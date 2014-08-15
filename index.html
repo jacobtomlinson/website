@@ -42,7 +42,7 @@ layout: default
 
                   {% endfor %}
                   <li>
-                      <small><i><a href="/page/2">more...</a></i></small>
+                      <small><i><a href="/posts/">more...</a></i></small>
                   </li>
               </ul>
 
@@ -56,7 +56,8 @@ layout: default
             <h2>Projects</h2>
 
             <ul>
-                {% for post in site.posts | limit: 5 %}
+              {% assign projects = (site.posts | where: "category", "Project") %}
+                {% for post in projects | limit: 5 %}
 
                     <li>
                         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -64,7 +65,7 @@ layout: default
 
                 {% endfor %}
                 <li>
-                    <small><i><a href="/page/2">more...</a></i></small>
+                    <small><i><a href="/projects/">more...</a></i></small>
                 </li>
             </ul>
 
