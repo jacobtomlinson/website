@@ -3,8 +3,8 @@ title: 'Python script: Recursively remove empty folders/directories'
 author: Jacob Tomlinson
 layout: post
 permalink: /2014/02/16/python-script-recursively-remove-empty-folders-directories/
-categories:
-  - Python
+category: Python
+thumbnail: python
 tags:
   - Module
   - Python
@@ -12,13 +12,13 @@ tags:
 ---
 So as part of a script I&#8217;m writing I needed the ability to recursively remove empty folders/directories from a filesystem. After a bit of googling I found <a title="Original python script" href="http://dev.enekoalonso.com/2011/08/06/python-script-remove-empty-folders" target="_blank">this very useful script</a> by <a title="Eneko Alonso's Blog" href="http://dev.enekoalonso.com" target="_blank">Eneko Alonso</a>. However the script isn&#8217;t really in a usable state for what I want so I decided to make a few changes to it and publish it on GitHub.
 
-#### Features
+### Features
 
 *   Recursively delete empty folders/directories
 *   Run as a standalone script or import into existing script
 *   Specify whether or not to delete the root folder (useful when you want to delete empty sub folders but not the folder itself even if empty)
 
-#### Usage
+### Usage
 
 
 ```bash
@@ -30,9 +30,7 @@ $ /path/to/script/remove_empty_folders.py /path/to/clean False
 ```
 
 
-#### Script
-
-<noscript>
+### Script
 
 ```python
 #! /usr/bin/env python
@@ -84,5 +82,3 @@ if __name__ == "__main__":
 
   removeEmptyFolders(sys.argv[1], removeRoot)</code>
 ```
-
-</noscript>

@@ -3,10 +3,10 @@ title: Sort top command by cpu usage and set to default in OS X
 author: Jacob Tomlinson
 layout: post
 permalink: /2013/06/04/sort-top-command-by-cpu-usage-and-set-to-default-in-os-x/
+thumbnail: command-line
 has_been_twittered:
   - yes
-categories:
-  - Apple
+category: Apple
 tags:
   - alias
   - bash

@@ -3,8 +3,8 @@ title: 'Amazon S3: s3cmd put ([Errno 32] Broken pipe)'
 author: Jacob Tomlinson
 layout: post
 permalink: /2014/07/31/amazon-s3-s3cmd-put-errno-32-broken-pipe/
-categories:
-  - Linux
+category: Linux
+thumbnail: aws
 tags:
   - aws
   - error
@@ -14,7 +14,7 @@ tags:
 ---
 Recently I decided to use Amazon&#8217;s S3 as another location to store some of my server backups. However I found when testing that I was unable to upload my backup tarballs to S3. I ended up with the following errors.
 
-```bash
+```
 jacob@server:backups$ s3cmd put backup-20140731.tar.gz s3://test-bucket/backup-20140731.tar.gz
 backup-20140731.tar.gz -&gt; s3://test-bucket/backup-20140731.tar.gz  [1 of 1]
     253952 of 250487870     0% in    1s   159.37 kB/s  failed
@@ -48,7 +48,7 @@ ERROR: Upload of 'backup-20140731.tar.gz' failed too many times. Skipping that f
 
 The file I&#8217;m uploading isn&#8217;t huge (238MB). So it wasn&#8217;t the known limit of trying to <a title="Amazon S3 docs - 5GB put limit" href="http://docs.aws.amazon.com/AmazonS3/latest/dev/UploadingObjects.html" target="_blank">upload files which are greater than 5GB</a>.
 
-```bash
+```
 jacob@server:backups$ ll
 total 238M
 -rw------- 1 jacob 238M Jul 31 06:00 backup-20140731.tar.gz</pre>

@@ -140,6 +140,13 @@ ul {
 		width: 120%;
 	}
 
+	.author-header {
+		font-family: 'Montserrat', sans-serif;
+		color: $light-medium;
+		margin-top: -20px;
+		font-size: 60px;
+	}
+
 	.row {
 		height: 100%;
 		max-height: 100%;
@@ -365,6 +372,11 @@ ul {
 
 			img {
 				max-width: 100%;
+				padding: 10px;
+			}
+
+			li {
+				list-style-type: disc;
 			}
 
 			.alignright {
@@ -396,6 +408,7 @@ ul {
 					box-sizing: content-box;
 					border-radius: 0;
 					margin-bottom: 40px;
+					margin-top: 10px;
 				}
 			}
 

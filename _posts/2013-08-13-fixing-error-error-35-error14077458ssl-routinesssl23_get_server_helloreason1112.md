@@ -3,14 +3,14 @@ title: 'Fixing &#8220;ERROR: Error 35: error:14077458:SSL routines:SSL23_GET_SER
 author: Jacob Tomlinson
 layout: post
 permalink: /2013/08/13/fixing-error-error-35-error14077458ssl-routinesssl23_get_server_helloreason1112/
+thumbnail: command-line
 has_been_twittered:
   - failed
 twitter_failure_code:
   - 410
 twitter_failure_reason:
   -
-categories:
-  - Apple
+category: Apple
 tags:
   - apple
   - curl
