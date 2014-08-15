@@ -3,6 +3,7 @@ title: Convert tweet hashtags, at-tags and urls to links with PHP and Regular Ex
 author: Jacob Tomlinson
 layout: post
 permalink: /2014/01/22/convert-tweet-hashtags-at-tags-and-urls-to-links-with-php-and-regular-expressions/
+thumbnail: twitter
 categories:
   - Web Development
 tags:
@@ -28,35 +29,33 @@ So what we&#8217;re going to do is to search for hashtags, at-tags and urls in t
 ```php
 $tweet = "@george check out http://www.google.co.uk #google";
 
-//Convert urls to &lt;a&gt; links
-$tweet = preg_replace("/([\w]+\:\/\/[\w-?&;#~=\.\/\@]+[\w\/])/", "&lt;a target=\"_blank\" href=\"$1\"&gt;$1&lt;/a&gt;", $tweet);
+//Convert urls to <a> links
+$tweet = preg_replace("/([\w]+\:\/\/[\w-?&;#~=\.\/\@]+[\w\/])/", "<a target=\"_blank\" href=\"$1\">$1</a>", $tweet);
 
-//Convert hashtags to twitter searches in &lt;a&gt; links
-$tweet = preg_replace("/#([A-Za-z0-9\/\.]*)/", "&lt;a target=\"_new\" href=\"http://twitter.com/search?q=$1\"&gt;#$1&lt;/a&gt;", $tweet);
+//Convert hashtags to twitter searches in <a> links
+$tweet = preg_replace("/#([A-Za-z0-9\/\.]*)/", "<a target=\"_new\" href=\"http://twitter.com/search?q=$1\">#$1</a>", $tweet);
 
 //Convert attags to twitter profiles in &lt;a&gt; links
-$tweet = preg_replace("/@([A-Za-z0-9\/\.]*)/", "&lt;a href=\"http://www.twitter.com/$1\"&gt;@$1&lt;/a&gt;", $tweet);
+$tweet = preg_replace("/@([A-Za-z0-9\/\.]*)/", "<a href=\"http://www.twitter.com/$1\">@$1</a>", $tweet);
 
 echo $tweet;
 ```
 
 Which gives the output
 
-```
-
 Now this is all well and good but you don&#8217;t want to be implementing this code every time you want to &#8220;linkify&#8221; a tweet so lets wrap it up in a function which you can put at the top of your code or in an included module.
 
 ```php
 function linkify_tweet($tweet) {
 
-  //Convert urls to &lt;a&gt; links
-  $tweet = preg_replace("/([\w]+\:\/\/[\w-?&;#~=\.\/\@]+[\w\/])/", "&lt;a target=\"_blank\" href=\"$1\"&gt;$1&lt;/a&gt;", $tweet);
+  //Convert urls to <a> links
+  $tweet = preg_replace("/([\w]+\:\/\/[\w-?&;#~=\.\/\@]+[\w\/])/", "<a target=\"_blank\" href=\"$1\">$1</a>", $tweet);
 
-  //Convert hashtags to twitter searches in &lt;a&gt; links
-  $tweet = preg_replace("/#([A-Za-z0-9\/\.]*)/", "&lt;a target=\"_new\" href=\"http://twitter.com/search?q=$1\"&gt;#$1&lt;/a&gt;", $tweet);
+  //Convert hashtags to twitter searches in <a> links
+  $tweet = preg_replace("/#([A-Za-z0-9\/\.]*)/", "<a target=\"_new\" href=\"http://twitter.com/search?q=$1\">#$1</a>", $tweet);
 
-  //Convert attags to twitter profiles in &lt;a&gt; links
-  $tweet = preg_replace("/@([A-Za-z0-9\/\.]*)/", "&lt;a href=\"http://www.twitter.com/$1\"&gt;@$1&lt;/a&gt;", $tweet);
+  //Convert attags to twitter profiles in <a> links
+  $tweet = preg_replace("/@([A-Za-z0-9\/\.]*)/", "<a href=\"http://www.twitter.com/$1\">@$1</a>", $tweet);
 
   return $tweet;
 

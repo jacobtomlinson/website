@@ -6,9 +6,9 @@ layout: default
   <div class="row">
 
     <div class="col-md-12 article">
-      {% if page.thumbnail %}
+      {% if site.data.thumbnail[page.thumbnail] %}
       <div class="thumb">
-        <img src="{{ page.thumbnail }}" />
+        <img src="{{ site.data.thumbnail[page.thumbnail] }}" />
       </div>
       {% endif %}
 
@@ -17,7 +17,7 @@ layout: default
       <div class="author">
         <small><i>
           by
-          <span itemprop="author">thumbnail.y
+          <span itemprop="author">
             {% if site.google_plus_link %}
               <a rel="author" href="{{ site.google_plus_link }}">
             {% endif %}
