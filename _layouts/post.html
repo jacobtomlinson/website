@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+<div class="container-fluid single">
+  <div class="row">
+
+    <div class="col-md-12 article">
+      {% if page.thumbnail %}
+      <div class="thumb">
+        <img src="{{ page.thumbnail }}" />
+      </div>
+      {% endif %}
+
+      <h1 class="header" itemprop="headline">{{ page.title }}</h1>
+
+      <div class="author">
+        <small><i>
+          by
+          <span itemprop="author">thumbnail.y
+            {% if site.google_plus_link %}
+              <a rel="author" href="{{ site.google_plus_link }}">
+            {% endif %}
+            {% if page.author %}
+              {{ page.author }}
+            {% endif %}
+            {% if site.google_plus_link %}
+              </a>
+            {% endif %}
+          </span>
+          on {{ page.date | date: "%B %-d, %Y" }}
+          under {% if page.categories %}{% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
+        </i></small>
+      </div>
+
+      <div class="content-panel content" itemprop="blogPost">
+        {{ content }}
+
+        <div class="share">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+        </div>
+
+        <div class="tags"><small>
+          <i class="fa fa-tags"></i>
+            {{ page.tags | join: ', ' }}
+        </small></div>
+
+      </div>
+
+      <div class="content-panel feedback">
+        I <i class="fa fa-heart"></i> feedback.<br />
+        Let me know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> or leave a comment below!
+      </div>
+
+      <div class="content-panel comments">
+        <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              {% if jekyll.environment == "production" %}
+              var disqus_shortname = "{{ site.disqus_production_account }}"; // required: replace example with your forum shortname
+              {% else %}
+              var disqus_shortname = "{{ site.disqus_development_account }}"; // required: replace example with your forum shortname
+              {% endif %}
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+
+      <div class="content-panel related clearfix">
+        <div class="related-header">
+          <a href="">Read More</a>
+        </div>
+        {% for post in site.related_posts limit:1 %}
+          <div class="title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </div>
+          <div class="excerpt">
+            {{ post.excerpt | strip_html | truncatewords:30 }}
+            <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
+          </div>
+        {% endfor %}
+        <hr />
+        <div class="previous previous-next">
+          {% if page.previous %}
+          <p>
+            <a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title }}</a>
+          </p>
+          <p class="date">Published {{ page.previous.date | date: "%B %-d, %Y" }}</p>
+          {% endif %}
+        </div>
+        <div class="next previous-next">
+          {% if page.next %}
+          <p>
+            <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
+          </p>
+          <p class="date">Published {{ page.next.date | date: "%B %-d, %Y" }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
