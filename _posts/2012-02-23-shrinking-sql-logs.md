@@ -3,18 +3,13 @@ title: Shrinking SQL logs
 author: Jacob Tomlinson
 layout: post
 permalink: /2012/02/23/shrinking-sql-logs/
-has_been_twittered:
-  - yes
-categories:
-  - Web Development
+category: Web Development
+thumbnail: database
 tags:
   - Databases
   - SQL
   - Storage
 ---
-<p style="text-align: center;">
-  <a href="http://www.jacobtomlinson.co.uk/wp-content/uploads/2012/02/Database-1.png"><img class="aligncenter size-thumbnail wp-image-59" title="Database 1" src="http://www.jacobtomlinson.co.uk/wp-content/uploads/2012/02/Database-1-150x150.png" alt="" width="150" height="150" /></a>
-</p>
 
 While reading some articles about minimizing the size of data while leaving the data fully searchable I came across a lot of info about finding common data and replacing it with pointers to a dictionary or store of common strings. After thinking about it for a while I thought I would just write a little post about a way I try and minimize the size of databases in projects that I work on. Now I&#8217;m going to start with an example of a very bad database I wrote a while back and how I used relational tables to shrink the size considerably. Now if you know anything about databases you should find all of this quite obvious but if you don&#8217;t then it may be worth taking note of.
 

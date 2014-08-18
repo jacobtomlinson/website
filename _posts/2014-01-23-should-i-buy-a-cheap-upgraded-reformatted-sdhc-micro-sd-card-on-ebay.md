@@ -3,23 +3,25 @@ title: Should I buy a cheap upgraded/reformatted SDHC micro SD card on eBay?
 author: Jacob Tomlinson
 layout: post
 permalink: /2014/01/23/should-i-buy-a-cheap-upgraded-reformatted-sdhc-micro-sd-card-on-ebay/
-categories:
-  - News
+category: News
+thumbnail: sd-card
 tags:
   - eBay
   - Micro SD Card
   - Scam
   - Storage
 ---
-### <a href="http://www.jacobtomlinson.co.uk/2014/01/23/should-i-buy-a-cheap-upgraded-reformatted-sdhc-micro-sd-card-on-ebay/image-3/" rel="attachment wp-att-669"><img class="size-medium wp-image-669 alignright" style="padding: 5px;" alt="Fake 32GB Micro SD SDHC Card cropped" src="http://www.jacobtomlinson.co.uk/wp-content/uploads/2014/01/image-294x300.png" width="294" height="300" /></a>Short answer &#8211; ***No!***
+Short answer &#8211; ***No!***
 
 Now I must admit I am one for buying rubbish on eBay and usually fancy myself as someone who can spot the difference between a bargain and a scam. However this time I almost got scammed.
 
-I was looking for a 32GB micro SD card to go in my new android tablet, I had a look on Amazon and saw that they were somewhere around the £15 mark. Then I went to eBay and saw that on there they were mostly the same except for a few which were around the £6-8 mark. At this point I should&#8217;ve thought to myself &#8220;danger&#8221; but instead I simply though &#8220;wow they must be shipping straight out of China or something&#8221;, I wasn&#8217;t bothered about waiting for it to arrive as my tablet is on it&#8217;s way from Hong Kong and won&#8217;t be here any time soon.
+I was looking for a 32GB micro SD card to go in my new android tablet, I had a look on Amazon and saw that they were somewhere around the &pound;15 mark. Then I went to eBay and saw that on there they were mostly the same except for a few which were around the &pound;6-8 mark. At this point I should&#8217;ve thought to myself &#8220;danger&#8221; but instead I simply though &#8220;wow they must be shipping straight out of China or something&#8221;, I wasn&#8217;t bothered about waiting for it to arrive as my tablet is on it&#8217;s way from Hong Kong and won&#8217;t be here any time soon.
 
-To my delight it arrived just a few days later. I opened it up and had a look at it and it looked like the real deal, I didn&#8217;t have any devices with me at the time to test it out so just popped it in my bag. I then thought to myself that I&#8217;d have a look and see if there are other sizes for this great price. I went back onto eBay and searched for 64GB SDXC Micro SD card, knowing that the SDHC format is limited to 32GB and has now been superseded by the SDXC format to support larger sizes. However what I found was people claiming to sell 64GB SDHC cards at around the £10 mark.
+![](http://i.imgur.com/CNO5hup.png)
 
-I thought this was a bit weird as it isn&#8217;t technically possible to have cards at that size in that format so wondered if it was a typo, however when looking down the list I saw more and more 64GB SDHC cards. I noticed that quite a few of them had things in the title like *&#8220;upgraded&#8221;* or *&#8220;reformatted&#8221;. *Not having heard of this before I did a bit of reading and came across <a title="eBay article on upgraded/reformatted SDHC cards" href="http://www.ebay.co.uk/gds/Cheap-microsd-cards-Reformatted-upgraded-any-good-/10000000177055047/g.html" target="_blank">this guide</a> on eBay&#8217;s forums themselves.
+To my delight it arrived just a few days later. I opened it up and had a look at it and it looked like the real deal, I didn&#8217;t have any devices with me at the time to test it out so just popped it in my bag. I then thought to myself that I&#8217;d have a look and see if there are other sizes for this great price. I went back onto eBay and searched for 64GB SDXC Micro SD card, knowing that the SDHC format is limited to 32GB and has now been superseded by the SDXC format to support larger sizes. However what I found was people claiming to sell 64GB SDHC cards at around the &pound;10 mark.
+
+I thought this was a bit weird as it isn&#8217;t technically possible to have cards at that size in that format so wondered if it was a typo, however when looking down the list I saw more and more 64GB SDHC cards. I noticed that quite a few of them had things in the title like &#8220;upgraded&#8221; or &#8220;reformatted&#8221;. Not having heard of this before I did a bit of reading and came across <a title="eBay article on upgraded/reformatted SDHC cards" href="http://www.ebay.co.uk/gds/Cheap-microsd-cards-Reformatted-upgraded-any-good-/10000000177055047/g.html" target="_blank">this guide</a> on eBay&#8217;s forums themselves.
 
 This is worth a read but basically states that these cards are in fact smaller cards (e.g 4GB) but have had their filesystem headers tampered with to show 32GB when connected to a PC or other device.
 

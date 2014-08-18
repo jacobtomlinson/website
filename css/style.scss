@@ -351,7 +351,6 @@ ul {
 			text-align: center;
 
 			img {
-				width: 70px;
 				height: 70px;
 			}
 		}
@@ -373,6 +372,9 @@ ul {
 			img {
 				max-width: 100%;
 				padding: 10px;
+    		display: block;
+    		margin-left: auto;
+    		margin-right: auto
 			}
 
 			li {

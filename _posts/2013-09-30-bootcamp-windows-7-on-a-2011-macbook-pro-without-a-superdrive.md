@@ -3,8 +3,8 @@ title: Bootcamp Windows 7 on a 2011 MacBook Pro without a SuperDrive
 author: Jacob Tomlinson
 layout: post
 permalink: /2013/09/30/bootcamp-windows-7-on-a-2011-macbook-pro-without-a-superdrive/
-categories:
-  - Apple
+category: Apple
+thumbnail: bootcamp
 tags:
   - mac
   - os x
@@ -33,26 +33,21 @@ So in order to get Windows installed on my MacBook I had two options, put the Su
 
 So initially I put a Windows 7 DVD in my USB SuperDrive and began the usual process of installing Windows using the bootcamp assistant. I launched the bootcamp assistant from Applications > Utilities and used it to partition the HDD. Now the assistant will complain if you don&#8217;t have the Windows media attached so it may be worth plugging in a USB DVD drive with a Windows disk in for this part, we won&#8217;t actually use this to install Windows. If you try to boot from the USB attached DVD you will most likely just get a flashing white cursor in the top left corner.
 
-<p style="text-align: center;">
-  <a class="align-center" href="http://www.jacobtomlinson.co.uk/2013/09/30/bootcamp-windows-7-on-a-2011-macbook-pro-without-a-superdrive/vmware-fusion/" rel="attachment wp-att-586"><img class="aligncenter" alt="VMware-Fusion" src="http://www.jacobtomlinson.co.uk/wp-content/uploads/2013/09/VMware-Fusion-300x300.png" width="100" height="100" /></a>
-</p>
+![](http://i.imgur.com/Be3I5gL.png)
 
 Now the posts I found online suggested using VMWare to use the partition as the HDD for a Virtual machine rather than a normal Virtual Disk file. This way you can partially install Windows onto the partition and then reboot natively to that partition and complete the installation. Now in order to do this you will need to install rEFIt which is an addition to the normal EFI bootloader, this is required as the partially installed Windows will not show up in the normal menu you get when holding alt when booting. So you will need to download rEFIt and install it.
 
 Next you will need to install a trial of VMWare fusion 5 and create the VM linked to the partition. The guide I followed to do this can be found <a title="Installing Windows on a Macbook Pro without a Superdrive" href="http://www.andrewsavory.com/blog/2011/2156" target="_blank">here</a>. The important section from this article is as follows (see original article for screenshots)
 
-> You first need to configure VMWare to use the Boot Camp partition ‘raw’, as a real disk rather than a virtual disk. To do this, open up a terminal and type:
->
->
+You first need to configure VMWare to use the Boot Camp partition 'raw', as a real disk rather than a virtual disk. To do this, open up a terminal and type:
+
 ```bash
 mkdir Virtual\ Machines
 /Applications/VMware\ Fusion.app/Contents/Library/vmware-rawdiskCreator print /dev/disk0
 ```
 
->
-> The output will be something like:
->
->
+The output will be something like:
+
 ```
 Nr      Start       Size Type Id Sytem
 -- ---------- ---------- ---- -- ------------------------
@@ -61,30 +56,23 @@ Nr      Start       Size Type Id Sytem
  3  584656896  392116224 BIOS  B Win95 FAT32
 ```
 
->
-> Identify the correct drive number on the left – as a guideline, it’s probably listed as FAT32 or NTFS formatted under ‘Sytem’ (sic).
->
-> Next, create the raw disk description:
->
->
+Identify the correct drive number on the left - as a guideline, it's probably listed as FAT32 or NTFS formatted under 'Sytem' (sic).
 
+Next, create the raw disk description:
 
->
-> This will give you two raw disk description files
->
-> Next, start VMWare Fusion and select “New…” from the File menu. Select “Continue without disc”
->
-> On the installation media page, drag and drop the windows7.vmdk file previously created onto the “Use an existing virtual disk” drop-down (where it says “None”). You can’t just select the disk by clicking the radio button and then the drop-down, because the disk files are in a different format and will show up greyed-out.You will be prompted to convert the virtual disk to a newer format. Select “Don’t Convert”. If you select “Convert”, you will get an error about insufficient permissions. It works just fine without converting. If all went well, you should see your vmdk listed and be able to click Continue. Accept the defaults for the operating system and version, and click Continue. On the last page, click “Customize Settings”, accept the default save filename and click “Save”. You’ll then be taken to the Customize Settings screen, where you want to configure the ISO to boot from. Click on the CD/DVD (IDE) option and then select the location of your Windows 7 ISO
->
-> Go through preliminary install up to the point that Windows does the first reboot. At this point, power down the VM, and reboot the computer.
+This will give you two raw disk description files
+
+Next, start VMWare Fusion and select "New..." from the File menu. Select "Continue without disc"
+
+On the installation media page, drag and drop the windows7.vmdk file previously created onto the "Use an existing virtual disk" drop-down (where it says "None"). You can't just select the disk by clicking the radio button and then the drop-down, because the disk files are in a different format and will show up greyed-out.You will be prompted to convert the virtual disk to a newer format. Select "Don't Convert". If you select "Convert", you will get an error about insufficient permissions. It works just fine without converting. If all went well, you should see your vmdk listed and be able to click Continue. Accept the defaults for the operating system and version, and click Continue. On the last page, click "Customize Settings", accept the default save filename and click "Save". You'll then be taken to the Customize Settings screen, where you want to configure the ISO to boot from. Click on the CD/DVD (IDE) option and then select the location of your Windows 7 ISO
+
+Go through preliminary install up to the point that Windows does the first reboot. At this point, power down the VM, and reboot the computer.
 
 Now once completing this you may find that this guide works perfectly for you and if you reboot and select Windows from the rEFIt menu the installation may continue, if that&#8217;s the case then fantastic, but if like me you encounter an error then read on.
 
 When I followed that guide and rebooted I was confronted with the message &#8220;Could not find file winboot.exe&#8221;. Now this issue is caused by the Windows boot record pointing at the wrong partition. I guess this is caused by the fact that the number and possibly order of the partitions is different on the physical machine to when it is accessed form the VM. This problem can usually be fixed by loading up the recovery console from the installation DVD and repairing the MBR but the whole reason we&#8217;re doing this is because we can&#8217;t boot from the DVD so we&#8217;re going to have to blow away this failed installation and start again from a different angle, but don&#8217;t worry this wasn&#8217;t for nothing, what this has achieved is it has made this partition bootable so what we will do now is copy the installation media to this bootable partition and then it form there onto itself.
 
-<p style="text-align: center;">
-  <a href="http://www.jacobtomlinson.co.uk/2013/09/30/bootcamp-windows-7-on-a-2011-macbook-pro-without-a-superdrive/paragon-ntfs-folder-icon/" rel="attachment wp-att-589"><img class="aligncenter  wp-image-589" alt="Paragon NTFS Folder Icon" src="http://www.jacobtomlinson.co.uk/wp-content/uploads/2013/09/Paragon-NTFS-Folder-Icon-200x200.png" width="100" height="100" /></a>
-</p>
+![](http://i.imgur.com/rQnMhnD.png)
 
 To do this you will need to be able to modify the NTFS partition from OS X. So boot back into OS X and install Paragon NTFS, you can get a free trial of this which will be fine. Once you&#8217;ve installed that you need to open the Windows partition in finder and drag it&#8217;s entire contents to the trash and then empty the trash to delete everything. This will take a few minutes but you will be left with an empty bootable NTFS partition.
 
