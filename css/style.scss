@@ -124,6 +124,61 @@ ul {
 	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.my-menu {
+
+	p {
+		margin-bottom: 5px;
+	}
+
+	a, a:active {
+		color: $white;
+	}
+
+	a:hover {
+		color: $light-blue;
+	}
+}
+
+.links {
+	margin-top: 50px;
+	text-align: center;
+
+	i {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.fa {
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		transition: 0.3s;
+	}
+
+	.fa-twitter:hover {
+		color: $twitter;
+	}
+
+	.fa-linkedin:hover {
+		color: $linkedin;
+	}
+
+	.fa-google-plus:hover {
+		color: $google-plus;
+	}
+
+	.fa-github-alt:hover {
+		color: $github;
+	}
+
+	.fa-stack-overflow:hover {
+		color: $stack-overflow;
+	}
+
+	.fa-rss:hover {
+		color: $rss;
+	}
+}
+
 /* Index */
 
 .index {
@@ -191,46 +246,6 @@ ul {
 
 		a:hover {
 			color: $light-blue;
-		}
-	}
-
-	.links {
-		margin-top: 50px;
-		text-align: center;
-
-		i {
-			padding-left: 10px;
-			padding-right: 10px;
-		}
-
-		.fa {
-			-webkit-transition: 0.3s;
-			-moz-transition: 0.3s;
-			transition: 0.3s;
-		}
-
-		.fa-twitter:hover {
-			color: $twitter;
-		}
-
-		.fa-linkedin:hover {
-			color: $linkedin;
-		}
-
-		.fa-google-plus:hover {
-			color: $google-plus;
-		}
-
-		.fa-github-alt:hover {
-			color: $github;
-		}
-
-		.fa-stack-overflow:hover {
-			color: $stack-overflow;
-		}
-
-		.fa-rss:hover {
-			color: $rss;
 		}
 	}
 

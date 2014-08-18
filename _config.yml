@@ -6,12 +6,16 @@ baseurl: ""
 url: "http://www.jacobtomlinson.co.uk"
 author_name: Jacob Tomlinson
 author_description: A unix system administrator by day and a website and app developer by night. With experience in RHEL and OS X administration, HTML5, CSS3, JavaScript, jQuery, PHP, Python, MySQL, CodeIgniter, Wordpress and much more. When he is not tapping away at his keyboard you can usually find him making music, gaming or spending time with his wonderful fianc&#233;e.
-twitter_username: _jacobtomlinson
-github_username:  jacobtomlinson
-google_plus_link: https://plus.google.com/+JacobTomlinson0/
 google_analytics: UA-20365477-2
 disqus_development_account: wwwdevjacobtomlinsoncouk
 disqus_production_account: jacobtomlinson
+
+# Social usernames/URLs
+twitter_username: _jacobtomlinson
+github_username:  jacobtomlinson
+linkedin_link: http://www.linkedin.com/pub/jacob-tomlinson/34/b67/84
+google_plus_link: https://plus.google.com/+JacobTomlinson0/
+stackoverflow_link: http://stackoverflow.com/users/1003288/jacob-tomlinson
 
 # Build settings
 markdown: redcarpet
