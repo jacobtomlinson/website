@@ -214,10 +214,15 @@ ul {
 
 	.header {
 		margin-top: 10px;
-		margin-left: -10%;
+		margin-left: 0%;
 		margin-bottom: 0px;
 		font-size: 32px;
-		width: 120%;
+		width: 100%;
+
+		@media (min-width: $screen-md-min) {
+			margin-left: -10%;
+			width: 120%;
+		}
 	}
 
 	.author-header {
