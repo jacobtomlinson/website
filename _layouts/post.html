@@ -57,11 +57,8 @@ layout: default
         <div id="disqus_thread"></div>
           <script type="text/javascript">
               /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-              {% if jekyll.environment == "production" %}
               var disqus_shortname = "{{ site.disqus_production_account }}"; // required: replace example with your forum shortname
-              {% else %}
-              var disqus_shortname = "{{ site.disqus_development_account }}"; // required: replace example with your forum shortname
-              {% endif %}
+              //var disqus_shortname = "{{ site.disqus_development_account }}"; // required: replace example with your forum shortname
               /* * * DON'T EDIT BELOW THIS LINE * * */
               (function() {
                   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
