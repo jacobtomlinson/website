@@ -27,13 +27,18 @@ $regular-purple:	#601848;
 $red:							#C04848;
 $orange:					#F07241;
 
+/* Responsive sizes */
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
 /* Globals */
 
 html {
 	height: 100%;
 	min-height: 100%;
 	max-height: 100%;
-
+	overflow-x: hidden;
 }
 
 body {
@@ -94,24 +99,34 @@ ul {
 }
 
 .header {
-	font-size: 62px;
+	font-size: 32px;
 	text-align: center;
 	margin-top: 20px;
-	margin-left: -10%;
-	width: 120%;
+	margin-left: -0%;
+	width: 100%;
+
+	@media (min-width: $screen-sm-min) {
+		font-size: 62px;
+		margin-left: -10%;
+		width: 120%;
+	}
 }
 
 .menu-button {
 	color: $white;
-	font-size: 36px;
+	font-size: 24px;
 	position: fixed;
-	top: 20px;
-	left: 40px;
+	top: 10px;
+	left: 20px;
 	cursor: pointer;
 	line-height: 1em;
 	padding: 10px;
 	background-color: $dark;
 	z-index: 100;
+	@media (min-width: $screen-sm-min) {
+		top: 20px;
+		left: 40px;
+	}
 }
 
 .content-panel {
@@ -144,8 +159,13 @@ ul {
 	text-align: center;
 
 	i {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+
+		@media (min-width: $screen-sm-min) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
 
 	.fa {
@@ -184,8 +204,13 @@ ul {
 .index {
 	height: 100%;
 	max-height: 100%;
-	width: 700px;
-	max-width:700px;
+	width: 100%;
+	padding: 0px;
+
+	@media (min-width: $screen-sm-min) {
+		width: 700px;
+		max-width:700px;
+	}
 
 	.header {
 		margin-top: 10px;
@@ -198,8 +223,13 @@ ul {
 	.author-header {
 		font-family: 'Montserrat', sans-serif;
 		color: $light-medium;
-		margin-top: -20px;
-		font-size: 60px;
+		margin-top: 0px;
+		font-size: 30px;
+
+		@media (min-width: $screen-sm-min) {
+			font-size: 60px;
+			margin-top: -20px;
+		}
 	}
 
 	.row {
@@ -290,6 +320,26 @@ ul {
 
 }
 
+.all-posts {
+	margin-left: 0px;
+	margin-right: 0px;
+
+	@media (min-width: $screen-md-min) {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.content-panel {
+		padding-left: 10px;
+		padding-right: 10px;
+		@media (min-width: $screen-md-min) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+}
+
+
 .single {
 	height:100%;
 	max-height: 100%;
@@ -308,7 +358,11 @@ ul {
 	}
 
 	p {
-		margin-bottom: 40px;
+		margin-bottom: 10px;
+
+		@media (min-width: $screen-sm-min) {
+			margin-bottom: 40px;
+		}
 	}
 
 	.menu {
@@ -355,10 +409,21 @@ ul {
 	}
 
 	.article {
-		width: 70%;
-		max-width: 950px;
-		margin-left: 15%;
+		width: 100%;
+		margin-left: 0%;
 		padding: 0px;
+
+		@media (min-width: $screen-sm-min) {
+			width: 90%;
+			margin-left: 5%;
+		}
+
+
+		@media (min-width: $screen-md-min) {
+			width: 70%;
+			margin-left: 15%;
+			max-width: 950px;
+		}
 
 		.thumb {
 			margin-top: 20px;
@@ -366,23 +431,37 @@ ul {
 			text-align: center;
 
 			img {
-				height: 70px;
+				height: 50px;
+				@media (min-width: $screen-sm-min) {
+					height: 70px;
+				}
 			}
 		}
 
 		.author {
 			font-size: 20px;
 			text-align: center;
-			margin-bottom: 40px;
+			margin-bottom: 10px;
+			@media (min-width: $screen-sm-min) {
+				margin-bottom: 40px;
+			}
 		}
 
 		.content {
-			font-size: 24px;
+			font-size: 18px;
 			line-height: 170%;
-			padding-left: 30px;
-			padding-right: 30px;
-			padding-top: 40px;
-			padding-bottom: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			@media (min-width: $screen-sm-min) {
+				font-size: 24px;
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-top: 40px;
+				padding-bottom: 20px;
+			}
 
 			img {
 				max-width: 100%;
@@ -407,25 +486,37 @@ ul {
 
 			.highlight {
 				width: 100%;
-				margin-left: -30px;
-				padding-right: 60px;
+				margin-left: -15px;
+				padding-right: 45px;
 				box-sizing: content-box;
+
+				@media (min-width: $screen-sm-min) {
+					margin-left: -30px;
+					padding-right: 60px;
+				}
 
 				pre {
 					width: 100%;
 					font-family: 'Anonymous Pro', ;
 					background-color: $darker;
 					color: $white;
-					font-size: 15px;
+					font-size: 12px;
 					border: none;
-					padding-left: 50px;
+					padding-left: 15px;
 					padding-top: 20px;
 					padding-bottom: 20px;
-					padding-right: 10px;
+					padding-right: 15px;
 					box-sizing: content-box;
 					border-radius: 0;
-					margin-bottom: 40px;
+					margin-bottom: 10px;
 					margin-top: 10px;
+
+					@media (min-width: $screen-sm-min) {
+						padding-left: 50px;
+						padding-right: 10px;
+						margin-bottom: 40px;
+						font-size: 15px;
+					}
 				}
 			}
 
@@ -502,8 +593,12 @@ ul {
 
 			.title {
 				padding-top:20px;
-				font-size: 36px;
+				font-size: 24px;
 				margin-bottom: 20px;
+
+				@media (min-width: $screen-sm-min) {
+					font-size: 36px;
+				}
 
 				a {
 					color: $white;
