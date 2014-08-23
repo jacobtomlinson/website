@@ -65,7 +65,7 @@ rm YosemitePreview.dmg
 
 ```bash
 cd /path/to/your/vm
-VBoxManage modifyvm –cpuidset 00000001 000306a9 00020800 80000201 178bfbff
+VBoxManage modifyvm "VM Name" –cpuidset 00000001 000306a9 00020800 80000201 178bfbff
 ```
 
 ![](http://i.imgur.com/8pSI2Ww.png)
