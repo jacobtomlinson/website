@@ -4,7 +4,7 @@ author: Jacob Tomlinson
 layout: post
 permalink: /2014/08/28/stop-google-from-scanning-my-site/
 category: Web Development
-thumbnail: google
+thumbnail: google-developers
 tags:
   - google
   - bots
