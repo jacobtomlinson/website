@@ -5,14 +5,14 @@ layout: default
 <div class="container-fluid single">
   <div class="row">
 
-    <div class="col-md-12 article">
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
       {% if site.data.thumbnail[page.thumbnail] %}
       <div class="thumb">
-        <img src="{{ site.data.thumbnail[page.thumbnail] }}" />
+        <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" />
       </div>
       {% endif %}
 
-      <h1 class="header" itemprop="headline">{{ page.title }}</h1>
+      <h1 class="header" itemprop="name" itemprop="headline">{{ page.title }}</h1>
 
       <div class="author">
         <small><i>
@@ -22,19 +22,21 @@ layout: default
               <a rel="author" href="{{ site.google_plus_link }}">
             {% endif %}
             {% if page.author %}
-              {{ page.author }}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ page.author }}</span>
+            </span>
             {% endif %}
             {% if site.google_plus_link %}
               </a>
             {% endif %}
           </span>
-          on {{ page.date | date: "%B %-d, %Y" }}
+          on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
           under {% if page.categories %}{% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
         </i></small>
       </div>
 
-      <div class="content-panel content" itemprop="blogPost">
-        {{ content }}
+      <div class="content-panel content">
+        <span itemprop="articleBody">{{ content }}</span>
 
         <div class="share">
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
