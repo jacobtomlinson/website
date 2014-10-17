@@ -3,7 +3,7 @@ title: How to use an Xbox 360 controller with OS X Yosemite
 author: Jacob Tomlinson
 layout: post
 permalink: /2014/10/17/use-xbox-360-pad-with-yosemite/
-category: Web Development
+category: Gaming
 thumbnail: xbox-controller
 tags:
   - xbox 360 controller
