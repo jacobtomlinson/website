@@ -30,8 +30,17 @@ OS X Yosemite. Luckily for us someone else has updated the code and [posted it o
 GitHub](https://github.com/d235j/360Controller/releases/tag/v0.13.1-unofficial).
 
 To install it just download the .dmg file from the GitHub repository, open it
-and run the installer. You'll need to reboot once it's done for your
-Mac to recognise the controller.
+and run the installer.
+
+You may also need to disable kext signing on your Mac. This is now enforced by
+default in Yosemite but will cause this kext not to load. You can do this by
+running the following command in the Terminal and entering your password:
+
+```
+sudo nvram boot-args="kext-dev-mode=1"
+```
+
+You'll need to reboot once it's done for your Mac to recognise the controller.
 
 ## Configuration
 
