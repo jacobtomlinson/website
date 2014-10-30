@@ -32,8 +32,8 @@ GitHub](https://github.com/d235j/360Controller/releases/tag/v0.13.1-unofficial).
 To install it just download the .dmg file from the GitHub repository, open it
 and run the installer.
 
-You may also need to disable kext signing on your Mac. This is now enforced by
-default in Yosemite but will cause this kext not to load. You can do this by
+You will also need to disable kext signing on your Mac. This is now enforced by
+default in Yosemite and will cause this kext not to load. You can do this by
 running the following command in the Terminal and entering your password:
 
 ```
