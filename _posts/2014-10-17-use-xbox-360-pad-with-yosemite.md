@@ -27,18 +27,10 @@ the Xbox 360 controller so we'll have to look elsewhere.
 Colin Munro at tattiebogle.net created a driver for the Xbox 360 controller,
 however this hasn't been updated since Snow Leopard and it won't work with
 OS X Yosemite. Luckily for us someone else has updated the code and [posted it on
-GitHub](https://github.com/d235j/360Controller/releases/tag/v0.13.1-unofficial).
+GitHub](https://github.com/d235j/360Controller/releases).
 
 To install it just download the .dmg file from the GitHub repository, open it
 and run the installer.
-
-You will also need to disable kext signing on your Mac. This is now enforced by
-default in Yosemite and will cause this kext not to load. You can do this by
-running the following command in the Terminal and entering your password:
-
-```
-sudo nvram boot-args="kext-dev-mode=1"
-```
 
 You'll need to reboot once it's done for your Mac to recognise the controller.
 
@@ -53,3 +45,7 @@ From this menu you'll be able to test your controller is working as well as
 make changes to the config.
 
 ![Imgur](http://i.imgur.com/ikYGruw.png)
+
+### Updates
+ * Add disable kext sign check
+ * Removed disable kext sign check, not needed as of v0.14
