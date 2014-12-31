@@ -14,14 +14,14 @@ tags:
 ### Introduction
 
 Often when managing a large number of systems you want to manage all software
-install the same way. So when it comes to VMware Tools you may not want to
+installs the same way. So when it comes to VMware Tools you may not want to
 follow the [official instructions][1] but instead install using yum, especially
-if you're automating a number of headless systems.
+if you're automating a large number of headless systems.
 
-VMware do make their tools available via a web hosted yum repository, however
-this means you must also update the tools using yum. You server will show tools in
-vCenter as "Running (3rd-party/Independant)" and you will not be able to specify
-the "Update on boot" option in your vm settings.
+VMware makes their tools available via a web hosted yum repository, however
+this means you must also update the tools using yum. You server will show the
+tools status in vCenter as "Running (3rd-party/Independant)" and you will not be
+able to specify the "Update on boot" option in your vm settings.
 
 ## Add repository
 
@@ -61,7 +61,7 @@ From now on if you need to update VMware Tools you can simply run
 yum update vmware-tools-esx-nox
 ```
 
-or as part of a larger yum update.
+or as part of a regular yum update.
 
 ## Removing VMware Tools
 
