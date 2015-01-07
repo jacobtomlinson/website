@@ -23,6 +23,15 @@ on Centos 6.
 All commands in this guide will either need to be run as the root user or with
 sudo.
 
+### Requirements
+
+If you're running CentOS x86_64 you'll need to install the i686 version of glibc
+for inadyn to work.
+
+```
+yum install glibc.i686
+```
+
 ## Install Binary
 
 First we need to download and install the binary. DynDNS makes the utility, along
