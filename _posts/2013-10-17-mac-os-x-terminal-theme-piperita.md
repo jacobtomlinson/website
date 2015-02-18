@@ -14,17 +14,17 @@ tags:
 **UPDATE** &#8211; This project is now at version 2. See the [Piperita GitHub page][1] for up to date documentation and information.
 
 
-<a href="http://www.jacobtomlinson.co.uk/2013/10/17/mac-os-x-terminal-theme-piperita/terminal/" rel="attachment wp-att-602"><img style="text-align: center;" alt="Piperita - Terminal" src="http://www.jacobtomlinson.co.uk/wp-content/uploads/2013/10/terminal.png" width="900" height="250" /></a>
+![Imgur](http://i.imgur.com/XHmCIzR.png)
 
-I spend a lot of my day staring at a Mac terminal, so I decided to find a nice theme and tweak the prompt. I found a theme called [Peppermint][2] designed by [Noah Frederick][3] which I began using. However I didn&#8217;t like the way the prompt looks, I like the way the default prompt looks but I don&#8217;t like some of the settings like displaying the full path.
+I spend a lot of my day staring at a Mac terminal, so I decided to find a nice theme and tweak the prompt. I found a theme called [Peppermint][2] designed by [Noah Frederick][3] which I began using. However I didn't like the way the prompt looks, I like the way the default prompt looks but I don't like some of the settings like displaying the full path.
 
 So I decided to create my own theme based on Peppermint which includes the colour scheme from Peppermint and my own bash configuration to make full use of those colours.
 
-<a href="http://www.jacobtomlinson.co.uk/2013/10/17/mac-os-x-terminal-theme-piperita/codeexample/" rel="attachment wp-att-600"><img style="text-align: center;" alt="Piperita- Terminal - Code Example" src="http://www.jacobtomlinson.co.uk/wp-content/uploads/2013/10/codeexample.png" width="900" height="560" /></a>
+![Imgur](http://i.imgur.com/0rr9Ulz.png)
 
-I&#8217;ve also decided to port this scheme to every terminal I use starting with [iTerm 2][4].
+I've also decided to port this scheme to every terminal I use starting with [iTerm 2][4].
 
-<a href="http://www.jacobtomlinson.co.uk/2013/10/17/mac-os-x-terminal-theme-piperita/iterm2/" rel="attachment wp-att-601"><img style="text-align: center;" alt="Piperita - iTerm 2" src="http://www.jacobtomlinson.co.uk/wp-content/uploads/2013/10/iterm2.png" width="900" height="250" /></a>
+![Imgur](http://i.imgur.com/gOudKTc.png)
 
 If you want to get hold of this theme for yourself you can find it [here on GitHub][5] along with instructions on how to install it.
 
