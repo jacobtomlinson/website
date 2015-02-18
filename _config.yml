@@ -4,7 +4,6 @@ email: jacob@jacobtomlinson.co.uk
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 baseurl: ""
 url: "http://www.jacobtomlinson.co.uk"
-permalink: pretty
 author_name: Jacob Tomlinson
 author_description: A unix system administrator by day and a website and app developer by night. With experience in RHEL and OS X administration, HTML5, CSS3, JavaScript, jQuery, PHP, Python, MySQL, CodeIgniter, Wordpress and much more. When he is not tapping away at his keyboard you can usually find him making music, gaming or spending time with his wonderful fianc&#233;e.
 google_analytics: UA-20365477-2
@@ -24,3 +23,4 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 permalink: pretty
+exclude: [vendor]
