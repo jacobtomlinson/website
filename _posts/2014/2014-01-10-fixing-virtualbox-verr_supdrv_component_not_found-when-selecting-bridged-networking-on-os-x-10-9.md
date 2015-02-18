@@ -17,7 +17,7 @@ While installing CentOS in VirtualBox (version 4.2.4) on OS X (version 10.9.1) I
 virtualbox verr_supdrv_component_not_found
 ```
 
-The solution I found to this is to reload the VirtualBox kexts on the host operating system. To do this I used a script which I found <a href="https://forums.virtualbox.org/viewtopic.php?f=8&t=56013&start=15#p272403" target="_blank">here</a>, I&#8217;ve put it on <a title="GitHub Gist" href="https://gist.github.com/killfall/8361722" target="_blank">GitHub as a gist</a> for future reference.
+The solution I found to this is to reload the VirtualBox kexts on the host operating system. To do this I used a script which I found [here][1], I've put it on [GitHub as a gist][2] for future reference.
 
 
 ```bash
@@ -51,3 +51,6 @@ case "$1" in
                 ;;
 esac
 ```
+
+[1]: https://forums.virtualbox.org/viewtopic.php?f=8&t=56013&start=15#p272403
+[2]: https://gist.github.com/jacobtomlinson/8361722

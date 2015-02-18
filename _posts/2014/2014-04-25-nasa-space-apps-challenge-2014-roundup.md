@@ -19,7 +19,7 @@ Some people arrived at the hackathon with a challenge in mind and gave a pitch t
 
 One of the main reasons I decided to lead a team at this hackathon rather than just join one as I have done in the past was because often I find that the team leaders are too ambitious (or possibly naive) about what they want to achieve and then end up with a project at the end of the weekend which isn't even half finished and doesn't really work. At the end of a hackathon you have to give a presentation and I've seen far too many people, including myself, say "If I had more time it would have done this". I wanted to approach the project differently to avoid this from happening.
 
-![](http://i.imgur.com/IxB38Af.png)
+![Me](http://i.imgur.com/IxB38Af.png)
 
 #### Me giving my pitch. Photo by <a title="Adam Burt's Flickr" href="https://www.flickr.com/photos/aburt/" target="_blank">Adam Burt</a>
 
@@ -39,13 +39,13 @@ We were awarded "Best Gameplay" and are currently awaiting results from the glob
 
 I am very grateful for the excellent team I worked with but I am especially thankful to my friend and colleague <a title="Ian Gentry's Twitter profile" href="https://twitter.com/iangentry" target="_blank">Ian Gentry</a>, not only for helping me plan the project and for bouncing ideas off but also for helping me manage the team when it grew far larger than I expected.
 
-![](http://i.imgur.com/sMO2e2M.png)
+![Space Apps Teams](http://i.imgur.com/sMO2e2M.png)
 
-#### Most of <a title="Asteroid Prospector Credits" href="http://killfall.github.io/asteroid-prospector/credits.html" target="_blank">the team</a>. Photo by <a title="Adam Burt's Flickr" href="https://www.flickr.com/photos/aburt/" target="_blank">Adam Burt</a>
+#### Most of <a title="Asteroid Prospector Credits" href="http://jacobtomlinson.github.io/asteroid-prospector/credits.html" target="_blank">the team</a>. Photo by <a title="Adam Burt's Flickr" href="https://www.flickr.com/photos/aburt/" target="_blank">Adam Burt</a>
 
 For more information on the project see the following resources:
 
-*   <a title="Play Asteroid Prospector" href="http://killfall.github.io/asteroid-prospector/" target="_blank">The game itself</a>
+*   <a title="Play Asteroid Prospector" href="http://jacobtomlinson.github.io/asteroid-prospector/" target="_blank">The game itself</a>
 *   <a title="Asteroid Prospector Twitter" href="https://twitter.com/APEMining" target="_blank">Twitter</a>
 *   <a title="Asteroid Prospector Tumblr" href="http://asteroidprospectorexeter.tumblr.com/" target="_blank">Tumblr</a>
-*   <a title="Asteroid Prospector GitHub" href="https://github.com/killfall/asteroid-prospector/tree/gh-pages" target="_blank">GitHub</a>
+*   <a title="Asteroid Prospector GitHub" href="https://github.com/jacobtomlinson/asteroid-prospector/tree/gh-pages" target="_blank">GitHub</a>
