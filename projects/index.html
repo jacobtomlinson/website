@@ -7,7 +7,7 @@ layout: default
   <div class="row index all-posts">
 
     <h1 class="header author-header">{{ site.author_name }}</h1>
-    <h2 class="header" itemprop="headline">Projects</h1>
+    <h2 class="header" itemprop="headline">Projects</h2>
 
       {% assign projects = (site.posts | where: "category", "Project") %}
       {% for post in projects %}
@@ -40,4 +40,3 @@ layout: default
     </div>
 
   </div>
-</div>
