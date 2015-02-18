@@ -21,7 +21,7 @@ So what better way to get back into writting my blog posts than to have a rant a
 
 As most of the programs I am testing are inherently web based I find myself using a vast array of browsers. Now I have no issue with different companies releasing different browsers and I appreciate that everyone has there own personal preference. Personally I am a Chrome fan at home, a Firefox fan at work. I do also have strong beliefs that Internet Explorer users should have their PC&#8217;s taken away and be locked in a sewer for their remaining years but that&#8217;s not what this post is about. The main issue I have with browsers is the huge number of different versions floating about. IE is definitely the biggest culprit of this but the others aren&#8217;t too much better.
 
-![](http://i.imgur.com/VHtFiwb.png)
+![Browsers](http://i.imgur.com/VHtFiwb.png)
 
 Chrome seems to be the smart one by imposing non-optional updates and firefox seems to have caught on and implemented the same idea in it&#8217;s latest release, however these features can be switched off. Safari does prompt you to update with the apple update tool and opera and IE do prompt you too but you don&#8217;t have to listen and in my experience a lot of people tend to ignore update windows when they appear. Due to this there are a lot of people out there with old, even obsolete, browsers still running on their pc&#8217;s which not only causes issues to web developers moving the industry forwards but also lessens the users experience of the amazing world wide web.
 

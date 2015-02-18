@@ -15,6 +15,6 @@ Feel free to download yourself a copy and sort out your plans!
 
 [https://docs.google.com/open?id=0BzChRg3SiZzDbDhhLUVpOGZrUXM][1]
 
-![](http://i.imgur.com/z0AE46p.png)
+![Download Festival Lineup 2012](http://i.imgur.com/z0AE46p.png)
 
  [1]: https://docs.google.com/open?id=0BzChRg3SiZzDbDhhLUVpOGZrUXM "Download 2012 Timetable"

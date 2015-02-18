@@ -10,7 +10,7 @@ tags:
   - Music
   - Reviews
 ---
-![](http://i.imgur.com/JqCKBKD.png)
+![MUSE Second Law](http://i.imgur.com/JqCKBKD.png)
 
 Well I just got "2nd Law" by Muse and as I'm a big Muse fan I thought I'd write a quick review of it. Up until now I've enjoyed all of Muse's albums with the exception of album 5 "The Resistance" which I felt was a little too experimental for my liking.
 
