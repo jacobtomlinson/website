@@ -8,7 +8,7 @@ layout: default
     <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
       {% if site.data.thumbnail[page.thumbnail] %}
       <div class="thumb">
-        <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" />
+        <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" alt="Thumbnail: {{ page.thumbnail }}" />
       </div>
       {% endif %}
 
@@ -73,10 +73,10 @@ layout: default
       </div>
 
       <div class="content-panel related clearfix">
-        <div class="related-header">
-          <a href="">Read More</a>
-        </div>
         {% for post in site.related_posts limit:1 %}
+        <div class="related-header">
+          <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+        </div>
           <div class="title">
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           </div>
