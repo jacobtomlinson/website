@@ -184,7 +184,7 @@ partial to-do lists all over them. This way I can at least attempt to stay
 organised.
 
 The fact that I regularly have to rewrite items and migrate them to later pages is
-pretty good at making me to things I've been putting off or even removing
+pretty good at making me do things I've been putting off, or even removing
 things that aren't worth doing. Much better than having a stagnating list in a
 reminders app!
 
