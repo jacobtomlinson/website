@@ -23,3 +23,6 @@ Temporary Items
 
 # Jekyll Specific
 _site/
+
+# Ruby
+Gemfile.lock
