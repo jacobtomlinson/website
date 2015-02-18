@@ -140,7 +140,7 @@ When working on a project I turn to the next available double spread in the jour
 and title it with the name of the project. I then use this page for project specific
 task lists and planning. When I get to the end of a double spread I turn to the next
 available double spread, add the title, and continue, if the next double spread isn't immediately
-afterwards then I put a "goto in the bottom corner to allow to me to
+afterwards then I put a "goto" in the bottom corner to allow to me to
 quickly turn to the next page in that project.
 
 Project pages are added to the index. If I attend a meeting relating to the project
@@ -162,11 +162,11 @@ a completed project).
 
 These pages are not added to the index and are usually done in the form of a sketch,
 picture or sticker. I include these now and again when large milestones occur such
-as a promotion or moving house. These are added where the next day list would
-occur.
+as a promotion, moving house or attending an interesting conference. These are added
+where the next day list would occur.
 
 I add these because one day I expect I will read back over my old journals and
-am sure I'll find it interesting to see when these events happened. I also include
+I am sure I'll find it interesting to see when these events happened. I also include
 smaller but still significant events in day lists for the same reason.
 
 ## Bookmark
