@@ -13,7 +13,7 @@ tags:
 
 ### Introduction
 
-Testing your blog may sound like an odd thing to do, but if you're running a Jekyll
+Testing your blog may sound like an odd thing to do, but if you're running a [Jekyll][8]
 blog hosted on GitHub it is simple to set up and really useful for notifying you about broken links
 and other issues.
 
@@ -110,7 +110,13 @@ so that you can fix the problem.
 It will also do this when someone (or you) submits a pull request. Travis will see the pull request,
 test the code and then advise within the pull request window whether it is safe to merge.
 
-![](http://i.imgur.com/IxsaFSe.png)
+![Pull request waiting to be checked by Travis CI](http://i.imgur.com/IxsaFSe.png)
+
+So if the build fails you will get a message like this:
+
+![Pull request failed by Travis CI](http://i.imgur.com/aThKVyp.png)
+
+Or if it succeeds you get given the go ahead to merge:
 
 ![Pull request successfully checked by Travis CI](http://i.imgur.com/kLZlnlD.png)
 
@@ -133,3 +139,4 @@ to deploy your `_site` to another server such as a VPS or maybe an Amazon S3 Buc
 [5]: http://www.nokogiri.org/tutorials/ensuring_well_formed_markup.html
 [6]: http://zachholman.com/posts/how-github-writes-blog-posts/
 [7]: http://docs.travis-ci.com/user/languages/ruby/
+[8]: http://jekyllrb.com/
