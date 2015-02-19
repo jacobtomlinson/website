@@ -2,6 +2,11 @@
 layout: default
 ---
 
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
+
 <div class="container-fluid single">
   <div class="row">
 
@@ -33,6 +38,16 @@ layout: default
           on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
           under {% if page.categories %}{% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
         </i></small>
+      </div>
+
+      <div class="read-time">
+        <small>
+          {% if page.minutes %}
+          {{ page.minutes }} minute read
+          {% else %}
+          {{ minutes }} minute read
+          {% endif %}
+        </small>
       </div>
 
       <div class="content-panel content">
