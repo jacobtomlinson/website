@@ -110,7 +110,9 @@ so that you can fix the problem.
 It will also do this when someone (or you) submits a pull request. Travis will see the pull request,
 test the code and then advise within the pull request window whether it is safe to merge.
 
-![Pull request checked by Travis CI](http://i.imgur.com/kLZlnlD.png)
+![](http://i.imgur.com/IxsaFSe.png)
+
+![Pull request successfully checked by Travis CI](http://i.imgur.com/kLZlnlD.png)
 
 If you're following a GitHub workflow using pull requests this can be a great way to
 make sure that everything which goes into the master branch is already tested.
