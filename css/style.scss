@@ -454,7 +454,14 @@ ul {
 		.author {
 			font-size: 20px;
 			text-align: center;
+			margin-bottom: 0px;
+		}
+
+		.read-time {
+			font-size: 16px;
+			text-align: center;
 			margin-bottom: 10px;
+			font-weight: 400;
 			@media (min-width: $screen-sm-min) {
 				margin-bottom: 40px;
 			}
