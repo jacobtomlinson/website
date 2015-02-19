@@ -100,16 +100,26 @@ It will throw errors when you do things like not closing divs correctly or doubl
 declaring attributes. As I said before this is down to your theme rather than
 your content but you still want to test it.
 
-## Conclusion
+## Pull Requests
 
 Setting this up means that whenever you commit to your Jekyll blog it will test
 you code and make sure it is correct, if it isn't it will send you an email saying
 that the build has failed and will allow you to see the output of HTML Proofer
 so that you can fix the problem.
 
-This is just one simple way of testing your blog, you could tell Travis about additional
-tools for checking spelling and grammar, ensuring your images are hosted on
-a CDN or even making sure you [don't have any emoji in your article][6].
+It will also do this when someone (or you) submits a pull request. Travis will see the pull request,
+test the code and then advise within the pull request window whether it is safe to merge.
+
+![Pull request checked by Travis CI](http://i.imgur.com/kLZlnlD.png)
+
+If you're following a GitHub workflow using pull requests this can be a great way to
+make sure that everything which goes into the master branch is already tested.
+
+## Conclusion
+
+This is just one simple way of testing your blog. If you wanted to take it further
+you could get Travis to install additional tools and scripts for checking spelling and grammar,
+ensuring your images are hosted on a CDN or even making sure you [don't have any emoji in your article][6].
 
 If you don't want to host your website on GitHub Pages you can also get Travis
 to deploy your `_site` to another server such as a VPS or maybe an Amazon S3 Bucket.
