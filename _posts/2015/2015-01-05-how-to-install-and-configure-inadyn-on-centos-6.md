@@ -10,6 +10,8 @@ tags:
 - dyndns
 - inadyn
 - chkconfig
+excerpt: "Inadyn is a command line utility for periodically checking and updating your ip
+address with DynDNS."
 ---
 
 ### Introduction

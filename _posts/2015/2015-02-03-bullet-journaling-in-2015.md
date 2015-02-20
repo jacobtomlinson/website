@@ -8,6 +8,9 @@ thumbnail: journal
 tags:
 - bullet journal
 - journaling
+excerpt: "I started
+using bullet journaling to organise myself in March last year and now I can't
+imagine my life without it."
 ---
 
 ### Introduction

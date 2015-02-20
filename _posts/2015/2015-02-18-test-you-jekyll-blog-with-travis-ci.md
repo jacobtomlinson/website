@@ -9,6 +9,9 @@ tags:
 - unit test
 - travis ci
 - github
+excerpt: "Testing your blog may sound like an odd thing to do, but if you're running a Jekyll
+blog hosted on GitHub it is simple to set up and really useful for notifying you about broken links
+and other issues."
 ---
 
 ### Introduction
