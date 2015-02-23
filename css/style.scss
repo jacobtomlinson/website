@@ -139,7 +139,7 @@ ul {
 	box-shadow: 0px 0px 0px 0px, 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.my-menu {
+#my-menu {
 
 	p {
 		margin-bottom: 5px;
@@ -151,6 +151,13 @@ ul {
 
 	a:hover {
 		color: $light-blue;
+	}
+
+	.pages {
+
+		.fa {
+			margin-right: 10px;
+		}
 	}
 }
 
@@ -338,6 +345,26 @@ ul {
 		margin-left: -15px;
 		margin-right: -15px;
 	}
+
+	#search-input {
+		position:relative;
+		width: 100%;
+		padding:6px 15px 6px 30px;
+		margin: 2px;
+		margin-top: 50px;
+
+		color:$dark;
+		background-color:$white;
+
+		border:1px solid #adc5cf;
+		border-radius:15px;
+		-moz-border-radius:15px;
+		-webkit-border-radius:15px;
+	}
+
+	#search-input:focus {
+		border: none;
+  }
 
 	.content-panel {
 		padding-left: 10px;
