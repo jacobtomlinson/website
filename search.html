@@ -10,7 +10,6 @@ layout: default
     <div id="search-container">
       <input type="text" id="search-input" placeholder="Type here...">
       <div class="col-md-12 content-panel articles">
-        <h2 id="">Results</h2>
         <ul id="results-container"><small>Start typing to see some results</small></ul>
       </div>
     </div>
@@ -25,7 +24,7 @@ layout: default
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     dataSource: '{{ site.baseurl }}/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
     noResultsText: 'No results found',
     limit: 10,
     fuzzy: true,
