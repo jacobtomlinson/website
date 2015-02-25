@@ -18,3 +18,4 @@ deploy:
   region: eu-west-1
   on:
     repo: jacobtomlinson/jacobtomlinson.github.io
+    branch: s3-deploy
