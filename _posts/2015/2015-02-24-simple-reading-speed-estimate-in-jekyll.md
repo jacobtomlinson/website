@@ -17,7 +17,7 @@ about the theme but one thing in particular is the reading speed estimate
 at the top of each article. Not only is it a nice feature but the code is simple and
 concise too!
 
-The code was [contributed][4] to the project by GitHub user [WrinklyNinja][2] and I decided I
+The code was first [contributed][4] to the project by GitHub user [WrinklyNinja][2] and I decided I
 liked it so much I would add it to my own blog.
 
 This simple one line of code (which I included immediately after my frontmatter)
@@ -46,12 +46,12 @@ sentence you like.
 A {{ minutes }} minute read
 ```
 
-Taking it a bit further, [Rassol][3] made a nice addition which allows you to override the number
+Taking it a bit further, [Rassol][3] made a [nice addition][6] which allows you to override the number
 of minutes in the pages YAML Frontmatter. However he decided to add the logic
 to the display code , I felt it would probably be better to add it to the calculation
 because there is no point in calculating it if it has already been specified.
 
-My changes wrap around the first two lines to look like this.
+[My changes][5] wrap around the first two lines to look like this.
 
 ```
 {% if page.minutes %}
@@ -77,4 +77,6 @@ they have enough time to do so.
 [1]: https://github.com/johnotander/pixyll
 [2]: https://github.com/WrinklyNinja
 [3]: https://github.com/rassol
-[4]: https://github.com/met-office-lab/met-office-lab.github.io/commit/0979ada039a7a36b3383c0739b1e7d7edb1f34f9
+[4]: https://github.com/johnotander/pixyll/commit/0979ada039a7a36b3383c0739b1e7d7edb1f34f9
+[5]: https://github.com/johnotander/pixyll/commit/0742c98c9e379de607ff840595ceb29583e139a7
+[6]: https://github.com/johnotander/pixyll/commit/16fc4ea2c83eadd40781f914f8654567926e6b7e
