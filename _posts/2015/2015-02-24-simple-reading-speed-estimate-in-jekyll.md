@@ -17,7 +17,7 @@ about the theme but one thing in particular is the reading speed estimate
 at the top of each article. Not only is it a nice feature but the code is simple and
 concise too!
 
-The code was [contributed][4] to the project by GitHub user [WrinklyNinja](2) and I decided I
+The code was [contributed][4] to the project by GitHub user [WrinklyNinja][2] and I decided I
 liked it so much I would add it to my own blog.
 
 This simple one line of code (which I included immediately after my frontmatter)
