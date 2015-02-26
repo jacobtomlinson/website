@@ -41,11 +41,11 @@ I am very grateful for the excellent team I worked with but I am especially than
 
 ![Space Apps Teams](http://i.imgur.com/sMO2e2M.png)
 
-#### Most of <a title="Asteroid Prospector Credits" href="http://jacobtomlinson.github.io/asteroid-prospector/credits.html" target="_blank">the team</a>. Photo by <a title="Adam Burt's Flickr" href="https://www.flickr.com/photos/aburt/" target="_blank">Adam Burt</a>
+#### Most of <a title="Asteroid Prospector Credits" href="http://www.ape-mining.com//credits.html" target="_blank">the team</a>. Photo by <a title="Adam Burt's Flickr" href="https://www.flickr.com/photos/aburt/" target="_blank">Adam Burt</a>
 
 For more information on the project see the following resources:
 
-*   <a title="Play Asteroid Prospector" href="http://jacobtomlinson.github.io/asteroid-prospector/" target="_blank">The game itself</a>
+*   <a title="Play Asteroid Prospector" href="http://www.ape-mining.com/" target="_blank">The game itself</a>
 *   <a title="Asteroid Prospector Twitter" href="https://twitter.com/APEMining" target="_blank">Twitter</a>
 *   <a title="Asteroid Prospector Tumblr" href="http://asteroidprospectorexeter.tumblr.com/" target="_blank">Tumblr</a>
 *   <a title="Asteroid Prospector GitHub" href="https://github.com/jacobtomlinson/asteroid-prospector/tree/gh-pages" target="_blank">GitHub</a>
