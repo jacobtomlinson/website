@@ -36,8 +36,6 @@ $screen-lg-min: 1200px;
 
 html {
 	height: 100%;
-	min-height: 100%;
-	max-height: 100%;
 	overflow-x: hidden;
 }
 
@@ -47,10 +45,7 @@ body {
 	background-color: $dark;
 	color: $white;
 	font-size: 16px;
-	min-width:280px;
 	height: 100%;
-	max-height: 100%;
-	min-height: 100%;
 	overflow-x: hidden;
 	width: 100%
 }
