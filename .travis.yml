@@ -6,6 +6,8 @@ script:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: dl3uWpiNWF9R81lzeOSe2G4e2+se+pUVEFKIiPfT9kvOQ733K+mw1ULb4VK6IsQ8Flkb3nDQRq78cZCYswAizwOlTyiYnFVSz8eTEYIGBPbFf1+yi/6jXlAMRhMI/hy2zSnAAvNYM/F5Ixzy7y93Iv6hkj+mz3ObfUImLvCwUnY=
+  - secure: wLT+Sr2WYXfTZgwYo6jnlg7FKYu3yBjiwmv0XvwMIaqRWO/Y6QGc83J9FtGGdIsrKYA6T1h8iXhzCgcwNn1lzro4kIhTdjCnGZ5C4+R/EwfuBgye444ICp6qonvXjxZre31j1vEXCt/biw9C3eErCUkKTj3VX01SdCE/8ED7jTU=
 deploy:
   provider: s3
   access_key_id: AKIAJUHCKKZCTVJQGOXA
@@ -19,4 +21,5 @@ deploy:
   on:
     repo: jacobtomlinson/jacobtomlinson.github.io
     branch: master
-
+  after_success:
+    "curl https://www.cloudflare.com/api_json.html -d 'a=fpurge_ts' -d 'tkn=$CLOUDFLARE_API_KEY' -d 'email=$CLOUDFLARE_EMAIL' -d 'z=jacobtomlinson.co.uk' -d 'v=1'"
