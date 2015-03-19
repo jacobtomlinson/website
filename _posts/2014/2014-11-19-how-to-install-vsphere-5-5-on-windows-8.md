@@ -13,7 +13,7 @@ tags:
 ---
 
 If you've tried installing the vSphere 5.5 client on Windows 8 you may have
-received the followign error message
+received the following error message
 
 > Error 28173.Setup failed to enable Microsoft
 > .NET Framework 3.5. Enable this feature in Windows Server Manager
