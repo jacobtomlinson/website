@@ -17,6 +17,10 @@ layout: default
       <div class="thumb">
         <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" alt="Thumbnail: {{ page.thumbnail }}" />
       </div>
+      {% elsif page.thumbnail %}
+      <div class="thumb">
+        <i class="fa fa-{{ page.thumbnail }} fa-4x"></i>
+      </div>
       {% endif %}
 
       <h1 class="header" itemprop="name">{{ page.title }}</h1>
@@ -51,10 +55,12 @@ layout: default
       <div class="content-panel content">
         <span itemprop="articleBody">{{ content }}</span>
 
+        {% if site.addthis_id %}
         <div class="share">
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
           <div class="addthis_sharing_toolbox"></div>
         </div>
+        {% endif %}
 
         <div class="tags"><small>
           <i class="fa fa-tags"></i>
@@ -68,12 +74,14 @@ layout: default
         Let me know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> or leave a comment below!
       </div>
 
+      {% if site.disqus_account %}
       <div class="content-panel comments">
         <div id="disqus_thread">
           <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         </div>
       </div>
+      {% endif %}
 
       <div class="content-panel related clearfix">
         {% for post in site.related_posts limit:1 %}
@@ -113,12 +121,12 @@ layout: default
 
 </div>
 
+<<<<<<< HEAD
 
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 function disqus_config() { this.experiment.enable_scroll_container = true; }
-var disqus_shortname = "{{ site.disqus_production_account }}"; // required: replace example with your forum shortname
-//var disqus_shortname = "{{ site.disqus_development_account }}"; // required: replace example with your forum shortname
+var disqus_shortname = "{{ site.disqus_account }}"; // required: replace example with your forum shortname
 /* * * DON'T EDIT BELOW THIS LINE * * */
 (function() {
   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -126,3 +134,4 @@ var disqus_shortname = "{{ site.disqus_production_account }}"; // required: repl
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
 </script>
+{% endif %}
