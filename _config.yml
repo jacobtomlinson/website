@@ -1,5 +1,5 @@
 # Site settings
-title: "Jacob Tomlinson | Tech Blog"
+title: "Jacob Tomlinson"
 email: "jacob@jacobtomlinson.co.uk"
 description: "A technology blog by Jacob Tomlinson."
 baseurl: ""
@@ -21,8 +21,8 @@ google_plus_link: "https://plus.google.com/+JacobTomlinson0/"
 stackoverflow_link: "http://stackoverflow.com/users/1003288/jacob-tomlinson"
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: "Made with <i class=\"fa fa-heart\"></i> using <a href=\"http://jekyllrb.com/\">Jekyll</a>"
+footer_right: "<i class=\"fa fa-code\"></i> on <a href=\"https://github.com/jacobtomlinson/jacobtomlinson.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: redcarpet
