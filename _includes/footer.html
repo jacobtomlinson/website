@@ -1,12 +1,9 @@
 <div class="footer clearfix">
-  <div class="col-md-4">
-    Made with <i class="fa fa-heart"></i> using jekyll
+  <div class="col-md-6">
+    {{ site.footer_left }}
   </div>
-    <div class="col-md-4">
-      2010 - {{ site.time | date: "%Y" }} &copy; Jacob Tomlinson
-    </div>
-  <div class="col-md-4">
-    Proudly hosted on <a href="{{ site.github_repository }}">Github</a> &nbsp;<i class="fa fa-github-alt"></i>
+  <div class="col-md-6">
+    {{ site.footer_right }}
   </div>
 </div>
 
@@ -27,6 +24,7 @@
    });
 </script>
 
+{% if site.google_analytics %}
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
@@ -41,3 +39,4 @@
       s.parentNode.insertBefore(ga, s);
   })();
 </script>
+{% endif %}
