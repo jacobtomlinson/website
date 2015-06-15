@@ -11,9 +11,9 @@ tags:
 excerpt: 'How to avoid people saying "I really enjoyed your article on X, but your spelled pedantic wrong!".'
 ---
 
-Don't you just hate it when you publish an article on your blog and then someone comes up to you and says
+Don't you find it really useful when you publish an article on your blog and then someone comes up to you and says:
 
-> I really enjoyed your article but your spelled pedantic wrong!
+> I really enjoyed your article but you spelled pedantic wrong!
 
 ...well not any more!
 
