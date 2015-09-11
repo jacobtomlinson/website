@@ -51,7 +51,7 @@ The file I&#8217;m uploading isn&#8217;t huge (238MB). So it wasn&#8217;t the kn
 ```
 jacob@server:backups$ ll
 total 238M
--rw------- 1 jacob 238M Jul 31 06:00 backup-20140731.tar.gz</pre>
+-rw------- 1 jacob 238M Jul 31 06:00 backup-20140731.tar.gz
 ```
 
 It seems that this is a common issue when uploading files to a new bucket. Something to do with the DNS propagation means it takes a little while before your bucket can successfully accept files. More info <a title="Google Code thread mentioning DNS issues" href="https://code.google.com/p/s3ql/issues/detail?id=363#c13" target="_blank">here</a>.
