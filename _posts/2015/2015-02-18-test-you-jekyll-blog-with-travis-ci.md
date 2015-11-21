@@ -47,10 +47,10 @@ the [ruby version][7] of the guide.
 
 You tell Jekyll what to do with your code by including a YAML file in your repository
 called `.travis.yml`. We will be specifying ruby as the language which will cause Travis
-to ensure ruby is installed and will automatically install any gems your specify in
+to ensure ruby is installed and will automatically install any gems you specify in
 a file called `Gemfile`.
 
-A `Gemfile` is basically a set of dependancies for your application, if you haven't got one
+A `Gemfile` is basically a set of dependencies for your application, if you haven't got one
 in your Jekyll blog repository you'll want to create one with the following content.
 
 ```
@@ -59,7 +59,7 @@ gem 'github-pages'
 gem 'html-proofer'
 ```
 
-This tells Travis to use [bundler][2] to install the GitHub pages dependancies which includes
+This tells Travis to use [bundler][2] to install the GitHub pages dependencies which include
 Jekyll and also a tool called HTML Proofer which we will use to test our blog.
 
 So once Travis has ensured ruby is installed to the version we want and the gems are installed
