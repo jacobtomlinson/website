@@ -19,7 +19,7 @@ Now that I can safely go back on the internet without fear of spoilers I wanted 
 
 ## Rey's powers
 
-Rey seemed to have a lot of knowledge about the exact use of the powers that awoke in her. I have to assume that the myths about the Jedi she heard as a child included things like "mind control by giving commands in a monotone voice", "telekenesis by holding out your hand" and "thought reading by trying to burst the vein in your forehead". 
+Rey seemed to have a lot of knowledge about the exact use of the powers that awoke in her. I have to assume that the myths about the Jedi she heard as a child included things like "mind control by giving commands in a monotone voice", "telekenesis by holding out your hand" and "thought reading by trying to burst the vein in your forehead".
 
 However it would have been nice if they were presented in the film. There was a scene where Han tells her that the myths about the Jedi were true, he could've dropped in a joke about "even the silly mind control" which would've given some explaination to her using it on [Daniel Craig][daniel-craig-cameo].
 
@@ -35,7 +35,7 @@ I appreciate that this is a teaser for the next film but the way it was presente
 
 ## StarKiller base
 
-I was a little surprised that the New Order had managed to build something so much bigger and more powerful than the Death Star. Now that the Empire has fallen it feels like the New Republic and the Resistance should be the dominant force in the galaxy and the New Order are now the bunch of rebels trying to overthrow. Yet they have managed to build something so huge and powerful without the Resistance even noticing. 
+I was a little surprised that the New Order had managed to build something so much bigger and more powerful than the Death Star. Now that the Empire has fallen it feels like the New Republic and the Resistance should be the dominant force in the galaxy and the New Order are now the bunch of rebels trying to overthrow. Yet they have managed to build something so huge and powerful without the Resistance even noticing.
 
 ## Supreme Leader Snoke
 
@@ -45,7 +45,7 @@ It was less of an issue due to the character only being represented by a hologra
 
 ## R2-D2's awakening
 
-My final moment of confusion came when R2-D2 inexplicably woke up form his low power coma at the end of the film. Star Wars has always been a good mix of technology and magic but doesn't mix the two. In this case R2 powered down when Luke left and then woke up when the battle was won, conveniently with the missing part of the map. 
+My final moment of confusion came when R2-D2 inexplicably woke up form his low power coma at the end of the film. Star Wars has always been a good mix of technology and magic but doesn't mix the two. In this case R2 powered down when Luke left and then woke up when the battle was won, conveniently with the missing part of the map.
 
 It is conceivable that he was remotely accessing an old Empire network (as the New Order did to get the map themselves) but it wasn't really explained.
 
@@ -53,4 +53,4 @@ It is conceivable that he was remotely accessing an old Empire network (as the N
 
 The biggest spoiler of all shows that Luke and Han will never be reunited. While I like the fact that the new trilogy will be more about the new characters than the old, and therefore it made sense to remove Han, I'm sad that we wont see the old gang back together.
 
-[daniel-craig-cameo](http://www.theguardian.com/film/2015/dec/18/daniel-craig-stormtrooper-cameo-in-star-wars-the-force-awakens-revealed)
+[daniel-craig-cameo]: http://www.theguardian.com/film/2015/dec/18/daniel-craig-stormtrooper-cameo-in-star-wars-the-force-awakens-revealed
