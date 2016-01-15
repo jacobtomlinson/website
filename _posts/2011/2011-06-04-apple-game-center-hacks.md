@@ -30,9 +30,8 @@ After doing a bit of reading I found out that people are managing this using a j
 
 Personally I feel this is appalling that apple allow this to happen. If anyone tried to force scores on xbox live, playstation network or steam they would be penalised straight away. I have been on the [apple discussion forum][3] and there is a fairly long thread about this but no comment from apple yet at this stage.
 
-Hopefully something will be done soon. Apple have already proved that banning users for abuse is possible by [banning two hackers][4] working on jailbreaking products and also banning their spouses.
+Hopefully something will be done soon. Apple have already proved that banning users for abuse is possible by banning two hackers working on jailbreaking products and also banning their spouses.
 
  [1]: http://www.jacobtomlinson.co.uk/wp-content/uploads/2011/06/20110604-202225.jpg
  [2]: http://www.jacobtomlinson.co.uk/wp-content/uploads/2011/06/20110604-202241.jpg
  [3]: https://discussions.apple.com/message/13139147?messageID=13139147
- [4]: http://www.techhive.com/article/189436/apple_banning_hackers.html
