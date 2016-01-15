@@ -23,9 +23,9 @@ Rey seemed to have a lot of knowledge about the exact use of the powers that awo
 
 However it would have been nice if they were presented in the film. There was a scene where Han tells her that the myths about the Jedi were true, he could've dropped in a joke about "even the silly mind control" which would've given some explaination to her using it on [Daniel Craig][daniel-craig-cameo].
 
-## Rylo Ken
+## Kylo Ren
 
-I was unsure of Rylo Ken. I initially liked him and thought he made a good sith lord, however as the story unfolds and you discover he is fairly young he starts to feel a little over powered for his age.
+I was unsure of Kylo Ren. I initially liked him and thought he made a good sith lord, however as the story unfolds and you discover he is fairly young he starts to feel a little over powered for his age.
 
 I also found the unmasking disappointing, it felt a bit rushed and he seemed a little too normal. However I do see that it was needed for him to have an emotional confrontation with his father.
 
