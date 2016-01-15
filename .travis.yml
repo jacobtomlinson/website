@@ -23,4 +23,4 @@ deploy:
     repo: jacobtomlinson/jacobtomlinson.github.io
     branch: master
   after_success:
-    "curl https://www.cloudflare.com/api_json.html -d 'a=fpurge_ts' -d 'tkn=$CLOUDFLARE_API_KEY' -d 'email=$CLOUDFLARE_EMAIL' -d 'z=jacobtomlinson.co.uk' -d 'v=1'"
+    - rake purge
