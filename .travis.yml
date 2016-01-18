@@ -22,5 +22,5 @@ deploy:
   on:
     repo: jacobtomlinson/jacobtomlinson.github.io
     branch: master
-  after_success:
-    - rake purge
+after_deploy:
+  - rake purge
