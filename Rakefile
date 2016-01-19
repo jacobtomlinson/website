@@ -8,5 +8,10 @@ task :serve do
 end
 
 task :purge do
-  sh "curl -w \"\n\" https://www.cloudflare.com/api_json.html -d a=fpurge_ts -d tkn=${CLOUDFLARE_API_KEY} -d email=${CLOUDFLARE_EMAIL} -d z=jacobtomlinson.co.uk -d v=1"
+  sh "curl -w \"\n\" -X DELETE \
+      \"https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_IDENTIFIER}/purge_cache\" \
+      -H \"X-Auth-Email: ${CLOUDFLARE_EMAIL}\" \
+      -H \"X-Auth-Key: ${CLOUDFLARE_API_KEY}\" \
+      -H \"Content-Type: application/json\" \
+      --data '{\"purge_everything\":true}'"
 end
