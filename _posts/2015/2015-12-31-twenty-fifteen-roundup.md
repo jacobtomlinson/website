@@ -21,6 +21,7 @@ Here is a list of the technology and media I enjoyed this year, a follow up on [
  * [Feedly](http://feedly.com/)
  * [Keynote](https://www.apple.com/uk/mac/keynote/)
  * [Slack](https://slack.com/)
+ * [TweetDeck](https://tweetdeck.twitter.com/)
 
 ## Software / Geek Use
 
@@ -28,7 +29,7 @@ Here is a list of the technology and media I enjoyed this year, a follow up on [
  * [iTerm 2](http://iterm2.com/)
  * [GitHub](https://github.com/)
  * [Homebrew](http://brew.sh/)
- * [TweetDeck](https://tweetdeck.twitter.com/)
+ * [thefuck](https://github.com/nvbn/thefuck)
 
 ## Software / Mobile
 
