@@ -30,6 +30,7 @@ Here is a list of the technology and media I enjoyed this year, a follow up on [
  * [GitHub](https://github.com/)
  * [Homebrew](http://brew.sh/)
  * [thefuck](https://github.com/nvbn/thefuck)
+ * [Postman](https://www.getpostman.com/)
 
 ## Software / Mobile
 
