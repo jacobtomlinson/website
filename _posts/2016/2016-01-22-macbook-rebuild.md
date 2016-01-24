@@ -62,7 +62,7 @@ In a similar vein to the [year roundup posts][2015-roundup] that I've done I'm g
 
 ### Development (CLI)
  * [Homebrew](http://brew.sh/)
- * [ZSH](http://www.zsh.org/)
+ * [ZSH](http://www.zsh.org/) (Not used before but want to give it a go)
    * [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh)
  * [thefuck](https://github.com/nvbn/thefuck)
  * [My Dotfiles](https://github.com/jacobtomlinson/dotfiles)
