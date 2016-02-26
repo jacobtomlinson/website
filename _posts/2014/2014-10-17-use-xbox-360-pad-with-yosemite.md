@@ -12,6 +12,8 @@ tags:
   - gaming
 ---
 
+> __Update:__ There is a newer version of this article, see [How to use an Xbox 360 controller with OS X El Capitan](/gaming/2016/02/24/use-xbox-360-pad-with-el-capitan/).
+
 ### Introduction
 
 Want to use an Xbox 360 controller to play games on Mac OS X 10.10 Yosemite? Here are
