@@ -53,6 +53,24 @@ layout: default
       </div>
 
       <div class="content-panel content">
+
+        {% if page.series %}
+          This post is part of the series '{{ page.series }}':
+          <ol class="series">
+          {% for apost in site.posts %}
+            {% if page.series == apost.series %}
+              <li>
+                {% if page.title == apost.title %}
+                  {{ apost.title }}
+                {% else %}
+                  <a href="{{ apost.url }}">{{ apost.title }}</a>
+                {% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+          </ol>
+        {% endif %}
+
         <span itemprop="articleBody">{{ content }}</span>
 
         {% if site.addthis_id %}
