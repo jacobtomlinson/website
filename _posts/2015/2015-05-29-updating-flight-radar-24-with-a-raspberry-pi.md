@@ -86,7 +86,7 @@ Congratulations, if you can see output similar to the above then you have a work
 [dvb-t]: http://en.wikipedia.org/wiki/DVB-T
 [external-antenna]: http://shop.jetvision.de/epages/64807909.sf/en_GB/?ObjectPath=/Shops/64807909/Products/67100
 [fr24]: http://www.flightradar24.com/
-[fr24feed-repo]: http://feed.flightradar24.com/raspberry-pi/\
+[fr24feed-repo]: http://feed.flightradar24.com/#raspberry-pi
 [raspberry-pi]: https://www.raspberrypi.org/
 [raspbian]: https://www.raspbian.org/
 [tuner-ebay-listing]: http://www.ebay.co.uk/itm/201338088784
