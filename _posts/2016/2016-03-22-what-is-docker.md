@@ -60,6 +60,12 @@ Containers are designed to be ephemeral. It is possible to persist data when you
 
 Be aware of the [K.I.S.S principal][kiss]. Complexity can be bad and should usually be avoided. If it is possible to achieve something using a simpler implementation then you should opt for that. Containers can add complexity, and they can reduce complexity. Ensure you understand the problem you are trying to solve and that containers will help you solve it before jumping in with both feet.
 
+## Conclusion
+
+Docker is an excellent tool for producing portable and repeatable linux services. Used in the right situation it can provide you with a flexible, scalable and secure infrastructure. It can also provide you with a consistent and repeatable development environment and a smooth deployment workflow.
+
+The rest of this series will walk through using Docker starting with the very basics!
+
 [alpine]: https://hub.docker.com/_/alpine/
 [docker-compose]: https://www.docker.com/products/docker-compose
 [docker-engine]: https://www.docker.com/products/docker-engine
