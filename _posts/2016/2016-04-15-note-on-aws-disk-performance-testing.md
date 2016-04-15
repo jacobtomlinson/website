@@ -34,3 +34,24 @@ sudo dd if=/dev/xvda of=/dev/null bs=16K
 ```
 
 Just replace `/dev/xvda` with the disk you wish to reset. This action makes no changes to the disk itself, it just resets the underlying EBS storage.
+
+### Example
+
+Here is an example of resetting an 8GB boot disk with 24 IOPS on a `t2.micro` instance.
+
+```
+$ sudo dd if=/dev/xvda of=/dev/null bs=16K
+524288+0 records in
+524288+0 records out
+8589934592 bytes (8.6 GB) copied, 189.241 s, 45.4 MB/s
+$ sudo dd if=/dev/xvda of=/dev/null bs=16K
+524288+0 records in
+524288+0 records out
+8589934592 bytes (8.6 GB) copied, 133.22 s, 64.5 MB/s
+$ sudo dd if=/dev/xvda of=/dev/null bs=16K
+524288+0 records in
+524288+0 records out
+8589934592 bytes (8.6 GB) copied, 133.226 s, 64.5 MB/s
+```
+
+Note that the second and third reads of the disk are 42% faster than the initial read.
