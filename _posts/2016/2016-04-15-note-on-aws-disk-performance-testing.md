@@ -33,7 +33,7 @@ You can do this by reading your whole disk into `/dev/null` using the tool `dd`.
 sudo dd if=/dev/xvda of=/dev/null bs=16K
 ```
 
-Just replace `/dev/xvda` with the disk you wish to reset. This action makes no changes to the disk itself, it just resets the underlying EBS storage.
+Just replace `/dev/xvda` with the disk you wish to reset. This action makes no changes to the data already on the disk as it is only reading. It just triggers all the resets to the unused blocks on the underlying EBS storage.
 
 ### Example
 
@@ -54,4 +54,4 @@ $ sudo dd if=/dev/xvda of=/dev/null bs=16K
 8589934592 bytes (8.6 GB) copied, 133.226 s, 64.5 MB/s
 ```
 
-Note that the second and third reads of the disk are 42% faster than the initial read.
+Note that the second and third reads of the disk are 42% faster than the initial read. This is because the first read triggered all the resets and the subsequent reads are now directly accessing the disk.
