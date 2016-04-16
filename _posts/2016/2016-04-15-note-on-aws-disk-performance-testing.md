@@ -11,7 +11,7 @@ tags:
   - Disk
 ---
 
-Here is an interesting note on testing the disk performance of your AWS instances. Before you can acurately test the performance of your EBS disk you need to read all the sectors of the disk at least once.
+Here is an interesting note on testing the disk performance of your AWS instances. Before you can acurately test the performance of your EBS disk you need to read all the sectors of the disk at least once if that disk was created from a snapshot.
 
 ### Why?
 
@@ -19,7 +19,7 @@ Imagine that I have created a 1TB EBS volume on AWS and filled it with sensitive
 
 Now imagine that you, a different user, has come along and requested a 50GB EBS volume from AWS. By chance you have been allocated a section of blocks which were within the range of my now deleted volume. This means you could potentially read some of my sensitive data from your raw disk.
 
-Of course AWS don't want to allow this to happen to their customers so they erase the disk and remove the sensitive data. The interesting thing is that they don't do this when you remove the volume as that would impact the performance of the EBS service. Instead they erase each block when the new user attempts to read/write to it. 
+Of course AWS don't want to allow this to happen to their customers so they erase the disk and remove the sensitive data. The interesting thing is that they don't do this when you remove the volume as that would impact the performance of the EBS service. Instead, if the new volume is restored form a snapshot, they erase each block when the new user attempts to read/write to it. 
 
 This means that whenever you provision a new EBS volume there is a performance impact whenever you access a block for the first time, as AWS has to erase it before performing your action.
 
@@ -55,3 +55,5 @@ $ sudo dd if=/dev/xvda of=/dev/null bs=16K
 ```
 
 Note that the second and third reads of the disk are 42% faster than the initial read. This is because the first read triggered all the resets and the subsequent reads are now directly accessing the disk.
+
+**Update** This is only true for volumes created from a snapshot. For empty volumes each block is reset on creation. Updated above to reflect this.
