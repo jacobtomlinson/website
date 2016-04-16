@@ -11,7 +11,7 @@ tags:
   - Disk
 ---
 
-Here is an interetsing note on testing the disk performance of your AWS instances. Before you can acurately test the performance of your EBS disk you need to read all the sectors of the disk at least once.
+Here is an interesting note on testing the disk performance of your AWS instances. Before you can acurately test the performance of your EBS disk you need to read all the sectors of the disk at least once.
 
 ### Why?
 
