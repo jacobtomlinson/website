@@ -28,10 +28,9 @@ After a while I just started playing some games on my iPhone and decided to chec
 
 After doing a bit of reading I found out that people are managing this using a jail break app from cydia called &#8220;hack center&#8221; this app allows them to enter any score they like by popping up a window every time an app tries to submit a score and letting them override the value.
 
-Personally I feel this is appalling that apple allow this to happen. If anyone tried to force scores on xbox live, playstation network or steam they would be penalised straight away. I have been on the [apple discussion forum][3] and there is a fairly long thread about this but no comment from apple yet at this stage.
+Personally I feel this is appalling that apple allow this to happen. If anyone tried to force scores on xbox live, playstation network or steam they would be penalised straight away. I have been on the apple discussion forum and there is a fairly long thread about this but no comment from apple yet at this stage.
 
 Hopefully something will be done soon. Apple have already proved that banning users for abuse is possible by banning two hackers working on jailbreaking products and also banning their spouses.
 
  [1]: http://www.jacobtomlinson.co.uk/wp-content/uploads/2011/06/20110604-202225.jpg
  [2]: http://www.jacobtomlinson.co.uk/wp-content/uploads/2011/06/20110604-202241.jpg
- [3]: https://discussions.apple.com/message/13139147?messageID=13139147
