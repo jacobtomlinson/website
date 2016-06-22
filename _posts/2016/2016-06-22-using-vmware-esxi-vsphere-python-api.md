@@ -1,5 +1,5 @@
 ---
-title: 'Getting started with VMware's ESXi/vSphere API in Python'
+title: 'Getting started with VMwares ESXi/vSphere API in Python'
 author: Jacob Tomlinson
 layout: post
 category: VMware
