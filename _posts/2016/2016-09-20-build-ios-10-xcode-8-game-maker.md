@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-Building games for iOS is straight forward with Game Maker. You create the game as you would any other in Game Maker, but in order to build it you must have a Mac with Xcode installed. You must configure Game Maker with the IP address of your Mac and the username and password. When you build the project Game Maker will produce an Xcode compatible project, copy it onto your Mac and open it in Xcode. You can find [comprehensive instructions][yoyo-ios-guide] on the YoYo Games website.
+Building games for iOS is straight forward with Game Maker. You create the game as normal in Game Maker, but in order to build it you must have a Mac with Xcode installed. You must configure Game Maker with the IP address of your Mac and the username and password. When you build the project Game Maker will produce an Xcode compatible project, copy it onto your Mac and open it in Xcode. You can find [comprehensive instructions][yoyo-ios-guide] on the YoYo Games website.
 
 As of the release of iOS 10 and Xcode 8 the project created by Game Maker Studio is not quite compatible any more. It's not a big problem and I'm sure YoYo will release an update for it soon. However in the mean time you will need to perform a couple of workaround tasks when you build. 
 
@@ -54,7 +54,7 @@ Game Maker also makes configures the project to have access to the user's photo 
 
 As of iOS 10 you must set a descriptive sting for each privacy privilege you want to use. This string will be displayed on the dialog box which asks for the users permission the first time you try and access the photos. Again regardless of whether you use this or not Game Maker references the permission and so the string must be set. 
 
-To do this expand the directory for your game in the project explorer, expand the `Supporting Files` directory and and open the plist file named `ProjectName-Info.plist` where `ProjectName` is the name of your project. In this file you must add a property called `Privacy - Photo Library Usage Description`, which is available in the drop down list of keys, and set the value to a string describing your use of the photo library. If you do not use the photo library you can probably set this to anything, but I recommend you set it to something sensible like "Used to save game screenshots".
+To do this expand the directory for your game in the project explorer, expand the `Supporting Files` directory and open the plist file named `ProjectName-Info.plist` where `ProjectName` is the name of your project. In this file you must add a property called `Privacy - Photo Library Usage Description`, which is available in the drop down list of keys, and set the value to a string describing your use of the photo library. If you do not use the photo library you can probably set this to anything, but I recommend you set it to something sensible like "Used to save game screenshots".
 
 ![Privacy plist option](http://i.imgur.com/bH9IF0v.png)
 
