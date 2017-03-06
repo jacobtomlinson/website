@@ -68,7 +68,7 @@ The rest of this series will walk through using Docker starting with the very ba
 
 [alpine]: https://hub.docker.com/_/alpine/
 [docker-compose]: https://www.docker.com/products/docker-compose
-[docker-engine]: https://www.docker.com/products/docker-engine
+[docker-engine]: https://docs.docker.com/engine/
 [docker-machine]: https://www.docker.com/products/docker-machine
 [docker-swarm]: https://www.docker.com/products/docker-swarm
 [kernel-namespaces]: http://man7.org/linux/man-pages/man7/namespaces.7.html
