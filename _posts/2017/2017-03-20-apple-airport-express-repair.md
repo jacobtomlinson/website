@@ -71,4 +71,6 @@ I didn't put a huge amount of effort into making it look nice as this is just go
 
 ![Powered on](http://i.imgur.com/hv8LPZT.jpg)
 
+![Final placement](http://i.imgur.com/ZCLbVUk.jpg)
+
 [See the full photo album here.](http://imgur.com/a/Yt1E7)
