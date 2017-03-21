@@ -36,7 +36,7 @@ Once I had cut through most of the seam around the edges I use a flat head screw
 
 ![Imgur](http://i.imgur.com/XuHM7JE.jpg)
 
-Once I has widened it enough I was able to completely open it out without damaging the connectors.
+When I had widened it enough I was able to completely open it out without damaging the connectors.
 
 ![Imgur](http://i.imgur.com/A3k1mME.jpg)
 
