@@ -64,7 +64,7 @@ Here is a list of the technology and media I enjoyed this year, a follow up on [
  * [Grid 2](http://www.gridgame.com/grid2)
  * [Chivalry](http://www.tornbanner.com/chivalry)
  * [Assassins Creed: Black Flag](http://assassinscreed.ubi.com/en-gb/games/assassins-creed-black-flag.aspx)
- * [Poker Night 2](https://www.telltalegames.com/pokernight2/)
+ * [Poker Night 2](https://en.wikipedia.org/wiki/Poker_Night_2)
  * [Prison Architect](https://www.introversion.co.uk/prisonarchitect/)
 
 [last-year]: https://www.jacobtomlinson.co.uk/2014/12/31/twenty-fourteen-roundup/
