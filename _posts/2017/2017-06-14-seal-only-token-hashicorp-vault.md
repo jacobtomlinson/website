@@ -15,7 +15,7 @@ tags:
 
 ## Introduction
 
-When using [Hashicorp's Vault][vault] you may want to have an authentication token which only has permissions to seal the vault. This can then be used in an emergency situation to seal the vault, perhaps through a chatbot.
+When using [Hashicorp's Vault][vault] you may want to have an authentication token which only has permissions to seal the vault. This can then be used in an emergency situation to seal the vault, [perhaps through a chatbot][opsdroid-skill-vault].
 
 ### The policy
 
@@ -59,4 +59,5 @@ token_policies 	[default seal-only]
 
 As you can see this token will expire after 7 days. If this token is being used by a bot or similar system you probably want to implement some scheduled process to renew the token's lease.
 
+[opsdroid-skill-vault]: https://github.com/opsdroid/skill-vault
 [vault]: https://www.vaultproject.io
