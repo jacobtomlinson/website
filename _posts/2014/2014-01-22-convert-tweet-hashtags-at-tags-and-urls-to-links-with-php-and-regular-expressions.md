@@ -13,7 +13,7 @@ tags:
   - Tweet
   - Twitter API
 ---
-Now of course if you're using the <a title="Twitter API" href="https://dev.twitter.com/" target="_blank">Twitter API</a> you can use <a title="Twitter Entities" href="https://dev.twitter.com/docs/entities" target="_blank">Twitter entities</a> but in this tutorial we're going to use <a title="Regular Expressions" href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expressions</a>.
+Now of course if you're using the <a title="Twitter API" href="https://dev.twitter.com/" target="_blank">Twitter API</a> you can use Twitter entities but in this tutorial we're going to use <a title="Regular Expressions" href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expressions</a>.
 
 ### What are Regular Expressions?
 
