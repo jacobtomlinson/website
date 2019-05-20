@@ -1,24 +1,20 @@
----
-layout: default
----
-
-
+{{ define "main" }}
 <div class="container-fluid index">
     <div class="row">
 
         <div class="col-md-12 main content-panel">
 
             <div class="gravatar">
-                <img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+                <img src="http://2.gravatar.com/avatar/b7c2d49748426791dc98b8214dfac9d1?s=500" class="img-circle about-image" height="150" width="150" alt="{{ .Title }}" />
             </div>
 
-            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
+            <h1 class="header author-header" itemprop="headline">{{ .Title }}</h1>
 
             <div class="author-text">
-                {{ site.title_description }}
+                {{ .Description }}
             </div>
 
-            {% include social_links.html %}
+            {{ partial "social_links.html" }}
           </div>
           <div class="col-md-12 main content-panel">
 
@@ -27,17 +23,19 @@ layout: default
               <h2>Latest Articles</h2>
 
               <ul>
-                  {% for post in site.posts | limit: site.post_limit %}
 
-                      <li>
-                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
-                      </li>
+                {{ range first 7 .Pages }}
+                {{ if eq .Type "posts"}}
+                <li>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <small class="hidden-xs">{{ .Date.Format "January 2, 2006"}}</small>
+                </li>
+                {{ end }}
+                {{ end }}
 
-                  {% endfor %}
-                  <li>
-                      <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
-                  </li>
+                <li>
+                    <small><i><a href="{{ .Site.BaseURL }}/posts/">more...</a></i></small>
+                </li>
               </ul>
 
             </div>
@@ -46,3 +44,4 @@ layout: default
 
     </div>
 </div>
+{{ end }}

@@ -1,0 +1,14 @@
+<nav id="my-menu">
+  <div>
+    <p>{{ .Title }}</p>
+
+    <ul class="pages">
+      <li><a href="{{ .Site.BaseURL }}/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="{{ .Site.BaseURL }}/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
+      <li><a href="{{ .Site.BaseURL }}/search/"><i class="fa fa-search"></i> Search</a></li>
+    </ul>
+
+    {{ partial "social_links.html" }}
+  </div>
+</nav>
+<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>
