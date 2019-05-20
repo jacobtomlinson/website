@@ -1,3 +1,8 @@
 <p class="links">
+  {{ if isset .Site.Data.social "twitter" }}<a href="http://www.twitter.com/{{ .Site.Data.social.twitter }}" target="_new"><i class="fa fa-twitter"></i></a>{{ end }}
+  {{ if isset .Site.Data.social "linkedin" }}<a href="{{ .Site.Data.social.linkedin }}" target="_new"><i class="fa fa-linkedin"></i></a>{{ end }}
+  {{ if isset .Site.Data.social "googleplus" }}<a href="{{ .Site.Data.social.googleplus }}" target="_new"><i class="fa fa-google-plus"></i></a>{{ end }}
+  {{ if isset .Site.Data.social "github" }}<a href="https://github.com/{{ .Site.Data.social.github }}" target="_new"><i class="fa fa-github-alt"></i></a>{{ end }}
+  {{ if isset .Site.Data.social "stackoverflow" }}<a href="https://stackoverflow.com/users/{{ .Site.Data.social.stackoverflow }}" target="_new"><i class="fa fa-stack-overflow"></i></a>{{ end }}
   <a href="{{ .Site.BaseURL }}/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
 </p>

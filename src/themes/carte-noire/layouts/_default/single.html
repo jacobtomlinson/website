@@ -1,13 +1,137 @@
-{{ partial "header.html" . }}
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
 
-<div class="content">
-  <h1>{{ .Title }}</h1>
-  <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}</aside>
-  <p>{{ .Content }}</p>
-</div>
+        <div class="page-content">
+            <div class="wrap">
+              <div class="container-fluid single">
+                <div class="row">
 
-{{ if (eq .Type "posts") }}
-  <p>Written on {{ .Date.Format "Jan 2, 2006"}}.</p>
-{{ end }}
+                  <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+                    <div class="thumb">
+                      <!-- TODO: Reinstate thumbnails -->
+                    </div>
 
-{{ partial "footer.html" . }}
+                    <h1 class="header" itemprop="name">{{ .Title }}</h1>
+
+                    <div class="author">
+                      <small><i>
+                        by
+                        <span itemprop="author">
+                          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <span itemprop="name">{{ .Site.Title }}</span>
+                          </span>
+                        </span>
+                        on <span itemprop="datePublished" content="2014-08-28">{{ .Date.Format "Jan 2, 2006"}}</span>
+                        {{ if isset .Params "categories" }} under {{ index .Params.categories 0 }}{{ end }}
+                      </i></small>
+                    </div>
+
+                    <div class="read-time">
+                      <small>
+                        {{ .ReadingTime }} minute read
+                      </small>
+                    </div>
+
+                    <div class="content-panel content">
+
+                      <!-- TODO: Re-instate series -->
+
+                      <span itemprop="articleBody">{{ .Content }}</span>
+
+                      <!-- TODO: Re-instate series next -->
+
+                      <div class="share">
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <div class="addthis_sharing_toolbox"></div>
+                      </div>
+
+                      <div class="tags">
+                        <small>
+                        <i class="fa fa-tags"></i>
+                          {{ delimit .Params.tags ", " }}
+                        </small>
+                      </div>
+
+                      <div class="suggest-edit">
+                        Spotted a mistake in this article? Why not <a href="/blob/master/{{ .File.Dir }}" data-proofer-ignore>suggest an edit</a>!
+                      </div>
+
+                    </div>
+
+                    <div class="content-panel feedback">
+                      I <i class="fa fa-heart"></i> feedback.<br />
+                      Let me know what you think of this article on twitter <a href="http://www.twitter.com/{{ .Site.Data.social.twitter }}">@{{ .Site.Data.social.twitter }}</a> or leave a comment below!
+                    </div>
+
+                    <div class="content-panel comments">
+                      <div id="disqus_thread">
+                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                      </div>
+                    </div>
+
+
+                    <div class="content-panel related clearfix">
+                        {{ $related := .Site.RegularPages.Related . | first 1 }}
+                        {{ with $related }}
+                        {{ range . }}
+                            <div class="related-header">
+                                <a href="{{ .Permalink }}">Read More</a>
+                            </div>
+                            <div class="title">
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                </div>
+                                <div class="excerpt">
+                                    {{ .Summary }}
+                                <a href="{{ .Permalink }}">Continue Reading</a>
+                            </div>
+                        {{ end }}
+                        {{ end }}
+                        <hr />
+                        <div class="previous previous-next">
+                            {{if .NextPage}}
+                            <p>
+                            <a href="{{.NextPage.Permalink}}">{{.NextPage.Title}}</a>
+                            </p>
+                            <p class="date">Published {{ .NextPage.Date.Format "Jan 2, 2006"}}</p>
+                            {{end}}
+                        </div>
+                        <div class="next previous-next">
+                            {{if .PrevPage}}
+                            <p>
+                            <a href="{{.PrevPage.Permalink}}">{{.PrevPage.Title}}</a>
+                            </p>
+                            <p class="date">Published {{ .PrevPage.Date.Format "Jan 2, 2006"}}</p>
+                            {{end}}
+                        </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+        </div>
+
+      {{- partial "footer.html" . -}}
+
+      {{ if isset .Site.Data.social "disqus" }}
+      <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      function disqus_config() { this.experiment.enable_scroll_container = true; }
+      var disqus_shortname = "{{ .Site.Data.social.disqus }}"; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      </script>
+      {{ end }}
+
+    </body>
+</html>

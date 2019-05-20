@@ -2,3 +2,4 @@ baseURL = "https://www.jacobtomlinson.co.uk/"
 languageCode = "en-gb"
 title = "Jacob Tomlinson"
 theme = "carte-noire"
+pygmentsCodeFences = true

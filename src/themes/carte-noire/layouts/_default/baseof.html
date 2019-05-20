@@ -3,8 +3,11 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
+
+        <div class="page-content">
+            <div class="wrap">
+                {{- block "main" . }}{{- end }}
+            </div>
         </div>
         {{- partial "footer.html" . -}}
     </body>
