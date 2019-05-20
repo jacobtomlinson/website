@@ -21,8 +21,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Jekyll Specific
-_site/
-
-# Ruby
-Gemfile.lock
+# Hugo Specific
+public/

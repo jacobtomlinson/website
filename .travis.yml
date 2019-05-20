@@ -1,24 +1,25 @@
-language: ruby
-rvm:
-- 2.2.2
+language: go
+go:
+  - master
 sudo: false
+
+install:
+  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb
+  - sudo dpkg -i /tmp/hugo.deb
+
 script:
-- rake test
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - hugo
+
 deploy:
   provider: s3
   access_key_id: AKIAJUHCKKZCTVJQGOXA
   secret_access_key:
     secure: JqgqPebaI6aoplctpz3y6baGbi9PEjv8MLZWb/fXPWIWmq1jHfU/mLM5gUAT0N41qqcKT9JtrUD5ybG8EyKaczt/z5CHUR+K0DkVVc0wiKiM5+Ow+XAK40ZamZj+pRgHy8hhPLqcVjuZp1DEzM6MgfJ7RQ7n7AJXbdRlal511Ug=
   bucket: www.jacobtomlinson.co.uk
-  local-dir: _site
+  local-dir: public
   acl: public_read
   skip_cleanup: true
   region: eu-west-1
   on:
     repo: jacobtomlinson/jacobtomlinson.github.io
     branch: master
-after_deploy:
-  - rake purge
