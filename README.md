@@ -18,6 +18,12 @@ on the relevant page.
 If you notice any bugs relating to the theme or display of the website please raise an issue in the
 [Carte Noire repository][1].
 
+### Building
+
+```
+hugo server -D
+```
+
 ## License
 All written works and data are not for redistribution without permission, but feel free to link back.
 
@@ -25,4 +31,4 @@ The Hugo theme, HTML, CSS and JavaScript is licensed under GPLv3 (unless stated 
 
 See the LICENSE file for more information.
 
-[1]: https://github.com/jacobtomlinson/carte-noire
+[1]: https://github.com/jacobtomlinson/carte-noire-hugo
