@@ -4,14 +4,14 @@ date: 2014-08-28T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2014/08/28/stop-google-from-scanning-my-site/
 tags:
   - google
   - bots
   - robots.txt
 thumbnail: google-developers
 title: How to stop Google from scanning my site
-url: /2014/08/28/stop-google-from-scanning-my-site/
+aliases:
+  - /2014/08/28/stop-google-from-scanning-my-site/
 ---
 
 

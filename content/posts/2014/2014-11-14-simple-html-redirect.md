@@ -4,7 +4,6 @@ date: 2014-11-14T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2014/11/14/simple-html-redirect/
 tags:
   - html
   - web development
@@ -12,7 +11,8 @@ tags:
   - code snippet
 thumbnail: google-developers
 title: Simple HTML Redirect
-url: /2014/11/14/simple-html-redirect/
+aliases:
+  - /2014/11/14/simple-html-redirect/
 ---
 
 

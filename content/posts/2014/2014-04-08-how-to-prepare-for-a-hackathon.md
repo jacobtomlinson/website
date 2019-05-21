@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2014-04-08T00:00:00+00:00
 categories:
   - Events
-permalink: /2014/04/08/how-to-prepare-for-a-hackathon/
 tags:
   - Guide
   - hackathon
   - space apps
   - tools
 title: How to prepare for a hackathon
-url: /2014/04/08/how-to-prepare-for-a-hackathon/
+aliases:
+  - /2014/04/08/how-to-prepare-for-a-hackathon/
 ---
 
 So this weekend I&#8217;ll be taking part in the [2014 NASA Space Apps Challenge][1]. This time around I&#8217;ll be leading a team, rather than just joining one on the day, so I feel like I have to be extra prepared. Here is a checklist of all the things you should do before going to a hackathon/codeathon.

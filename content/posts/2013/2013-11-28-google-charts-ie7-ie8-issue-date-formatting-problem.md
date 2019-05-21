@@ -4,7 +4,6 @@ date: 2013-11-28T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2013/11/28/google-charts-ie7-ie8-issue-date-formatting-problem/
 tags:
   - Google Charts
   - IE7
@@ -12,7 +11,8 @@ tags:
   - JavaScript
 thumbnail: google-developers
 title: 'Google Charts IE7 IE8 Issue: Date formatting problem'
-url: /2013/11/28/google-charts-ie7-ie8-issue-date-formatting-problem/
+aliases:
+  - /2013/11/28/google-charts-ie7-ie8-issue-date-formatting-problem/
 ---
 
 Just a quick post about an issue I&#8217;ve had with Google Charts on IE7/8.

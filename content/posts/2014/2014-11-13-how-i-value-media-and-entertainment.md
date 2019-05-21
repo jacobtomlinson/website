@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-11-13T00:00:00+00:00
 categories:
   - Blog
-permalink: /2014/11/13/how-i-value-media-and-entertainment/
 tags:
   - movies
   - games
@@ -11,7 +10,8 @@ tags:
   - media
 thumbnail: monitor
 title: How I value media and entertainment
-url: /2014/11/13/how-i-value-media-and-entertainment/
+aliases:
+  - /2014/11/13/how-i-value-media-and-entertainment/
 ---
 
 

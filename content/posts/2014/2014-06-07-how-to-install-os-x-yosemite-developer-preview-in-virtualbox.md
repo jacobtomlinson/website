@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-06-07T00:00:00+00:00
 categories:
   - Apple
-permalink: /2014/06/07/how-to-install-os-x-yosemite-developer-preview-in-virtualbox/
 tags:
   - apple
   - Developer Preview
@@ -14,7 +13,8 @@ tags:
   - Yosemite
 thumbnail: osx
 title: How to install OS X Yosemite Developer Preview Beta in Virtualbox
-url: /2014/06/07/how-to-install-os-x-yosemite-developer-preview-in-virtualbox/
+aliases:
+  - /2014/06/07/how-to-install-os-x-yosemite-developer-preview-in-virtualbox/
 ---
 
 Like me you may be excited about the Developer Preview Beta of OS X 10.10 Yosemite and want to try it out, but you don't want to deal with a buggy system between now and the general release. If that's the case you'll want to install Yosemite as a virtual machine on your Mac. Here's how I've done it on mine using VirtualBox.

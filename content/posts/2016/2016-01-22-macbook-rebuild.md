@@ -7,7 +7,8 @@ tags:
   - MacBook Air
   - Software
 title: MacBook Rebuild
-url: /2016/01/22/macbook-rebuild/
+aliases:
+  - /2016/01/22/macbook-rebuild/
 ---
 
 

@@ -4,14 +4,14 @@ date: 2012-02-23T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2012/02/23/shrinking-sql-logs/
 tags:
   - Databases
   - SQL
   - Storage
 thumbnail: database
 title: Shrinking SQL logs
-url: /2012/02/23/shrinking-sql-logs/
+aliases:
+  - /2012/02/23/shrinking-sql-logs/
 ---
 
 

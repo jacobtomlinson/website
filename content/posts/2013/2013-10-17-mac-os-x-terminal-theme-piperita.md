@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2013-10-17T00:00:00+00:00
 categories:
   - Project
-permalink: /2013/10/17/mac-os-x-terminal-theme-piperita/
 tags:
   - bash
   - github
   - terminal
   - theme
 title: 'Mac OS X Terminal Theme: Piperita'
-url: /2013/10/17/mac-os-x-terminal-theme-piperita/
+aliases:
+  - /2013/10/17/mac-os-x-terminal-theme-piperita/
 ---
 
 

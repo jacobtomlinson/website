@@ -12,7 +12,8 @@ tags:
   - docker
 thumbnail: influxdata
 title: Building Telegraf for 32bit FreeBSD
-url: /2017/01/16/build-telegraf-for-i386-32bit-pfsense-freebsd/
+aliases:
+  - /2017/01/16/build-telegraf-for-i386-32bit-pfsense-freebsd/
 ---
 
 

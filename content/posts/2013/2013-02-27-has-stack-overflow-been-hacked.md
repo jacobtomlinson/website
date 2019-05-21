@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2013-02-27T00:00:00+00:00
 categories:
   - News
-permalink: /2013/02/27/has-stack-overflow-been-hacked/
 tags:
   - Google
   - Hijack
   - Stack Overflow
 thumbnail: stack-overflow
 title: Has Stack Overflow been hijacked?
-url: /2013/02/27/has-stack-overflow-been-hacked/
+aliases:
+  - /2013/02/27/has-stack-overflow-been-hacked/
 ---
 
 Something funny seems to be happening with Google and Stack Overflow.

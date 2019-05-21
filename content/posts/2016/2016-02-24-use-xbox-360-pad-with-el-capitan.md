@@ -10,7 +10,8 @@ tags:
   - gaming
 thumbnail: xbox-controller
 title: How to use an Xbox 360 controller with OS X El Capitan
-url: /2016/02/24/use-xbox-360-pad-with-el-capitan/
+aliases:
+  - /2016/02/24/use-xbox-360-pad-with-el-capitan/
 ---
 
 

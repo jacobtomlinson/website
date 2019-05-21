@@ -12,7 +12,8 @@ tags:
   - diy
 thumbnail: apple
 title: Apple Airport Express Repair
-url: /2017/03/20/apple-airport-express-repair/
+aliases:
+  - /2017/03/20/apple-airport-express-repair/
 ---
 
 

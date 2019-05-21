@@ -11,7 +11,8 @@ tags:
   - delete merged branches
 thumbnail: code-fork
 title: Quick Tip - git delete merged branches
-url: /2015/10/01/quick-tip-git-delete-merged/
+aliases:
+  - /2015/10/01/quick-tip-git-delete-merged/
 ---
 
 

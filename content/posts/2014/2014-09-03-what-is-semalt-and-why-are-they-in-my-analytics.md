@@ -4,7 +4,6 @@ date: 2014-09-03T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2014/09/03/what-is-semalt-and-why-are-they-in-my-analytics/
 tags:
   - google analytics
   - analytics
@@ -12,7 +11,8 @@ tags:
   - spam
 thumbnail: google-analytics
 title: What is semalt and why are they in my analytics?
-url: /2014/09/03/what-is-semalt-and-why-are-they-in-my-analytics/
+aliases:
+  - /2014/09/03/what-is-semalt-and-why-are-they-in-my-analytics/
 ---
 
 

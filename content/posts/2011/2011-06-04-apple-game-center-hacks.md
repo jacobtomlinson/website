@@ -5,7 +5,6 @@ categories:
   - Apple
 has_been_twittered:
   - true
-permalink: /2011/06/04/apple-game-center-hacks/
 tags:
   - apple
   - cheat
@@ -15,7 +14,8 @@ tags:
   - iPad
   - iPhone
 title: Apple game center hacks
-url: /2011/06/04/apple-game-center-hacks/
+aliases:
+  - /2011/06/04/apple-game-center-hacks/
 ---
 
 Ok I&#8217;m currently on holiday with my girlfriend in turkey. It started getting a bit too hot in the sun a few days ago so we went into the hotel lobby and found free wifi. We went to our room and both got out our iOS devices and went to the lobby to catch up with Facebook etc.

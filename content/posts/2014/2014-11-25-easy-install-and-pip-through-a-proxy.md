@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-11-25T00:00:00+00:00
 categories:
   - Python
-permalink: /2014/11/25/easy-install-and-pip-through-a-proxy/
 tags:
   - python
   - easy_install
@@ -11,7 +10,8 @@ tags:
   - proxy
 thumbnail: python
 title: How to easy_install and pip through a proxy
-url: /2014/11/25/easy-install-and-pip-through-a-proxy/
+aliases:
+  - /2014/11/25/easy-install-and-pip-through-a-proxy/
 ---
 
 

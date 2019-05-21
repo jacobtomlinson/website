@@ -9,7 +9,8 @@ tags:
   - api
 thumbnail: vmware
 title: Getting started with VMwares ESXi/vSphere API in Python
-url: /2016/06/22/using-vmware-esxi-vsphere-python-api/
+aliases:
+  - /2016/06/22/using-vmware-esxi-vsphere-python-api/
 ---
 
 

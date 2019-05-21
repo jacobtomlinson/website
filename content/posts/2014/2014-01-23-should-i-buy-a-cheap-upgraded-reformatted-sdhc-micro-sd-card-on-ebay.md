@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-01-23T00:00:00+00:00
 categories:
   - News
-permalink: /2014/01/23/should-i-buy-a-cheap-upgraded-reformatted-sdhc-micro-sd-card-on-ebay/
 tags:
   - eBay
   - Micro SD Card
@@ -11,7 +10,8 @@ tags:
   - Storage
 thumbnail: sd-card
 title: Should I buy a cheap upgraded/reformatted SDHC micro SD card on eBay?
-url: /2014/01/23/should-i-buy-a-cheap-upgraded-reformatted-sdhc-micro-sd-card-on-ebay/
+aliases:
+  - /2014/01/23/should-i-buy-a-cheap-upgraded-reformatted-sdhc-micro-sd-card-on-ebay/
 ---
 
 Short answer &#8211; ***No!***

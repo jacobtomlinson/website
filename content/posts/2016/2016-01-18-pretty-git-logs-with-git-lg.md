@@ -10,7 +10,8 @@ tags:
   - log
 thumbnail: code-fork
 title: Pretty git logs with `git lg`
-url: /2016/01/18/pretty-git-logs-with-git-lg/
+aliases:
+  - /2016/01/18/pretty-git-logs-with-git-lg/
 ---
 
 

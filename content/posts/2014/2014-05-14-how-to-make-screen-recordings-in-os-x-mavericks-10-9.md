@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-05-14T00:00:00+00:00
 categories:
   - Apple
-permalink: /2014/05/14/how-to-make-screen-recordings-in-os-x-mavericks-10-9/
 tags:
   - apple
   - Guide
@@ -13,7 +12,8 @@ tags:
   - screen recording
 thumbnail: osx
 title: How to make screen recordings in OS X Mavericks 10.9
-url: /2014/05/14/how-to-make-screen-recordings-in-os-x-mavericks-10-9/
+aliases:
+  - /2014/05/14/how-to-make-screen-recordings-in-os-x-mavericks-10-9/
 ---
 
 

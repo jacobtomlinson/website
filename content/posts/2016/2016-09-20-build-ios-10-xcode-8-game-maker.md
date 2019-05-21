@@ -11,7 +11,8 @@ tags:
   - bugs
 thumbnail: apple
 title: Build games for iOS 10 with Xcode 8 and Game Maker Studio 1.4
-url: /2016/09/20/build-ios-10-xcode-8-game-maker/
+aliases:
+  - /2016/09/20/build-ios-10-xcode-8-game-maker/
 ---
 
 

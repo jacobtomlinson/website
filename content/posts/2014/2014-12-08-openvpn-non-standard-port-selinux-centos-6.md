@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2014-12-08T00:00:00+00:00
 categories:
   - Centos
-permalink: /2014/12/08/openvpn-non-standard-port-selinux-centos-6/
 tags:
   - centos 6
   - SELinux
   - OpenVPN
 thumbnail: centos
 title: Run OpenVPN on non-standard port with SELinux and Centos 6
-url: /2014/12/08/openvpn-non-standard-port-selinux-centos-6/
+aliases:
+  - /2014/12/08/openvpn-non-standard-port-selinux-centos-6/
 ---
 
 

@@ -10,7 +10,8 @@ tags:
   - collaboration
 thumbnail: jekyll
 title: Collaborative article corrections in Jekyll
-url: /2015/05/27/collabortive-article-corrections-in-jekyll/
+aliases:
+  - /2015/05/27/collabortive-article-corrections-in-jekyll/
 ---
 
 

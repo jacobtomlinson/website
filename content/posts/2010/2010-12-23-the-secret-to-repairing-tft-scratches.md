@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2010-12-23T00:00:00+00:00
 categories:
   - Hardware
-permalink: /2010/12/23/the-secret-to-repairing-tft-scratches/
 tags:
   - Guide
   - Monitor
   - Repair
 thumbnail: monitor
 title: Guide to repairing TFT monitor scratches
-url: /2010/12/23/the-secret-to-repairing-tft-scratches/
+aliases:
+  - /2010/12/23/the-secret-to-repairing-tft-scratches/
 ---
 
 About a year and a half ago I was working on a guitar modification and dropped part of the modified casing on my laptop. It made a pretty good scratch on the bottom of my monitor about an inch long (2.54cm for you metrics out there). It has mildly bothered me since then but I've never done anything about it. But this evening I decided to google around and see if there was any kind of specialist product that could be purchased and used to fill in the scratch. I read a few blogs and sites until I found the most amazing solution ever.

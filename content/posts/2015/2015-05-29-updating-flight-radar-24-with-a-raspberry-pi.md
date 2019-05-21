@@ -10,7 +10,8 @@ tags:
   - raspberry pi
 thumbnail: plane
 title: Updating flightradar24 with a Raspberry Pi
-url: /2015/05/29/updating-flight-radar-24-with-a-raspberry-pi/
+aliases:
+  - /2015/05/29/updating-flight-radar-24-with-a-raspberry-pi/
 ---
 
 

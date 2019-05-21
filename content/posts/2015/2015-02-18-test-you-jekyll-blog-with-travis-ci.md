@@ -11,7 +11,8 @@ tags:
   - github
 thumbnail: jekyll
 title: Test your Jekyll blog with Travis CI
-url: /2015/02/18/test-you-jekyll-blog-with-travis-ci/
+aliases:
+  - /2015/02/18/test-you-jekyll-blog-with-travis-ci/
 ---
 
 

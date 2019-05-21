@@ -4,13 +4,13 @@ date: 2015-02-03T00:00:00+00:00
 categories:
   - Productivity
 excerpt: I started using bullet journaling to organise myself in March last year and now I can't imagine my life without it.
-permalink: /2015/02/16/bullet-journaling-in-2015/
 tags:
   - bullet journal
   - journaling
 thumbnail: journal
 title: Bullet Journaling in 2015
-url: /2015/02/03/bullet-journaling-in-2015/
+aliases:
+  - /2015/02/03/bullet-journaling-in-2015/
 ---
 
 

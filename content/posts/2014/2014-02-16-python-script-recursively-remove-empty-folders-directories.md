@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2014-02-16T00:00:00+00:00
 categories:
   - Python
-permalink: /2014/02/16/python-script-recursively-remove-empty-folders-directories/
 tags:
   - Module
   - Python
   - Script
 thumbnail: python
 title: 'Python script: Recursively remove empty folders/directories'
-url: /2014/02/16/python-script-recursively-remove-empty-folders-directories/
+aliases:
+  - /2014/02/16/python-script-recursively-remove-empty-folders-directories/
 ---
 
 So as part of a script I&#8217;m writing I needed the ability to recursively remove empty folders/directories from a filesystem. After a bit of googling I found <a title="Original python script" href="http://dev.enekoalonso.com/2011/08/06/python-script-remove-empty-folders" target="_blank">this very useful script</a> by <a title="Eneko Alonso's Blog" href="http://dev.enekoalonso.com" target="_blank">Eneko Alonso</a>. However the script isn&#8217;t really in a usable state for what I want so I decided to make a few changes to it and publish it on GitHub.

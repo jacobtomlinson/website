@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-05-15T00:00:00+00:00
 categories:
   - Apple
-permalink: /2014/05/15/how-to-use-text-expansion-in-os-x-10-9-mavericks/
 tags:
   - apple
   - Guide
@@ -14,7 +13,8 @@ tags:
   - os x
 thumbnail: osx
 title: How to use text expansion in OS X 10.9 Mavericks
-url: /2014/05/15/how-to-use-text-expansion-in-os-x-10-9-mavericks/
+aliases:
+  - /2014/05/15/how-to-use-text-expansion-in-os-x-10-9-mavericks/
 ---
 
 ![Text Expansion](http://i.imgur.com/X1qkC2J.png)

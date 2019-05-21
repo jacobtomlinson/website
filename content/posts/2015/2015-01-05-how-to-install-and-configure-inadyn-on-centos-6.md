@@ -4,7 +4,6 @@ date: 2015-01-05T00:00:00+00:00
 categories:
   - Centos
 excerpt: Inadyn is a command line utility for periodically checking and updating your ip address with DynDNS.
-permalink: /2015/01/05/how-to-install-and-configure-inadyn-on-centos-6/
 tags:
   - centos
   - dyndns
@@ -12,7 +11,8 @@ tags:
   - chkconfig
 thumbnail: centos
 title: How to install and configure inadyn on CentOS 6
-url: /2015/01/05/how-to-install-and-configure-inadyn-on-centos-6/
+aliases:
+  - /2015/01/05/how-to-install-and-configure-inadyn-on-centos-6/
 ---
 
 

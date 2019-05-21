@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-11-19T00:00:00+00:00
 categories:
   - VMWare
-permalink: /2014/11/19/how-to-install-vsphere-5-5-client-on-windows-8/
 tags:
   - vmware
   - vsphere
@@ -11,7 +10,8 @@ tags:
   - guide
 thumbnail: vmware
 title: How to install the vSphere 5.5 Client on Windows 8
-url: /2014/11/19/how-to-install-vsphere-5-5-on-windows-8/
+aliases:
+  - /2014/11/19/how-to-install-vsphere-5-5-on-windows-8/
 ---
 
 

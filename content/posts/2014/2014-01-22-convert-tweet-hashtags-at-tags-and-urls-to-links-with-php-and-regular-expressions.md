@@ -4,7 +4,6 @@ date: 2014-01-22T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2014/01/22/convert-tweet-hashtags-at-tags-and-urls-to-links-with-php-and-regular-expressions/
 tags:
   - Guide
   - PHP
@@ -14,7 +13,8 @@ tags:
   - Twitter API
 thumbnail: twitter
 title: Convert tweet hashtags, at-tags and urls to links with PHP and Regular Expressions
-url: /2014/01/22/convert-tweet-hashtags-at-tags-and-urls-to-links-with-php-and-regular-expressions/
+aliases:
+  - /2014/01/22/convert-tweet-hashtags-at-tags-and-urls-to-links-with-php-and-regular-expressions/
 ---
 
 Now of course if you're using the <a title="Twitter API" href="https://dev.twitter.com/" target="_blank">Twitter API</a> you can use Twitter entities but in this tutorial we're going to use <a title="Regular Expressions" href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expressions</a>.

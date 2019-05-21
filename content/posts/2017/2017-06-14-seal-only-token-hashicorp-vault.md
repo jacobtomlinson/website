@@ -12,7 +12,8 @@ tags:
   - infrastructure
 thumbnail: vault
 title: How to create a seal only token for Hashicorp Vault
-url: /2017/06/14/seal-only-token-hashicorp-vault/
+aliases:
+  - /2017/06/14/seal-only-token-hashicorp-vault/
 ---
 
 

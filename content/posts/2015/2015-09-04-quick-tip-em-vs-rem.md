@@ -11,7 +11,8 @@ tags:
   - rem
 thumbnail: code
 title: Quick Tip - em vs rem
-url: /2015/09/04/quick-tip-em-vs-rem/
+aliases:
+  - /2015/09/04/quick-tip-em-vs-rem/
 ---
 
 

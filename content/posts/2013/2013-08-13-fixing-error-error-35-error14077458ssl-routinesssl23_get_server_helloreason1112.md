@@ -5,7 +5,6 @@ categories:
   - Apple
 has_been_twittered:
   - failed
-permalink: /2013/08/13/fixing-error-error-35-error14077458ssl-routinesssl23_get_server_helloreason1112/
 tags:
   - apple
   - curl
@@ -23,7 +22,8 @@ twitter_failure_code:
   - 410
 twitter_failure_reason:
   - null
-url: /2013/08/13/fixing-error-error-35-error14077458ssl-routinesssl23_get_server_helloreason1112/
+aliases:
+  - /2013/08/13/fixing-error-error-35-error14077458ssl-routinesssl23_get_server_helloreason1112/
 ---
 
 So the other day I came across the following error when using the munki configuration tool for mac.

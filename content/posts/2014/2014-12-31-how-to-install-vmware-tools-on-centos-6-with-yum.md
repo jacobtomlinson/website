@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2014-12-31T00:00:00+00:00
 categories:
   - Centos
-permalink: /2014/12/31/how-to-install-vmware-tools-on-centos-6-with-yum/
 tags:
   - centos 6
   - VMware
   - yum
 thumbnail: vmware
 title: How to install VMware Tools on Centos 6 with yum
-url: /2014/12/31/how-to-install-vmware-tools-on-centos-6-with-yum/
+aliases:
+  - /2014/12/31/how-to-install-vmware-tools-on-centos-6-with-yum/
 ---
 
 

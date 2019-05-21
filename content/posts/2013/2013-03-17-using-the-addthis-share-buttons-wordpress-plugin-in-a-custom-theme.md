@@ -4,14 +4,14 @@ date: 2013-03-17T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2013/03/17/using-the-addthis-share-buttons-wordpress-plugin-in-a-custom-theme/
 tags:
   - addthis
   - theme
   - wordpress
 thumbnail: add-this
 title: Using the AddThis Share Buttons wordpress plugin in a custom theme
-url: /2013/03/17/using-the-addthis-share-buttons-wordpress-plugin-in-a-custom-theme/
+aliases:
+  - /2013/03/17/using-the-addthis-share-buttons-wordpress-plugin-in-a-custom-theme/
 ---
 
 

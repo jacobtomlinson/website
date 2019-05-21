@@ -9,7 +9,8 @@ tags:
   - reading speed
 thumbnail: jekyll
 title: Simple reading speed estimate in Jekyll
-url: /2015/02/24/simple-reading-speed-estimate-in-jekyll/
+aliases:
+  - /2015/02/24/simple-reading-speed-estimate-in-jekyll/
 ---
 
 

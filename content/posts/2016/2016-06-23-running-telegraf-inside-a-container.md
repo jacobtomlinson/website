@@ -11,7 +11,8 @@ tags:
   - docker
 thumbnail: influxdata
 title: Running Telegraf inside a docker container
-url: /2016/06/23/running-telegraf-inside-a-container/
+aliases:
+  - /2016/06/23/running-telegraf-inside-a-container/
 ---
 
 

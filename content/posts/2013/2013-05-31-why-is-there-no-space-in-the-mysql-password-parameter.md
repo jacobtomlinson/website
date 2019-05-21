@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2013-05-31T00:00:00+00:00
 categories:
   - Linux
-permalink: /2013/05/31/why-is-there-no-space-in-the-mysql-password-parameter/
 tags:
   - CLI
   - Command Line
@@ -12,7 +11,8 @@ tags:
   - terminal
 thumbnail: mysql
 title: Why is there no space in the MySQL password parameter?
-url: /2013/05/31/why-is-there-no-space-in-the-mysql-password-parameter/
+aliases:
+  - /2013/05/31/why-is-there-no-space-in-the-mysql-password-parameter/
 ---
 
 After troubleshooting a MySQL issue with a colleague we began discussing a "feature"

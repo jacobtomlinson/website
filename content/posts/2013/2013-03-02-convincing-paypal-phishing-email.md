@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2013-03-02T00:00:00+00:00
 categories:
   - News
-permalink: /2013/03/02/convincing-paypal-phishing-email/
 tags:
   - Hacking
   - Paypal
   - Phishing
 thumbnail: paypal
 title: Convincing Paypal Phishing Email
-url: /2013/03/02/convincing-paypal-phishing-email/
+aliases:
+  - /2013/03/02/convincing-paypal-phishing-email/
 ---
 
 So I woke up yesterday morning to find a receipt from Paypal for $149.49 on my iPhone. I haven&#8217;t bought anything for $149.49 so right away I was worried that my Paypal account had been broken into. The first thing I did was to log into my Paypal account on my laptop to check to see more information about the transaction. When logging in there was no trace of this transaction.

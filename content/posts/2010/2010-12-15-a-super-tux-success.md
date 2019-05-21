@@ -3,13 +3,13 @@ author: Jacob Tomlinson
 date: 2010-12-15T00:00:00+00:00
 categories:
   - Linux
-permalink: /2010/12/15/a-super-tux-success/
 tags:
   - linux
   - ubuntu
 thumbnail: ubuntu
 title: Ubuntu setup 2010
-url: /2010/12/15/a-super-tux-success/
+aliases:
+  - /2010/12/15/a-super-tux-success/
 ---
 
 

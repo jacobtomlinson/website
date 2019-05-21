@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-07-31T00:00:00+00:00
 categories:
   - Linux
-permalink: /2014/07/31/amazon-s3-s3cmd-put-errno-32-broken-pipe/
 tags:
   - aws
   - error
@@ -12,7 +11,8 @@ tags:
   - terminal
 thumbnail: aws
 title: 'Amazon S3: s3cmd put ([Errno 32] Broken pipe)'
-url: /2014/07/31/amazon-s3-s3cmd-put-errno-32-broken-pipe/
+aliases:
+  - /2014/07/31/amazon-s3-s3cmd-put-errno-32-broken-pipe/
 ---
 
 Recently I decided to use Amazon&#8217;s S3 as another location to store some of my server backups. However I found when testing that I was unable to upload my backup tarballs to S3. I ended up with the following errors.

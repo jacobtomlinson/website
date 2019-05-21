@@ -4,7 +4,6 @@ date: 2012-09-11T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2012/09/11/ajax-database-tooltip/
 tags:
   - AJAX
   - Guide
@@ -14,7 +13,8 @@ tags:
   - PHP
 thumbnail: jquery
 title: How to query a database with AJAX and display as a tooltip
-url: /2012/09/11/ajax-database-tooltip/
+aliases:
+  - /2012/09/11/ajax-database-tooltip/
 ---
 
 This post began as an answer on Stack Overflow to a question on &#8216;<a href="http://stackoverflow.com/questions/12291654/netflix-style-tooltip-with-ajax-jquery-php-and-mysql/12366841#12366841" target="_blank">How to query a database with AJAX and display as a tooltip</a>&#8216;. I have put the answer here for future reference.

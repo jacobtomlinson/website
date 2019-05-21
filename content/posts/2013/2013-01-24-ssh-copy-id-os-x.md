@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2013-01-24T00:00:00+00:00
 categories:
   - Apple
-permalink: /2013/01/24/ssh-copy-id-os-x/
 tags:
   - os x
   - ssh
@@ -11,7 +10,8 @@ tags:
   - terminal
 thumbnail: command-line
 title: SSH without a password on OS X with ssh-copy-id
-url: /2013/01/24/ssh-copy-id-os-x/
+aliases:
+  - /2013/01/24/ssh-copy-id-os-x/
 ---
 
 

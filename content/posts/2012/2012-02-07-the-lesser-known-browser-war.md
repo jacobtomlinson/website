@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2012-02-07T00:00:00+00:00
 categories:
   - News
-permalink: /2012/02/07/the-lesser-known-browser-war/
 tags:
   - browser war
   - browsers
@@ -14,7 +13,8 @@ tags:
   - safari
 thumbnail: internet
 title: The lesser known browser war
-url: /2012/02/07/the-lesser-known-browser-war/
+aliases:
+  - /2012/02/07/the-lesser-known-browser-war/
 ---
 
 

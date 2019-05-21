@@ -10,7 +10,8 @@ tags:
   - Reviews
 thumbnail: star-wars
 title: 'Thoughts on Star Wars: The Force Awakens'
-url: /2015/12/21/star-wars-force-awakens/
+aliases:
+  - /2015/12/21/star-wars-force-awakens/
 ---
 
 

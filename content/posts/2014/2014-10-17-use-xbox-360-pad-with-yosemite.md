@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-10-17T00:00:00+00:00
 categories:
   - Gaming
-permalink: /2014/10/17/use-xbox-360-pad-with-yosemite/
 tags:
   - xbox 360 controller
   - yosemite
@@ -11,7 +10,8 @@ tags:
   - gaming
 thumbnail: xbox-controller
 title: How to use an Xbox 360 controller with OS X Yosemite
-url: /2014/10/17/use-xbox-360-pad-with-yosemite/
+aliases:
+  - /2014/10/17/use-xbox-360-pad-with-yosemite/
 ---
 
 

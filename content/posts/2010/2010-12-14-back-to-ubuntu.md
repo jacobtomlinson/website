@@ -3,13 +3,13 @@ author: Jacob Tomlinson
 date: 2010-12-14T00:00:00+00:00
 categories:
   - Linux
-permalink: /2010/12/14/back-to-ubuntu/
 tags:
   - linux
   - ubuntu
 thumbnail: ubuntu
 title: Back to Ubuntu
-url: /2010/12/14/back-to-ubuntu/
+aliases:
+  - /2010/12/14/back-to-ubuntu/
 ---
 
 

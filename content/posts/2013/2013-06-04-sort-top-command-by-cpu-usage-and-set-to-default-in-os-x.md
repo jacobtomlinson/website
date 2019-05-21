@@ -5,7 +5,6 @@ categories:
   - Apple
 has_been_twittered:
   - true
-permalink: /2013/06/04/sort-top-command-by-cpu-usage-and-set-to-default-in-os-x/
 tags:
   - alias
   - bash
@@ -14,7 +13,8 @@ tags:
   - top
 thumbnail: command-line
 title: Sort top command by cpu usage and set to default in OS X
-url: /2013/06/04/sort-top-command-by-cpu-usage-and-set-to-default-in-os-x/
+aliases:
+  - /2013/06/04/sort-top-command-by-cpu-usage-and-set-to-default-in-os-x/
 ---
 
 As I come from a linux background but seem to spend more and more of my free time using OS X I keep noticing little differences in the way the command line works on a mac. One difference which as been bugging me recently is that way that the *top* command orders itself. I&#8217;m used to having it ordered by highest processor usage at the top on linux, which I find the most useful as generally when I run top I&#8217;m looking to see what is chewing up my cpu. However when you run top in OS X it orders by pid, so the newest processes are at the top.

@@ -8,7 +8,8 @@ tags:
   - Tutorial
 thumbnail: docker
 title: What is Docker?
-url: /2016/03/22/what-is-docker/
+aliases:
+  - /2016/03/22/what-is-docker/
 ---
 
 

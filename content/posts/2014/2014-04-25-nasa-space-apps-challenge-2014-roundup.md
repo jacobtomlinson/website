@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-04-25T00:00:00+00:00
 categories:
   - Events
-permalink: /2014/04/25/nasa-space-apps-challenge-2014-roundup/
 tags:
   - agile
   - hackathon
@@ -13,7 +12,8 @@ tags:
   - planning
 thumbnail: nasa
 title: NASA Space Apps Challenge 2014 Roundup
-url: /2014/04/25/nasa-space-apps-challenge-2014-roundup/
+aliases:
+  - /2014/04/25/nasa-space-apps-challenge-2014-roundup/
 ---
 
 A couple of weeks ago I attended a hackathon hosted by the Met Office as part of the <a title="2014 NASA Space Apps Challenge Official Website" href="https://2014.spaceappschallenge.org/" target="_blank">2014 NASA Space Apps Challenge</a>. It was a weekend event and the basic idea was to meet with other technology professionals/enthusiasts, form teams with these like minded folk, select a challenge from a long list of challenges set by NASA and solve it during the weekend.

@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2013-09-30T00:00:00+00:00
 categories:
   - Apple
-permalink: /2013/09/30/bootcamp-windows-7-on-a-2011-macbook-pro-without-a-superdrive/
 tags:
   - mac
   - os x
@@ -15,7 +14,8 @@ tags:
   - windows
 thumbnail: bootcamp
 title: Bootcamp Windows 7 on a 2011 MacBook Pro without a SuperDrive
-url: /2013/09/30/bootcamp-windows-7-on-a-2011-macbook-pro-without-a-superdrive/
+aliases:
+  - /2013/09/30/bootcamp-windows-7-on-a-2011-macbook-pro-without-a-superdrive/
 ---
 
 So recently I swapped out the SuperDrive in my early 2011 MacBook pro for an additional HDD caddy. I then moved my 1TB HDD into the caddy and put a new SSD in the HDD slot. As I was messing around with hard drives I decided to go for a fresh install of OS X and Windows on the SSD.

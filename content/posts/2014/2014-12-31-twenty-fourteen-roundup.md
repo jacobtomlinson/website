@@ -3,12 +3,12 @@ author: Jacob Tomlinson
 date: 2014-12-31T00:00:00+00:00
 categories:
   - News
-permalink: /2014/12/31/twenty-fourteen-roundup/
 tags:
   - 2014
   - roundup
 title: Twenty Fourteen Roundup
-url: /2014/12/31/twenty-fourteen-roundup/
+aliases:
+  - /2014/12/31/twenty-fourteen-roundup/
 ---
 
 

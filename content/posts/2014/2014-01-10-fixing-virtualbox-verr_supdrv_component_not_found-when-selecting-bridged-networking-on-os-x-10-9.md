@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2014-01-10T00:00:00+00:00
 categories:
   - Apple
-permalink: /2014/01/10/fixing-virtualbox-verr_supdrv_component_not_found-when-selecting-bridged-networking-on-os-x-10-9/
 tags:
   - kexts
   - mavericks
@@ -11,7 +10,8 @@ tags:
   - VirtualBox
 thumbnail: command-line
 title: Fixing VirtualBox verr_supdrv_component_not_found when selecting bridged networking on OS X 10.9
-url: /2014/01/10/fixing-virtualbox-verr_supdrv_component_not_found-when-selecting-bridged-networking-on-os-x-10-9/
+aliases:
+  - /2014/01/10/fixing-virtualbox-verr_supdrv_component_not_found-when-selecting-bridged-networking-on-os-x-10-9/
 ---
 
 While installing CentOS in VirtualBox (version 4.2.4) on OS X (version 10.9.1) I came across the following error message when selecting bridged networking

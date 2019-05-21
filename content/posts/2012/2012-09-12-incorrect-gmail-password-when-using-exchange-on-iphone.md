@@ -3,7 +3,6 @@ author: Jacob Tomlinson
 date: 2012-09-12T00:00:00+00:00
 categories:
   - iPhone
-permalink: /2012/09/12/incorrect-gmail-password-when-using-exchange-on-iphone/
 tags:
   - Gmail
   - Google
@@ -11,7 +10,8 @@ tags:
   - Microsoft Exchange
 thumbnail: gmail
 title: Incorrect Gmail password when using exchange on iPhone
-url: /2012/09/12/incorrect-gmail-password-when-using-exchange-on-iphone/
+aliases:
+  - /2012/09/12/incorrect-gmail-password-when-using-exchange-on-iphone/
 ---
 
 

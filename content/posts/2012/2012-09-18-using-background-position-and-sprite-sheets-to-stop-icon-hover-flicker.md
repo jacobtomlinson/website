@@ -4,14 +4,14 @@ date: 2012-09-18T00:00:00+00:00
 categories:
   - Web
   - Development
-permalink: /2012/09/18/using-background-position-and-sprite-sheets-to-stop-icon-hover-flicker/
 tags:
   - CSS
   - Guide
   - HTML
 thumbnail: internet
 title: Using background-position and sprite sheets to stop icon hover flicker
-url: /2012/09/18/using-background-position-and-sprite-sheets-to-stop-icon-hover-flicker/
+aliases:
+  - /2012/09/18/using-background-position-and-sprite-sheets-to-stop-icon-hover-flicker/
 ---
 
 

@@ -8,7 +8,8 @@ tags:
   - Tutorial
 thumbnail: docker
 title: Running a Docker container
-url: /2016/03/29/running-a-docker-container/
+aliases:
+  - /2016/03/29/running-a-docker-container/
 ---
 
 

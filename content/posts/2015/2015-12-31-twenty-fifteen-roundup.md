@@ -7,7 +7,8 @@ tags:
   - 2015
   - roundup
 title: Twenty Fifteen Roundup
-url: /2015/12/31/twenty-fifteen-roundup/
+aliases:
+  - /2015/12/31/twenty-fifteen-roundup/
 ---
 
 

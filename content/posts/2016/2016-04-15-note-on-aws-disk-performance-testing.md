@@ -10,7 +10,8 @@ tags:
   - Disk
 thumbnail: aws
 title: A note on AWS disk performance testing
-url: /2016/04/15/note-on-aws-disk-performance-testing/
+aliases:
+  - /2016/04/15/note-on-aws-disk-performance-testing/
 ---
 
 

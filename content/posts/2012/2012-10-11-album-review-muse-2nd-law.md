@@ -3,14 +3,14 @@ author: Jacob Tomlinson
 date: 2012-10-11T00:00:00+00:00
 categories:
   - Reviews
-permalink: /2012/10/11/album-review-muse-2nd-law/
 tags:
   - Muse
   - Music
   - Reviews
 thumbnail: cd
 title: 'Album Review: Muse &#8211; 2nd Law'
-url: /2012/10/11/album-review-muse-2nd-law/
+aliases:
+  - /2012/10/11/album-review-muse-2nd-law/
 ---
 
 ![MUSE Second Law](http://i.imgur.com/JqCKBKD.png)

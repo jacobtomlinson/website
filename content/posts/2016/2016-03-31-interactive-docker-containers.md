@@ -8,7 +8,8 @@ tags:
   - Tutorial
 thumbnail: docker
 title: Interactive Docker containers
-url: /2016/03/31/interactive-docker-containers/
+aliases:
+  - /2016/03/31/interactive-docker-containers/
 ---
 
 

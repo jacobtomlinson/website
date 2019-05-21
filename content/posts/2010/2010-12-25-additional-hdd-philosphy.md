@@ -3,13 +3,13 @@ author: Jacob Tomlinson
 date: 2010-12-25T00:00:00+00:00
 categories:
   - Hardware
-permalink: /2010/12/25/additional-hdd-philosphy/
 tags:
   - Hard Drive
   - Storage
 thumbnail: hard-drive
 title: Additional HDD Philosphy
-url: /2010/12/25/additional-hdd-philosphy/
+aliases:
+  - /2010/12/25/additional-hdd-philosphy/
 ---
 
 
