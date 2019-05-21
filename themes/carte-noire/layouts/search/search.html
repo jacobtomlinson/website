@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="container-fluid index">
+  <div class="row index all-posts">
+
+    <h1 class="header header-search">Search</h1>
+
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Type here...">
+      <div class="col-md-12 content-panel articles">
+        <ul id="search-results"><small>Start typing to see some results</small></ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="search-hr" />
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/search.js"></script>
+
+{{ end }}

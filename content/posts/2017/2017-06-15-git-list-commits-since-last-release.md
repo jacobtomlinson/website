@@ -8,7 +8,8 @@ tags:
   - github
 thumbnail: git
 title: Generate git release notes automatically
-url: /2017/06/15/git-list-commits-since-last-release/
+aliases:
+  - /2017/06/15/git-list-commits-since-last-release/
 ---
 
 

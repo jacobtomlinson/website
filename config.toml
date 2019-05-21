@@ -3,3 +3,7 @@ languageCode = "en-gb"
 title = "Jacob Tomlinson"
 theme = "carte-noire"
 pygmentsCodeFences = true
+disqusShortname = "jacobtomlinson"
+
+[permalinks]
+  posts = "/:section/:year/:title/"
