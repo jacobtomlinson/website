@@ -4,6 +4,15 @@ title = "Jacob Tomlinson"
 theme = "carte-noire"
 pygmentsCodeFences = true
 disqusShortname = "jacobtomlinson"
+googleAnalytics = "UA-20365477-2"
+
+[params]
+    author = "Jacob Tomlinson"
+    description = "Engineer and cloud architect. Writes code and automates things. When he is not tapping away at his keyboard you can usually find him making music, gaming or spending time with his wonderful family."
+    SiteSourceURL = "https://github.com/jacobtomlinson/jacobtomlinson.github.io"
+
+    footer_left = "Made with <i class=\"fa fa-heart\"></i> using [Hugo](https://gohugo.io/)</a>"
+    footer_right = "<i class=\"fa fa-code\"></i> on [Github](https://github.com/jacobtomlinson/jacobtomlinson.github.io) &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 [permalinks]
     posts = "/:section/:year/:title/"
