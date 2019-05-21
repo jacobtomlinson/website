@@ -1,0 +1,3 @@
+[submodule "themes/carte-noire"]
+	path = themes/carte-noire
+	url = https://github.com/jacobtomlinson/carte-noire-hugo.git
