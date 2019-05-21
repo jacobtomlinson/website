@@ -1,29 +1,30 @@
 {{ define "main" }}
 <div class="container-fluid index">
-    <div class="row">
-          <div class="col-md-12 main content-panel">
+    <div class="row index all-posts">
 
-            <div class="articles">
+        <h1 class="header author-header">{{ .Site.Title }}</h1>
+        <h2 class="header" itemprop="headline">All posts</h2>
 
-              <h2>All Articles</h2>
+        <div class="articles">
 
-              <ul>
+            {{ range $year := .Pages.GroupByDate "2006" }}
+            <div class="col-md-12 content-panel articles">
+                <h2 id="{{ $year.Key}}-ref">{{ $year.Key}}</h2>
+                <ul>
+                    {{ range $year.Pages }}
+                    {{ if eq .Type "posts"}}
+                    <li>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        <small class="hidden-xs">{{ .Date.Format "January 2"}}</small>
+                    </li>
+                    {{ end }}
+                    {{ end }}
 
-                {{ range .Pages }}
-                {{ if eq .Type "posts"}}
-                <li>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    <small class="hidden-xs">{{ .Date.Format "January 2, 2006"}}</small>
-                </li>
-                {{ end }}
-                {{ end }}
-
-              </ul>
-
+                </ul>
             </div>
+            {{ end }}
 
         </div>
-
     </div>
 </div>
 {{ end }}

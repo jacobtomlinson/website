@@ -6,4 +6,9 @@ pygmentsCodeFences = true
 disqusShortname = "jacobtomlinson"
 
 [permalinks]
-  posts = "/:section/:year/:title/"
+    posts = "/:section/:year/:title/"
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
