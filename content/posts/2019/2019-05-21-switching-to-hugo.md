@@ -1,7 +1,7 @@
 ---
 title: "Switching to Hugo"
 date: 2019-05-21T14:21:28+01:00
-draft: true
+draft: false
 author: "Jacob Tomlinson"
 categories:
   - blog
