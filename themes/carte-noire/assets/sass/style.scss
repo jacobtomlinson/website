@@ -10,7 +10,7 @@ $github:         #f6c2a4;
 $stack-overflow: #c98b3b;
 $rss:            #eea33a;
 
-$darker:         #21211E;
+$darker:         #272822;
 $dark:           #2D2D29;
 $medium:         #3B3B35;
 $light-medium:   #969696;
@@ -425,11 +425,11 @@ ul {
 	}
 
 	h2 {
-		font-size: 34px;
+		font-size: 30px;
 	}
 
 	h3 {
-		font-size: 26px;
+		font-size: 22px;
 	}
 
 	p {
@@ -485,22 +485,24 @@ ul {
 
 	.article {
 		width: 100%;
+		margin-top: 60px;
 		margin-left: 0%;
 		padding: 0px;
 
 		@media (min-width: $screen-sm-min) {
 			width: 90%;
+			margin-top: 0px;
 			margin-left: 5%;
 		}
 
 		@media (min-width: $screen-md-min) {
-			width: 70%;
-			margin-left: 15%;
+			width: 80%;
+			margin-left: 10%;
 		}
 
 		@media (min-width: $screen-lg-min) {
-			width: 50%;
-			margin-left: 25%;
+			width: 60%;
+			margin-left: 20%;
 		}
 
 		.thumb {
@@ -627,6 +629,7 @@ ul {
 				padding-right: 15px;
 				box-sizing: content-box;
 				border-radius: 0;
+				margin-left: -15px;
 				margin-bottom: 10px;
 				margin-top: 10px;
 
