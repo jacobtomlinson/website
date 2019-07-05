@@ -41,7 +41,8 @@ Next you need to ssh to the box with the ssh key you selected during setup. In o
 
 - Visit https://www.nvidia.co.uk/Download/index.aspx
   - Select the appropriate GPU for the instance (in this case Tesla V100)
-  - Select Linux 64-bit Ubuntu 18.04 _(WARNING: Do not select the generic linux 64-bit driver as it will not work on ubuntu)_
+  - Select Linux 64-bit Ubuntu 18.04 
+    - _WARNING: Do not select the generic linux 64-bit driver as it will not work on ubuntu_
   - Copy the download link and run `wget` on the EC2 instance to download the `.deb` file.
   - Install your `.deb` file on the server (in our case we ran `dpkg -i nvidia-diag-driver-local-repo-ubuntu1804-418.67_1.0-1_amd64.deb` but your driver file name may differ)
 - This will have installed a new repository but not the actual drivers so let's also do that.
@@ -124,11 +125,13 @@ We can also test cupy out by creating an array and playing around with it.
 
 import cupy as cp
 x = cp.arange(6).reshape(2, 3).astype('f')
-x
-array([[ 0.,  1.,  2.],
-       [ 3.,  4.,  5.]], dtype=float32)
-x.sum(axis=1)
-array([  3.,  12.], dtype=float32)        
+print(x.sum(axis=1))     
+```
+
+This should show
+
+```
+array([  3.,  12.], dtype=float32)   
 ```
 
 ## Uses
