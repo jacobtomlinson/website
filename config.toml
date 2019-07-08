@@ -8,7 +8,7 @@ googleAnalytics = "UA-20365477-2"
 
 [params]
     author = "Jacob Tomlinson"
-    description = "Engineer and cloud architect. Writes code and automates things. When he is not tapping away at his keyboard you can usually find him making music, gaming or spending time with his wonderful family."
+    description = "Cloud, infrastructure and deployments for [Dask](https://dask.org/) and [RAPIDS](https://rapids.ai/) at [NVIDIA](https://nvidia.com/). Previously at [Met Office](https://www.metoffice.gov.uk/). Build [Opsdroid](https://opsdroid.dev/) in my spare time."
     HeroImage = "https://2.gravatar.com/avatar/b7c2d49748426791dc98b8214dfac9d1?s=500"
     SiteSourceURL = "https://github.com/jacobtomlinson/jacobtomlinson.github.io"
 
