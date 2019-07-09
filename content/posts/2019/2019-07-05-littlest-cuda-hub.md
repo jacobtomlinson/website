@@ -20,15 +20,17 @@ thumbnail: jupyter
 
 In my first week working at Nvidia I have been spending some time with my previous colleagues at the Met Office to explore how the two organisations can collaborate. 
 
-The theme for the week was to run a hackathon to explore how GPUs could be used to accelerate existing tools and workflows within the Met Office. To begin trying things out we needed a collaborative environment with access to GPUs. For this the Met Office kindly provided a GPU EC2 instance on AWS and we set up RAPIDS and the [Littlest JupyterHub](https://tljh.jupyter.org/en/latest/) (tljh) to expose it to collaborators.
+We decided to run a hackathon to explore how GPUs could be used to accelerate existing tools and workflows within the Met Office. The attendees were 10-15 people who were seasoned Python developers but had little experience with GPUs. There was some awareness and curiosity about CUDA and GPU acceleration but little hands on experience.
+
+To begin trying things out we needed a collaborative environment with access to GPUs. Our group was familiar with Jupyter Notebooks and we felt that asking people to SSH into a server would add unnecessary complication. There is a project called the [Littlest JupyterHub](https://tljh.jupyter.org/en/latest/) (tljh) which not only provides a stright forward way to install and manage Jupyter Hub on a single server but also has great documentation. However as we wanted to add GPU support we had to deviate from the docs a little. This post encapsulates the additional steps we took. 
 
 ## Setup
 
-Let's walk through the steps to create our GPU enabled Littlest JupyterHub.
+The Met Office folks kindly provided access to an AWS account so that we could build our own server.
 
 ### Infrastructure
 
-First we will need to build a ubuntu server with GPUs available. As the Met Office folks have provided access to an AWS account we will go through the excellent instructions from the [tljh docs](https://tljh.jupyter.org/en/latest/install/amazon.html) to set up on AWS with a few adjustments below.
+At this time tljh only supports ubuntu linux so first we will need to build a ubuntu server with GPUs available. As we had AWS access we will go through the excellent instructions from the [tljh docs](https://tljh.jupyter.org/en/latest/install/amazon.html) to set up on AWS with the following adjustments.
 
 - At step 6 we selected a `p3.8xlarge` instance as it comes with four Nvidia Tesla V100 GPUs. 
 - At step 7 we skipped entering the user data (bootstrapping script) as we wanted to run this ourselves manually later.
@@ -62,7 +64,14 @@ Select an admin username that you will remember as you will need that the first 
 
 We should now be able to return to the tljh documentation and continue from step 20 by visiting the server's IP address in the browser.
 
-Once you finish this I also recommend upgrading the version of Jupyter Lab to the latest by running `sudo -E pip install -U jupyterlab` from within Jupyter Lab.
+![Jupyter Hub login](https://tljh.jupyter.org/en/latest/_images/first-login.png)
+
+Once you finish this I also recommend upgrading conda and Jupyter Lab to the latest version by running the following from within Jupyter Lab.
+
+```shell
+$ sudo -E conda upgrade conda -y
+$ sudo -E pip install -U jupyterlab
+```
 
 ### RAPIDS
 
@@ -79,7 +88,7 @@ Then copy the command, prefix it with `sudo -E`, add `cupy` to the end and run i
 
 ```
 $ sudo -E conda install -c nvidia -c rapidsai -c numba -c conda-forge -c pytorch -c defaults \
-cudf=0.8 cuml=0.8 cugraph=0.8 python=3.7 cudatoolkit=10.0 cupy
+cudf cuml cugraph python=3.7 cudatoolkit cupy
 ```
 
 ### Testing
