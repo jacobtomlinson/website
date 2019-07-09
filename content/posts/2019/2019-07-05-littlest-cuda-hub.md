@@ -18,7 +18,7 @@ thumbnail: jupyter
 
 ## Background
 
-In my first week working at Nvidia I have been spending some time with my previous colleagues at the Met Office to explore how the two organisations can collaborate. 
+In my first week working at NVIDIA I have been spending some time with my previous colleagues at the Met Office to explore how the two organisations can collaborate. 
 
 We decided to run a hackathon to explore how GPUs could be used to accelerate existing tools and workflows within the Met Office. The attendees were 10-15 people who were seasoned Python developers but had little experience with GPUs. There was some awareness and curiosity about CUDA and GPU acceleration but little hands on experience.
 
@@ -32,14 +32,14 @@ The Met Office folks kindly provided access to an AWS account so that we could b
 
 At this time tljh only supports ubuntu linux so first we will need to build a ubuntu server with GPUs available. As we had AWS access we will go through the excellent instructions from the [tljh docs](https://tljh.jupyter.org/en/latest/install/amazon.html) to set up on AWS with the following adjustments.
 
-- At step 6 we selected a `p3.8xlarge` instance as it comes with four Nvidia Tesla V100 GPUs. 
+- At step 6 we selected a `p3.8xlarge` instance as it comes with four NVIDIA Tesla V100 GPUs. 
 - At step 7 we skipped entering the user data (bootstrapping script) as we wanted to run this ourselves manually later.
 - At step 8 we selected 100GB to give ourselves reasonable space for data.
 - Stop after step 16. As we skipped step 7, steps 17-19 do not apply and we need to do some manual configuration before continuing.
 
 ### Drivers
 
-Next you need to ssh to the box with the ssh key you selected during setup. In order to make use of GPU enabled libraries we needed to install the NVidia CUDA drivers.
+Next you need to ssh to the box with the ssh key you selected during setup. In order to make use of GPU enabled libraries we needed to install the NVIDIA CUDA drivers.
 
 - Visit https://www.nvidia.co.uk/Download/index.aspx
   - Select the appropriate GPU for the instance (in this case Tesla V100)
