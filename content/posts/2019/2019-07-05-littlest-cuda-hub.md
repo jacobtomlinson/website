@@ -145,13 +145,18 @@ array([  3.,  12.], dtype=float32)
 
 ## Uses
 
-Now we have a great place to experiment with GPU accelerated Python libraries. Here are some links to posts about some of the things that took place at the Met Office hackathon:
-
-  - Using Cupy in Iris (TODO)
-  - Alistair (TODO)
-  - 
+Now we have a great place to experiment with GPU accelerated Python libraries. At the Met Office hackathon people were experimenting with things like replacing numpy with cupy in existing libraries and testing performance. As people write up their own blog posts about this I'll add a list of them here.
 
 ## Future enhancements
 
-- Rotating GPUs
-- GPU dashboard
+Having this machine was great for an event like a hackathon. It was quick to build, simple to administer and provided a familiar interface for users. We shut it down each night to save money and then blew the whole thing away when the event was done (once everyone had downloaded their notebooks of course). Next time I build one of these there are a few additional features I would like to explore.
+
+### Rotating GPUs
+
+We had four GPUs shared between 10-15 people. As everyone was a beginner and wouldn't actually be doing that much intensive calculation with them this was fine, however by default their python environments would be using GPU 0 for single GPU tasks which means we wouldn't be making good use of the other three GPUs without additional configuration.
+
+It is possible to [change your GPU order](https://devblogs.nvidia.com/cuda-pro-tip-control-gpu-visibility-cuda_visible_devices/) with the environment variable `CUDA_VISIBLE_DEVICES`. In future deployments we could get JupyterHub to set this variable for each user and randomise the order.
+
+### GPU dashboard
+
+To give new users a better understanding of what is going on it would be great to give them a dashboard showing what the GPUs are doing. There is currently a [PR for a Jupyter Lab extention](https://github.com/ian-r-rose/jupyterlab-bokeh-server/pull/6) which would show useful metrics right within Jupyter Lab. Once this is available I wouldn't hesitate to install it too.
