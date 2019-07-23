@@ -2,7 +2,6 @@
 title: "Setting up GPU Data Science environments for hackathons"
 subtitle: "AKA Littlest Cuda Hub"
 date: 2019-07-05T00:00:00+00:00
-draft: true
 author: "Jacob Tomlinson"
 categories:
   - blog
@@ -145,7 +144,7 @@ array([  3.,  12.], dtype=float32)
 
 ## Uses
 
-Now we have a great place to experiment with GPU accelerated Python libraries. At the Met Office hackathon people were experimenting with things like replacing numpy with cupy in existing libraries and testing performance. As people write up their own blog posts about this I'll add a list of them here.
+Now we have a great place to experiment with GPU accelerated Python libraries. At the Met Office hackathon people were experimenting with things like [replacing numpy with cupy in existing libraries](https://medium.com/informatics-lab/accelerating-iris-with-nvidia-gpus-6a5a44ff047e).
 
 ## Future enhancements
 
