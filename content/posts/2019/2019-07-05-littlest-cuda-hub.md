@@ -1,6 +1,6 @@
 ---
 title: "Setting up GPU Data Science environments for hackathons"
-subtitle: "AKA Littlest Cuda Hub"
+subtitle: "AKA Littlest CUDA Hub"
 date: 2019-07-05T00:00:00+00:00
 author: "Jacob Tomlinson"
 categories:
@@ -17,11 +17,11 @@ thumbnail: jupyter
 
 ## Background
 
-In my first week working at NVIDIA I have been spending some time with my previous colleagues at the Met Office to explore how the two organisations can collaborate. 
+In my first week working at NVIDIA I have been spending some time with my previous colleagues at the Met Office to explore how the two organizations can collaborate. 
 
 We decided to run a hackathon to explore how GPUs could be used to accelerate existing tools and workflows within the Met Office. The attendees were 10-15 people who were seasoned Python developers but had little experience with GPUs. There was some awareness and curiosity about CUDA and GPU acceleration but little hands on experience.
 
-To begin trying things out we needed a collaborative environment with access to GPUs. Our group was familiar with Jupyter Notebooks and we felt that asking people to SSH into a server would add unnecessary complication. There is a project called the [Littlest JupyterHub](https://tljh.jupyter.org/en/latest/) (tljh) which not only provides a stright forward way to install and manage Jupyter Hub on a single server but also has great documentation. However as we wanted to add GPU support we had to deviate from the docs a little. This post encapsulates the additional steps we took. 
+To begin trying things out we needed a collaborative environment with access to GPUs. Our group was familiar with Jupyter Notebooks and we felt that asking people to SSH into a server would add unnecessary complication. There is a project called the [Littlest JupyterHub](https://tljh.jupyter.org/en/latest/) (tljh) which not only provides a straight forward way to install and manage Jupyter Hub on a single server but also has great documentation. However as we wanted to add GPU support we had to deviate from the docs a little. This post encapsulates the additional steps we took. 
 
 ## Setup
 
@@ -154,7 +154,7 @@ Having this machine was great for an event like a hackathon. It was quick to bui
 
 We had four GPUs shared between 10-15 people. As everyone was a beginner and wouldn't actually be doing that much intensive calculation with them this was fine, however by default their python environments would be using GPU 0 for single GPU tasks which means we wouldn't be making good use of the other three GPUs without additional configuration.
 
-It is possible to [change your GPU order](https://devblogs.nvidia.com/cuda-pro-tip-control-gpu-visibility-cuda_visible_devices/) with the environment variable `CUDA_VISIBLE_DEVICES`. In future deployments we could get JupyterHub to set this variable for each user and randomise the order.
+It is possible to [change your GPU order](https://devblogs.nvidia.com/cuda-pro-tip-control-gpu-visibility-cuda_visible_devices/) with the environment variable `CUDA_VISIBLE_DEVICES`. In future deployments we could get JupyterHub to set this variable for each user and randomize the order.
 
 ### GPU dashboard
 
