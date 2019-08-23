@@ -24,3 +24,5 @@ Temporary Items
 # Hugo Specific
 public/
 _gen/
+
+.vscode/
