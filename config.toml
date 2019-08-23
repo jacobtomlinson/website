@@ -13,7 +13,7 @@ googleAnalytics = "UA-20365477-2"
     SiteSourceURL = "https://github.com/jacobtomlinson/jacobtomlinson.github.io"
 
     footer_left = "Made with <i class=\"fa fa-heart\"></i> using [Hugo](https://gohugo.io/)</a>"
-    footer_right = "<i class=\"fa fa-code\"></i> on [Github](https://github.com/jacobtomlinson/jacobtomlinson.github.io) &nbsp;<i class=\"fa fa-github-alt\"></i>"
+    footer_right = "<i class=\"fa fa-code\"></i> on [Github](https://github.com/jacobtomlinson/jacobtomlinson.github.io) &nbsp;<i class=\"fab fa-github-alt\"></i>"
 
 [permalinks]
     posts = "/:section/:year/:title/"
