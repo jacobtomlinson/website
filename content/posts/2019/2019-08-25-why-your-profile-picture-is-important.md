@@ -16,9 +16,10 @@ For the last couple of months I've been getting used to working remotely. I've w
 
 Currently my primary means of working with my colleagues is either via email (Outlook), Slack or GitHub and it is notoriously difficult to convey emotion and emphasis in a text only communication method. When we speak to someone face to face there are a whole bunch of physical queues that we do with our body language, facial expressions and tone of voice which add context and meaning to the words we are saying.
 
-Since switching to a text only medium I've noticed myself picking up these same social queues from the person's profile picture. It is the only other thing to focus on while reading the words they've written. I've noticed this particularly strongly with people that I haven't spoken to in real life or by video call. Their profile picture is the only thing I have to frame who they are, their personality and their tone. When working in open source you speak to new people every day, so while you will build up a mental image of a direct colleague via video chats and occasional in person meetings, you are always going to be speaking to new people too.
+Since switching to a text only medium I've noticed myself picking up these same social queues from profile pictures of the folks I'm speaking to. It is the only other thing to focus on while reading the words they've written. I've noticed this particularly strongly with people that I haven't spoken to in real life or by video call. Their profile picture is the only thing I have to frame who they are, their personality and their tone. When working in open source you speak to new people every day, so while you will build up a mental image of a direct colleague via video chats and occasional in person meetings, you are always going to be speaking to new people and experiencing this.
 
-Therefore if a person's picture is friendly and welcoming then everything you say will be taken with a positive spin. If it is cold and professional then their words feel more critical. I'm by no means a body language expert but I wanted to break down what I think are some good guidelines for creating your profile picture in order to make communication easier, especially with people you haven't met yet.
+Therefore if a person's picture is friendly and welcoming then everything they say will be taken with a subtle positive spin. If it is cold and professional then their words may feel more critical. I'm by no means a body language expert but I wanted to break down what I think are some good guidelines for creating your profile picture in order to make communication easier, especially with people you haven't met yet.
+
 
 ## Have a profile picture
 
@@ -26,13 +27,13 @@ It may sound obvious in a post about profile pictures but it is really helpful t
 
 <img src="/images/1564412117661.png" width="50%" />
 
-I have no idea at a glance who has replied to this slack thread because they are using the default Slack profile pictures. It's great that Slack provides unique profile pictures to everyone by default but they are not THAT unique, they all seem to blend together in my mind. Having a distinctive picture helps others identify you at a glance.
+I have no idea at a glance who has replied to this Slack thread because they are using the default Slack profile pictures. It's great that Slack provides unique profile pictures to everyone by default but they are not THAT unique, they all seem to blend together in my mind. Having a distinctive picture helps others identify you at a glance.
 
 
 ## Use a photo of yourself
 
 Choosing a picture from some pop culture reference can create a unique avatar which people can use to identify you, and it also communicates your interests. However it doesn't communicate who you are or what you look like.
-It's great that you love [xkcd](https://xkcd.com/) and I'm sure [cueball](https://www.explainxkcd.com/wiki/index.php/Cueball) sitting at a computer sums up how you view yourself but it doesn't help anyone's mental picture of you.
+It's great that you love [xkcd](https://xkcd.com/) and I'm sure [cueball](https://www.explainxkcd.com/wiki/index.php/Cueball) sitting at a computer sums up how you view yourself, but it doesn't help anyone's mental picture of you.
 
 <img src="/images/1564481273507.png" width="50%" />
 
@@ -53,6 +54,7 @@ Try using a photo like this with open body language and a friendly facial expres
 
 <img src="/images/1564576853434.png" width="50%" />
 
+
 ## Frame your head and shoulders
 
 Your profile picture is going to be viewed at many different sizes, and most likely it will be very small the first time someone sees it. So you might want to focus on your face to keep it clear and visible, which helps avoid any body language issues too! Frame just your head and shoulders in the shot because you are going to lose a lot of detail as things are shrunk down.
@@ -63,15 +65,17 @@ Compare the two following images at different sizes. The full head and torso sho
 
 <img src="/images/1564486576183.png" width="100%" />
 
+
 ## Keep your face uncovered
 
 Obscuring your face can give the same impression as a negative facial expression. Covering your mouth is a common gesture that people do when they are lying or being deceitful.
 
 <img src="/images/1564577787267.png" width="50%" />
 
-If you really must let people know that you are a coffee fanatic in your profile picture make sure you're holding your mug out of the way.
+If you want to let people know that you are a coffee fanatic in your profile picture try holding your mug out of the way.
 
 <img src="/images/1564577990437.png" width="50%" />
+
 
 ## Face the camera
 
@@ -83,27 +87,30 @@ When you talk to someone in real life it is polite to face them and give them ey
 
 <img src="/images/1564674220532.png" width="50%" />
 
+
 ## Be the only person in the photo
 
 Your profile picture is there to give someone an impression of who you are. Having multiple people in the photo will just lead to confusion. Even if it is obvious which one is you (perhaps because of age, gender, etc). It still adds a mental overhead to filter out the other person.
 
 <img src="/images/1564674540191.png" width="50%" />
 
-If there is a picture of you with someone else that you particularly like then be sure to crop out enough of them that it's clear that it's you.
+If there is a picture of you with someone else that you particularly like then be sure to crop out enough of them to leave just you.
 
 <img src="/images/1564674929230.png" width="50%" />
 
+
 ## Keep the photo natural and in full colour
 
-Using a filter on your profile photo will decrease how well it represents you. If you're going to edit your photo be sure to use effects which fix lighting and contrast to make it look more realistic. Save Clarendon or Juno for Instagram.
+Using a filter on your profile photo is common on personal social media, especially on Instagram. By association this gives these pictures more of a social feel than a professional one. If you're going to edit your photo I suggest you use effects which fix lighting and contrast to make it look more realistic rather than artistic.
 
-In this example the left image here is going to provide a better impression of you in a professional setting than the right image.
+In this example the left image here is going to feel more professional and the right image is going to feel more personal.
 
 <img src="/images/1564577566695.png" width="100%" />
 
+
 ## Use a high contrast photo
 
-You are the only thing that matters in the photo. To help view your profile picture at smaller sizes you want to make sure there is a high contrast between you and the background. You can techniques including lighting, focus and plan background to make sure you stand out.
+You are the only thing that matters in the photo. To help view your profile picture at smaller sizes you want to make sure there is a high contrast between you and the background. You can use techniques including lighting, focus and plain backgrounds to make sure you stand out.
 
 <img src="/images/1566566957096.png" width="50%" />
 
@@ -111,22 +118,25 @@ The busy, green, in-focus background above makes it harder for your eyes to pick
 
 <img src="/images/1566567102964.png" width="50%" />
 
+
 ## Use the same picture everywhere
 
-Be consistent with your profile picture. It is the way people will identify you between platforms. If you use one picture in Slack and a different one on GitHub people will have to put in some effort to identify you when they switch contexts.
+Be consistent with your profile picture. It is the way people will identify you between platforms. If you use one picture in Slack and a different one on GitHub people will have to put in some effort to identify you when they switch contexts. It doesn't sound like much but the small discontinuity may disrupt someone's mental image of you.
 
 That being said different pictures may be better suited to different platforms. You may want a professional headshot on your LinkedIn and a fun photo from a family occasion on your Facebook profile. My advice here is that you should be consistent within your various communities. If you use Twitter, GitHub and Slack regularly for work then it is helpful to have the same picture across them.
 
-You could also use this to create a distinction between your work and home personas. You may want one picture for work and then a totally different one on personal channels like Facebook and Instagram.
+You could also use this to create a distinction between your work and home personas with a different image for each.
+
 
 ## Don't change your picture often
 
-To continue the point above, people will learn to recognise you by your profile picture across various platforms. If you change that image too regularly people will have to learn to recognise you again at a glance every time.
+To continue the point above, people will learn to recognise you by your profile picture across various platforms. If you change that image too regularly people will have to re-learn to recognise at a glance each time.
 
 Find a picture that you like, that presents you in the way you want people to see you and then stick with it. As long as that picture still accurately represents you then you're fine! If you've cut your hair, grown a beard or gone grey it might be time for an update.
 
+
 # Conclusion
 
-These general tips are intended to help you choose a profile picture that will hopefully ease communication. Breaking some of these rules isn't going to hurt your work relationships so don't worry if your current picture doesn't follow all of these rules. It is just something to bear in mind next time you update your picture.
+These general tips are intended to help you choose a profile picture that will hopefully ease communication. Breaking some of these rules isn't going to hurt your work relationships so don't worry if your current picture doesn't follow all of them. It is just something to bear in mind next time you update your picture.
 
 Lastly a quick thank you to all the creators who made their photos free to use on [unsplash](https://unsplash.com/). It really helped me put this article together with examples.
