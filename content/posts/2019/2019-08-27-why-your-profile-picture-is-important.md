@@ -1,5 +1,6 @@
 ---
 title: "Why your profile picture is important"
+description: "Choosing a good profile picture will make collaborating with others easier, especially if you haven't met them yet. Here are some tips to help you pick a good one."
 date: 2019-08-27T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
@@ -12,6 +13,8 @@ tags:
 thumbnail: communication
 ---
 
+Choosing a good profile picture will make collaborating with others easier, especially if you haven't met them yet. Here are some tips to help you pick a good one.
+
 For the last couple of months I've been getting used to working remotely. I've worked on many open source projects in the past with remote collaborators, but this is the first time that I've been 100% remote from the people I'm working with every day. It has been going great and I'm really enjoying it, but it has really shown me the importance of a good profile picture.
 
 Currently my primary means of working with my colleagues is either via email (Outlook), Slack or GitHub and it is notoriously difficult to convey emotion and emphasis in a text only communication method. When we speak to someone face to face there are a whole bunch of physical queues that we do with our body language, facial expressions and tone of voice which add context and meaning to the words we are saying.
@@ -20,6 +23,16 @@ Since switching to a text only medium I've noticed myself picking up these same 
 
 Therefore if a person's picture is friendly and welcoming then everything they say will be taken with a subtle positive spin. If it is cold and professional then their words may feel more critical. I'm by no means a body language expert but I wanted to break down what I think are some good guidelines for creating your profile picture in order to make communication easier, especially with people you haven't met yet.
 
+
+## Start with me
+
+This is my current profile picture.
+
+<img src="https://i.imgur.com/0byOhwQ.jpg" width="50%" />
+
+I've used this picture for around three years across most of my social media and communication channels. I didn't put much thought into choosing it, a photographer was taking pictures at work and when I saw this one I was pleased I hadn't blinked at the wrong time and the picture was high quality. That was about all of the critical thinking that went into it. Once we've gone through my suggestions for choosing a good picture let's review this to see how I did.
+
+# Tips
 
 ## Have a profile picture
 
@@ -138,5 +151,7 @@ Find a picture that you like, that presents you in the way you want people to se
 # Conclusion
 
 These general tips are intended to help you choose a profile picture that will hopefully ease communication. Breaking some of these rules isn't going to hurt your work relationships so don't worry if your current picture doesn't follow all of them. It is just something to bear in mind next time you update your picture.
+
+Thinking back to my current profile picture I think I actually did a reasonable job, despite not putting much thought to it. I'm smiling, facing the camera and I'm consistent with it (mostly out of laziness). I think I'll probably stick with it for a while, at least until I'm a bit more grey and have a few more wrinkles.
 
 Lastly a quick thank you to all the creators who made their photos free to use on [unsplash](https://unsplash.com/). It really helped me put this article together with examples.
