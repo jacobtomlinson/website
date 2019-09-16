@@ -30,4 +30,8 @@ The third type of fun is not fun at all. You do not enjoy doing it and you do no
 
 ![People playing rugby](https://i.imgur.com/IOk3O7Ul.png)
 
+## Balance
+
+I feel like to really enjoy life you need to try and get a good balance of these types of fun. Type I fun is like sugar, its great and gives you a rush but gets sickly quite quick and the enjoyment doesn't last long. Type II is more like your carbs, it will keep you content for longer if you put in the effort. Type III is like that time you tried to make your own pasta from scratch and it turned out as a sloppy inedible mess, it wasn't satisfying at all but it makes you appreciate every time you buy dried pasta.
+
 _As always thanks to [Unsplash](https://unsplash.com) for the photos._
