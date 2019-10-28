@@ -15,7 +15,7 @@ thumbnail: kubernetes
 
 [Helm](https://helm.sh) has become a pervasive tool in the [Kubernetes](https://kubernetes.io/) community for packaging, managing, upgrading and distributing applications. It uses a packaging format called [charts](https://helm.sh/docs/developing_charts/#charts) which are a collection of templates that describe Kubernetes resources and can be configured by the user.
 
-Helm supports repositories for charts, which are HTTP web servers that serve an `index.yaml` manifest file describing the available charts. Along with the chart payloads themselves, which are tar gzip files containing the resource template files and metadata. The manifest contains additional information about each chart including versions of both the chart and the application, urls for the project and source code, human readable descriptions and more.
+Helm supports repositories for charts, which are HTTP web servers that serve an `index.yaml` manifest file describing the available charts, along with the chart payloads themselves. These are tar gzip files containing the resource template files and metadata. The manifest contains additional information about each chart including versions of both the chart and the application, urls for the project and source code, human readable descriptions and more.
 
 The Kubernetes and Helm communities maintain a [central charts repository](https://github.com/helm/charts) in a single monorepo. However [there has been a shift](https://helm.sh/blog/intro-helm-hub/) recently towards federated repositories that are owned and managed by communities and a central search index called [Helm Hub](https://hub.helm.sh/). This allows Kubernetes users to still have a central place to look for charts, but reduces the maintenance burden on the Helm maintainers.
 
@@ -83,7 +83,7 @@ Before we deploy our chart to our repository and share it with the world we may 
 We can test our chart locally like so:
 
 ```
-helm lint example
+$ helm lint example
 ==> Linting example
 [INFO] Chart.yaml: icon is recommended
 
@@ -105,11 +105,11 @@ icon: https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_
 
 If we lint again now we should see the warning has gone away.
 
-Next we should automate our linting with a continuous integration service. In this guide we will use Travis CI, but there are many good CI services to choose from. To get started with Travis you need to log in with your GitHub account and allow permissions for Travis to see your repositories. You then need to select which repositories to build and you should enable the new repo we just created. Nothing will actually happen at this point as we need to add some config for Travis.
+Next we should automate our linting with a continuous integration service. In this guide we will use [Travis CI](https://travis-ci.com), but there are many good CI services to choose from. To get started with Travis you need to log in with your GitHub account and allow permissions for Travis to see your repositories. You then need to select which repositories to build and you should enable the new repo we just created. Nothing will actually happen at this point as we need to add some config for Travis.
 
 Full instructions for getting start on Travis can be found [here](https://docs.travis-ci.com/user/tutorial/).
 
-To get Travis to automatically lint our charts we need to configure Travis to install helm and run helm lint on our chart. This will be triggered automatically when we push to the master branch or raise Pull Requests on GitHub.
+To get Travis to automatically lint our charts we need to configure Travis to install helm and run helm lint on our chart. This will be triggered automatically when we push to the master branch or raise Pull Requests on GitHub. We do this by creating a `.travis.yml` file in the root of our project.
 
 ```yaml
 # .travis.yml
@@ -135,7 +135,9 @@ If we then commit and push our chart along with our Travis config and check out 
 
 ## Setting up the static site on GitHub Pages
 
-Now that we have our chart and we know it builds successfully we need somewhere to package it up and serve it from. To do this we are going to create a new orphan branch in our repository and serve a GitHub pages site from this branch. GitHub Pages allows you to serve a website directly from a repository on GitHub, which is perfect for our use case here. However we don't want to be publishing the source of our charts, but rather we want to bundle our chart up into payloads and generate an `index.yaml` file describing the charts available in the repository. This is why we will be creating an orphan branch, which is effectively a blank branch that is part of our repository.
+Now that we have our chart and we know it builds successfully we need somewhere to package it up and serve it from. To do this we are going to create a new orphan branch in our repository and serve a GitHub pages site from this branch.
+
+GitHub Pages allows you to serve a website directly from a repository on GitHub, which is perfect for our use case here. However we don't want to be publishing the source of our charts, but rather we want to bundle our chart up into payloads and generate an `index.yaml` file describing the charts available in the repository. This is why we will be creating an orphan branch, which is effectively a blank branch that is part of our repository.
 
 ```
 git checkout --orphan gh-pages
@@ -199,7 +201,7 @@ Install Chartpress:
 pip install chartpress
 ```
 
-Create our Chartpress config:
+Our chartpress config will live in a file called `chartpress.yaml`, so let's create that in the root of our project.
 
 ```yaml
 # chartpress.yaml
@@ -238,7 +240,7 @@ git push
 
 You will also notice that Chartpress has left the versioned copy of our chart in the repository. We can clean that up with `git clean -xffd`.
 
-## Using our repository
+## Using our GitHub Pages site for our chart repository
 
 At this point we have successfully published our chart to our repository. We can test this locally with `helm` by adding our repository and updating our local cache.
 
@@ -272,11 +274,11 @@ We could stop here if we wanted. We have a working Helm chart repo and some simp
 
 ## Adding a human readable front to the repository
 
-Our GitHub Pages site contains our test `index.md` file and our `index.yaml` manifest and `example-0.1.0.tgz` payload. This is enough for Helm to use the repository but if we navigate to the repo url in our browser we just see our test page from before. This isn't super useful for humans.
+Our GitHub Pages site contains our test `index.md` file and our auto generated `index.yaml` manifest and `example-0.1.0.tgz` payload. This is enough for Helm to use the repository but if we navigate to the repo url in our browser we just see our test page from before. This isn't super useful for humans.
 
 What we could do to improve this is to add a simple static website to give users some information about the charts that are available in the repository.
 
-By default GitHub Pages uses Jekyll to build the contents of the `gh-pages` site into the static website that you see served at your URL. We can add our own configuration and additional files which Jekyll can use to build a more useful website.
+By default GitHub Pages uses [Jekyll](https://jekyllrb.com/) to build the contents of the `gh-pages` site into the static website that you see served at your URL. We can add our own configuration and additional files which Jekyll can use to build a more useful website.
 
 Let's checkout our `gh-pages` branch and pull down the upstream changes made by Chartpress.
 
@@ -295,7 +297,7 @@ gem install bundler jekyll
 
 _Hint: As I do not regularly write Ruby I tend to use the system installed Ruby distribution that comes with OS X and seems to regularly break with every OS update. Therefore my preferred way of testing local Jekyll sites is to use [Bret Fisher's Jekyll Docker image](https://github.com/BretFisher/jekyll-serve) to ensure a consistent Ruby environment. I even [have an alias](https://github.com/jacobtomlinson/dotfiles/blob/master/.zshrc.d/jekyll.zsh) set up to run the docker image when I use the `jekyll` command._
 
-Now we can create a `Gemfile` which contains Ruby dependency information for GitHub Pages to use. This just allows us to be specific about the versions of Jekyll and specific plugins that we may want.
+Now we can create a `Gemfile` which contains Ruby dependency information for GitHub Pages to use. This just allows us to be specific about the versions of Jekyll and specific plugins that we may want. Pinning things here should help avoid breakages in the future as it's likely we wont put much effort into maintaining this Jekyll code.
 
 ```gemfile
 # Gemfile
@@ -344,7 +346,7 @@ cd -
 
 Now that we have everything set up for Jekyll to build we need to update the pages that we want built. We want to replace our `index.md` file with a more complex one which loops over the charts in our `index.yaml` file and then over the releases within each chart laying them out in a useful way for the user to see.
 
-Here is an example `index.md` file I created for the Dask helm chart repo. It should be generic enough to be useful in many other Helm chart repos but you are welcome to modify it and add your own information. For now let's copy this into your `index.md` file.
+Here is an example `index.md` file I created for the [Dask helm chart repo](https://github.com/dask/helm-chart). It should be generic enough to be useful in many other Helm chart repos but you are welcome to modify it and add your own information. For now let's copy this into your `index.md` file.
 
     ---
     layout: default
@@ -407,7 +409,7 @@ We can test this locally by running `jekyll serve` and navigating to http://loca
 
 We can see here that our install instructions have been filled in with our information. _Note that it shows the URL as 0.0.0.0:4000 because we are testing locally, this will show the correct URL when built by GitHub pages._
 
-We can then see our example chart (even with the Kubernetes icon we added to the `Chart.yaml` file earlier). Then we have an example install command to install the chart and the table containing our 0.1.0 release.
+We can then see our example chart (it even has the Kubernetes icon we added to the `Chart.yaml` file earlier). Then we have an example install command to install the chart and the table containing our `0.1.0` release.
 
 This view is far more useful to a human who is looking to install charts from our repo than trying to read a YAML file.
 
@@ -475,8 +477,7 @@ We also need to update our `.travis.yml` file to install Chartpress after it ins
 
 ```yamls
 install:
-  - curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
-  - helm init --client-only
+  # ... other install commands
   - pip install chartpress
 ```
 
@@ -492,11 +493,16 @@ deploy:
       tags: true
 ```
 
-We also need to tell Chartpress to use our deploy keys. We can do this by adding an `env` section to our `.travis.yml` file and setting the `GIT_SSH_COMMAND` variable. We also need to change the permissions on our key as ssh will refuse to use it unless it has very conservative permissions.
+We also need to tell Chartpress to use our deploy keys. We can do this by adding an `env` section to our `.travis.yml` file and setting the `GIT_SSH_COMMAND` variable.
 
 ```
 env:
   - GIT_SSH_COMMAND="ssh -i ${PWD}/deploy_key"
+```
+
+Finally we need to change the permissions on our key as ssh will refuse to use it unless it has very conservative permissions.
+
+```
 before_install:
   # ... Autogenerated travis command...
   - chmod 400 deploy_key
@@ -528,7 +534,6 @@ To do this you need to raise a PR against the [Helm Hub repo](https://github.com
 Add your repo to `config/repo-values.yaml`:
 
 ```yaml
-# ...
 sync:
   repos:
     # ... other repos
