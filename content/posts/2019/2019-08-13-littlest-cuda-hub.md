@@ -20,6 +20,8 @@ thumbnail: jupyter
 
 In my first week working at NVIDIA, I have been spending some time with my previous colleagues at the [Met Office](https://www.metoffice.gov.uk/) to explore how the two organizations can collaborate.
 
+![Hackathon in progress](https://miro.medium.com/max/4008/1*8IsIY3x6_fZiTBPS5Y5R8w.png)
+
 We decided to run a hackathon to explore how GPUs could be used to accelerate existing tools and workflows within the Met Office. The attendees were 10-15 people who were seasoned Python developers but had little experience with GPUs. There was some awareness and curiosity about [CUDA](https://developer.nvidia.com/cuda-zone) and GPU acceleration but little hands on experience.
 
 To begin trying things out we needed a collaborative environment with access to GPUs. Our group was familiar with Jupyter Notebooks and we felt that asking people to SSH into a server would add unnecessary complication. There is a project called the [Littlest JupyterHub](https://tljh.jupyter.org/en/latest/) (tljh) which not only provides a straight forward way to install and manage Jupyter Hub on a single server but also has great documentation. However, as we wanted to add GPU support, we had to deviate from the docs a little. This post encapsulates the additional steps we took.
