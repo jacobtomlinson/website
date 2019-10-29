@@ -563,12 +563,14 @@ Once you've done this and your PR has been merged you should see your charts lis
 
 This has turned into a bit of a monster guide. We have covered:
 
-- Creating an example Helm chart on GitHub
-- Linting your chart automatically with Travis CI
-- Creating a GitHub Pages site for your git repo
-- Building a Helm repo for your chart and publishing it with Chartpress
-- Adding a human readable frontend to your chart repo with Jekyll
-- Automating the deployment of your chart with Travis CI
-- Adding your helm chart repo to Helm Hub
+- Creating an example [Helm chart](https://helm.sh/docs/developing_charts/) on [GitHub](https://pages.github.com/).
+- [Linting your chart](https://helm.sh/docs/helm/#helm-lint) automatically with [Travis CI](https://travis-ci.com/).
+- Creating a [GitHub Pages](https://pages.github.com/) site for your git repo.
+- Building a [Helm chart repository](https://helm.sh/docs/chart_repository/) for your chart and publishing it with [Chartpress](https://github.com/jupyterhub/chartpress).
+- Adding a human readable frontend to your chart repo with [Jekyll](https://jekyllrb.com/).
+- Automating the deployment of your chart with Travis CI.
+- Adding your helm chart repo to [Helm Hub](https://hub.helm.sh/).
 
-That's a lot of stuff!
+That's a lot of stuff so thanks for bearing with me.
+
+You can find all the code and configuration from this post in the [example GitHub repository here](https://github.com/jacobtomlinson/helm-repo-example).
