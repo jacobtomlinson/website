@@ -10,7 +10,7 @@ tags:
 thumbnail: vmware
 title: Getting started with VMwares ESXi/vSphere API in Python
 aliases:
-  - /2016/06/22/using-vmware-esxi-vsphere-python-api/
+  - /vmware/2016/06/22/using-vmware-esxi-vsphere-python-api/
 ---
 
 
