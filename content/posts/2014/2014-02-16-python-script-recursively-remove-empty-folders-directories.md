@@ -83,5 +83,5 @@ if __name__ == "__main__":
   else:
     removeRoot = False
 
-  removeEmptyFolders(sys.argv[1], removeRoot)</code>
+  removeEmptyFolders(sys.argv[1], removeRoot)
 ```
