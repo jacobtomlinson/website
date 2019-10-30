@@ -9,6 +9,7 @@ tags:
   - terminal
   - theme
 title: 'Mac OS X Terminal Theme: Piperita'
+thumbnail: command-line
 aliases:
   - /2013/10/17/mac-os-x-terminal-theme-piperita/
 ---

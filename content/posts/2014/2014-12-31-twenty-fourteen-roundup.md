@@ -7,6 +7,7 @@ tags:
   - 2014
   - roundup
 title: Twenty Fourteen Roundup
+thumbnail: journal
 aliases:
   - /2014/12/31/twenty-fourteen-roundup/
 ---

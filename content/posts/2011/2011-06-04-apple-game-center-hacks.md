@@ -14,6 +14,7 @@ tags:
   - iPad
   - iPhone
 title: Apple game center hacks
+thumbnail: apple
 aliases:
   - /2011/06/04/apple-game-center-hacks/
 ---

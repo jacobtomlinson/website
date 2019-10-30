@@ -10,7 +10,7 @@ tags:
   - work
   - profile
   - remote working
-thumbnail: communication
+thumbnail: journal
 ---
 
 Choosing a good profile picture will make collaborating with others easier, especially if you haven't met them yet. Here are some tips to help you pick a good one.

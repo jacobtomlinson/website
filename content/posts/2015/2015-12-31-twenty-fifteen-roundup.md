@@ -7,6 +7,7 @@ tags:
   - 2015
   - roundup
 title: Twenty Fifteen Roundup
+thumbnail: journal
 aliases:
   - /2015/12/31/twenty-fifteen-roundup/
 ---

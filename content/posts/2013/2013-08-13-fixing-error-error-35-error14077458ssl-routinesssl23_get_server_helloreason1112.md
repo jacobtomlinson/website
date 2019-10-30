@@ -17,7 +17,7 @@ tags:
   - sslv3
   - tlsv1
 thumbnail: command-line
-title: 'Fixing &#8220;ERROR: Error 35: error:14077458:SSL routines:SSL23_GET_SERVER_HELLO: reason(1112)&#8221;'
+title: 'Fixing "ERROR: Error 35: error:14077458:SSL routines:SSL23_GET_SERVER_HELLO: reason(1112)"'
 twitter_failure_code:
   - 410
 twitter_failure_reason:

@@ -8,7 +8,7 @@ tags:
   - flightradar24
   - fr24
   - raspberry pi
-thumbnail: plane
+thumbnail: raspberry-pi
 title: Updating flightradar24 with a Raspberry Pi
 aliases:
   - /2015/05/29/updating-flight-radar-24-with-a-raspberry-pi/

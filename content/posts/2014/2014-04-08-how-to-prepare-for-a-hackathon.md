@@ -8,6 +8,7 @@ tags:
   - hackathon
   - space apps
   - tools
+thumbnail: journal
 title: How to prepare for a hackathon
 aliases:
   - /2014/04/08/how-to-prepare-for-a-hackathon/
@@ -19,8 +20,6 @@ So this weekend I&#8217;ll be taking part in the [2014 NASA Space Apps Challenge
 
 ![Software Updates](http://i.imgur.com/acQstYq.png)
 There&#8217;s nothing worse than sitting down with your newly formed team ready to write some code, switching your laptop on to be greeted with it installing updates. Not only do you look like a lemon but it wastes your valuable coding time.
-
-###
 
 
 ### 2. Install the right software

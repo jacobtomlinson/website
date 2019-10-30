@@ -9,7 +9,7 @@ tags:
   - quick tips
   - em
   - rem
-thumbnail: code
+thumbnail: css
 title: Quick Tip - em vs rem
 aliases:
   - /2015/09/04/quick-tip-em-vs-rem/
