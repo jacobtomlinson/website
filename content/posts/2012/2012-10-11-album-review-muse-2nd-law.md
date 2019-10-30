@@ -8,7 +8,7 @@ tags:
   - Music
   - Reviews
 thumbnail: cd
-title: 'Album Review: Muse &#8211; 2nd Law'
+title: 'Album Review: Muse 2nd Law'
 aliases:
   - /2012/10/11/album-review-muse-2nd-law/
 ---

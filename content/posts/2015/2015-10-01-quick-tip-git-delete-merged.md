@@ -9,7 +9,7 @@ tags:
   - quick tips
   - git
   - delete merged branches
-thumbnail: code-fork
+thumbnail: git
 title: Quick Tip - git delete merged branches
 aliases:
   - /2015/10/01/quick-tip-git-delete-merged/

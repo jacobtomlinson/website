@@ -8,6 +8,7 @@ categories:
 tags:
   - life
   - advice
+thumbnail: journal
 ---
 
 According to [folks who enjoy outdoor activities](http://goeast.ems.com/three-types-of-fun/) there are three types of fun. I've been using this scale for a while to categorize my own enjoyment of things and wanted to share my version.

@@ -8,7 +8,7 @@ excerpt: Make your git logs easier to look at and track branches.
 tags:
   - git
   - log
-thumbnail: code-fork
+thumbnail: git
 title: Pretty git logs with `git lg`
 aliases:
   - /2016/01/18/pretty-git-logs-with-git-lg/

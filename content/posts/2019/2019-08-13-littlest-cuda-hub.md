@@ -13,7 +13,7 @@ tags:
   - jupyterhub
   - cuda
   - gpu
-thumbnail: jupyter
+thumbnail: gpu
 ---
 
 ## Background
