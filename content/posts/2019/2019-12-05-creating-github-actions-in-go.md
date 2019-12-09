@@ -13,6 +13,8 @@ tags:
 thumbnail: go
 ---
 
+_Note: This post is also [available in Python flavour](/posts/2019/creating-github-actions-in-python/)._
+
 [GitHub Actions](https://github.com/features/actions) provide a way to automate your software development workflows on GitHub. This includes traditional CI/CD tasks on all three major operating systems such as running test suites, building applications and publishing packages. But it also includes [automated greetings](https://github.com/actions/starter-workflows/blob/master/automation/greetings.yml) for new contributors, [labelling pull requests based on the files changed](https://github.com/actions/starter-workflows/blob/master/automation/label.yml), or even [creating cron jobs to perform scheduled tasks](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#onschedule).
 
 Also GitHub Actions is **free for open source projects** 🎉!
@@ -137,7 +139,7 @@ jobs:
         myInput: world
 ```
 
-In the above configuration the variable `INPUT_MYINPUT` would be created with the value `example input`. We can then grab this within our code.
+In the above configuration the variable `INPUT_MYINPUT` would be created with the value `world`. We can then grab this within our code.
 
 The next line of Go code is formatting this variable into an output string, nothing fancy here. This means our output string will now be `Hello world` in our little example workflow.
 
@@ -151,10 +153,10 @@ This article isn't intended to be a Go tutorial, so we won't go into the detail 
 
 Our application is going to take some inputs:
 
-- A regular expression of files to include in the replacement
-- A regular expression of files to exclude from the replacement
-- The string we want to replace
-- The replacement string
+- A regular expression of files to `include` in the replacement
+- A regular expression of files to `exclude` from the replacement
+- The string we want to `find` replace
+- The string we want to `replace` with
 
 We will then recursively list all of the files relative to our current working directory, check those files against our include/exclude lists, perform our replacement on the matching files and then write them back to disk.
 
@@ -273,9 +275,9 @@ runs:
   image: "Dockerfile"
 ```
 
-We start here by setting some metadata to describe the skill, what it does and who wrote it.
+We start here by setting some metadata to describe the Action, what it does and who wrote it.
 
-We then list our inputs and outputs, give them a description, set any default values and whether they are optional or not. For our find and replace skill we have given our `include` input a default value of `.*` so that it matches everything and marked it as not required so that user's can leave this default value if they wish. We've then set our `exclude` to be just `.git` as we don't really want to modify our hidden git repo state directory. We then marked our `find` and `replace` inputs as required as folks will have to set these values when they use the skill. Then we let GitHub Actions know to expect an output of `modifiedFiles` from our code.
+We then list our inputs and outputs, give them a description, set any default values and whether they are optional or not. For our find and replace Action we have given our `include` input a default value of `.*` so that it matches everything and marked it as not required so that user's can leave this default value if they wish. We've then set our `exclude` to be just `.git` as we don't really want to modify our hidden git repo state directory. We then marked our `find` and `replace` inputs as required as folks will have to set these values when they use the skill. Then we let GitHub Actions know to expect an output of `modifiedFiles` from our code.
 
 Lastly we tell GitHub how to run our Action. In this case we are using `docker` and we can either specify an image by name, or set it to `Dockerfile` which will cause GitHub Actions to build our image itself when running the Action.
 
@@ -355,7 +357,7 @@ There is an example in `.github/workflows/integration.yml` which we will modify 
 
 ```yaml
 name: Integration Test
-on: [push, pull_request]
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -406,9 +408,9 @@ Hooray our integration test has also passed. We can have a look at the outputs f
 
 Now that we have created our Action and verified that it works as expected we can publish it to the Marketplace so other folks can find it.
 
-Technically anyone could use our Action right now, we have already used it ourselves in our integration test. But the `master` branch is a moving target and folks don't want to hunt through GitHub for unpublished Actions.
+Technically anyone could use our Action right now, we have already used it ourselves in our integration test. But the `master` branch is a moving target and we want to make it a little easier for folks to find it.
 
-To resolve both of these issues we need to do a GitHub release. We can do this the usual way through the releases page, but GitHub has already detected that we have written an Action and has included a prompt to on our repo. So let's click "Draft a release" button on the "Publish this Action to Marketplace" dialog.
+To publish it we need to do a GitHub release. We can do this the usual way through the releases page, but GitHub may have already detected that we have written an Action and  included a prompt to on our repo. Click the "Draft a release" button on the "Publish this Action to Marketplace" dialog or head to the releases page and click it from there.
 
 ![Draft a release](https://i.imgur.com/P3b7Xl2.png)
 
@@ -422,7 +424,7 @@ GitHub has already picked up some information from our `action.yml` file includi
 
 We will leave ours out for now which will just use the defaults but you can go back to your `action.yml` and set yours however you like.
 
-You also need to choose which categories your Action belongs in. For our find and replace action I've gone for "Continuous Integration" and "Utilities".
+You also need to choose which categories your Action belongs in. For our find and replace Action I've gone for "Continuous Integration" and "Utilities".
 
 You also need to set a version tag. My preference is to use SemVer and start at `0.1.0`.
 
