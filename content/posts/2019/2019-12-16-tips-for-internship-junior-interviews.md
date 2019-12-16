@@ -85,7 +85,7 @@ This answer ticks a lot of boxes. You've demonstrated that you have the required
 
 A great way to demonstrate that you're passionate about something is when the interviewer gives you an opportunity to ask them questions. Experienced candidates will often use this section to ask general about the renumeration package, timescales, history of the team they are joining and fundamental questions about why the job is being created or filled. However when you're starting out it is normal to struggle to think of questions at this point. One way you can take advantage of this is to pick one of the criteria and ask a question like *"I especially enjoy doing X, how much of my time do you think I would be spending doing it?"*. This not only backs up the point that you are capable of X, but it starts a conversation about the day to day work of the job which often gets overlooked in interviews.
 
-## 4. Don't skip the small stuff
+## 5. Don't skip the small stuff
 
 When you're talking to senior staff of an established company it's easy to dismiss achievements you've made because they seem trivial in comparison to the job you're applying for. Remember that the interviewer knows they are hiring for an entry level role, they aren't going to expect you to have real world experience in that job, if you did you would be applying for a more senior job. So they are going to want to hear these small snippets of evidence because it will give them confidence that you can scale that up to the job you're applying for.
 
