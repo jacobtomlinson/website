@@ -15,6 +15,8 @@ Applying for internships and entry-level positions can be tricky. Interviewers w
 
 This week I helped conduct some interviews for a Marketing and Communications internship at [Tech Exeter](https://techexeter.uk/) and want to give some general advice to anyone who is applying for entry-level roles and how you can overcome these hurdles.
 
+![Photo of Dog being interviewed by Drew Hays on Unsplash](https://i.imgur.com/Dac6voJh.jpg)
+
 ## 1. Do your research
 
 You've applied for a job at a company, make sure you've read up on what the company does. They will ask you for sure.
