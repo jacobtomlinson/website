@@ -16,6 +16,8 @@ tags:
 thumbnail: gpu
 ---
 
+_Originally published on the [RAPIDS AI blog](https://medium.com/rapids-ai/setting-up-gpu-data-science-environments-for-hackathons-cdb52e7781a5) on August 13th, 2019._
+
 ## Background
 
 In my first week working at NVIDIA, I have been spending some time with my previous colleagues at the [Met Office](https://www.metoffice.gov.uk/) to explore how the two organizations can collaborate.
@@ -163,7 +165,3 @@ It is possible to [change your GPU order](https://devblogs.nvidia.com/cuda-pro-t
 ### GPU Dashboard
 
 To give new users a better understanding of what is going on it would be great to give them a dashboard showing what the GPUs are doing. There is currently a [PR for a Jupyter Lab extension](https://github.com/ian-r-rose/jupyterlab-bokeh-server/pull/6) which would show useful metrics right within Jupyter Lab. Once this is available I wouldn’t hesitate to install it too.
-
----
-
-_Originally published on the [RAPIDS AI blog](https://medium.com/rapids-ai/setting-up-gpu-data-science-environments-for-hackathons-cdb52e7781a5) August 13th, 2019._
