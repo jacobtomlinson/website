@@ -1,6 +1,6 @@
 ---
 title: "5 Tips to help you ace your internship and entry-level job interviews"
-date: 2019-12-13T00:00:00+00:00
+date: 2019-12-16T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 categories:
