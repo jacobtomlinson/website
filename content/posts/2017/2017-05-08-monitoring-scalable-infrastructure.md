@@ -8,9 +8,10 @@ tags:
 - infrastructure
 author: Jacob Tomlinson
 thumbnail: influxdata
+canonical: http://archived.informaticslab.co.uk/infrastructure/2017/05/08/monitoring-scalable-infrastructure.html
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/process/2017/05/08/jupyter-for-sysadmin-devops-cloudops-workflows.html) on May 8th, 2017._
+_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/infrastructure/2017/05/08/monitoring-scalable-infrastructure.html) on May 8th, 2017._
 
 ---
 
