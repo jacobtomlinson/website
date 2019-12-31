@@ -51,18 +51,11 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * Google Photos
  * Todoist
  * Google Keep
-
-## Software / SysAdmin Specific
-
- * [Docker](https://www.docker.com/)
- * [Kubernetes](http://kubernetes.io/)
- * [Amazon Web Services](https://aws.amazon.com/)
- * [Cloudflare](https://www.cloudflare.com/)
- * [Quay.io](https://quay.io/)
+ * Pocket
 
 ## Hardware
 
- * iPhone 6S 64GB Black (iOS 9)
+ * Google Pixel 4 (65
  * iPad 4th Gen 32GB Black (iOS 8)
  * Macbook Air 5,2; i5 3427U, 8GB, 128GB SSD (OS X 10.11 El Capitan)
  * Lenovo ThinkServer TS140 Xeon E3-1226 v3 3.3GHz, 16GB, 1TB HDD (ESXi 6.1)
@@ -78,8 +71,6 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [Assassins Creed: Black Flag](http://assassinscreed.ubi.com/en-gb/games/assassins-creed-black-flag.aspx)
  * [Poker Night 2](https://en.wikipedia.org/wiki/Poker_Night_2)
  * [Prison Architect](https://www.introversion.co.uk/prisonarchitect/)
-
-[last-year]: https://www.jacobtomlinson.co.uk/2014/12/31/twenty-fourteen-roundup/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTg0NjU2NV19
+eyJoaXN0b3J5IjpbLTE0ODE0NjQzODFdfQ==
 -->
