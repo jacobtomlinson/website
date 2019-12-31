@@ -47,13 +47,13 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [Pocket Casts](https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts&hl=en_GB)
  * [Plex](https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en_GB)
  * [Outlook](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_GB)
- * WhatsApp
- * Slack
- * Riot.im
- * Gitter
- * Viber
- * Boost (Reddit)
- * Chrome
+ * [WhatsApp](https://play.google.com/store/apps/details?id=com.whatsapp&hl=en_GB)
+ * [Slack](https://play.google.com/store/apps/details?id=com.Slack&hl=en_GB)
+ * [Riot.im](https://play.google.com/store/apps/details?id=im.vector.app&hl=en_GB)
+ * [Gitter](https://play.google.com/store/apps/details?id=im.gitter.gitter&hl=en_GB)
+ * [Viber](https://play.google.com/store/apps/details?id=com.viber.voip&hl=en_GB)
+ * [Boost (Reddit)](https://play.google.com/store/apps/details?id=com.rubenmayayo.reddit&hl=en_GB)
+ * [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en_GB)
  * Google Photos
  * Todoist
  * Google Keep
@@ -136,5 +136,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODM4NjE1MiwtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbMTkzMDM0MDIyMywtMzEwMTYyNzA5XX0=
 -->
