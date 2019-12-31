@@ -99,12 +99,12 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * [Lost in Space](https://en.wikipedia.org/wiki/Lost_in_Space_%282018_TV_series%29)
 * [The Witcher](https://en.wikipedia.org/wiki/The_Witcher_%28TV_series%29)
 * [Last Week Tonight](https://en.wikipedia.org/wiki/Last_Week_Tonight_with_John_Oliver)
-* Saturday Night Live
-* Rick and Morty
-* Silicon Valley
-* Young Sheldon
-* Modern Family
-* Stranger Things
+* [Saturday Night Live](https://en.wikipedia.org/wiki/Saturday_Night_Live)
+* [Rick and Morty](https://en.wikipedia.org/wiki/Rick_and_Morty)
+* [Silicon Valley](https://en.wikipedia.org/wiki/Silicon_Valley_%28TV_series%29)
+* [Young Sheldon](https://en.wikipedia.org/wiki/Young_Sheldon)
+* [Modern Family](https://en.wikipedia.org/wiki/Modern_Family)
+* [Stranger Things](https://en.wikipedia.org/wiki/Stranger_Things)
 
 ## Books
 
@@ -134,5 +134,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjQ5NTUzLC0zMTAxNjI3MDldfQ==
+eyJoaXN0b3J5IjpbMjA5ODI1MDkxNiwtMzEwMTYyNzA5XX0=
 -->
