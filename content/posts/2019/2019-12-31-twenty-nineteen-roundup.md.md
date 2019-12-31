@@ -94,11 +94,11 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 ## TV
 
 * [Game of Thrones (final season)](https://en.wikipedia.org/wiki/Game_of_Thrones)
-* Mandalorian
-* The Rookie
-* Lost in Space
-* The Witcher
-* Last Week Tonight
+* [Mandalorian](https://en.wikipedia.org/wiki/The_Mandalorian)
+* [The Rookie](https://en.wikipedia.org/wiki/The_Rookie_%28TV_series%29)
+* [Lost in Space](https://en.wikipedia.org/wiki/Lost_in_Space_%282018_TV_series%29)
+* [The Witcher](https://en.wikipedia.org/wiki/The_Witcher_%28TV_series%29)
+* [Last Week Tonight](https://en.wikipedia.org/wiki/Last_Week_Tonight_with_John_Oliver)
 * Saturday Night Live
 * Rick and Morty
 * Silicon Valley
@@ -134,5 +134,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDA1NjQ3OSwtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbMTEzMjQ5NTUzLC0zMTAxNjI3MDldfQ==
 -->
