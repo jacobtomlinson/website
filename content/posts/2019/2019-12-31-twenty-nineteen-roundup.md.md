@@ -40,7 +40,17 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * Spotify
  * Pocket Casts
  * Plex
- * Out
+ * Outlook
+ * WhatsApp
+ * Slack
+ * Riot.im
+ * Gitter
+ * Viber
+ * Boost (Reddit)
+ * Chrome
+ * Google Photos
+ * Todoist
+ * Google Keep
 
 ## Software / SysAdmin Specific
 
@@ -71,5 +81,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 [last-year]: https://www.jacobtomlinson.co.uk/2014/12/31/twenty-fourteen-roundup/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MzAxMTIwOV19
+eyJoaXN0b3J5IjpbLTEwMTg0NjU2NV19
 -->
