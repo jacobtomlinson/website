@@ -131,8 +131,8 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * [Home Assistant Podcast](https://hasspodcast.io/)
 * [Ladybug Podcast](https://ladybug.dev/)
 * [Under the radar](https://www.relay.fm/radar)
-* Dan Carlin's Hardcore Histories
-* Passenger List
+* [Dan Carlin's Hardcore History](https://www.dancarlin.com/)
+* [Passenger List](https://passengerlist.org/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzAyNzk1NCwtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbLTM3NTc1ODgwOCwtMzEwMTYyNzA5XX0=
 -->
