@@ -41,12 +41,12 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Software / Mobile
 
- * Twitter
- * TuneIn Radio
- * Spotify
- * Pocket Casts
- * Plex
- * Outlook
+ * [Twitter](https://play.google.com/store/apps/details?id=com.twitter.android&hl=en_GB)
+ * [TuneIn Radio](https://play.google.com/store/apps/details?id=tunein.player&hl=en_GB)
+ * [Spotify](https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_GB)
+ * [Pocket Casts](https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts&hl=en_GB)
+ * [Plex](https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en_GB)
+ * [Outlook](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_GB)
  * WhatsApp
  * Slack
  * Riot.im
@@ -136,5 +136,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ0Nzg2ODEsLTMxMDE2MjcwOV19
+eyJoaXN0b3J5IjpbMTU1ODM4NjE1MiwtMzEwMTYyNzA5XX0=
 -->
