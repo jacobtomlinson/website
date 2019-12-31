@@ -126,13 +126,13 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * [Darknet Diaries](https://darknetdiaries.com/)
 * [Criminal](https://thisiscriminal.com/)
 * [Shagged Married Annoyed](https://chrisramseycomedy.com/podcast)
-* 99% Invisible
-* Twenty Thousand Hertz
-* Home Assistant Podcast
-* Ladybug Podcast
-* Under the radar
+* [99% Invisible](https://99percentinvisible.org/)
+* [Twenty Thousand Hertz](https://www.20k.org/)
+* [Home Assistant Podcast](https://hasspodcast.io/)
+* [Ladybug Podcast](https://ladybug.dev/)
+* [Under the radar](https://www.relay.fm/radar)
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODExMzczNDY0LC0zMTAxNjI3MDldfQ==
+eyJoaXN0b3J5IjpbLTE4NzAyNzk1NCwtMzEwMTYyNzA5XX0=
 -->
