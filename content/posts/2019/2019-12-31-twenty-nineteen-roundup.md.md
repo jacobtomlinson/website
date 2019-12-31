@@ -24,8 +24,9 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [LastPass](https://lastpass.com/)
  * [Slack](https://slack.com/)
  * [TweetDeck](https://tweetdeck.twitter.com/)
+ * Airtable
 
-## Software / Geek Use
+## Software / Development
 
  * [VS Code](https://code.visualstudio.com/)
  * [iTerm 2](http://iterm2.com/)
@@ -61,7 +62,7 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * Nintendo Switch
  * MSI GF63 8RC Gaming Laptop (Core i7-8750H, 8GB, 128GB SSD, 1TB HDD, GeForce GTX 1050 4GB, 15 inch)
  * Lenovo ThinkServer TS140 Xeon E3-1226 v3 3.3GHz, 16GB, 1TB HDD (ESXi 6.1)
- * HP Proliant N54L Microserver 8GB 5x3TB RAIDz1 (Debian)
+ * HP Proliant N54L Microserver 8GB MergerFS/SnapRAID 20TB (Debian)
 
 ## Games
 
@@ -73,5 +74,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [Poker Night 2](https://en.wikipedia.org/wiki/Poker_Night_2)
  * [Prison Architect](https://www.introversion.co.uk/prisonarchitect/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDAyMzk0MV19
+eyJoaXN0b3J5IjpbLTE0NjQ4NTk0MzZdfQ==
 -->
