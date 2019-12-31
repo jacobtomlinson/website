@@ -121,11 +121,11 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * [The Indicator](https://www.npr.org/podcasts/510325/the-indicator-from-planet-money)
 * [On The Metal](https://oxide.computer/blog/categories/on-the-metal/)
 * [How I Built This](https://www.npr.org/podcasts/510313/how-i-built-this)
-* This American Life
-* Dear HBR
-* Darknet Diaries
-* Criminal
-* Shagged Married Annoyed
+* [This American Life](https://www.thisamericanlife.org/)
+* [Dear HBR](https://hbr.org/2018/01/podcast-dear-hbr)
+* [Darknet Diaries](https://darknetdiaries.com/)
+* [Criminal](https://thisiscriminal.com/)
+* [Shagged Married Annoyed](https://chrisramseycomedy.com/podcast)
 * 99% Invisible
 * Twenty Thousand Hertz
 * Home Assistant Podcast
@@ -134,5 +134,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5ODQwMTA0OSwtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbODExMzczNDY0LC0zMTAxNjI3MDldfQ==
 -->
