@@ -14,27 +14,24 @@ thumbnail: journal
 
 ### Introduction
 
-It has been a few years since I published a list of technology and media I enjoyed this year, so here we go for 2019.
+It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fifteen-roundup/) since I published a list of technology and media I enjoyed this year, so here we go for 2019.
 
 ## Software / General Use
 
  * [Gmail](https://mail.google.com/)
- * [Chrome](https://www.google.com/chrome/)
+ * [Firefox](https://www.mozilla.org/en-GB/firefox/new/)
  * [Plex](https://plex.tv/)
  * [LastPass](https://lastpass.com/)
- * [Feedly](http://feedly.com/)
- * [Keynote](https://www.apple.com/uk/mac/keynote/)
  * [Slack](https://slack.com/)
  * [TweetDeck](https://tweetdeck.twitter.com/)
 
 ## Software / Geek Use
 
- * [Atom](https://atom.io/)
+ * [VS Code](https://code.visualstudio.com/)
  * [iTerm 2](http://iterm2.com/)
  * [GitHub](https://github.com/)
  * [Homebrew](http://brew.sh/)
  * [thefuck](https://github.com/nvbn/thefuck)
- * [Postman](https://www.getpostman.com/)
 
 ## Software / Mobile
 
@@ -73,5 +70,5 @@ It has been a few years since I published a list of technology and media I enjoy
 
 [last-year]: https://www.jacobtomlinson.co.uk/2014/12/31/twenty-fourteen-roundup/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2MjY3NzcyXX0=
+eyJoaXN0b3J5IjpbLTE5NzUxOTY0NV19
 -->
