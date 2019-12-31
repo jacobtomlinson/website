@@ -24,8 +24,8 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [LastPass](https://lastpass.com/)
  * [Slack](https://slack.com/)
  * [TweetDeck](https://tweetdeck.twitter.com/)
- * Airtable
- * Home Assistant
+ * [Airtable](https://airtable.com/)
+ * [Home Assistant](https://www.home-assistant.io/)
 
 ## Software / Development
 
@@ -34,10 +34,10 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [GitHub](https://github.com/)
  * [Homebrew](http://brew.sh/)
  * [thefuck](https://github.com/nvbn/thefuck)
- * Miniconda
- * Docker
- * Kubernetes
- * Amazon Web Services
+ * [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+ * [Docker](https://www.docker.com/)
+ * [Kubernetes](https://kubernetes.io/)
+ * [Amazon Web Services](https://aws.amazon.com/)
 
 ## Software / Mobile
 
@@ -136,5 +136,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTkxNTQxNCwtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbLTE1NzQ0Nzg2ODEsLTMxMDE2MjcwOV19
 -->
