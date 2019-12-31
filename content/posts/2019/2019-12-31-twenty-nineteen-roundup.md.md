@@ -86,6 +86,7 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 * Greenbook
 * Star Wars - The Rise of Skywalker
+* Bird
 
 ## TV
 
@@ -99,11 +100,12 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 * The Lord of the Rings
 * Mortal Engines
+* Predators Gold
 * Bad blood
-* The smartest guys int h
+* The smartest guys in the room
 
 ## Podcasts
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTI4NzIxNzZdfQ==
+eyJoaXN0b3J5IjpbLTI0OTUwMjEzNV19
 -->
