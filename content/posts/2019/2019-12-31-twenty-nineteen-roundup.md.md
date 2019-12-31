@@ -86,15 +86,14 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * [Green Book](https://en.wikipedia.org/wiki/Green_Book_%28film%29)
 * [Star Wars - The Rise of Skywalker](https://en.wikipedia.org/wiki/Star_Wars:_The_Rise_of_Skywalker)
 * [Bird Box](https://en.wikipedia.org/wiki/Bird_Box_%28film%29)
-* Official Secrets
-* El Camino
-* Us
-* Fyre
-* First Man
+* [Official Secrets](https://en.wikipedia.org/wiki/Official_Secrets_%28film%29)
+* [El Camino](https://en.wikipedia.org/wiki/El_Camino:_A_Breaking_Bad_Movie?wprov=srpw1_0)
+* [Us](https://en.wikipedia.org/wiki/Us_%282019_film%29)
+* [Fyre](https://en.wikipedia.org/wiki/Fyre_%28film%29)
 
 ## TV
 
-* Game of Thrones (final season)
+* [Game of Thrones (final season)](https://en.wikipedia.org/wiki/Game_of_Thrones)
 * Mandalorian
 * The Rookie
 * Lost in Space
@@ -135,5 +134,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDA1OTc5NywtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbMTMyNDA1NjQ3OSwtMzEwMTYyNzA5XX0=
 -->
