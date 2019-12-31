@@ -108,11 +108,11 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Books
 
-* The Lord of the Rings Trilogy
-* Mortal Engines
-* Predators Gold
-* Bad blood
-* The smartest guys in the room
+* [The Lord of the Rings Trilogy](https://en.wikipedia.org/wiki/The_Lord_of_the_Rings)
+* [Mortal Engines](https://en.wikipedia.org/wiki/Mortal_Engines)
+* [Predators Gold](https://en.wikipedia.org/wiki/Predator%27s_Gold)
+* [Bad Blood](https://en.wikipedia.org/wiki/Bad_Blood:_Secrets_and_Lies_in_a_Silicon_Valley_Startup)
+* [Enron: The smartest guys in the room](https://en.wikipedia.org/wiki/Enron:_The_Smartest_Guys_in_the_Room)
 * Bird Box
 
 ## Podcasts
@@ -134,5 +134,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5ODI1MDkxNiwtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbMTMyMzM5NDY5MiwtMzEwMTYyNzA5XX0=
 -->
