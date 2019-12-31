@@ -87,6 +87,9 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Greenbook
 * Star Wars - The Rise of Skywalker
 * Bird Box
+* Official Secrets
+* El Camino
+* 
 
 ## TV
 
@@ -97,6 +100,8 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * The Witcher
 * Last Week Tonight
 * Saturday Night Live
+* Rick and Morty
+* Silicon Valley
 * 
 
 ## Books
@@ -111,5 +116,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 ## Podcasts
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1Mjk1MTM5MF19
+eyJoaXN0b3J5IjpbLTc0NTUwNjk1XX0=
 -->
