@@ -74,10 +74,10 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 ## Games
 
  * [Alto's Odyssey](https://play.google.com/store/apps/details?id=com.noodlecake.altosodyssey&hl=en_GB)
- * Downwell
- * Holedown
- * Pokemon Ash Grey
- * Crash Bandicoot - N Sane Trilogy
+ * [Downwell](https://play.google.com/store/apps/details?id=com.devolver.downwell_rerelease&hl=en_GB)
+ * [Holedown](https://play.google.com/store/apps/details?id=com.grapefrukt.games.bore&hl=en_GB)
+ * [Pokemon Ash Gray](https://www.pokecommunity.com/showthread.php?t=180722)
+ * [Crash Bandicoot - N Sane Trilogy](https://www.nintendo.co.uk/Games/Nintendo-Switch/Crash-Bandicoot-N-Sane-Trilogy-1347784.html)
  * Planet Coaster
  * Minecraft
  * 
@@ -136,5 +136,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDIzOTkzMDUsLTMxMDE2MjcwOV19
+eyJoaXN0b3J5IjpbMzI4NDY5MjIsLTMxMDE2MjcwOV19
 -->
