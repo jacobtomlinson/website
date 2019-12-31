@@ -84,10 +84,26 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Films
 
+* Greenbook
+* Star Wars - The Rise of Skywalker
+
+## TV
+
+* Game of Thrones (final season)
+* Mandalorian
+* The Rookie
+* Lost in Space
+* The Witcher
+
 ## Books
+
+* The Lord of the Rings
+* Mortal Engines
+* Bad blood
+* The smartest guys int h
 
 ## Podcasts
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjUxNTY5M119
+eyJoaXN0b3J5IjpbLTE2OTI4NzIxNzZdfQ==
 -->
