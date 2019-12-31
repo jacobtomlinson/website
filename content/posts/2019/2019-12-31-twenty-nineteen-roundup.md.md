@@ -54,12 +54,12 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [Viber](https://play.google.com/store/apps/details?id=com.viber.voip&hl=en_GB)
  * [Boost (Reddit)](https://play.google.com/store/apps/details?id=com.rubenmayayo.reddit&hl=en_GB)
  * [Chrome](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en_GB)
- * Google Photos
- * Todoist
- * Google Keep
- * Pocket
- * Monzo
- * KWGT
+ * [Google Photos](https://play.google.com/store/apps/details?id=com.google.android.apps.photos&hl=en_GB)
+ * [Todoist](https://play.google.com/store/apps/details?id=com.todoist&hl=en_GB)
+ * [Google Keep](https://play.google.com/store/apps/details?id=com.google.android.keep&hl=en_GB)
+ * [Pocket](https://play.google.com/store/apps/details?id=com.ideashower.readitlater.pro&hl=en_GB)
+ * [Monzo](https://play.google.com/store/apps/details?id=co.uk.getmondo&hl=en_GB)
+ * [KWGT](https://play.google.com/store/apps/details?id=org.kustom.widget&hl=en_GB)
 
 ## Hardware
 
@@ -73,7 +73,7 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Games
 
- * Altos Odyssey
+ * [Alto's Odyssey](https://play.google.com/store/apps/details?id=com.noodlecake.altosodyssey&hl=en_GB)
  * Downwell
  * Holedown
  * Pokemon Ash Grey
@@ -136,5 +136,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMDM0MDIyMywtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbLTExMDIzOTkzMDUsLTMxMDE2MjcwOV19
 -->
