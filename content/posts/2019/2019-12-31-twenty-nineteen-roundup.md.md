@@ -35,11 +35,12 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Software / Mobile
 
- * [Alien Blue](http://www.alienblue.org/)
- * [9GAG](http://9gag.com/)
- * [Overcast](https://overcast.fm/)
- * [Plex Pass](https://plex.tv/subscription/about)
- * [OpenHAB](http://www.openhab.org/)
+ * Twitter
+ * TuneIn Radio
+ * Spotify
+ * Pocket Casts
+ * Plex
+ * Out
 
 ## Software / SysAdmin Specific
 
@@ -70,5 +71,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 [last-year]: https://www.jacobtomlinson.co.uk/2014/12/31/twenty-fourteen-roundup/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzUxOTY0NV19
+eyJoaXN0b3J5IjpbLTU0MzAxMTIwOV19
 -->
