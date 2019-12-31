@@ -113,14 +113,14 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * [Predators Gold](https://en.wikipedia.org/wiki/Predator%27s_Gold)
 * [Bad Blood](https://en.wikipedia.org/wiki/Bad_Blood:_Secrets_and_Lies_in_a_Silicon_Valley_Startup)
 * [Enron: The smartest guys in the room](https://en.wikipedia.org/wiki/Enron:_The_Smartest_Guys_in_the_Room)
-* Bird Box
+* [Bird Box](https://en.wikipedia.org/wiki/Bird_Box_%28novel%29)
 
 ## Podcasts
 
-* Planet Money
-* The Indicator
-* On The Metal
-* How I Built This
+* [Planet Money](https://www.npr.org/sections/money/?t=1577799681273)
+* [The Indicator](https://www.npr.org/podcasts/510325/the-indicator-from-planet-money)
+* [On The Metal](https://oxide.computer/blog/categories/on-the-metal/)
+* [How I Built This](https://www.npr.org/podcasts/510313/how-i-built-this)
 * This American Life
 * Dear HBR
 * Darknet Diaries
@@ -134,5 +134,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMzM5NDY5MiwtMzEwMTYyNzA5XX0=
+eyJoaXN0b3J5IjpbLTU5ODQwMTA0OSwtMzEwMTYyNzA5XX0=
 -->
