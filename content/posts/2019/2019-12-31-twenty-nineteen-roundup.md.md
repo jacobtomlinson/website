@@ -33,6 +33,10 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [GitHub](https://github.com/)
  * [Homebrew](http://brew.sh/)
  * [thefuck](https://github.com/nvbn/thefuck)
+ * Miniconda
+ * Docker
+ * Kubernetes
+ * Amazon Web Services
 
 ## Software / Mobile
 
@@ -72,7 +76,8 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * Pokemon Ash Grey
  * Crash Bandicoot - N Sane Trilogy
  * Planet Coaster
- * Minecr
+ * Minecraft
+ * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDYyOTUwM119
+eyJoaXN0b3J5IjpbLTkxMTM0MzQyNl19
 -->
