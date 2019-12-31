@@ -66,13 +66,13 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Games
 
- * [Pop the lock](https://itunes.apple.com/gb/app/pop-the-lock/id979100082)
- * [Spelunky](http://www.spelunkyworld.com/)
- * [Grid 2](http://www.gridgame.com/grid2)
- * [Chivalry](http://www.tornbanner.com/chivalry)
- * [Assassins Creed: Black Flag](http://assassinscreed.ubi.com/en-gb/games/assassins-creed-black-flag.aspx)
- * [Poker Night 2](https://en.wikipedia.org/wiki/Poker_Night_2)
- * [Prison Architect](https://www.introversion.co.uk/prisonarchitect/)
+ * Altos Odyssey
+ * Downwell
+ * Holedown
+ * Pokemon Ash Grey
+ * Crash Bandicoot - N Sane Trilogy
+ * Planet Coaster
+ * Minecr
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQ4NTk0MzZdfQ==
+eyJoaXN0b3J5IjpbMTY1MDYyOTUwM119
 -->
