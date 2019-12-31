@@ -95,6 +95,9 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * The Rookie
 * Lost in Space
 * The Witcher
+* Last Week Tonight
+* Saturday Night Live
+* 
 
 ## Books
 
@@ -108,5 +111,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 ## Podcasts
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3MDI5MzU0XX0=
+eyJoaXN0b3J5IjpbLTI1Mjk1MTM5MF19
 -->
