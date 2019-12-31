@@ -91,7 +91,7 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * El Camino
 * Us
 * Fyre
-* 
+* First Man
 
 ## TV
 
@@ -104,6 +104,8 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Saturday Night Live
 * Rick and Morty
 * Silicon Valley
+* Young Sheldon
+* Modern Family
 * 
 
 ## Books
@@ -118,5 +120,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 ## Podcasts
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MjczMjY3XX0=
+eyJoaXN0b3J5IjpbLTMxMDE2MjcwOV19
 -->
