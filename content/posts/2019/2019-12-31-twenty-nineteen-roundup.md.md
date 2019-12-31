@@ -25,6 +25,7 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [Slack](https://slack.com/)
  * [TweetDeck](https://tweetdeck.twitter.com/)
  * Airtable
+ * Home Assistant
 
 ## Software / Development
 
@@ -57,12 +58,14 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * Todoist
  * Google Keep
  * Pocket
+ * Monzo
+ * KWGT
 
 ## Hardware
 
- * Google Pixel 4 (64GB)
- * Amazon Fire HD 8
- * Kindle Paperwhite
+ * Google Pixel 4 Black (64GB)
+ * Amazon Kindle Fire HD 8
+ * Amazon Kindle Paperwhite
  * Nintendo Switch
  * MSI GF63 8RC Gaming Laptop (Core i7-8750H, 8GB, 128GB SSD, 1TB HDD, GeForce GTX 1050 4GB, 15 inch)
  * Lenovo ThinkServer TS140 Xeon E3-1226 v3 3.3GHz, 16GB, 1TB HDD (ESXi 6.1)
@@ -78,6 +81,13 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * Planet Coaster
  * Minecraft
  * 
+
+## Films
+
+## Books
+
+## Podcasts
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMTM0MzQyNl19
+eyJoaXN0b3J5IjpbMjEzMjUxNTY5M119
 -->
