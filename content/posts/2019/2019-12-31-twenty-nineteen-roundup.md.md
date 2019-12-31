@@ -55,9 +55,9 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Hardware
 
- * Google Pixel 4 (65
- * iPad 4th Gen 32GB Black (iOS 8)
- * Macbook Air 5,2; i5 3427U, 8GB, 128GB SSD (OS X 10.11 El Capitan)
+ * Google Pixel 4 (64GB)
+ * Amazon Fire HD 8
+ * MSI GF63 8RC Gaming Laptop (Core i7-8750H, 8GB, 128GB & 1TB GeForce GTX 1050 4GB 15)
  * Lenovo ThinkServer TS140 Xeon E3-1226 v3 3.3GHz, 16GB, 1TB HDD (ESXi 6.1)
  * Custom Gaming PC; i5 4570, 8GB, GTX660, 40GB SSD, 2TB HDD (Windows 10)
  * HP Proliant N54L Microserver 8GB 5x3TB RAIDz1 (FreeNAS 9.3)
@@ -72,5 +72,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [Poker Night 2](https://en.wikipedia.org/wiki/Poker_Night_2)
  * [Prison Architect](https://www.introversion.co.uk/prisonarchitect/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODE0NjQzODFdfQ==
+eyJoaXN0b3J5IjpbODI3Nzc5NzY3XX0=
 -->
