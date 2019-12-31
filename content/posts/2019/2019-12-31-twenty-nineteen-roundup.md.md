@@ -78,15 +78,14 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
  * [Holedown](https://play.google.com/store/apps/details?id=com.grapefrukt.games.bore&hl=en_GB)
  * [Pokemon Ash Gray](https://www.pokecommunity.com/showthread.php?t=180722)
  * [Crash Bandicoot - N Sane Trilogy](https://www.nintendo.co.uk/Games/Nintendo-Switch/Crash-Bandicoot-N-Sane-Trilogy-1347784.html)
- * Planet Coaster
- * Minecraft
- * 
+ * [Planet Coaster](https://store.steampowered.com/app/493340/Planet_Coaster/)
+ * [Minecraft](https://www.nintendo.co.uk/Games/Nintendo-Switch/Minecraft-1386505.html)
 
 ## Films
 
-* Green Book
-* Star Wars - The Rise of Skywalker
-* Bird Box
+* [Green Book](https://en.wikipedia.org/wiki/Green_Book_%28film%29)
+* [Star Wars - The Rise of Skywalker](https://en.wikipedia.org/wiki/Star_Wars:_The_Rise_of_Skywalker)
+* [Bird Box](https://en.wikipedia.org/wiki/Bird_Box_%28film%29)
 * Official Secrets
 * El Camino
 * Us
@@ -136,5 +135,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Dan Carlin's Hardcore Histories
 * Passenger List
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI4NDY5MjIsLTMxMDE2MjcwOV19
+eyJoaXN0b3J5IjpbMTkzNDA1OTc5NywtMzEwMTYyNzA5XX0=
 -->
