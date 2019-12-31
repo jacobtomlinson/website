@@ -106,7 +106,7 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 * Silicon Valley
 * Young Sheldon
 * Modern Family
-* 
+* Stranger Things
 
 ## Books
 
@@ -119,6 +119,11 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Podcasts
 
+* Planet Money
+* The Indicator
+* On The Metal
+* How I Built This
+* Thi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMDE2MjcwOV19
+eyJoaXN0b3J5IjpbMTM0NjA1NzMwNywtMzEwMTYyNzA5XX0=
 -->
