@@ -84,11 +84,13 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 
 ## Films
 
-* Greenbook
+* Green Book
 * Star Wars - The Rise of Skywalker
 * Bird Box
 * Official Secrets
 * El Camino
+* Us
+* Fyre
 * 
 
 ## TV
@@ -116,5 +118,5 @@ It has been [a few years](https://www.jacobtomlinson.co.uk/posts/2015/twenty-fif
 ## Podcasts
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NTUwNjk1XX0=
+eyJoaXN0b3J5IjpbMTc3MjczMjY3XX0=
 -->
