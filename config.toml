@@ -19,6 +19,11 @@ googleAnalytics = "UA-20365477-2"
 [permalinks]
     posts = "/:section/:year/:title/"
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
 [outputFormats]
 [outputFormats.RSS]
 mediatype = "application/rss"
