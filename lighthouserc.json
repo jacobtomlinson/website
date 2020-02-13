@@ -8,8 +8,8 @@
     "collect": {
       "url": [
         "http://localhost/",
-        "http://localhost/posts/",
-        "http://localhost/posts/2017/apple-airport-express-repair/"
+        "http://localhost/posts/"
+        // "http://localhost/posts/2017/apple-airport-express-repair/"
       ],
       "staticDistDir": "./public"
     }
