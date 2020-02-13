@@ -19,19 +19,19 @@ When you build a website you want pages to load as quickly as possible for users
 
 ![PageSpeed Insights](https://i.imgur.com/UPGxUDV.png)
 
-This service is powered by an open-source tool that Google maintains called [Lighthouse](https://developers.google.com/web/tools/lighthouse). Lighthouse uses Chrome's rendering engine to test a url and report metrics around performance, accessibility, progressive web apps, SEO and more.
+This service is powered by an open-source tool that Google maintains called [Lighthouse](https://developers.google.com/web/tools/lighthouse). Lighthouse uses Chrome's rendering engine to test a URL and report metrics around performance, accessibility, progressive web apps, SEO and more.
 
 Lighthouse has also been bundled up into a NodeJS package called [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) to enable you to run Lighthouse on your websites from the command line with a headless version of Chrome. You can set up Lighthouse CI in your existing CI solution and you can even run a Lighthouse server to collect and aggregate metrics.
 
 But if you don't want all the fuss of hosting a Lighthouse server and running a complex CI pipeline you can get started quickly and easily using the [Lighthouse CI GitHub Action](https://github.com/treosh/lighthouse-ci-action).
 
-In this post we will cover setting up Lighthouse CI in [GitHub Actions](https://github.com/features/actions) to run performance tests on your static website. This could be a blog built with [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [Pelican](https://blog.getpelican.com/), [Gatsby](https://www.gatsbyjs.org/) or perhaps a documentation site built with [Sphinx](https://www.sphinx-doc.org/en/master/) or [MkDocs](https://www.mkdocs.org/). Any project which outputs a static set of HTML/JS/CSS files into a build directory.
+In this post, we will cover setting up Lighthouse CI in [GitHub Actions](https://github.com/features/actions) to run performance tests on your static website. This could be a blog built with [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/), [Pelican](https://blog.getpelican.com/), [Gatsby](https://www.gatsbyjs.org/) or perhaps a documentation site built with [Sphinx](https://www.sphinx-doc.org/en/master/) or [MkDocs](https://www.mkdocs.org/). Any project which outputs a static set of HTML/JS/CSS files into a build directory.
 
 I'm going to focus on adding Lighthouse CI to [this blog](https://github.com/jacobtomlinson/jacobtomlinson.github.io), the one you're reading right now.
 
 ## Configuring our GitHub Action
 
-First we need to create a new directory in the root of our repository called `.github/workflows` if it doesn't already exist.
+First, we need to create a new directory in the root of our repository called `.github/workflows` if it doesn't already exist.
 
 ```bash
 mkdir -p .github/workflows
@@ -57,11 +57,11 @@ jobs:
         uses: textbook/git-checkout-submodule-action@master
 ```
 
-This config creates a new workflow called `Lighthouse`. It runs one job called `CI` which uses a Ubuntu worker and has a step which checks out our git repository and another to checkout any submodules. Hugo uses submodules for themes so we need to ensure our theme is checked out here.
+This config creates a new workflow called `Lighthouse`. It runs one job called `CI` which uses a Ubuntu worker and has a step which checks out our git repository and another to check out any submodules. Hugo uses submodules for themes so we need to ensure our theme is checked out here.
 
-The next thing we want to do is to build our static website. This will vary depending on your chosen tool, so refer to your documentation. You may well find there is an existing GitHub Action in the Marketplace for installing your chosen tool.
+The next thing we want to do is to build our static website. This will vary depending on your chosen tool, so refer to the documentation. You may well find there is an existing GitHub Action in the Marketplace for installing your chosen tool.
 
-For my Hugo website I'll add an install step using a Hugo Action and then a build step.
+For my Hugo website, I'll add an install step using a [Hugo Action](https://github.com/peaceiris/actions-hugo) and then a build step.
 
 ```yaml
 - name: Setup Hugo
@@ -86,7 +86,7 @@ The last thing we want to add to our workflow is the Lighthouse CI Action.
     temporaryPublicStorage: true
 ```
 
-In this last step we have instructed Lighthouse CI to run using a configuration file called `./lighthouserc.json`. We've also set `temporaryPublicStorage` to `true` which means the final report will be uploaded to Google Cloud Storage for a while so we can look at the results in a nice web page.
+In this last step, we have instructed Lighthouse CI to run using a configuration file called `./lighthouserc.json`. We've also set `temporaryPublicStorage` to `true` which means the final report will be uploaded to Google Cloud Storage for a while so we can look at the results in a nice web page.
 
 Here is our completed workflow file.
 
@@ -121,7 +121,7 @@ jobs:
 
 ## Configuring Lighthouse CI
 
-Next we need to create the `lighthouserc.json` file in the root of our project and add some configuration so Lighthouse CI knows what to do.
+Next, we need to create the `lighthouserc.json` file in the root of our project and add some configuration so Lighthouse CI knows what to do.
 
 ```json
 {
@@ -134,11 +134,11 @@ Next we need to create the `lighthouserc.json` file in the root of our project a
 }
 ```
 
-This is a basic config file which tells Lighthouse CI that we have some static files in `./public` and Lighthouse CI should serve them on a local web server. By default Lighthouse CI will run tests against every HTML file in that folder so we are also specifying that we just want to test the root index page of the website and the blog post list page. Lighthouse CI will run the local web server on a random high port but it will correct your urls automatically do you can just assume they will serve on `http://localhost`.
+This is a basic config file which tells Lighthouse CI that we have some static files in `./public` and Lighthouse CI should serve them on a local webserver. By default Lighthouse CI will run tests against every HTML file in that folder so we are also specifying that we just want to test the root index page of the website and the blog post list page. Lighthouse CI will run the local web server on a random high port but it will correct your URLs automatically do you can just assume they will serve on `http://localhost`.
 
 ## Testing our Action
 
-Next we will commit these two files and push them up to GitHub and open a new PR. This will allow us to test our Actions and ensure they run as expected.
+Next, we will commit these two files and push them up to GitHub and open a new PR. This will allow us to test our Actions and ensure they run as expected.
 
 ```bash
 git checkout -b add-lighthouse-ci
@@ -150,7 +150,7 @@ git commit -m "Add lighthouse CI"
 
 git push --set-upstream origin add-lighthouse-ci
 
-gr pr create  # Hooray for the GitHub CLI https://cli.github.com/
+gh pr create  # Hooray for the GitHub CLI https://cli.github.com/
 ```
 
 We can then look at the output of our GitHub Action in the Checks section of our PR.
@@ -173,7 +173,7 @@ The GitHub Action should also soon have the ability to [share the report URL bac
 
 Now that we have our Action configured the CI should always pass if the site successfully builds and Lighthouse successfully runs on the pages. But what if we want to fail our build based on the results of the report?
 
-To do this we can use [Lighthouse CI assertions](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md). There are many things you can check here, but for example we could assert that our pages should always get a perfect score for accessibility. To do this let's update our `lighthouserc.json` config.
+To do this we can use [Lighthouse CI assertions](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md). There are many things you can check here, but for example, we could assert that our pages should always get a perfect score for accessibility. To do this let's update our `lighthouserc.json` config.
 
 ```json
 {
@@ -208,7 +208,7 @@ If we check the GitHub Actions log we can see our assertions here are failing.
 
 ![Lighthouse CI assertion errors](https://i.imgur.com/lvKcKUc.png)
 
-Great! We can have our CI pass/fail our Pull Requests based on information from the Lighthouse report. We can assert on things like ["Does the page use responsive images?"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#audits_), ["Do our categories get a specific score"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#categories) or even ["Does my page download less than 200KB of CSS?"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#budgets).
+Great! We can have our CI pass/fail our Pull Requests based on information from the Lighthouse report. We can assert things like ["Does the page use responsive images?"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#audits_), ["Do our categories get a specific score"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#categories) or even ["Does my page download less than 200KB of CSS?"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#budgets).
 
 ## Next steps
 
@@ -218,6 +218,6 @@ In this post we covered:
 - Adding Lighthouse CI to your project with GitHub Actions
 - Checking your builds with Lighthouse CI assertions
 
-Moving forwards we should set our assertions however we like and get our PR merged in so that we are testing our website going forwards. It would also be a good idea to update the list of URLs with at least one of each type of page in the site to ensure good test coverage. For a blog this would probably be the home page, one or more posts and any error pages.
+Moving forwards we should set our assertions however we like and get our PR merged in so that we are testing our website with Lighthouse. It would also be a good idea to update the list of URLs with at least one of each type of page in the site to ensure good test coverage. For a blog this would probably be the home page, one or more posts and any error pages.
 
 I certainly have a few things to fix on my site and once I do I'll use Lighthouse CI to ensure it stays that way.
