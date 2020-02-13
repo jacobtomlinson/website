@@ -6,7 +6,11 @@
       }
     },
     "collect": {
-      "url": ["http://localhost/"],
+      "url": [
+        "http://localhost/",
+        "http://localhost/posts/",
+        "http://localhost/posts/2017/apple-airport-express-repair/"
+      ],
       "staticDistDir": "./public"
     }
   }
