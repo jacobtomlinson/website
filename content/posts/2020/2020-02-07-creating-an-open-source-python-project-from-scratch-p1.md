@@ -57,18 +57,18 @@ For our example library we are going to create a library called `is_number` with
 
 ```
 is_number/ Top-level package
- __init__.py Initialization file for the package
+          __init__.py Initialization file for the package
 ```
 
 That file will contain our simple function for checking if something is a number.
 
 ```python
 def is_number(in_value):
- try:
- float(in_value)
- return True
- except ValueError:
- return False
+    try:
+        float(in_value)
+        return True
+    except ValueError:
+        return False
 ```
 
 We can test our example package by running `python` in our project directory and importing and using the code.
@@ -184,26 +184,26 @@ To enable people to install our library we need to create a `setup.py` file and 
 import setuptools
 
 with open("README.rst", "r") as fh:
- long_description = fh.read()
+    long_description = fh.read()
 with open("requirements.txt", "r") as fh:
- requirements = [line.strip() for line in fh]
+    requirements = [line.strip() for line in fh]
 
 setuptools.setup(
- name="is-number",
- version="0.0.1",
- author="Jacob Tomlinson",
- author_email="jacob@tomlinson.email",
- description="A Python library to determine if something is a number.",
- long_description=long_description,
- long_description_content_type="text/x-rst",
- packages=setuptools.find_packages(),
- classifiers=[
- "Programming Language :: Python :: 3",
- "License :: OSI Approved :: MIT License",
- "Operating System :: OS Independent",
- ],
- python_requires='>=3.6',
- install_requires=requirements,
+    name="is-number",
+    version="0.0.1",
+    author="Jacob Tomlinson",
+    author_email="jacob@tomlinson.email",
+    description="A Python library to determine if something is a number.",
+    long_description=long_description,
+    long_description_content_type="text/x-rst",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
+    install_requires=requirements,
 )
 ```
 
