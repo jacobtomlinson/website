@@ -22,7 +22,7 @@ In this post, we will cover a few project hygiene things that we may want to put
 
 At this point we should put some thought into versioning our library. When we make changes to our code we will want to release a new version, but what kind of naming scheme should we use for our version labels?
 
-There are several commonly used versioning standards used in open-source software. The two that you will see most often in open source software are [Semantic Versioning](https://semver.org/) or SemVer for short, and [Calendar Versioning](https://calver.org/) or CalVer for short. The first increments the version numbers based on what changes are made to the software, the second increments the version number based on when those changes were made.
+There are several commonly used versioning standards used in open-source software. The two that you will see most often are [Semantic Versioning](https://semver.org/) or SemVer for short, and [Calendar Versioning](https://calver.org/) or CalVer for short. The first increments the version numbers based on what changes are made to the software, the second increments the version number based on when those changes were made.
 
 SemVer is commonly used when a project has an API which is being presented to the user, the developer can use the version information to communicate to the user whether or not new versions will impact their use of the library. CalVer is more commonly used for projects which do not necessarily provide an API to the user, an example may be a set of configuration files for a system which changes over time.
 
@@ -36,7 +36,7 @@ The middle number is referred to as the `minor` version number. This should be i
 
 The left number is the `major` version number. This should be incremented if we have made a change which will break things for our users. After this version, they cannot just continue as usual and will probably have to read the documentation and change their behaviour accordingly. We also reset both other numbers to `0`. For example, if we modified `is_number` to return the strings `'yes'` and `'no'` instead of the booleans `True` and `False` this would be a breaking change and we should release `2.0.0`.
 
-In our `setup.py` we have set the initial version to `0.0.1`. When the major version of a library is `0` this means it is in development mode and should be considered unstable. Generally in this mode, the `bugfix` version remains the same but the `minor` version is incremented for both `major` and `minor` changes, meaning anything could break at any time. Ideally once a library is finished and the functionality is stable you should move on to version `1.0.0` and adopt SemVer more strictly, however you will notice in the wild that many well-used projects have not yet had a version `1.0.0` release. This is because many open source projects are run by volunteers. Folks with limited time to work on projects do not want to commit to a stable API.
+In our `setup.py` we have set the initial version to `0.0.1`. When the major version of a library is `0` this means it is in development mode and should be considered unstable. Generally in this mode, the `bugfix` version remains the same but the `minor` version is incremented for both `major` and `minor` changes, meaning anything could break at any time. Ideally once a library is "finished" and the functionality is stable you should move on to version `1.0.0` and adopt SemVer more strictly, however you will notice in the wild that many well-used projects have not yet had a version `1.0.0` release. This is because many open source projects are run by volunteers. Folks with limited time to work on projects do not want to commit to a stable API.
 
 For more information on this schema see the [Semantic Versioning website](https://semver.org/).
 
@@ -44,7 +44,7 @@ For more information on this schema see the [Semantic Versioning website](https:
 
 As we are using git for our version control we also have the ability to [tag specific commits with our version numbers](https://git-scm.com/book/en/v2/Git-Basics-Tagging). However it is easy to forget to update our `setup.py` file when creating a tag, so it would be great to enable our setup to automatically detect the current version from the git information.
 
-To do this we can use [versioneer](https://github.com/warner/python-versioneer) which is a Python module that you package with your project. Then instead of explicitly setting your version in `setup.py` versioneer gets it dynamically from the version control.
+To do this we can use [versioneer](https://github.com/warner/python-versioneer) which is a Python module that you package with your project. Instead of explicitly setting your version in `setup.py` versioneer gets it dynamically from the version control.
 
 ```bash
 pip install versioneer
