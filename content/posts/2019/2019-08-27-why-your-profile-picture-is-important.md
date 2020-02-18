@@ -23,7 +23,6 @@ Since switching to a text only medium I've noticed myself picking up these same 
 
 Therefore if a person's picture is friendly and welcoming then everything they say will be taken with a subtle positive spin. If it is cold and professional then their words may feel more critical. I'm by no means a body language expert but I wanted to break down what I think are some good guidelines for creating your profile picture in order to make communication easier, especially with people you haven't met yet.
 
-
 ## Start with me
 
 This is my current profile picture.
@@ -42,7 +41,6 @@ It may sound obvious in a post about profile pictures but it is really helpful t
 
 I have no idea at a glance who has replied to this Slack thread because they are using the default Slack profile pictures. It's great that Slack provides unique profile pictures to everyone by default but they are not THAT unique, they all seem to blend together in my mind. Having a distinctive picture helps others identify you at a glance.
 
-
 ## Use a photo of yourself
 
 Choosing a picture from some pop culture reference can create a unique avatar which people can use to identify you, and it also communicates your interests. However it doesn't communicate who you are or what you look like.
@@ -52,6 +50,7 @@ It's great that you love [xkcd](https://xkcd.com/) and I'm sure [cueball](https:
 
 Making a character that looks like you in the South Park Character Creator, or using the carriacature you got at your friends wedding goes a little further to help identify who you are to others. But you just can't beat an actual photo of you.
 
+_Note: There are many valid reasons why you might not want to put a photo of yourself on the internet. If you've made the decision to keep your face to yourself then that's your business. Many of the following points may still be valuable when considering how your chosen picture represents you._
 
 ## Be warm, positive and happy
 
@@ -61,12 +60,11 @@ The emotion that you present in your photo will subconsciously provide context t
 
 While people intend for it to make them look respectable this pose may come across as defensive and put people on guard.
 
-The neutral expression adds to this and will give people the impression that you are putting on a poker face. It's better for you to be smiling in your photo as it will add possitive connotations what whatever you are saying.
+The neutral expression adds to this and will give people the impression that you are putting on a poker face. It's better for you to be smiling in your photo as it will add positive connotations what whatever you are saying.
 
 Try using a photo like this with open body language and a friendly facial expression.
 
 <img src="https://i.imgur.com/KZj1zLcl.png" width="50%" />
-
 
 ## Frame your head and shoulders
 
@@ -78,7 +76,6 @@ Compare the two following images at different sizes. The full head and torso sho
 
 <img src="https://i.imgur.com/WxUDp01l.png" width="100%" />
 
-
 ## Keep your face uncovered
 
 Obscuring your face can give the same impression as a negative facial expression. Covering your mouth is a common gesture that people do when they are lying or being deceitful.
@@ -88,7 +85,6 @@ Obscuring your face can give the same impression as a negative facial expression
 If you want to let people know that you are a coffee fanatic in your profile picture try holding your mug out of the way.
 
 <img src="https://i.imgur.com/WoYyZF4l.png" width="50%" />
-
 
 ## Face the camera
 
@@ -100,7 +96,6 @@ When you talk to someone in real life it is polite to face them and give them ey
 
 <img src="https://i.imgur.com/HAL10fll.png" width="50%" />
 
-
 ## Be the only person in the photo
 
 Your profile picture is there to give someone an impression of who you are. Having multiple people in the photo will just lead to confusion. Even if it is obvious which one is you (perhaps because of age, gender, etc). It still adds a mental overhead to filter out the other person.
@@ -111,7 +106,6 @@ If there is a picture of you with someone else that you particularly like then b
 
 <img src="https://i.imgur.com/Wtv3CPKl.png" width="50%" />
 
-
 ## Keep the photo natural and in full colour
 
 Using a filter on your profile photo is common on personal social media, especially on Instagram. By association this gives these pictures more of a social feel than a professional one. If you're going to edit your photo I suggest you use effects which fix lighting and contrast to make it look more realistic rather than artistic.
@@ -119,7 +113,6 @@ Using a filter on your profile photo is common on personal social media, especia
 In this example the left image here is going to feel more professional and the right image is going to feel more personal.
 
 <img src="https://i.imgur.com/fSKiafBl.png" width="100%" />
-
 
 ## Use a high contrast photo
 
@@ -131,7 +124,6 @@ The busy, green, in-focus background above makes it harder for your eyes to pick
 
 <img src="https://i.imgur.com/OD9XEljl.png" width="50%" />
 
-
 ## Use the same picture everywhere
 
 Be consistent with your profile picture. It is the way people will identify you between platforms. If you use one picture in Slack and a different one on GitHub people will have to put in some effort to identify you when they switch contexts. It doesn't sound like much but the small discontinuity may disrupt someone's mental image of you.
@@ -140,13 +132,11 @@ That being said different pictures may be better suited to different platforms. 
 
 You could also use this to create a distinction between your work and home personas with a different image for each.
 
-
 ## Don't change your picture often
 
 To continue the point above, people will learn to recognise you by your profile picture across various platforms. If you change that image too regularly people will have to re-learn to recognise at a glance each time.
 
 Find a picture that you like, that presents you in the way you want people to see you and then stick with it. As long as that picture still accurately represents you then you're fine! If you've cut your hair, grown a beard or gone grey it might be time for an update.
-
 
 # Conclusion
 
