@@ -314,9 +314,15 @@ Now that we have laid out the current state of the Dask distributed cluster ecos
 
 As shown at the beginning a Dask cluster is a combination of scheduler, workers and clients which enable distributed execution of Python functions. Setting up your own cluster on your own machines is straight forward, but there is such a variety of ways to provision infrastructure that we now have a number of ways of automating this.
 
+This variation opens up a number of questions about how we can improve things
+
 ### Do we need more fixed cluster options?
 
-While covering the various cluster managers we only covered one fixed cluster implementation, the Helm chart. Is there a requirement for more fixed clusters? Examples may be a CloudFormation or Terraform templates which follow the same structure as the Helm chart, providing a Jupyter service, Dask scheduler and fixed number of workers.
+While covering the various cluster managers we only covered one fixed cluster implementation, the Helm chart. Is there a requirement for more fixed clusters? Examples may be a [CloudFormation](https://aws.amazon.com/cloudformation/) or [Terraform](https://www.terraform.io/) templates which follow the same structure as the Helm chart, providing a Jupyter service, Dask scheduler and fixed number of workers.
+
+### Can we bridge some gaps?
+
+Could the Dask Kubernetes cluster manager connect to an existing cluster that was built using the Helm chart to then perform adaptive scaling? I've been asked this a lot but it is currently unclear how to get to this position. The cluster manager and Helm chart use different Kubernetes resources to achieve the same goal, so some unification would be needed before this is possible.
 
 ### Are ephemeral clusters too ephemeral?
 
