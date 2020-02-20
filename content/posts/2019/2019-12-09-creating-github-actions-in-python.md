@@ -65,7 +65,7 @@ If you look in the project you will find a few files. The two we are going to fo
 The `Dockerfile` here is a pretty minimal Python Docker build.
 
 ```docker
-FROM python:3-slim AS build-env
+FROM python:3-slim AS builder
 ADD . /app
 WORKDIR /app
 
@@ -75,10 +75,10 @@ RUN pip install --target=/app requests
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
 FROM gcr.io/distroless/python3-debian10
-COPY --from=build-env /app /app
+COPY --from=builder /app /app
 WORKDIR /app
 ENV PYTHONPATH /app
-CMD ["main.py"]
+CMD ["/cmd/main.py"]
 ```
 
 We start with a `builder` container based on `python:3-slim`. We copy in our code and run `pip install --target=/app <deps>` to install our dependancies into our app directory.
