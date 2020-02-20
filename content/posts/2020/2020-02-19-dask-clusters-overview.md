@@ -78,7 +78,7 @@ If you are using Jupyter Lab as your Python environment you are also able to ope
 
 ### Recap
 
-In this minimal example we have installed Dask on some machines, run a distributed scheduler on one of them and workers on the others. We then connected to our cluster from our Python session and opened the dashboard to keep an eye on the cluster.
+In this minimal example we have installed Dask on some machines, ran a distributed scheduler on one of them and workers on the others. We then connected to our cluster from our Python session and opened the dashboard to keep an eye on the cluster.
 
 What we haven't covered is where these machines came from in the first place. In the rest of this post we will discuss the different ways that folks tend to run clusters out in the wild and give an overview of the various tools that exist to help you set up Dask clusters on a variety of infrastructure.
 
@@ -112,15 +112,15 @@ Ephemeral clusters allow you to leverage a bunch of machines but free them up ag
 
 ## Adaptivity
 
-Ephemeral clusters are also generally easier to scale as you will likely have an automated mechanism for starting workers. The Dask scheduler maintains an estimate of how long it expects the outstanding work to take to complete. If the scheduler has a mechanism for starting and stopping workers then it will scale up the workers in an attempt to complete all outstanding work within 5 seconds. This is referred to as adaptive mode.
+Ephemeral clusters are also generally easier to scale as you will likely have an automated mechanism for starting workers. The Dask scheduler maintains an estimate of how long it expects the outstanding work will take to complete. If the scheduler has a mechanism for starting and stopping workers then it will scale up the workers in an attempt to complete all outstanding work within 5 seconds. This is referred to as adaptive mode.
 
 The mechanisms for starting and stopping workers are added via plugins. Many of the implementations we are about to discuss include this logic.
 
 ## Connectivity
 
-Dask uses TCP to communicate between client, scheduler and workers by default. This means that all of these components must be on a TCP/IP network with open routes between the machines. Many connectivity problems step from firewalls or private networks blocking connections between certain components. An example of this would be running Dask on a cloud platform like AWS, but running the Python session and client on your laptop while using the free wifi in a coffee shop. You must ensure you are able to route traffic between components, either by exposing the Dask cluster to the internet or by connecting your laptop to the private network via a VPN or tunnel.
+Dask uses TCP to communicate between client, scheduler and workers by default. This means that all of these components must be on a TCP/IP network with open routes between the machines. Many connectivity problems step from firewalls or private networks blocking connections between certain components. An example of this would be running Dask on a cloud platform like AWS, but running the Python session and client on your laptop while sitting in a coffee shop using the free wifi. You must ensure you are able to route traffic between components, either by exposing the Dask cluster to the internet or by connecting your laptop to the private network via a VPN or tunnel.
 
-There is also [ongoing work to add support for UCX](https://blog.dask.org/2019/06/09/ucx-dgx) to Dask, which will allow it to make use of Infiniband or NVLINK networks where they are available.
+There is also [ongoing work to add support for UCX](https://blog.dask.org/2019/06/09/ucx-dgx) to Dask, which will allow it to make use of InfiniBand or NVLink networks where they are available.
 
 ## Cluster Managers
 
@@ -292,7 +292,7 @@ For each user the commands for creating and using a gateway cluster are the same
 
 The last cluster manager I'm going to cover is `LocalCUDACluster` from the [Dask CUDA](https://github.com/rapidsai/dask-cuda) package.
 
-This is slightly different than the other cluster managers in that it is constructing a Dask cluster which is specifically optimised for a single piece of hardware. In this case it is targeting machines with multiple GPUs like an [NVIDIA DGX-2](https://www.nvidia.com/en-gb/data-center/dgx-2/).
+This is slightly different than the other cluster managers in that it is constructing a Dask cluster which is specifically optimised for a single piece of hardware. In this case it is targeting machines with GPUs ranging from your laptop with an onboard NVIDIA GPU to an [NVIDIA DGX-2](https://www.nvidia.com/en-gb/data-center/dgx-2/) with multiple GPUs running in your datacentre.
 
 The cluster manager closely follows the `LocalCluster` in that is creates resources locally on the current machine, but instead of creating one worker per CPU core it creates one per GPU. It also changes some of the configuration defaults to ensure good performance of GPU workloads.
 
@@ -310,7 +310,7 @@ This package also has an alternative Dask worker bash command called `dask-cuda-
 
 Now that we have laid out the current state of the Dask distributed cluster ecosystem let's discuss where we could go next.
 
-As shown at the beginning a Dask cluster is a combination of scheduler, workers and clients which enable distributed execution of Python functions. Setting up your own cluster on your own machines is straight forward, but there is such a variety of ways to provision infrastructure that we now have a number of ways of automating this.
+As shown at the beginning a Dask cluster is a combination of scheduler, workers and client which enable distributed execution of Python functions. Setting up your own cluster on your own machines is straight forward, but there is such a variety of ways to provision infrastructure that we now have a number of ways of automating this.
 
 This variation opens up a number of questions about how we can improve things.
 
