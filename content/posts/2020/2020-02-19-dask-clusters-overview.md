@@ -270,13 +270,11 @@ client = Client(cluster)
 
 This cluster manager uses your [AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html#cli-quick-configuration) to authenticate and request AWS resources on Fargate, and then connects your local session to the Dask cluster running on the cloud.
 
-There are even higher level services such as [AWS Lambda](https://aws.amazon.com/lambda/) or [Google Cloud Functions](https://cloud.google.com/functions) which allow you to execute code on demand and you are billed for the execution time of the code. These are referred to as "serverless" services as the servers are totally abstracted away. This would be perfect for out Dask cluster as you could submit the scheduler and workers as the code to run. **However** when running these cloud functions it is not possible to get a network connection between them as they do not have routable IP addresses, so there is no way to set up a Dask cluster made of these executing functions.
-
-Maybe one day!
+There are even higher level services such as [AWS Lambda](https://aws.amazon.com/lambda/) or [Google Cloud Functions](https://cloud.google.com/functions) which allow you to execute code on demand and you are billed for the execution time of the code. These are referred to as "serverless" services as the servers are totally abstracted away. This would be perfect for out Dask cluster as you could submit the scheduler and workers as the code to run. **However** when running these cloud functions it is not possible to get a network connection between them as they do not have routable IP addresses, so there is no way to set up a Dask cluster made of these executing functions. Maybe one day!
 
 ### Dask Gateway
 
-[Dask Gateway](https://gateway.dask.org/) is a central service for managing Dask clusters. It provides a secure API which multiple users can communicate with to request Dask servers. It can spawn Dask cluster on Kubernetes, Yarn or batch systems.
+[Dask Gateway](https://gateway.dask.org/) is a central service for managing Dask clusters. It provides a secure API which multiple users can communicate with to request Dask servers. It can spawn Dask clusters on Kubernetes, Yarn or batch systems.
 
 This tool is targeted at IT administrators who want to enable their users to create Dask clusters, but want to maintain some centralized control instead of each user creating their own thing. This can also be useful for tracking Dask usage and setting per user limits.
 
@@ -298,7 +296,7 @@ This is slightly different than the other cluster managers in that it is constru
 
 The cluster manager closely follows the `LocalCluster` in that is creates resources locally on the current machine, but instead of creating one worker per CPU core it creates one per GPU. It also changes some of the configuration defaults to ensure good performance of GPU workloads.
 
-```
+```python
 from dask.distributed import Client
 from dask_cuda import LocalCUDACluster
 
@@ -314,11 +312,11 @@ Now that we have laid out the current state of the Dask distributed cluster ecos
 
 As shown at the beginning a Dask cluster is a combination of scheduler, workers and clients which enable distributed execution of Python functions. Setting up your own cluster on your own machines is straight forward, but there is such a variety of ways to provision infrastructure that we now have a number of ways of automating this.
 
-This variation opens up a number of questions about how we can improve things
+This variation opens up a number of questions about how we can improve things.
 
 ### Do we need more fixed cluster options?
 
-While covering the various cluster managers we only covered one fixed cluster implementation, the Helm chart. Is there a requirement for more fixed clusters? Examples may be a [CloudFormation](https://aws.amazon.com/cloudformation/) or [Terraform](https://www.terraform.io/) templates which follow the same structure as the Helm chart, providing a Jupyter service, Dask scheduler and fixed number of workers.
+While covering the various cluster managers we only covered one fixed cluster implementation, the Helm chart. Is there a requirement for more fixed clusters? Examples may be [CloudFormation](https://aws.amazon.com/cloudformation/) or [Terraform](https://www.terraform.io/) templates which follow the same structure as the Helm chart, providing a Jupyter service, Dask scheduler and fixed number of workers.
 
 ### Can we bridge some gaps?
 
@@ -328,10 +326,12 @@ Could the Dask Kubernetes cluster manager connect to an existing cluster that wa
 
 Many of the cluster managers only exist for the duration of the Python session. However some like the `YarnCluster` allow you to disconnect and reconnect from the cluster. This allows you to treat a YARN cluster more like a fixed cluster.
 
-In other circumstances the Python session may have a timeout or limit and may be killed before the Dask cluster can complete its work. Would there be benefit to letting the Dask cluster continue to exist? With the Python session cleared up and client and futures will also be garbage collected. So perhaps not.
+In other circumstances the Python session may have a timeout or limit and may be killed before the Dask cluster can complete its work. Would there be benefit to letting the Dask cluster continue to exist? With the Python session cleared up the client and futures will also be garbage collected. So perhaps not.
 
 ### Can we manage conda environments better?
 
-Currently it is the responsibility of the person creating the cluster to ensure that the workers conda environment matches the one where the `Client` is going to be created. On fixed clusters this can be easier as the Python/Jupyter environment can be provided within the same set of systems. However on ephemeral clusters where you may be reaching into a cloud or batch system they may not match your laptop's environment for example.
+Currently it is the responsibility of the person creating the cluster to ensure that the worker's conda environment matches the one where the `Client` is going to be created. On fixed clusters this can be easier as the Python/Jupyter environment can be provided within the same set of systems. However on ephemeral clusters where you may be reaching into a cloud or batch system they may not match your laptop's environment for example.
 
-Perhaps there could be integration between workers and coda to create dynamic environments on the fly. Exploring the performance impact of this would be interesting.
+Perhaps there could be integration between workers and conda to create dynamic environments on the fly. Exploring the performance impact of this would be interesting.
+
+Another option could be enabling users to start a remote Jupyter kernel on a worker. They wouldn't have access to the same filesystem, but they would share a conda environment.
