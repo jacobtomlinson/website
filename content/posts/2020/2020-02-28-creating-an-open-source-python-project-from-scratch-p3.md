@@ -1,7 +1,7 @@
 ---
 title: "Publishing open source Python packages on GitHub, PyPI and Conda Forge"
 series: ["Creating an open source Python project from scratch"]
-date: 2020-02-29T00:00:00+00:00
+date: 2020-02-28T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 categories:
