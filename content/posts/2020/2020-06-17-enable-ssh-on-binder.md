@@ -8,7 +8,7 @@ categories:
 tags:
   - Binder
   - SSH
-thumbnail: Binder
+thumbnail: mybinder
 ---
 
 While preparing material for a [Dask tutorial](https://github.com/jacobtomlinson/dask-video-tutorial-2020) I wanted to be able to ssh to `localhost` on [Binder](https://mybinder.org/). This was to allow me to demonstrate the SSH features in Dask, while remaining in my Binder instance.
