@@ -16,11 +16,11 @@ tags:
 thumbnail: obs
 ---
 
-A popular tool with streamers and YouTubers is [Open Broadcaster Software®️ Studio](https://obsproject.com/) or OBS for short. It allows you to compose scenes with cameras, desktop sharing, video snippets, images, web pages and more and then stream that video to services like Twitch or Mixer. You can also save recordings locally if you want to upload them to places like YouTube.
+A popular tool with streamers and YouTubers is [Open Broadcaster Software®️ Studio](https://obsproject.com/) or OBS for short. It allows you to compose scenes with cameras, desktop sharing, video snippets, images, web pages and more and then stream that video to services like Twitch or Mixer. You can also save recordings locally if you want to upload them to YouTube.
 
 ![OBS Studio screenshot](https://i.imgur.com/sRUYmhm.png)
 
-While OBS Studio supports streaming via the [RTMP protocol](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) and has a bunch of presets for services like Twitch you may also want to use your OBS scenes in video meeting applications like Zoom, Hangouts or Teams.
+While OBS Studio supports streaming via the [RTMP protocol](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) and has a bunch of presets for services like [Twitch](https://www.twitch.tv/) you may also want to use your OBS scenes in video meeting applications like [Zoom](https://zoom.us/), [Hangouts](https://hangouts.google.com/) or [Teams](https://www.microsoft.com/en-gb/microsoft-365/microsoft-teams/group-chat-software).
 
 In this post we will talk through setting up OBS Studio for use in these tools. Before we begin you should already ensure you have OBS Studio and your favorite video meeting software installed.
 
@@ -36,7 +36,7 @@ Head to the [releases page](https://github.com/johnboiles/obs-mac-virtualcam/rel
 
 Once it is installed restart OBS Studio and any other application that you want to access your video stream.
 
-Then in OBS Studio click `Tools > Start Virtual Camera`.
+Then in OBS Studio click `Tools > Start Virtual Camera`. You'll need to do this every time you open OBS.
 
 ![OBS Studio Start Virtual Camera menu](https://i.imgur.com/c7YX2HW.png)
 
@@ -80,7 +80,7 @@ If you see a blue screen with the OBS logo in your camera output this means you 
 
 ![OBS Virtual Camera stopped](https://i.imgur.com/43ITcL2.png)
 
-You may have noticed that your video feed is flipped, and in the OBS test card it says `Mirrored`. This is because many video meeting tools will show you a mirrored version of yourself, because this is what you are used to seeing in the mirror. Seeing a regular version of yourself can often feel weird. But don't worry, just because you see a mirrored version doesn't mean that others in the meeting will. So don't try and "fix" it by flipping your camera in OBS.
+You may have noticed that your video feed is flipped, and in the OBS test card it says `Mirrored`. This is because many video meeting tools will show you a mirrored version of yourself, because this is what you are used to seeing in the mirror. Seeing a regular version of yourself can feel weird. But don't worry, just because you see a mirrored version doesn't mean that others in the meeting will. So don't try and "fix" it by flipping your camera in OBS.
 
 ### Microsoft Teams
 
@@ -123,7 +123,7 @@ Then open your terminal and run the following command.
 
 ```bash
 # Change directory to the location of your entitlements.xml
-cd /path/where/you/created/your/entitlements.xml
+cd /path/to/file/
 
 # Codesign Zoom to disable library validation
 sudo codesign --entitlements entitlements.xml -f -s - /Applications/zoom.us.app
