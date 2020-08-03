@@ -1,6 +1,6 @@
-# www.jacobtomlinson.co.uk [![Build Status](https://travis-ci.org/jacobtomlinson/jacobtomlinson.github.io.svg?branch=master)](https://travis-ci.org/jacobtomlinson/jacobtomlinson.github.io)
+# jacobtomlinson.dev [![Netlify](https://img.shields.io/netlify/523dc931-d960-4932-a028-593bf87be0f0)](https://app.netlify.com/sites/jacobtomlinson/overview)
 
-The code which powers www.jacobtomlinson.co.uk
+The code which powers jacobtomlinson.dev
 
 ## Theme
 This blog is using my own [Carte Noire theme][1].
@@ -8,7 +8,7 @@ This blog is using my own [Carte Noire theme][1].
 ## Contact
 If you wish to contact me regarding my website please raise an issue on GitHub,
 tweet me [@_jacobtomlinson](http://www.twitter.com/_jacobtomlinson) or email me
-[jacob@jacobtomlinson.co.uk](mailto:jacob@jacobtomlinson.co.uk).
+[jacob@tomlinson.email](mailto:jacob@tomlinson.email).
 
 ## Contribution
 If you see any errors in my website content or feel you could make improvements then please
