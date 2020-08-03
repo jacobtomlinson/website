@@ -10,13 +10,20 @@ tags:
   - Dask
   - Distributed computing
 thumbnail: dask
+canonical: https://blog.dask.org/2020/07/23/current-state-of-distributed-dask-clusters
 ---
 
-In this post I am going to discuss the current state of distributed Dask clusters. If you aren't familiar with [Dask](https://dask.org/) you may wish to check out the documentation first.
-
-## Distributed Dask clusters
+_Originally published on the [Dask blog](https://blog.dask.org/2020/07/23/current-state-of-distributed-dask-clusters) on July 23rd, 2020._
 
 Dask enables you to build up a graph of the computation you want to perform and then executes it in parallel for you. This is great for making best use of your computer's hardware. It is also great when you want to expand beyond the limits of a single machine.
+
+In this post we will cover:
+
+- [Manual cluster setup](#manual-setup)
+- [Review of deployment options today](#cluster-managers)
+- [Analysis of that state](#future)
+
+## Manual setup
 
 Let's dive in by covering the most straight forward way to setup a distributed Dask cluster.
 
@@ -70,11 +77,15 @@ Creating this `Client` object within the Python global namespace means that any 
 
 The Dask distributed scheduler also has a dashboard which can be opened in a web browser. As you can see in the output above the default location for this is on the scheduler machine at port `8787`. So you should be able to navigate to `http://MachineA:8787`.
 
-![Dask dashboard](https://i.imgur.com/VzQIVpI.png)
+<a href="https://i.imgur.com/VzQIVpI.png">
+<img alt="Dask dashboard" src="https://i.imgur.com/VzQIVpI.png" width="100%" align="center">
+</a>
 
 If you are using Jupyter Lab as your Python environment you are also able to open individual plots from the dashboard as windows in Jupyter Lab with the [Dask Lab Extension](https://github.com/dask/dask-labextension).
 
-![Dask Lab Extension](https://i.imgur.com/SNk6F0H.png)
+<a href="https://i.imgur.com/SNk6F0H.png">
+<img alt="Dask Lab Extension" src="https://i.imgur.com/SNk6F0H.png" width="100%" align="center">
+</a>
 
 ### Recap
 
@@ -147,7 +158,7 @@ This cluster manager starts a scheduler on your local machine, and then starts a
 
 ### SSH Cluster
 
-Another reference implementation is `SSHCluster`. This is one of the most pure and simple ways of using multiple machines with Dask distributed and is very similar to our initial example in this blog post.
+Another reference implementation is [`SSHCluster`](https://docs.dask.org/en/latest/setup/ssh.html). This is one of the most pure and simple ways of using multiple machines with Dask distributed and is very similar to our initial example in this blog post.
 
 ```python
 from dask.distributed import SSHCluster, Client
@@ -184,7 +195,7 @@ The `KubeCluster` cluster manager further abstracts away those concepts into the
 from dask.distributed import Client
 from dask_kubernetes import KubeCluster
 
-cluster = KubeCluster()
+cluster = KubeCluster(**cluster_specific_kwargs)
 client = Client(cluster)
 ```
 
@@ -226,7 +237,7 @@ Dask Jobqueue has cluster manager objects for [PBS](https://en.wikipedia.org/wik
 from dask.distributed import Client
 from dask_jobqueue import PBSCluster
 
-cluster = PBSCluster()
+cluster = PBSCluster(**cluster_specific_kwargs)
 client = Client(cluster)
 ```
 
@@ -244,7 +255,7 @@ Hadoop is a framework that allows for the distributed processing of large data s
 from dask.distributed import Client
 from dask_yarn import YarnCluster
 
-cluster = YarnCluster()
+cluster = YarnCluster(**cluster_specific_kwargs)
 client = Client(cluster)
 ```
 
@@ -264,7 +275,7 @@ One example is [AWS Fargate](https://aws.amazon.com/fargate/) which is a managed
 from dask.distributed import Client
 from dask_cloudprovider import FargateCluster
 
-cluster = FargateCluster()
+cluster = FargateCluster(**cluster_specific_kwargs)
 client = Client(cluster)
 ```
 
@@ -282,7 +293,7 @@ This tool is targeted at IT administrators who want to enable their users to cre
 from dask.distributed import Client
 from dask_gateway import GatewayCluster
 
-cluster = GatewayCluster()
+cluster = GatewayCluster(**cluster_specific_kwargs)
 client = Client(cluster)
 ```
 
@@ -300,7 +311,7 @@ The cluster manager closely follows the `LocalCluster` in that is creates resour
 from dask.distributed import Client
 from dask_cuda import LocalCUDACluster
 
-cluster = LocalCUDACluster()
+cluster = LocalCUDACluster(**cluster_specific_kwargs)
 client = Client(cluster)
 ```
 
