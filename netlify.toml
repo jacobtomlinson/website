@@ -1,5 +1,5 @@
 [build]
-  command = "hugo"
+  command = "make build"
   functions = "functions"
   publish = "public"
 [build.environment]
