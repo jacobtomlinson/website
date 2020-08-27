@@ -14,7 +14,7 @@ tags:
 
 [Hacktoberfest](https://hacktoberfest.digitalocean.com/) is approaching once again. In previous years I have both participated and contributed to open source, and also tried to leverage the community in the open source projects I maintain by curating and labeling issues.
 
-Hacktoberfest is a noble endeavour. At its core it is a group of large well funded companies who are incentivising developers around the world to contribute to open source by offering them free t-shirts and stickers. Open source projects who want to make use of this resource just need to label issues with `hacktoberfest` for some free development time to be sent their way.
+Hacktoberfest is a noble endeavor. At its core it is a group of large well funded companies who are incentivising developers around the world to contribute to open source by offering them free t-shirts and stickers. Open source projects who want to make use of this resource just need to label issues with `hacktoberfest` for some free development time to be sent their way.
 
 Sadly the reality isn't quite this simple. The event is plagued with low quality contributions where the majority of participants are trying to do the minimum amount possible to qualify for their t-shirts. Someone once told me
 
@@ -60,7 +60,7 @@ Sometimes a contributor will raise a PR which adds a feature to a project which 
 
 ![Imgur](https://i.imgur.com/92SqTRq.png)
 
-### Bizarre miscelaneous contributions
+### Bizarre miscellaneous contributions
 
 I have also seen a whole range of bizarre contributions. Having folks PR in an unrelated Python script is definitely a bit strange, here's another one where someone contributed a C++ bubble sort script to a Python project.
 
@@ -114,9 +114,9 @@ It is likely that your rules for accepting Hacktoberfest contributions may be st
 
 If the answer is no to any of these I close the PR. This may seem a little harsh, but given the amount of low effort contributions I review every October I have to draw a line in order to not sink all of my time into this.
 
-GitHub has a [saved replies](https://docs.github.com/en/github/writing-on-github/using-saved-replies) feature which allows you to create some template reply snippets and very quickly use them when reviewing a PR. I have templates for thanking contributors for a quality contribution, pointing folks to the contribution docs and rejecting a low effort hacktoberfest PR. This saves me a lot of time writing individual responses and allows me to give off a consistent, upbeat, positive tone even if this is the hundredth low effort PR that I have closed that day.
+GitHub has a [saved replies](https://docs.github.com/en/github/writing-on-github/using-saved-replies) feature which allows you to create some template reply snippets and very quickly use them when reviewing a PR. I have templates for thanking contributors for a quality contribution, pointing folks to the contribution docs and rejecting a low effort Hacktoberfest PR. This saves me a lot of time writing individual responses and allows me to give off a consistent, upbeat, positive tone even if this is the hundredth low effort PR that I have closed that day.
 
-> Thanks for taking the time to raise this PR! I'm afraid it does not meet our guidelines for contributing to the project, hacktoberfest is a busy time for project maintainers and sadly we are going to have to close this now.
+> Thanks for taking the time to raise this PR! I'm afraid it does not meet our guidelines for contributing to the project, Hacktoberfest is a busy time for project maintainers and sadly we are going to have to close this now.
 >
 > Please have a look at our contributing guidelines. We often close issues for the following reasons:
 >
@@ -132,7 +132,7 @@ Once you have a decent workflow for filtering out the low effort PRs from folks 
 
 Many open source projects have repetitive well defined tasks which need doing, but the core maintainers do not have the time or inclination to do so. These can be great tasks for Hacktoberfest contributors.
 
-One example of this is an issue we have in opsdroid which covers [converting the existing test suite](https://github.com/opsdroid/opsdroid/issues/1502) from `unittest` to `pytest`. In a previous maintainer meeting we decided to migrate to a new test framework in order to make things more maintainable. The tests have also grown organically and many are not very high quality.
+One example of this is an issue we have in Opsdroid which covers [converting the existing test suite](https://github.com/opsdroid/opsdroid/issues/1502) from `unittest` to `pytest`. In a previous maintainer meeting we decided to migrate to a new test framework in order to make things more maintainable. The tests have also grown organically and many are not very high quality.
 
 We took the time to craft an issue which described what we are trying to achieve and the process you must go through to convert tests to the new framework. We included an example of converting one file and explained that there are many files which need converting, so the issue doesn't need one person to fix it, it needs many.
 
