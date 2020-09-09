@@ -25,7 +25,6 @@ function gdb () {
 	git remote show $REMOTE | grep "HEAD branch" | sed 's/.*: //'
 }
 
-
 unalias gcm
 function gcm () {
        git checkout $(gdb $1)
