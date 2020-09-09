@@ -12,7 +12,7 @@ tags:
 thumbnail: git
 ---
 
-Many open source projects are taking steps to update terminology to be more inclusive. The largest of these changes has been renaming the "trunk" branch of git repositories from `master` to `main`.
+Many open source projects are taking steps to update terminology to be more inclusive. The largest of these changes has been [renaming the "trunk" branch of git repositories from `master` to `main`](https://github.com/github/renaming).
 
 This is great and I fully support the transition, however this has resulted in some minor annoyances when working on various projects. I use git aliases to checkout out the trunk branch (`gcm`) and to also pull from upstream repositories (`glum`) as I generally work on forks. I'm now in a position where some projects still use `master` as their default branch, some use `main`, some repos like documentation or websites may use `gh-pages`, and some use other conventions all together.
 
