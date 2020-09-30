@@ -32,3 +32,5 @@ The Hugo theme, HTML, CSS and JavaScript is licensed under GPLv3 (unless stated 
 See the LICENSE file for more information.
 
 [1]: https://github.com/jacobtomlinson/carte-noire-hugo
+
+Thank You
