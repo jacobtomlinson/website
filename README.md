@@ -21,7 +21,7 @@ If you notice any bugs relating to the theme or display of the website please ra
 ### Building
 
 ```
-hugo server -D
+on hugo server -D
 ```
 
 ## License
