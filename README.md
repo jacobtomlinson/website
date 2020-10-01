@@ -18,7 +18,7 @@ on the relevant page.
 If you notice any bugs relating to the theme or display of the website please raise an issue in the
 [Carte Noire repository][1].
 
-### Building
+### Building-an amazing project
 
 ```
 hugo server -D
