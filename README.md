@@ -1,6 +1,6 @@
 # jacobtomlinson.dev [![Netlify](https://img.shields.io/netlify/523dc931-d960-4932-a028-593bf87be0f0)](https://app.netlify.com/sites/jacobtomlinson/overview)
 
-The code which powers jacobtomlinson.dev
+The code which powers jacobtomlinson.dev (Amazing one!!)
 
 ## Theme
 This blog is using my own [Carte Noire theme][1].
@@ -8,7 +8,7 @@ This blog is using my own [Carte Noire theme][1].
 ## Contact
 If you wish to contact me regarding my website please raise an issue on GitHub,
 tweet me [@_jacobtomlinson](http://www.twitter.com/_jacobtomlinson) or email me
-[jacob@tomlinson.email](mailto:jacob@tomlinson.email).
+[jacob@tomlinson.email](mailto:jacob@tomlinson.email).Instagram contact could also be mentioned.
 
 ## Contribution
 If you see any errors in my website content or feel you could make improvements then please
