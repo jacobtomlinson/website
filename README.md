@@ -3,6 +3,7 @@
 The code which powers jacobtomlinson.dev
 
 ## Theme
+In this blog theme is very attractive.
 This blog is using my own [Carte Noire theme][1].
 
 ## Contact
