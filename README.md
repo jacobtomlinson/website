@@ -5,7 +5,7 @@ The code which powers jacobtomlinson.dev
 ## Theme
 This blog is using my own [Carte Noire theme][1].
 
-## Contact
+## Contact me
 If you wish to contact me regarding my website please raise an issue on GitHub,
 tweet me [@_jacobtomlinson](http://www.twitter.com/_jacobtomlinson) or email me
 [jacob@tomlinson.email](mailto:jacob@tomlinson.email).
