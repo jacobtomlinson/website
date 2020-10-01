@@ -2,7 +2,7 @@
 
 The code which powers jacobtomlinson.dev
 
-## Theme
+## Amazing Theme
 This blog is using my own [Carte Noire theme][1].
 
 ## Contact
