@@ -7,8 +7,8 @@ This blog is using my own [Carte Noire theme][1].
 
 ## Contact
 If you wish to contact me regarding my website please raise an issue on GitHub,
-tweet me [@_jacobtomlinson](http://www.twitter.com/_jacobtomlinson) or email me
-[jacob@tomlinson.email](mailto:jacob@tomlinson.email).
+tweet me[@_jacobtomlinson] (http://www.twitter.com/_jacobtomlinson) or email me
+[jacob@tomlinson.email] (mailto:jacob@tomlinson.email).
 
 ## Contribution
 If you see any errors in my website content or feel you could make improvements then please
