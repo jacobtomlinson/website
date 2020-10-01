@@ -11,7 +11,7 @@
         "http://localhost/404.html",
         "http://localhost/posts/",
         "http://localhost/search/",
-        "http://localhost/posts/2017/apple-airport-express-repair/"
+        "http://localhost/posts/2017/orange-airport-express-repair/"
       ],
       "staticDistDir": "./public"
     }
