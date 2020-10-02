@@ -32,3 +32,8 @@ The Hugo theme, HTML, CSS and JavaScript is licensed under GPLv3 (unless stated 
 See the LICENSE file for more information.
 
 [1]: https://github.com/jacobtomlinson/carte-noire-hugo
+```html
+An Amazing Website
+    From scratch, i learn to code to make website .That's really a fun the amazing thing is that how are you creative website will be more impressive.
+    You should try to more creative which come from what you do in a day.
+```
