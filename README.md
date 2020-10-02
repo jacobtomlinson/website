@@ -33,23 +33,7 @@ See the LICENSE file for more information.
 
 [1]: https://github.com/jacobtomlinson/carte-noire-hugo
 ```html
-<html>
-  <body>
-    <head>
-      <style>
-        h1:hover{
-        color:white;
-        background-color:black;
-        }
-        div{
-        boder:2px solid green;
-        border-radius:2px;
-        }
-      </style>
-    </head>
-    <h1> An Amazing Website</h1><hr>
-    <div>From scratch, i learn to code to make website .That's really a fun the amazing thing is that how are you creative website will be more impressive.
-      You should try to more creative which come from what you do in a day.</div>
-  </body>
-</html>
+An Amazing Website
+    From scratch, i learn to code to make website .That's really a fun the amazing thing is that how are you creative website will be more impressive.
+    You should try to more creative which come from what you do in a day.
 ```
