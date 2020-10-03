@@ -19,7 +19,7 @@ If you notice any bugs relating to the theme or display of the website please ra
 [Carte Noire repository][1].
 
 ### Building
-
+Syntax:
 ```
 hugo server -D
 ```
