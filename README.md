@@ -11,7 +11,7 @@ tweet me [@_jacobtomlinson](http://www.twitter.com/_jacobtomlinson) or email me
 [jacob@tomlinson.email](mailto:jacob@tomlinson.email).
 
 ## Contribution
-If you see any errors in my website content or feel you could make improvements then please
+If you see any types of errors in my website content or feel you could make improvements then please
 feel free to open an issue or raise a pull request. Or if you wish just leave a comment
 on the relevant page.
 
@@ -32,3 +32,5 @@ The Hugo theme, HTML, CSS and JavaScript is licensed under GPLv3 (unless stated 
 See the LICENSE file for more information.
 
 [1]: https://github.com/jacobtomlinson/carte-noire-hugo
+
+Thank You
