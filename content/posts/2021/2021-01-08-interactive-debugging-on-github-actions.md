@@ -1,6 +1,6 @@
 ---
 title: "How to interactively debug GitHub Actions with netcat"
-date: 2021-02-08T00:00:00+00:00
+date: 2021-01-08T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 categories:
