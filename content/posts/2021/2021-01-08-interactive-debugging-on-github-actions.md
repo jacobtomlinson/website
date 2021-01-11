@@ -32,6 +32,8 @@ Much easier!
 
 ---
 
+**Original post**
+
 When a [GitHub Actions](https://github.com/features/actions) workflow fails it would be really nice to be able to interactively debug things with a shell. GitHub doesn't provide anything like a web console or SSH access to workflow runners so in this post we walk talk through throwing shells with [netcat](https://en.wikipedia.org/wiki/Netcat) and catching them with netcat and [ngrok](https://ngrok.com/).
 
 ## Throwing a reverse shell
