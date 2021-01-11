@@ -19,7 +19,7 @@ thumbnail: github
   uses: mxschmitt/action-tmate@v3
 ```
 
-With this step if any previous step in your workflow fails a `tmate` session will be started and the connection info will be repeatedly printed in the workflow output.
+With this step if any previous step in your workflow fails a [`tmate` session](https://tmate.io/) will be started and the connection info will be repeatedly printed in the workflow output.
 
 ```text
 Created new session successfully
