@@ -11,6 +11,29 @@ tags:
 thumbnail: github
 ---
 
+**Update**: This was a fun experiment and I recommend you check out the post for a fun read on setting up reverse shells. But I've since discovered [this awesome tmate action](https://github.com/mxschmitt/action-tmate) which lets you interactively debug in the browser or via SSH.
+
+```yaml
+- name: Debug with tmate on failure
+  if: ${{ failure() }}
+  uses: mxschmitt/action-tmate@v3
+```
+
+With this step if any previous step in your workflow fails a [`tmate` session](https://tmate.io/) will be started and the connection info will be repeatedly printed in the workflow output.
+
+```text
+Created new session successfully
+ssh xMMK8vwSQyCXdZfTCS9hN7fgx@nyc1.tmate.io
+
+https://tmate.io/t/xMMK8vwSQyCXdZfTCS9hN7fgx
+```
+
+Much easier!
+
+---
+
+**Original post**
+
 When a [GitHub Actions](https://github.com/features/actions) workflow fails it would be really nice to be able to interactively debug things with a shell. GitHub doesn't provide anything like a web console or SSH access to workflow runners so in this post we walk talk through throwing shells with [netcat](https://en.wikipedia.org/wiki/Netcat) and catching them with netcat and [ngrok](https://ngrok.com/).
 
 ## Throwing a reverse shell
