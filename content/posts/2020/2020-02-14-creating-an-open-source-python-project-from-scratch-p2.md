@@ -34,7 +34,7 @@ Let's discuss each number but starting right to left, as that will take us from 
 
 The middle number is referred to as the `minor` version number. This should be incremented if we add a new feature to our library. Existing users should be able to continue using the library exactly as they always had done regardless of the new feature. Also when incrementing this number we should reset the `bugfix` number to `0`. For example, if we added a new function to our library, but left `is_number` totally alone, this is a `minor` modification and the next release should be `1.1.0`.
 
-The left number is the `major` version number. This should be incremented if we have made a change which will break things for our users. After this version, they cannot just continue as usual and will probably have to read the documentation and change their behaviour accordingly. We also reset both other numbers to `0`. For example, if we modified `is_number` to return the strings `'yes'` and `'no'` instead of the booleans `True` and `False` this would be a breaking change and we should release `2.0.0`.
+The left number is the `major` version number. This should be incremented if we have made a change which will break things for our users. After this version, they cannot just continue as usual and will probably have to read the documentation and change their behavior accordingly. We also reset both other numbers to `0`. For example, if we modified `is_number` to return the strings `'yes'` and `'no'` instead of the booleans `True` and `False` this would be a breaking change and we should release `2.0.0`.
 
 In our `setup.py` we have set the initial version to `0.0.1`. When the major version of a library is `0` this means it is in development mode and should be considered unstable. Generally in this mode, the `bugfix` version remains the same but the `minor` version is incremented for both `major` and `minor` changes, meaning anything could break at any time. Ideally once a library is "finished" and the functionality is stable you should move on to version `1.0.0` and adopt SemVer more strictly, however you will notice in the wild that many well-used projects have not yet had a version `1.0.0` release. This is because many open source projects are run by volunteers. Folks with limited time to work on projects do not want to commit to a stable API.
 
@@ -103,20 +103,14 @@ setuptools.setup(
 )
 ```
 
-We should also go and have a look at the `__init__.py` file where our code lives as versioneer has added some extra lines in there. These lines use versioneer to set a `__version__` variable in the root scope of the file, this is common practice for Python libraries. However I prefer to have this section at the top and versioneer has added it to the bottom, so I'll readjust it to look like this.
+We should also go and have a look at the `__init__.py` file where our code lives as versioneer has added some extra lines in there. These lines use versioneer to set a `__version__` variable in the root scope of the file, this is common practice for Python libraries.
 
 ```python
+from .is_number import is_number
+
 from ._version import get_versions
 __version__ = get_versions()['version']
 del get_versions
-
-
-def is_number(in_value):
-    try:
-        float(in_value)
-        return True
-    except ValueError:
-        return False
 ```
 
 It has also created a `versioneer.py`, `MANIFEST.in` and `.gitattributes` file in the root of the project and a `_version.py` file in our library folder.

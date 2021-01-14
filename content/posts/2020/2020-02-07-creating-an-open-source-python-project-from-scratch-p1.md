@@ -58,9 +58,16 @@ For our example library we are going to create a library called `is_number` with
 ```
 is_number/ Top-level package
           __init__.py Initialization file for the package
+          is_number.py Main code file
 ```
 
-That file will contain our simple function for checking if something is a number.
+The `__init__.py` file tells Python that this directory contains a package, and will include our top level imports. Our `is_number.py` file will contain a function called `is_number`, so let's import that in our init file to expose it.
+
+```python
+from .is_number import is_number
+```
+
+The `is_number.py` file will contain our simple function for checking if something is a number.
 
 ```python
 def is_number(in_value):
@@ -221,10 +228,10 @@ git commit -m "Add setup"
 This is enough that we can install our package on our system.
 
 ```
-pip install .
+pip install -e .
 ```
 
-This will run the `setup.py` file in the current directory and install our Python module into our site-packages.
+This will run the `setup.py` file in the current directory and install our Python module. The `-e` flag installs things in development mode, which means if we change our code we can use it straight away, if we omit this a copy of the package will be installed into our site-packages.
 
 We could move to any other location in our filesystem and import and run our code.
 
