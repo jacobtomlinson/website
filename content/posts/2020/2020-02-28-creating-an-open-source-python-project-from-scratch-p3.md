@@ -185,6 +185,7 @@ is-number
 =========
 
 .. image:: https://img.shields.io/pypi/v/is-number
+   :target: https://pypi.org/project/is-number/
    :alt: PyPI
 
 A Python library to determine if something is a number.
