@@ -23,14 +23,14 @@ class Hello:
         print("init")
         # We cannot await anything in here
 
-    async def a_method(self):
-        print("a_method")
+    async def method(self):
+        print("method")
         # We can await in here
 
 
 async def main():
     h = Hello()
-    await h.a_method()
+    await h.method()
 
 
 if __name__ == "__main__":
@@ -42,14 +42,14 @@ Running this code will print:
 
 ```
 init
-a_method
+method
 ```
 
 ## Awaitable objects
 
-We can make our object directly awaitable by giving it a `__await__` method. This method [must return an iterator](https://docs.python.org/3/reference/datamodel.html?highlight=__await__#object.__await__).
+We can make our object directly awaitable by giving it an `__await__` method. This method [must return an iterator](https://docs.python.org/3/reference/datamodel.html?highlight=__await__#object.__await__).
 
-When defining an async function the `__await__` method is created for us, so we can use an async closure and use the `__await__` method from that.
+When defining an async function the `__await__` method is created for us, so we can create an async closure and use the `__await__` method from that.
 
 ```python
 import asyncio
@@ -68,14 +68,14 @@ class Hello:
 
         return closure().__await__()
 
-    async def a_method(self):
-        print("a_method")
+    async def method(self):
+        print("method")
         # We can await in here
 
 
 async def main():
     h = await Hello()
-    await h.a_method()
+    await h.method()
 
 
 if __name__ == "__main__":
@@ -90,12 +90,12 @@ Running this code will print:
 ```
 init
 await
-a_method
+method
 ```
 
 ## Async context managers
 
-We can also turn out object into an async context manager with `__aenter__` and `__aexit__` coroutines.
+We can also turn our object into an async context manager with `__aenter__` and `__aexit__` coroutines.
 
 ```python
 import asyncio
@@ -119,14 +119,14 @@ class Hello:
     async def __aexit__(self, *args):
         print("exit")
 
-    async def a_method(self):
-        print("a_method")
+    async def method(self):
+        print("method")
 
 
 async def main():
     async with Hello() as h:
         print("context")
-        await h.a_method()
+        await h.method()
 
 
 if __name__ == "__main__":
@@ -142,7 +142,7 @@ Running this code will print:
 init
 enter
 context
-a_method
+method
 exit
 ```
 
@@ -166,21 +166,21 @@ class Hello:
         return closure().__await__()
 
     async def __aenter__(self):
-        print("enter")
         await self
+        print("enter")
         return self
 
     async def __aexit__(self, *args):
         print("exit")
 
-    async def a_method(self):
-        print("a_method")
+    async def method(self):
+        print("method")
 
 
 async def main():
     async with Hello() as h:
         print("context")
-        await h.a_method()
+        await h.method()
 
 
 if __name__ == "__main__":
@@ -192,10 +192,10 @@ Running this code will print:
 
 ```
 init
-enter
 await
+enter
 context
-a_method
+method
 exit
 ```
 
