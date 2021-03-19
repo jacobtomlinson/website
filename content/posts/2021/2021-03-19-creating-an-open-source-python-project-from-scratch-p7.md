@@ -250,21 +250,20 @@ As we are using `pytest` for our testing we need to add the coverage plugin. So 
 $ pip install --upgrade -r requirements_test.txt
 ```
 
-We also need to tell pytest to store coverage reports in the current directory. We can do this in the pytest section of our `setup.cfg`.
+We also need to tell coverage to measure code in the current directory. We can do this in the pytest section of our `setup.cfg`.
 
 ```
 [tool:pytest]
 addopts = --doctest-modules --cov=./
 ```
 
-To configure our coverage reports we need to create a new file called `.coveragerc`. For now we will just omit some files that we don't want to test coverage on, including versioneer, our `setup.py` and the tests themselves.
+To configure our coverage reports we need to create a new file called `.coveragerc`. For now we will just omit some files that we don't want to test coverage on, including versioneer and our `setup.py`.
 
 ```
 [run]
 omit =
     setup.py
     versioneer.py
-    is_number/tests/test*
     is_number/_version.py
 ```
 
