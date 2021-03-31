@@ -18,7 +18,7 @@ tags:
 thumbnail: dask
 ---
 
-This week I presented a talk on using [Dask](https://dask.org/) with [RAPIDS](https://rapids.ai/) as part of a [BlazingSQL](https://blazingsql.com/) webinar series.
+This week I presented a talk on using [Dask](https://dask.org/) with [RAPIDS](https://rapids.ai/) as part of a [BlazingSQL webinar series](https://github.com/BlazingDB/Welcome_to_BlazingSQL_Notebooks/tree/master/webinars/rapids_intro).
 
 ## Abstract
 
