@@ -71,7 +71,7 @@ This can be useful if you want to share your project with people for testing or 
 Instead of insisting people install directly from our source repository we can bundle up our code and publish it to the [Python Package Index (PyPI)](https://pypi.org/). PyPI is the default place for `pip` to look for packages when installing, you give your package a short name and publish it to PyPI, then folks can install it using that short name.
 
 ```bash
-pip insall mypackage
+pip install mypackage
 ```
 
 Then when you publish new versions user's can also use `pip` to upgrade to the latest version.
