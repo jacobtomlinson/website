@@ -1,0 +1,14 @@
+img {
+  max-width: 100%;
+}
+
+.header-logo {
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.attributes .avatar {
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}

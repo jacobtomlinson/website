@@ -1,0 +1,42 @@
+{{ if .Params.series }}
+{{ $scratch := newScratch }}
+{{ $scratch.Add "cur_page_num" 1 }}
+{{ $scratch.Add "total_page_num" 0 }}
+{{ $scratch.Add "series_link" (print "/series/" (index .Params.series 0 | urlize)) }}
+
+{{ range where .Site.RegularPages.ByDate "Params.series" "intersect" .Params.series }}
+{{ $scratch.Add "total_page_num" 1 }}
+{{ if gt $.Date.Unix .Date.Unix }}
+{{ $scratch.Add "cur_page_num" 1 }}
+{{ $scratch.Set "prev_link" .Permalink }}
+{{ $scratch.Set "prev_title" .Title }}
+{{ end }}
+{{ end }}
+
+{{ range where .Site.RegularPages.ByDate.Reverse "Params.series" "intersect" .Params.series }}
+{{ $scratch.Set "first_link" .Permalink }}
+{{ if lt $.Date.Unix .Date.Unix }}
+{{ $scratch.Set "next_link" .Permalink }}
+{{ $scratch.Set "next_title" .Title }}
+{{ end }}
+{{ end }}
+{{ if or ($scratch.Get "next_link") ($scratch.Get "prev_link") }}
+
+<h2>More in this series</h2>
+<p>
+    This was <i>part {{ $scratch.Get "cur_page_num" }}</i> in the <a href={{ $scratch.Get "series_link" }}>{{ index
+        .Params.series 0 }}</a> series.
+</p>
+{{ end }}
+
+{{ if lt ($scratch.Get "cur_page_num") ($scratch.Get "total_page_num") }}
+<p>
+    <strong>Next up</strong>, <a href={{ $scratch.Get "next_link" }}>{{ $scratch.Get "next_title" }}</a>
+</p>
+{{ end }}
+
+<p>Be sure to subscribe to the <a href="/feed.xml"><i class="fa fa-rss"></i> RSS feed</a> to hear about future parts in
+    this series.</p>
+
+
+{{ end }}

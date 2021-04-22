@@ -1,0 +1,21 @@
+<div class="attributes">
+    {{ if isset .Params "author" }}
+    <img class="avatar" src="{{ .Site.Params.avatar }}" />
+    <small><a href="{{ .Site.Params.twitter }}">{{ .Params.author }}</a></small>
+    {{ end }}
+    {{ if .Date }}
+    <small>
+        <i class="fas fa-calendar"></i>
+        <span itemprop="datePublished">{{ .Date.Format "Jan 2, 2006"}}</span>
+    </small>
+    {{ end }}
+    {{ if .ReadingTime }}
+    <small><i class="fas fa-stopwatch"></i> {{ .ReadingTime }} minute read</small>
+    {{ end }}
+    {{ if isset .Params "tags"}}
+    <small><i class="fa fa-tags"></i> {{ delimit (apply (apply .Params.tags "urlize" ".") "printf"
+        "<a href=/tags/%s>#%s</a>"
+        "." ".") ", "
+        }}</small>
+    {{ end }}
+</div>

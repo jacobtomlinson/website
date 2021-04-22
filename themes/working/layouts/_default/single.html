@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<!-- Title -->
+<h1 itemprop="name">
+  {{ .Title }}
+</h1>
+
+
+{{ partial "post_attributes.html" . }}
+
+<!-- Series header -->
+
+{{ partial "series_header.html" . }}
+
+<!-- Canonical -->
+
+{{ if isset .Params "canonical" }}
+<p>
+  <i>
+    <i class="fas fa-archive" title="Archived version"></i>
+    This is an archived post which was originally published at
+    <a href="{{ .Params.canonical }}" target="_blank" rel="noopener noreferrer">
+      {{ index (findRE "^(?:https?:\\/\\/)?(?:[^@\\/\\n]+@)?(?:www\\.)?([^:\\/?\\n]+)" .Params.canonical) 0 }}
+    </a>.
+  </i>
+</p>
+{{ end }}
+
+<!-- Content -->
+
+<article>{{ .Content }}</article>
+
+<!-- Series footer -->
+
+{{ partial "series_footer.html" . }}
+
+<hr />
+
+<h2>Have thoughts?</h2>
+
+<p>
+  I love hearing feedback on my posts. You should head over to <a href="{{ .Site.Params.twitter }}">Twitter</a> and let
+  me know what you think!
+</p>
+
+<p>
+  <i>Spotted a mistake? Why not
+    <a href="{{ .Site.Params.SiteSourceURL }}/blob/master/content/{{ .File.Path }}" data-proofer-ignore>suggest an
+      edit</a>!</i>
+</p>
+
+<!-- Comments -->
+
+{{ if index .Params "comments" | default false }}
+{{ template "_internal/disqus.html" . }}
+{{ end }}
+
+<!-- -->
+
+{{ end }}

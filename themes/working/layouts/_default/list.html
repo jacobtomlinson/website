@@ -1,0 +1,56 @@
+{{ define "main" }}
+{{ if isset .Data "Singular" }}
+<h1>{{ if eq .Data.Singular "tag"}}#{{ urlize .Title }}{{ else }}{{ .Title }}{{ end }}<br />
+    <small class="singular">{{ humanize .Data.Singular }}</small>
+</h1>
+{{ else }}
+<h1>Latest posts</h1>
+{{ end }}
+
+<div class="articles">
+
+    <div>
+        <ul>
+            {{ $scratch := newScratch }}
+            {{ $scratch.Set "pagenum" (len .Pages) }}
+            {{ if isset .Data "Singular" }}
+            {{ $scratch.Set "singular" .Data.Singular }}
+            {{ end }}
+            {{ range .Pages }}
+            {{ if eq .Type "posts"}}
+
+            {{ $scratch.Set "title" .Title }}
+
+            {{ if isset $scratch.Values "singular" }}
+            {{ if eq ($scratch.Get "singular") "series"}}
+            {{ $scratch.Set "title" (printf "Part %d: %s" ($scratch.Get "pagenum") .Title) }}
+            {{ $scratch.Add "pagenum" -1 }}
+            {{ end }}
+            {{ end }}
+            <li>
+                <h2>
+                    {{ if isset .Params "canonical" }}
+                    <a href="{{ .Params.canonical }}" target="_blank" rel="noopener noreferrer">
+                        {{ $scratch.Get "title" }}
+                        <i class="fas fa-external-link-alt" title="Canonical version"></i>
+                    </a>
+                    <a href="{{ .Permalink }}">
+                        <i class="fas fa-archive" title="Archived version"></i>
+                    </a>
+                    {{ else }}
+                    <a href="{{ .Permalink }}">
+                        {{ $scratch.Get "title" }}
+                    </a>
+                    {{ end }}
+                </h2>
+                {{ partial "post_attributes.html" . }}
+                <p>{{ .Summary }}</p>
+            </li>
+            {{ end }}
+            {{ end }}
+
+        </ul>
+    </div>
+
+</div>
+{{ end }}

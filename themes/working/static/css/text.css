@@ -1,0 +1,104 @@
+body {
+  color: var(--light-text);
+  font-size: 21px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  color: var(--primary);
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  font-size: 1.25em;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  box-shadow: inset 0 0px 0 white, inset 0 -2px 0 var(--primary);
+}
+
+a:link,
+a:visited {
+  color: var(--light-text);
+}
+
+a:hover {
+  color: var(--primary);
+  box-shadow: inset 0 0px 0 white, inset 0 -1px 0 var(--primary);
+}
+
+a:active {
+  color: var(--primary);
+}
+
+blockquote {
+  color: var(--primary);
+  font-family: "Roboto Slab", serif;
+}
+
+code {
+  color: var(--primary);
+  font-family: "Roboto Mono", serif;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding-left: 2rem;
+  list-style-type: square;
+}
+
+.footer, .attributes small {
+  color: #666;
+  font-size: 0.6em;
+  font-weight: 300;
+}
+
+.singular {
+  color: #666;
+  font-size: 0.5em;
+  vertical-align: top;
+  font-weight: 300;
+  border-top: #666 1px solid;
+}
+
+.articles ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.articles ul li {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}

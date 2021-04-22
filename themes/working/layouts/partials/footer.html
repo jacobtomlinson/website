@@ -1,0 +1,9 @@
+{{ if .Page.IsHome }}
+{{ else }}
+<div class="footer">
+  <div>All content © Jacob Tomlinson</div>
+  <div class="nav">
+    {{ partial "nav.html" . }}
+  </div>
+</div>
+{{ end }}
