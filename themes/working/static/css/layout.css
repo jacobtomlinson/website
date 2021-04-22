@@ -1,0 +1,55 @@
+h1 small {
+  padding-right: 0.5rem;
+}
+
+hr {
+  border-color: var(--primary);
+}
+
+.content {
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: var(--light-background);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.attributes {
+  margin-top: -1em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.attributes small {
+  margin-right: 1em;
+}
+
+.footer {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.footer .nav {
+  padding: 0;
+}
+
+.footer .nav a {
+  margin-right: 1em;
+}

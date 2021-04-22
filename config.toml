@@ -1,30 +1,35 @@
 baseURL = "https://jacobtomlinson.dev"
-languageCode = "en-gb"
-title = "Jacob Tomlinson"
-theme = "carte-noire"
-pygmentsCodeFences = true
 disqusShortname = "jacobtomlinson"
 googleAnalytics = "UA-20365477-2"
+languageCode = "en-gb"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+theme = "working"
+title = "Jacob Tomlinson"
 
 [params]
-    author = "Jacob Tomlinson"
-    description = "Cloud, infrastructure and deployments for [Dask](https://dask.org/) and [RAPIDS](https://rapids.ai/) at [NVIDIA](https://nvidia.com/). Previously at [Met Office](https://www.metoffice.gov.uk/). Build [Opsdroid](https://opsdroid.dev/) in my spare time."
-    HeroImage = "https://2.gravatar.com/avatar/b7c2d49748426791dc98b8214dfac9d1?s=500"
-    SiteSourceURL = "https://github.com/jacobtomlinson/jacobtomlinson.github.io"
-    images = ["https://2.gravatar.com/avatar/b7c2d49748426791dc98b8214dfac9d1?s=500"]
+SiteSourceURL = "https://github.com/jacobtomlinson/website"
+author = "Jacob Tomlinson"
+avatar = "https://github.com/jacobtomlinson.png"
+description = "Building [Dask](https://dask.org/) and [RAPIDS](https://rapids.ai/) at [NVIDIA](https://nvidia.com/). Creator of [Opsdroid](https://opsdroid.dev/)."
+images = ["https://2.gravatar.com/avatar/b7c2d49748426791dc98b8214dfac9d1?s=500"]
+twitter = "https://twitter.com/_jacobtomlinson"
 
-    footer_left = "Made with <i class=\"fa fa-heart\"></i> using [Hugo](https://gohugo.io/)</a>"
-    footer_right = "<i class=\"fa fa-code\"></i> on [Github](https://github.com/jacobtomlinson/jacobtomlinson.github.io) &nbsp;<i class=\"fab fa-github-alt\"></i>"
+footer_left = "Made with <i class=\"fa fa-heart\"></i> using [Hugo](https://gohugo.io/)</a>"
+footer_right = "<i class=\"fa fa-code\"></i> on [Github](https://github.com/jacobtomlinson/jacobtomlinson.github.io) &nbsp;<i class=\"fab fa-github-alt\"></i>"
 
 [permalinks]
-    posts = "/:section/:year/:title/"
+posts = "/:section/:year/:title/"
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
+category = "categories"
+series = "series"
+tag = "tags"
 
 [outputFormats]
 [outputFormats.RSS]
-mediatype = "application/rss"
 baseName = "feed"
+mediatype = "application/rss"
+
+[markup.goldmark.renderer]
+unsafe = true

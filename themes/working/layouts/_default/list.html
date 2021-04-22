@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ if isset .Data "Singular" }}
+<h1>{{ .Data.Singular }}: {{ .Title }}</h1>
+{{ else }}
+<h1>All posts</h1>
+{{ end }}
+
+    <div class="articles">
+
+        {{ range $year := .Pages.GroupByDate "2006" }}
+        <div>
+            <h2 id="{{ $year.Key}}-ref">{{ $year.Key}}</h2>
+            <ul>
+                {{ range $year.Pages }}
+                {{ if eq .Type "posts"}}
+                <li>
+                    {{ if isset .Params "canonical" }}
+                    <a href="{{ .Params.canonical }}" target="_blank" rel="noopener noreferrer">
+                        {{ .Title }}
+                        <i class="fas fa-external-link-alt" title="Canonical version"></i>
+                    </a>
+                    <a href="{{ .Permalink }}">
+                        <i class="fas fa-archive" title="Archived version"></i>
+                    </a>
+                    {{ else }}
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+                    <small>{{ .Date.Format "January 2"}}</small>
+                </li>
+                {{ end }}
+                {{ end }}
+
+            </ul>
+        </div>
+        {{ end }}
+
+    </div>
+    {{ end }}
