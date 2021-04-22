@@ -2,15 +2,18 @@
   "ci": {
     "assert": {
       "assertions": {
-        "categories:accessibility": ["warn", { "minScore": 1 }]
+        "categories:accessibility": [
+          "warn",
+          {
+            "minScore": 1
+          }
+        ]
       }
     },
     "collect": {
       "url": [
         "http://localhost/",
-        "http://localhost/404.html",
         "http://localhost/posts/",
-        "http://localhost/search/",
         "http://localhost/posts/2017/apple-airport-express-repair/"
       ],
       "staticDistDir": "./public"
