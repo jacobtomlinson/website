@@ -32,13 +32,6 @@ h8 {
   font-size: 1.25em;
 }
 
-.footer, .attributes small {
-  color: #666;
-  font-size: 0.6em;
-  font-weight: 300;
-}
-
-
 
 a:link,
 a:visited,
@@ -79,6 +72,20 @@ code {
 ul {
   padding-left: 2rem;
   list-style-type: square;
+}
+
+.footer, .attributes small {
+  color: #666;
+  font-size: 0.6em;
+  font-weight: 300;
+}
+
+.singular {
+  color: #666;
+  font-size: 0.5em;
+  vertical-align: top;
+  font-weight: 300;
+  border-top: #666 1px solid;
 }
 
 .articles ul {

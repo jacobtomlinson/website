@@ -27,6 +27,11 @@ hr {
   margin-right: 1rem;
 }
 
+.singular {
+  margin-top: 3em;
+  padding-right: 2em;
+}
+
 .attributes {
   margin-top: -1em;
   display: flex;
@@ -42,6 +47,7 @@ hr {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 1.5em;
   justify-content: space-between;
   margin-bottom: 1em;
 }
@@ -52,4 +58,8 @@ hr {
 
 .footer .nav a {
   margin-right: 1em;
+}
+
+.articles ul li {
+  margin-bottom: 3em;
 }

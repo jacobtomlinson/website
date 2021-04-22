@@ -4,6 +4,7 @@ googleAnalytics = "UA-20365477-2"
 languageCode = "en-gb"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+summaryLength = 15
 theme = "working"
 title = "Jacob Tomlinson"
 

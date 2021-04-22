@@ -30,7 +30,6 @@ generally accepted 200-250 words per minute of the average adult but I think
 having it a bit lower takes into account thoroughly reading through code snippets
 and looking at images.
 
-{% raw %}
 ```
 {% assign minutes = content | number_of_words | divided_by: 180 %}
 ```
@@ -70,7 +69,6 @@ And you can simply specify the number of minutes in the frontmatter.
 ```
 minutes: 8
 ```
-{% endraw %}
 
 Adding a reading length to your article lets people know how long
 they need to spend on your content and make a quick decision about whether
