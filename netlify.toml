@@ -1,7 +1,7 @@
 [build]
-  command = "hugo"
-  functions = "functions"
-  publish = "public"
+command = "hugo"
+functions = "functions"
+publish = "public"
 [build.environment]
-  HUGO_VERSION = "0.55.6"
-  GO_IMPORT_PATH = "github.com/jacobtomlinson/website"
+GO_IMPORT_PATH = "github.com/jacobtomlinson/website"
+HUGO_VERSION = "0.82.0"
