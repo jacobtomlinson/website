@@ -1,33 +1,34 @@
 {{ if .Params.series }}
-    {{ $scratch := newScratch }}
-    {{ $scratch.Add "cur_page_num" 1 }}
-    {{ $scratch.Add "total_page_num" 0 }}
-    {{ $scratch.Add "series_link" (print "/series/" (index .Params.series 0 | urlize)) }}
+{{ $scratch := newScratch }}
+{{ $scratch.Add "cur_page_num" 1 }}
+{{ $scratch.Add "total_page_num" 0 }}
+{{ $scratch.Add "series_link" (print "/series/" (index .Params.series 0 | urlize)) }}
 
-    {{ range where .Site.RegularPages.ByDate "Params.series" "intersect" .Params.series }}
-        {{ $scratch.Add "total_page_num" 1 }}
-        {{ if gt $.Date.Unix .Date.Unix }}
-            {{ $scratch.Add "cur_page_num" 1 }}
-            {{ $scratch.Set "prev_link" .Permalink }}
-            {{ $scratch.Set "prev_title" .Title }}
-        {{ end }}
-    {{ end }}
+{{ range where .Site.RegularPages.ByDate "Params.series" "intersect" .Params.series }}
+{{ $scratch.Add "total_page_num" 1 }}
+{{ if gt $.Date.Unix .Date.Unix }}
+{{ $scratch.Add "cur_page_num" 1 }}
+{{ $scratch.Set "prev_link" .Permalink }}
+{{ $scratch.Set "prev_title" .Title }}
+{{ end }}
+{{ end }}
 
-    {{ range where .Site.RegularPages.ByDate.Reverse "Params.series" "intersect" .Params.series }}
-        {{ $scratch.Set "first_link" .Permalink }}
-        {{ if lt $.Date.Unix .Date.Unix }}
-            {{ $scratch.Set "next_link" .Permalink }}
-            {{ $scratch.Set "next_title" .Title }}
-        {{ end }}
-    {{ end }}
+{{ range where .Site.RegularPages.ByDate.Reverse "Params.series" "intersect" .Params.series }}
+{{ $scratch.Set "first_link" .Permalink }}
+{{ if lt $.Date.Unix .Date.Unix }}
+{{ $scratch.Set "next_link" .Permalink }}
+{{ $scratch.Set "next_title" .Title }}
+{{ end }}
+{{ end }}
 
-    {{ if or ($scratch.Get "next_link") ($scratch.Get "prev_link") }}
-    <p>
-        This is <i>part {{ $scratch.Get "cur_page_num" }}</i> in the <a href="{{ $scratch.Get "series_link" }}">{{ index .Params.series 0 }}</a> series.
-        {{ if ($scratch.Get "prev_link") }}
-        If you haven’t read the previous parts you may want to go back and check those out.
-        {{ end }}
-    </p>
+{{ if or ($scratch.Get "next_link") ($scratch.Get "prev_link") }}
+<p class="context">
+    This is <i>part {{ $scratch.Get "cur_page_num" }}</i> in the <a href={{ $scratch.Get "series_link" }}>{{ index
+        .Params.series 0 }}</a> series.
+    {{ if ($scratch.Get "prev_link") }}
+    If you haven’t read the previous parts you may want to go back and check those out.
     {{ end }}
+</p>
+{{ end }}
 
 {{ end }}
