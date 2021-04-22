@@ -5,3 +5,5 @@ publish = "public"
 [build.environment]
 GO_IMPORT_PATH = "github.com/jacobtomlinson/website"
 HUGO_VERSION = "0.82.0"
+[context.deploy-preview]
+command = "hugo -b $DEPLOY_PRIME_URL"
