@@ -23,8 +23,8 @@
 
 {{ if or ($scratch.Get "next_link") ($scratch.Get "prev_link") }}
 <p class="context">
-    This is <i>part {{ $scratch.Get "cur_page_num" }}</i> in the <a href={{ $scratch.Get "series_link" }}>{{ index
-        .Params.series 0 }}</a> series.
+    This is <i>part {{ $scratch.Get "cur_page_num" }}</i> in the
+    <a href={{ $scratch.Get "series_link" }}>{{ index .Params.series 0 }}</a> series.
     {{ if ($scratch.Get "prev_link") }}
     If you haven’t read the previous parts you may want to go back and check those out.
     {{ end }}

@@ -13,9 +13,9 @@
     <small><i class="fas fa-stopwatch"></i> {{ .ReadingTime }} minute read</small>
     {{ end }}
     {{ if isset .Params "tags"}}
-    <small><i class="fa fa-tags"></i> {{ delimit (apply (apply .Params.tags "urlize" ".") "printf"
-        "<a href=/tags/%s>#%s</a>"
-        "." ".") ", "
-        }}</small>
+    <small>
+        <i class="fa fa-tags"></i>
+        {{ delimit (apply (apply .Params.tags "urlize" ".") "printf" "<a href=/tags/%s>#%s</a>" "." ".") ", " }}
+    </small>
     {{ end }}
 </div>
