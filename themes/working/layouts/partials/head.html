@@ -2,22 +2,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- Fonts and CSS Reset -->
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:300,400,600,700|Open+Sans:300,400,600,700"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-/>
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:300,400,600,700|Open+Sans:300,400,600,700" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
 
 <!-- Font Awesome -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
 <!-- Wing CSS -->
 <link rel="stylesheet" href="https://unpkg.com/wingcss" />
 
 <link rel="stylesheet" href="/css/style.css" />
+
+
+{{ if isset .Params "canonical" }}
+<link rel="canonical" href="{{ .Params.canonical }}" />
+{{ end }}
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
