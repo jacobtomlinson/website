@@ -1,6 +1,6 @@
 [build]
-command = "hugo"
-functions = "functions"
+command = "hugo && cd functions && make build"
+functions = "functions/build"
 publish = "public"
 [build.environment]
 GO_IMPORT_PATH = "github.com/jacobtomlinson/website"
