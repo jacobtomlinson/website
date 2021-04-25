@@ -11,12 +11,24 @@ h5,
 h6,
 h7,
 h8 {
-  color: var(--primary);
+  color: var(--light-text);
   font-family: "Roboto Slab", serif;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  border-left: 0.25em solid var(--primary);
+  padding-left: 0.25em;
+}
+
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: 600;
 }
 
 h2 {
