@@ -13,8 +13,6 @@ tags:
 thumbnail: python
 ---
 
-# Community
-
 Now that our open source Python project exists and users can install it we will want to turn our attention to sustainability, reach and ongoing maintenance. By putting it out there and gaining users you are opening yourself up to questions, bug reports and feature requests.
 
 In this post we will discuss growing a community around your project for supporting your users.
