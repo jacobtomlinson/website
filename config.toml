@@ -13,7 +13,7 @@ title = "Jacob Tomlinson"
 SiteSourceURL = "https://github.com/jacobtomlinson/website"
 author = "Jacob Tomlinson"
 avatar = "https://github.com/jacobtomlinson.png"
-description = "Building [RAPIDS](https://rapids.ai/) and [Dask](https://dask.org/) at [NVIDIA](https://nvidia.com/). Tinker with [Opsdroid](https://opsdroid.dev/) in my spare time. he/him."
+description = "Building RAPIDS and Dask at NVIDIA. Tinker with Opsdroid in my spare time. he/him."
 images = ["https://i.imgur.com/Ln3NJU2h.png"]
 twitter = "https://twitter.com/_jacobtomlinson"
 
