@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{ if ne .Params.type "simple" }}
+
 <!-- Title -->
 <h1 itemprop="name">
   {{ .Title }}
@@ -26,9 +28,13 @@
 </p>
 {{ end }}
 
+{{ end }}
+
 <!-- Content -->
 
 <article>{{ .Content }}</article>
+
+{{ if ne .Params.type "simple" }}
 
 <!-- Series footer -->
 
@@ -56,5 +62,7 @@
 {{ end }}
 
 <!-- -->
+
+{{ end }}
 
 {{ end }}
