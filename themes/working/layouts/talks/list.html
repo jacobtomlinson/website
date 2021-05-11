@@ -1,0 +1,23 @@
+{{ define "main" }}
+<h1>Talks</h1>
+
+<div class="articles">
+
+    <div>
+        <ul>
+            {{ range .Pages }}
+            {{ if eq .Type "talks"}}
+            <li>
+                <h2>
+                    {{ .Title }}
+                </h2>
+                {{ partial "post_attributes.html" . }}
+            </li>
+            {{ end }}
+            {{ end }}
+
+        </ul>
+    </div>
+
+</div>
+{{ end }}

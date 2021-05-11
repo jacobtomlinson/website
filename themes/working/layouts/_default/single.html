@@ -10,6 +10,9 @@
 
 {{ partial "post_attributes.html" . }}
 
+
+{{ if eq .Type "posts"}}
+
 <!-- Series header -->
 
 {{ partial "series_header.html" . }}
@@ -27,6 +30,7 @@
   </i>
 </p>
 {{ end }}
+{{ end }}
 
 {{ end }}
 
@@ -35,6 +39,7 @@
 <article>{{ .Content }}</article>
 
 {{ if ne .Params.type "simple" }}
+{{ if eq .Type "posts"}}
 
 <!-- Series footer -->
 
@@ -59,6 +64,7 @@
 
 {{ if index .Params "comments" | default false }}
 {{ template "_internal/disqus.html" . }}
+{{ end }}
 {{ end }}
 
 <!-- -->

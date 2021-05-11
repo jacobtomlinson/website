@@ -3,19 +3,75 @@
     <img class="avatar" src="{{ .Site.Params.avatar }}" />
     <small><a href="{{ .Site.Params.twitter }}">{{ .Params.author }}</a></small>
     {{ end }}
+
     {{ if .Date }}
     <small>
         <i class="fas fa-calendar"></i>
         <span itemprop="datePublished">{{ .Date.Format "Jan 2, 2006"}}</span>
     </small>
     {{ end }}
+
+    {{ if .Params.event }}
+    <small>
+        <i class="fas fa-users"></i>
+        <a href={{ .Params.event.link }}>{{ .Params.event.name }}</a>
+    </small>
+    {{ if .Params.event.location }}
+    <small>
+        <i class="fas fa-map-marker-alt"></i>
+        {{ .Params.event.location }}
+    </small>
+    {{ end }}
+    {{ if .Params.event.type }}
+    <small>
+        <i class="fas fa-bullhorn"></i>
+        {{ .Params.event.type }}
+    </small>
+    {{ end }}
+    {{ end }}
+
+    {{ if eq .Type "talks"}}
+    {{ if .Params.length }}
+    <small><i class="fas fa-stopwatch"></i> {{ .Params.length }} minutes</small>
+    {{ end }}
+    {{ else }}
     {{ if .ReadingTime }}
     <small><i class="fas fa-stopwatch"></i> {{ .ReadingTime }} minute read</small>
     {{ end }}
+    {{ end }}
+
     {{ if isset .Params "tags"}}
     <small>
         <i class="fa fa-tags"></i>
         {{ delimit (apply (apply .Params.tags "urlize" ".") "printf" "<a href=/tags/%s>#%s</a>" "." ".") ", " }}
+    </small>
+    {{ end }}
+
+    {{ if .Params.abstract }}
+    <small>
+        <i class="fas fa-file-alt"></i>
+        <a href="{{ .Permalink }}">Abstract</a>
+    </small>
+    {{ end }}
+
+    {{ if .Params.slides }}
+    <small>
+        <a href="{{ .Params.slides }}"><i class="far fa-file-powerpoint"></i>
+            Slides</a>
+    </small>
+    {{ end }}
+
+    {{ if .Params.video }}
+    <small>
+        <i class="fas fa-video"></i>
+        <a href="{{ .Params.video }}">Video</a>
+    </small>
+    {{ end }}
+
+    {{ if .Params.resources }}
+    <small>
+        <i class="fas fa-book-open"></i>
+        <a href="{{ .Params.resources }}">Resources</a>
     </small>
     {{ end }}
 </div>
