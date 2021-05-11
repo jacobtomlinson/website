@@ -39,7 +39,7 @@ Our workflow will look something like this:
 - Install our project and its dependencies (including testing dependencies)
 - Run our tests
 
-We probably also want to run this workflow a few times with different configuration options to ensure things will work for a variety of users. For example we probably want to choose different runners for each operating system we support.
+We probably also want to run this workflow a few times with different configuration options to ensure things will work for a variety of users. For example we probably want to use a runner for each operating system we support.
 
 Given our project is simple and written in pure Python we should be able to easily support Linux, Windows and macOS, so let's have a runner for each of those.
 

@@ -12,5 +12,6 @@ length: 90
 abstract: false
 video: https://www.youtube.com/watch?v=_u0OQm9qf_A
 slides: null
+resources: https://github.com/jacobtomlinson/dask-video-tutorial-2020
 ---
 
