@@ -8,14 +8,18 @@
   padding: 0.5rem 2rem;
 }
 
-.index p {
+.index-nav {
   font-size: 2.5vw;
   background-color: var(--light-background);
   z-index: 1;
   position: fixed;
   left: 0;
-  top: 50%;
+  top: 68%;
   padding: 0.5rem 2rem;
+}
+
+.index-nav a {
+  margin-right: 2rem;
 }
 
 .index #animation {

@@ -1,3 +1,7 @@
+body {
+  min-width: 350px;
+}
+
 h1 small {
   padding-right: 0.5rem;
 }
@@ -14,17 +18,36 @@ hr {
 
 .header {
   width: 100%;
+  max-width: 800px;
   text-align: center;
   position: relative;
+  margin: 0 auto;
   z-index: 1;
   background: var(--light-background);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding-bottom: 3rem;
+  }
 }
 
 .header a {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.header .left {
+  float: left;
+}
+
+.header .right {
+  float: right;
 }
 
 .singular {

@@ -7,8 +7,9 @@ img {
   border-radius: 50%;
 }
 
-.attributes .avatar {
+.header .avatar {
   height: 1.5em;
   border-radius: 50%;
-  margin-right: 0.5em;
+  margin-right: 0.25em;
+  border: 2px solid var(--primary);
 }

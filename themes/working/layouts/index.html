@@ -1,8 +1,20 @@
+{{ define "header" }}
+<!-- No header -->
+{{ end }}
+
 {{ define "main" }}
 <div class="index">
   <h1>{{ .Site.Title }}</h1>
+  <div class="index-nav">
+    {{- partial "nav.html" . -}}
+  </div>
+
   <code id="animation"></code>
 </div>
+{{ end }}
+
+{{ define "footer" }}
+<!-- No footer -->
 {{ end }}
 
 {{ define "scripts" }}
