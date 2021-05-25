@@ -1,7 +1,7 @@
 ---
 title: "Blog post driven development"
 date: 2021-01-11T00:00:00+00:00
-draft: false
+draft: true
 author: "Jacob Tomlinson"
 categories:
   - blog
