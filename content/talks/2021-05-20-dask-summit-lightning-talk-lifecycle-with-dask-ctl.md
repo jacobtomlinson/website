@@ -11,5 +11,5 @@ event:
 length: 5
 video: null
 abstract: false
-slides: https://speakerdeck.com/jacobtomlinson/dask-on-kubernetes
+slides: https://speakerdeck.com/jacobtomlinson/lightning-talk-managing-cluster-lifecycle-with-dask-ctl
 ---
