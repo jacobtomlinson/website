@@ -87,7 +87,7 @@ Connect to the InfluxDB web GUI at `http://your-influxdb-host:8083/` and select 
 
 You should then see a list of the measurements Telegraf is collection that looks like this.
 
-![InfluxDB Telegraf Measurements](http://i.imgur.com/NVBIMLd.png)
+![InfluxDB Telegraf Measurements](https://i.imgur.com/NVBIMLd.png)
 
 [chronograf]: https://influxdata.com/time-series-platform/chronograf/
 [docker]: https://www.docker.com/

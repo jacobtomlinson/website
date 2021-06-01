@@ -19,11 +19,11 @@ Just a quick post about an issue I&#8217;ve had with Google Charts on IE7/8.
 
 When viewing my page in Firefox or Chrome my graph displayed as expected.
 
-![Correct graph](http://i.imgur.com/KWqjM9b.png)
+![Correct graph](https://i.imgur.com/KWqjM9b.png)
 
 However when I tried to view it in IE8 or IE7 the date axis just showed 1st of Jan 1970 and no chart.
 
-![Broken graph](http://i.imgur.com/xiMYNlw.png)
+![Broken graph](https://i.imgur.com/xiMYNlw.png)
 
 After a bit of digging it appears that this is to do with the JavaScript function I used to convert a string to a date object. All of my dates are stored in a json file with the format YYYY-MM-DD along with an integer value, to convert the date string into a JS date object I used the following code
 
@@ -73,4 +73,4 @@ data.addRows(dataArray);
 
 Now my graph displays as it always has in Firefox/Chrome but also not works in IE7/8
 
-![Fixed Graph](http://i.imgur.com/6KSxIwn.png)
+![Fixed Graph](https://i.imgur.com/6KSxIwn.png)

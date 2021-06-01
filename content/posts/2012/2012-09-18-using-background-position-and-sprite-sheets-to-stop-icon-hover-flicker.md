@@ -41,11 +41,11 @@ To fix it I used a very basic web design technique which involves putting all th
 
 The best way to think about it is to imagine the div as a little window that you're looking at the sprite sheet through. You can only see a small part the size of the window and if you move the sprite sheet around the image in the window changes.
 
-![Icon Sprite Sheet Grey](http://i.imgur.com/PZq9a1m.png)
+![Icon Sprite Sheet Grey](https://i.imgur.com/PZq9a1m.png)
 
 So in this example think of the red square as the div which is 32px by 32px. To position the grey facebook icon inside the square the position has to be set to -32px 0px which shifts the background image 32 pixels to the left.
 
-![Icon Sprite Sheet Colour](http://i.imgur.com/oI04LAo.png)
+![Icon Sprite Sheet Colour](https://i.imgur.com/oI04LAo.png)
 
 Then when the image is hovered over the x position stays at -32px for the facebook icon but the y axis changes to -32px to shift the sprite sheet up 32 pixels and places the colour facebook icon inside the div.
 
