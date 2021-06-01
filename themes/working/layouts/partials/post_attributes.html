@@ -1,25 +1,25 @@
 <div class="attributes">
     {{ if .Date }}
     <small>
-        <i class="fas fa-calendar"></i>
+        <i class="fas fa-calendar" title="Published date"></i>
         <span itemprop="datePublished">{{ .Date.Format "Jan 2, 2006"}}</span>
     </small>
     {{ end }}
 
     {{ if .Params.event }}
     <small>
-        <i class="fas fa-users"></i>
+        <i class="fas fa-users" title="Event name"></i>
         <a href={{ .Params.event.link }}>{{ .Params.event.name }}</a>
     </small>
     {{ if .Params.event.location }}
     <small>
-        <i class="fas fa-map-marker-alt"></i>
+        <i class="fas fa-map-marker-alt" title="Event location"></i>
         {{ .Params.event.location }}
     </small>
     {{ end }}
     {{ if .Params.event.type }}
     <small>
-        <i class="fas fa-bullhorn"></i>
+        <i class="fas fa-bullhorn" title="Talk type"></i>
         {{ .Params.event.type }}
     </small>
     {{ end }}
@@ -27,46 +27,53 @@
 
     {{ if eq .Type "talks"}}
     {{ if .Params.length }}
-    <small><i class="fas fa-stopwatch"></i> {{ .Params.length }} minutes</small>
+    <small><i class="fas fa-stopwatch" title="Talk length"></i> {{ .Params.length }} minutes</small>
     {{ end }}
     {{ else }}
     {{ if .ReadingTime }}
-    <small><i class="fas fa-stopwatch"></i> {{ .ReadingTime }} minute read</small>
+    <small><i class="fas fa-stopwatch" title="Reading time"></i> {{ .ReadingTime }} minute read</small>
     {{ end }}
     {{ end }}
 
     {{ if isset .Params "tags"}}
     <small>
-        <i class="fa fa-tags"></i>
+        <i class="fa fa-tags" title="Tags"></i>
         {{ delimit (apply (apply .Params.tags "urlize" ".") "printf" "<a href=/tags/%s>#%s</a>" "." ".") ", " }}
+    </small>
+    {{ end }}
+
+    {{ if .Params.canonical }}
+    <small>
+        <i class="fas fa-archive" title="Archived post"></i>
+        <a href="{{ .Permalink }}">Archive</a>
     </small>
     {{ end }}
 
     {{ if .Params.abstract }}
     <small>
-        <i class="fas fa-file-alt"></i>
+        <i class="fas fa-file-alt" title="Abstract"></i>
         <a href="{{ .Permalink }}">Abstract</a>
     </small>
     {{ end }}
 
     {{ if .Params.slides }}
     <small>
-        <i class="far fa-file-powerpoint"></i>
+        <i class="far fa-file-powerpoint" title="Slides"></i>
         <a href="{{ .Params.slides }}">Slides</a>
     </small>
     {{ end }}
 
     {{ if .Params.video }}
     <small>
-        <i class="fas fa-video"></i>
+        <i class="fas fa-video" title="Video"></i>
         <a href="{{ .Params.video }}">Video</a>
     </small>
     {{ end }}
 
     {{ if .Params.resources }}
     <small>
-        <i class="fas fa-book-open"></i>
-        <a href="{{ .Params.resources }}">Resources</a>
+        <i class="fas fa-book-open" title="Additional resources"></i>
+        <a href="{{ .Params.resources }}">Additional Resources</a>
     </small>
     {{ end }}
 </div>

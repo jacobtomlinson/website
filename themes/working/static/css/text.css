@@ -100,6 +100,21 @@ ul {
   border-top: #666 1px solid;
 }
 
+.draft {
+  position: absolute;
+  transform: rotate(90deg);
+  margin-top: 0.8em;
+  margin-left: -2.2em;
+  display: block;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+h1 .draft {
+  margin-top: 1.3em;
+  margin-left: -2.5em;
+}
+
 .articles ul {
   padding-left: 0;
   list-style-type: none;

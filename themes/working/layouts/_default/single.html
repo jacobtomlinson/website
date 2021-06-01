@@ -2,8 +2,13 @@
 
 {{ if ne .Params.type "simple" }}
 
+
 <!-- Title -->
 <h1 itemprop="name">
+  {{ if .Params.draft }}
+  <span class="draft">Draft</span>
+  {{ end }}
+
   {{ .Title }}
 </h1>
 

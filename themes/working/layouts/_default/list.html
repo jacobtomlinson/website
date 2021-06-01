@@ -28,14 +28,15 @@
             {{ end }}
             {{ end }}
             <li>
+                {{ if .Params.draft }}
+                <span class="draft">Draft</span>
+                {{ end }}
                 <h2>
                     {{ if isset .Params "canonical" }}
-                    <a href="{{ .Params.canonical }}" target="_blank" rel="noopener noreferrer">
+                    <a href="{{ .Params.canonical }}" target="_blank" rel="noopener noreferrer"
+                        title="This is an external link to the canonical version">
                         {{ $scratch.Get "title" }}
-                        <i class="fas fa-external-link-alt" title="Canonical version"></i>
-                    </a>
-                    <a href="{{ .Permalink }}">
-                        <i class="fas fa-archive" title="Archived version"></i>
+                        <sup><i class="fas fa-external-link-alt"></i></sup>
                     </a>
                     {{ else }}
                     <a href="{{ .Permalink }}">
