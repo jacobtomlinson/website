@@ -13,3 +13,11 @@ img {
   margin-right: 0.25em;
   border: 2px solid var(--primary);
 }
+
+figure figcaption {
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 0.6em;
+  font-weight: 300;
+}
