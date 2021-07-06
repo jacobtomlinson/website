@@ -1,7 +1,7 @@
 ---
 title: "Maintaining an open source Python package when you have no time"
 series: ["Creating an open source Python project from scratch"]
-date: 2021-05-14T00:00:00+00:00
+date: 2021-07-16T00:00:00+00:00
 draft: true
 author: "Jacob Tomlinson"
 categories:
