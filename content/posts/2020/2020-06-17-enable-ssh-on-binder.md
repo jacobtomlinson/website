@@ -11,6 +11,20 @@ tags:
 thumbnail: mybinder
 ---
 
+__⚠️ This post is no longer valid.__
+
+Running SSH on Binder has not been possible since late 2020. Due to abuse from botnets Binder will now kill sessions running `sshd`.
+
+<div style="text-align: center;">
+
+![This is why we can't have nice things](https://i.imgur.com/mY4jZkS.png)
+
+</div>
+
+---
+
+_Original post for archive purposes_
+
 While preparing material for a [Dask tutorial](https://github.com/jacobtomlinson/dask-video-tutorial-2020) I wanted to be able to ssh to `localhost` on [Binder](https://mybinder.org/). This was to allow me to demonstrate the SSH features in Dask, while remaining in my Binder instance.
 
 I can imagine other situations where being able to SSH to `localhost` on Binder would be useful so thought I would write up some instructions.
