@@ -75,7 +75,7 @@ labels:
 - Install method (conda, pip, source):
 ````
 
-The first section of our template enclosed in the `---` dashed is our YAML frontmatter. This is some data used but GitHub to describe our template. In this data we have the template a name and description and also list any issue labels which we want to have attached to issues created via this template.
+The first section of our template enclosed in the `---` dashed is our YAML frontmatter. This is some data used by GitHub to describe our template. In this data we have the template a name and description and also list any issue labels which we want to have attached to issues created via this template.
 
 Notice we added some instructions to the user within a `<!-- -->` HTML comment. We did this because user's will probably not remove anything from the template, only add, and we do not want these instructions to be visible in our final issue. If a user submits an issue containing HTML comments they will not be rendered by GitHub.
 
