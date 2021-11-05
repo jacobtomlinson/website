@@ -9,7 +9,7 @@ event:
   type: Lightning Talk
   location: Online
 length: 5
-video: null
+video: https://youtu.be/bbg5vPfNdeY?t=2481
 abstract: false
 slides: https://speakerdeck.com/jacobtomlinson/lightning-talk-managing-cluster-lifecycle-with-dask-ctl
 ---

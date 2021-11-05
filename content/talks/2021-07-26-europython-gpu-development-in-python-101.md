@@ -1,5 +1,5 @@
 ---
-title: "GPU development with Python 101"
+title: "GPU development with Python 101 (extended)"
 date: 2021-07-26T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"

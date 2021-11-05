@@ -9,7 +9,7 @@ event:
   type: Workshop Talk
   location: Online
 length: 15
-video: null
+video: https://youtu.be/faFncNrXmIY?t=1159
 abstract: true
 resources: https://summit.dask.org/schedule/presentation/20/deploying-dask/
 slides: https://speakerdeck.com/jacobtomlinson/dask-on-kubernetes

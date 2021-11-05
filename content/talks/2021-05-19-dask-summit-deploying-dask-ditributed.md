@@ -9,7 +9,7 @@ event:
   type: Workshop Talk
   location: Online
 length: 20
-video: null
+video: https://youtu.be/faFncNrXmIY?t=180
 abstract: true
 resources: https://summit.dask.org/schedule/presentation/20/deploying-dask/
 slides: https://speakerdeck.com/jacobtomlinson/deploying-dask-distributed
