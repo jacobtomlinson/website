@@ -9,7 +9,7 @@ event:
   type: Talk
   location: Online
 length: 45
-video: null
+video: https://www.youtube.com/watch?v=zJ11P0opmJo
 abstract: true
 resources: https://github.com/jacobtomlinson/gpu-python-tutorial
 slides: https://speakerdeck.com/jacobtomlinson/bristech-gpu-computing-in-python
