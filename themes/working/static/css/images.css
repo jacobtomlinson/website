@@ -14,6 +14,10 @@ img {
   border: 2px solid var(--primary);
 }
 
+figure {
+  text-align: center;
+}
+
 figure figcaption {
   width: 100%;
   text-align: center;
