@@ -8,6 +8,7 @@ tags:
 - collaboration
 author: Jacob Tomlinson
 canonical: http://archived.informaticslab.co.uk/collaboration/2015/07/22/govspeak-an-open-source-markup-language.html
+canonical_title: the Informatics Lab Blog
 thumbnail: jekyll
 ---
 

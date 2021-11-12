@@ -10,6 +10,7 @@ tags:
 - Xiaomi Aquara
 author: Jacob Tomlinson
 canonical: https://medium.com/jacob-tomlinson/using-xiaomi-door-window-sensors-as-light-switches-ce29d00aa981
+canonical_title: Medium
 ---
 
 ## Introduction

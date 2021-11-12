@@ -4,6 +4,7 @@ date: 2021-04-09T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 canonical: https://medium.com/rapids-ai/monitoring-dask-rapids-with-prometheus-grafana-96eaf6b8f3a0
+canonical_title: the NVIDIA RAPIDS Blog
 categories:
   - blog
 tags:

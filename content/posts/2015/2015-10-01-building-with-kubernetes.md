@@ -9,6 +9,7 @@ categories:
 author: Jacob Tomlinson
 thumbnail: kubernetes
 canonical: http://archived.informaticslab.co.uk/infrastructure/2015/10/01/building-with-kubernetes.html
+canonical_title: the Informatics Lab Blog
 ---
 
 _Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/infrastructure/2015/10/01/building-with-kubernetes.html) on October 1st, 2015._

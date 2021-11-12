@@ -10,6 +10,7 @@ tags:
 - Debugging
 author: Jacob Tomlinson
 canonical: https://itnext.io/debugging-kubernetes-pvcs-a150f5efbe95
+canonical_title: IT Next
 ---
 
 Sometimes I find that something goes wrong in a container and some data stored in a [persistent volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) gets corrupted. This may result in me having to get my hands dirty and have a poke around in the filesystem myself.

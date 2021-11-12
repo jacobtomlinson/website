@@ -28,9 +28,13 @@
 <p class="context">
   <i>
     <i class="fas fa-archive" title="Archived version"></i>
-    This is an archived post which was originally published at
+    This is an archived post that was originally published on
     <a href="{{ .Params.canonical }}" target="_blank" rel="noopener noreferrer">
+      {{ if isset .Params "canonical_title" }}
+      {{ .Params.canonical_title }}
+      {{ else }}
       {{ index (findRE "^(?:https?:\\/\\/)?(?:[^@\\/\\n]+@)?(?:www\\.)?([^:\\/?\\n]+)" .Params.canonical) 0 }}
+      {{ end }}
     </a>.
   </i>
 </p>

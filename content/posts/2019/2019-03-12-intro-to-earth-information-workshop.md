@@ -11,6 +11,7 @@ tags:
 - Workshop
 author: Jacob Tomlinson
 canonical: https://medium.com/informatics-lab/intro-to-earth-information-met-office-workshop-fb93e75dd5c5
+canonical_title: the Informatics Lab Blog
 ---
 
 ![](https://i.imgur.com/JxOLZgkh.png)

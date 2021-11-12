@@ -8,6 +8,7 @@ categories:
 tags:
 - docker
 canonical: http://archived.informaticslab.co.uk/lab-school/2015/06/24/lab-school-docker.html
+canonical_title: the Informatics Lab Blog
 thumbnail: docker
 ---
 

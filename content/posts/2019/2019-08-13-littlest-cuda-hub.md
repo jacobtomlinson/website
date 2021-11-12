@@ -4,6 +4,7 @@ subtitle: "AKA Littlest CUDA Hub"
 date: 2019-08-13T00:00:00+00:00
 author: "Jacob Tomlinson"
 canonical: https://medium.com/rapids-ai/setting-up-gpu-data-science-environments-for-hackathons-cdb52e7781a5
+canonical_title: the NVIDIA RAPIDS Blog
 categories:
   - blog
 tags:

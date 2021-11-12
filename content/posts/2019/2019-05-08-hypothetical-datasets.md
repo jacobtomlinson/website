@@ -12,6 +12,7 @@ tags:
 - Big Data
 author: Jacob Tomlinson
 canonical: https://medium.com/informatics-lab/hypothetical-datasets-70381cce8a9
+canonical_title: the Informatics Lab Blog
 ---
 ![Imgur](https://i.imgur.com/Ng5H2X1h.png)
 

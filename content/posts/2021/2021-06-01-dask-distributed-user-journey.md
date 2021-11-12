@@ -4,6 +4,7 @@ date: 2021-06-01T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 canonical: https://blog.dask.org/2021/06/01/dask-distributed-user-journey
+canonical_title: the Dask Blog
 categories:
   - blog
 tags:

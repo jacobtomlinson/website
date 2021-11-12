@@ -11,6 +11,7 @@ tags:
 - AWS Lambda
 author: Jacob Tomlinson
 canonical: https://medium.com/informatics-lab/exploring-dask-and-distributed-on-aws-lambda-55d81d9641d
+canonical_title: the Informatics Lab Blog
 ---
 
 I spent some time this week exploring whether it would be possible to run [Dask](https://dask.pydata.org/en/latest/) and [Distributed](https://distributed.readthedocs.io/en/latest/) on a function as a service platform like [AWS Lambda](https://aws.amazon.com/lambda/).

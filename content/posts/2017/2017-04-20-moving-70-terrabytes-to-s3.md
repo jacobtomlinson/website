@@ -9,6 +9,7 @@ tags:
 author: Jacob Tomlinson
 thumbnail: aws
 canonical: http://archived.informaticslab.co.uk/aws/2017/04/20/moving-70-terrabytes-to-s3.html
+canonical_title: the Informatics Lab Blog
 ---
 
 _Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/aws/2017/04/20/moving-70-terrabytes-to-s3.html) on April 20th, 2017._

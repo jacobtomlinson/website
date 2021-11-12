@@ -12,6 +12,7 @@ tags:
 - Training
 author: Jacob Tomlinson
 canonical: https://medium.com/informatics-lab/my-pragmatic-workshop-format-c3a4e6c5f49c
+canonical_title: the Informatics Lab Blog
 ---
 
 ![Mozfest workshop facilitators meeting](https://i.imgur.com/65WqItbh.png "Mozfest workshop facilitators meeting")

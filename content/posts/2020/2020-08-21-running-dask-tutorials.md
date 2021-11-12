@@ -14,6 +14,7 @@ tags:
   - Tutorials
 thumbnail: dask
 canonical: https://blog.dask.org/2020/08/21/running-tutorials
+canonical_title: the Dask Blog
 ---
 
 _Originally published on the [Dask blog](https://blog.dask.org/2020/08/21/running-tutorials) on August 21st, 2020._

@@ -11,6 +11,7 @@ tags:
   - Distributed computing
 thumbnail: dask
 canonical: https://blog.dask.org/2020/07/23/current-state-of-distributed-dask-clusters
+canonical_title: the Dask Blog
 ---
 
 _Originally published on the [Dask blog](https://blog.dask.org/2020/07/23/current-state-of-distributed-dask-clusters) on July 23rd, 2020._

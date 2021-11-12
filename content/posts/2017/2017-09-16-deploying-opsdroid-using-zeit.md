@@ -11,6 +11,7 @@ tags:
 - zeit
 author: Jacob Tomlinson
 canonical: https://medium.com/opsdroid/deploying-opsdroid-using-zeit-38296888a651
+canonical_title: the Opsdroid Blog
 ---
 
 [ZEIT](https://zeit.co/) is a great platform for deploying your [opsdroid](https://opsdroid.github.io/) instance. Particularly because it is free for light use, which many opsdroid deployments will be.

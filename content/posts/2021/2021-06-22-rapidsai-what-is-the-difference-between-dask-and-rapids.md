@@ -4,6 +4,7 @@ date: 2021-06-22T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 canonical: https://medium.com/rapids-ai/what-is-the-difference-between-dask-and-rapids-6b2ebe6bbb71
+canonical_title: the NVIDIA RAPIDS Blog
 categories:
   - blog
 tags:
