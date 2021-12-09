@@ -68,9 +68,9 @@ But I'm lazy, I don't want to have to remember to do that every time I reboot. I
 
 On macOS there is a directory called `~/Library/LaunchAgents/`. In this directory you can place Apple `.plist` files which will be parsed when you login.
 
-You can configure many things in here but the one we are interested in today is running a shell script automatically when we log in. Let's place our own `.plist` file in this directory called `jupyter.plist`.
+You can configure many things in here but the one we are interested in today is running a Jupyter server automatically when we log in. Let's place our own `.plist` file in this directory called `jupyter.plist`.
 
-We will configure this file to run a script which we will create in a minute.
+We will configure this file to run start up Jupyter.
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +80,13 @@ We will configure this file to run a script which we will create in a minute.
    <key>Label</key>
    <string>jupyter-startup</string>
    <key>ProgramArguments</key>
-   <array><string>/path/to/my/jupyter/startup/script.sh</string></array>
+   <array>
+      <string>/Users/<username>/conda/envs/jupyter/bin/jupyter</string>
+      <string>lab</string>
+      <string>--no-browser</string
+   </array>
+   <key>WorkingDirectory</key>
+   <string>/Users/<username></string>
    <key>RunAtLoad</key>
    <true/>
    <key>StandardOutPath</key>
@@ -91,32 +97,12 @@ We will configure this file to run a script which we will create in a minute.
 </plist>
 ```
 
-In this config file we have specified that we want `/path/to/my/jupyter/startup/script.sh` to run whenever we log in and the stdout and stderr from that script should go to `/Users/<username>/Library/Logs/jupyter.log`.
+In this config file we have specified that we want `/Users/<username>/conda/envs/jupyter/bin/jupyter lab --no-browser` to run whenever we log in and the stdout and stderr from that script should go to `/Users/<username>/Library/Logs/jupyter.log`.
 
 Of course these locations are different on my laptop and you will want to point them to somewhere sensible on yours.
 
-## Startup script
+A previous version of this post advised to make a startup bash script that in turn launches `jupyter`. With that setup however, it is not possible to allow Jupyter to access files in e.g. Documents, Desktop and network locations. By launching Jupyter directly, you now get a popup (on recent Mac systems) asking you whether you trust `python` to access those locations.
 
-Next we want to write our startup script.
-
-```bash
-#!/bin/bash
-
-PATH="/path/to/your/miniconda3/bin:<rest of your path>"
-
-eval "$(conda shell.bash hook)"
-conda activate jupyter
-
-cd ~ && /path/to/your/miniconda3/envs/jupyter/bin/python -m jupyter lab --port 8888 --no-browser
-```
-
-This script starts out by setting our `PATH` environment variable. As this script runs on login none of your regular bash environment will be available. Therefore I recommend you run `echo $PATH` in your terminal and copy the output into this script. You also need to ensure that the miniconda `bin` directory is on the path too.
-
-Next we are going to get conda to set up it's bash hooks and then to activate our `jupyter` environment.
-
-Lastly we are going to `cd` to our home directory (just as a sensible place for the Jupyter Lab file explorer to start from) and directly call the Python executable within our environment. Again this is because our script will be running in a minimal bash environment and it's good to be explicit in that case and give the full path.
-
-Lastly our Python command will call `jupyter lab` using it's module name with the `-m` flag rather than using the command line convenience function. We specify that it should run on port `8888` and not open a browser for you automatically when it starts up.
 
 ## Testing
 
