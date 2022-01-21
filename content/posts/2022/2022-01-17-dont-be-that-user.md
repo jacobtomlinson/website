@@ -55,7 +55,7 @@ Over time projects grow, they gather more users and more lines of code are added
 
 Eventually the maintainer finds things less like fun and more like work. This is a normal stage of many OSS projects and it is important to recognise that once it feels like work it should be treated like work. This is where funding is needed, both in terms of development time and community support.
 
-Some projects attract more developers and contributors who also volunteer to take on this burden. This can defer that feeling of work to a later date ad spread the burden, but I think it is inevitable that eventually someone has to pay for this software to continue existing.
+Some projects attract more developers and contributors who also volunteer to take on this burden. This can defer that feeling of work to a later date and spread the burden, but I think it is inevitable that eventually someone has to pay for this software to continue existing.
 
 There are different approaches that projects take to find a sustainable source of income. Sometimes projects use the open source software to power a for-profit business that adds an extra layer of value and charges for it, such as a managed service. Other times projects will try to attract donations in order to pay the maintainers. Occasionally large companies who have grown dependent on these tools will hire maintainers directly (I am fortunate to be in this group today). In all of these cases the bulk of the community for the open source software will not contribute financially and will continue to expect continued free service.
 
