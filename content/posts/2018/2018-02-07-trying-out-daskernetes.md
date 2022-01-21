@@ -8,11 +8,11 @@ tags:
 - dask
 author: Jacob Tomlinson
 thumbnail: dask
-canonical: http://archived.informaticslab.co.uk/dask/2018/02/07/trying-out-daskernetes.html
+canonical: https://archived.informaticslab.co.uk/dask/2018/02/07/trying-out-daskernetes.html
 canonical_title: the Informatics Lab Blog
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/dask/2018/02/07/trying-out-daskernetes.html) on February 7th, 2018._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/dask/2018/02/07/trying-out-daskernetes.html) on February 7th, 2018._
 
 ---
 

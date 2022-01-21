@@ -9,11 +9,11 @@ tags:
 - Design
 author: Jacob Tomlinson
 thumbnail: person
-canonical: http://archived.informaticslab.co.uk/design/2016/06/24/perception-of-symbols.html
+canonical: https://archived.informaticslab.co.uk/design/2016/06/24/perception-of-symbols.html
 canonical_title: the Informatics Lab Blog
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/design/2016/06/24/perception-of-symbols.html) on June 24th, 2016._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/design/2016/06/24/perception-of-symbols.html) on June 24th, 2016._
 
 ---
 

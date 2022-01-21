@@ -8,11 +8,11 @@ tags:
 - infrastructure
 author: Jacob Tomlinson
 thumbnail: influxdata
-canonical: http://archived.informaticslab.co.uk/infrastructure/2017/05/08/monitoring-scalable-infrastructure.html
+canonical: https://archived.informaticslab.co.uk/infrastructure/2017/05/08/monitoring-scalable-infrastructure.html
 canonical_title: the Informatics Lab Blog
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/infrastructure/2017/05/08/monitoring-scalable-infrastructure.html) on May 8th, 2017._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/infrastructure/2017/05/08/monitoring-scalable-infrastructure.html) on May 8th, 2017._
 
 ---
 

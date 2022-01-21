@@ -11,11 +11,11 @@ tags:
 - autoscaling
 author: Jacob Tomlinson
 thumbnail: dask
-canonical: http://archived.informaticslab.co.uk/dask/2017/07/21/adaptive-dask-clusters-on-kubernetes-and-aws.html
+canonical: https://archived.informaticslab.co.uk/dask/2017/07/21/adaptive-dask-clusters-on-kubernetes-and-aws.html
 canonical_title: the Informatics Lab Blog
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/dask/2017/07/21/adaptive-dask-clusters-on-kubernetes-and-aws.html) on July 21st, 2017._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/dask/2017/07/21/adaptive-dask-clusters-on-kubernetes-and-aws.html) on July 21st, 2017._
 
 ### Introduction
 

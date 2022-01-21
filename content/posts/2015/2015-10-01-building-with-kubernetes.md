@@ -8,11 +8,11 @@ categories:
 - blog
 author: Jacob Tomlinson
 thumbnail: kubernetes
-canonical: http://archived.informaticslab.co.uk/infrastructure/2015/10/01/building-with-kubernetes.html
+canonical: https://archived.informaticslab.co.uk/infrastructure/2015/10/01/building-with-kubernetes.html
 canonical_title: the Informatics Lab Blog
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/infrastructure/2015/10/01/building-with-kubernetes.html) on October 1st, 2015._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/infrastructure/2015/10/01/building-with-kubernetes.html) on October 1st, 2015._
 
 For our 3D visualisation project we wanted to build a data processing service using [Docker containers][lab-school-docker]. We quickly found that once you are running more than a couple of containers you need a way to manage them. After looking into the different tools available we decided to give [Kubernetes][kubernetes] a go, this is what we learned.
 

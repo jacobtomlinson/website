@@ -11,11 +11,11 @@ tags:
 - python
 author: Jacob Tomlinson
 thumbnail: chat
-canonical: http://archived.informaticslab.co.uk/worksops/2017/12/19/chatops-workshop.html
+canonical: https://archived.informaticslab.co.uk/worksops/2017/12/19/chatops-workshop.html
 canonical_title: the Informatics Lab Blog
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/worksops/2017/12/19/chatops-workshop.html) on December 19th, 2017._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/worksops/2017/12/19/chatops-workshop.html) on December 19th, 2017._
 
 # ChatOps - Automation via chat
 

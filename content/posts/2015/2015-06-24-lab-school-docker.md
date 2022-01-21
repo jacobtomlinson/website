@@ -7,12 +7,12 @@ categories:
 - blog
 tags:
 - docker
-canonical: http://archived.informaticslab.co.uk/lab-school/2015/06/24/lab-school-docker.html
+canonical: https://archived.informaticslab.co.uk/lab-school/2015/06/24/lab-school-docker.html
 canonical_title: the Informatics Lab Blog
 thumbnail: docker
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/lab-school/2015/06/24/lab-school-docker.html) on June 24th, 2015._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/lab-school/2015/06/24/lab-school-docker.html) on June 24th, 2015._
 
 Welcome to the first ever [Lab School][lab-school] session. This session aims to give you an overview of docker and how we are currently using it in the Lab.
 

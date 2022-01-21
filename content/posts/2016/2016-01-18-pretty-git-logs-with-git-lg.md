@@ -34,15 +34,15 @@ To use it add the following to your `~/.gitconfig`.
 Examples of how each command looks.
 
 #### git lg
-![git lg](http://i.stack.imgur.com/gkcfL.png)
+![git lg](https://i.stack.imgur.com/gkcfL.png)
 
 
 #### git lg2
-![git lg2](http://i.stack.imgur.com/7fWK9.png)
+![git lg2](https://i.stack.imgur.com/7fWK9.png)
 
 
 #### git lg3
-![git lg3](http://i.stack.imgur.com/mgrEp.png)
+![git lg3](https://i.stack.imgur.com/mgrEp.png)
 
 [stack-overflow-slipp-thompson]: http://stackoverflow.com/users/177525/slipp-d-thompson
 [stack-overflow-answer]: http://stackoverflow.com/a/34467298/1003288

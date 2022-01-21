@@ -7,12 +7,12 @@ categories:
 tags:
 - collaboration
 author: Jacob Tomlinson
-canonical: http://archived.informaticslab.co.uk/collaboration/2015/07/22/govspeak-an-open-source-markup-language.html
+canonical: https://archived.informaticslab.co.uk/collaboration/2015/07/22/govspeak-an-open-source-markup-language.html
 canonical_title: the Informatics Lab Blog
 thumbnail: jekyll
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/collaboration/2015/07/22/govspeak-an-open-source-markup-language.html) on July 22nd, 2015._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/collaboration/2015/07/22/govspeak-an-open-source-markup-language.html) on July 22nd, 2015._
 
 The Informatics Lab website is created with an application called [Jekyll][jekyll]. Recently I made an enhancement to it which I'm very excited about. It allows us to write our articles in a markup language called [Govspeak][govspeak], which is an extension to the excellent [markdown][markdown].
 

@@ -8,11 +8,11 @@ tags:
 - process
 author: Jacob Tomlinson
 thumbnail: jupyter
-canonical: http://archived.informaticslab.co.uk/process/2017/05/08/jupyter-for-sysadmin-devops-cloudops-workflows.html
+canonical: https://archived.informaticslab.co.uk/process/2017/05/08/jupyter-for-sysadmin-devops-cloudops-workflows.html
 canonical_title: the Informatics Lab Blog
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/process/2017/05/08/jupyter-for-sysadmin-devops-cloudops-workflows.html) on May 8th, 2017._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/process/2017/05/08/jupyter-for-sysadmin-devops-cloudops-workflows.html) on May 8th, 2017._
 
 ---
 

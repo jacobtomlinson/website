@@ -8,11 +8,11 @@ tags:
 - infrastructure
 author: Jacob Tomlinson
 thumbnail: docker
-canonical: http://archived.informaticslab.co.uk/infrastructure/2015/12/09/raspberry-pi-docker-cluster.html
+canonical: https://archived.informaticslab.co.uk/infrastructure/2015/12/09/raspberry-pi-docker-cluster.html
 canonical_title: the Informatics Lab Blog
 ---
 
-_Originally published on the [Met Office Informatics Lab blog](http://archived.informaticslab.co.uk/infrastructure/2015/12/09/raspberry-pi-docker-cluster.html) on December 12th, 2015._
+_Originally published on the [Met Office Informatics Lab blog](https://archived.informaticslab.co.uk/infrastructure/2015/12/09/raspberry-pi-docker-cluster.html) on December 12th, 2015._
 
 # Introduction
 
