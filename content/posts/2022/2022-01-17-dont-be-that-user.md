@@ -1,5 +1,5 @@
 ---
-title: "Don't be that user, don't be me"
+title: "Don't be that open-source user, don't be me"
 date: 2022-01-17T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
