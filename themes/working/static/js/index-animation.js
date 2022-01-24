@@ -2,7 +2,7 @@ function initBinary() {
   canvas = document.getElementById("animation");
   content = "";
   characters = "01";
-  for (var i = 0; i < 10000; i++) {
+  for (var i = 0; i < 12000; i++) {
     content += characters.charAt(Math.floor(Math.random() * characters.length));
     if (i % 250 == 0 && i > 0) {
       content += "<br />";
