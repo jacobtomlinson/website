@@ -4,7 +4,7 @@ function initBinary() {
   characters = "01";
   for (var i = 0; i < 10000; i++) {
     content += characters.charAt(Math.floor(Math.random() * characters.length));
-    if (i % 200 == 0 && i > 0) {
+    if (i % 250 == 0 && i > 0) {
       content += "<br />";
     }
   }
