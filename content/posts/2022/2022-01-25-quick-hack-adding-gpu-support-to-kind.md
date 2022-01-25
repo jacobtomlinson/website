@@ -42,7 +42,7 @@ $ git clone https://github.com/jacobtomlinson/kind.git
 
 $ cd kind
 
-$ git branch gpu
+$ git branch gpu && git pull origin gpu
 
 $ make install
 
