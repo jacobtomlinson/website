@@ -79,7 +79,7 @@ $ kubectx kind-gpu-test
 In order for us to be able to schedule GPUs in our cluster we need the NVIDIA plugins installed. We can
 do this via the NVIDIA Operator. Let's install that with [helm](https://helm.sh/).
 
-As out host machine already has NVIDIA drivers installed we need to disable the driver install step.
+As our host machine already has NVIDIA drivers installed we need to disable the driver install step.
 
 ```console
 $ helm repo add nvidia https://nvidia.github.io/gpu-operator \
