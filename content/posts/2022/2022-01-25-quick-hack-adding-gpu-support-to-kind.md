@@ -42,6 +42,8 @@ $ git clone https://github.com/jacobtomlinson/kind.git
 
 $ cd kind
 
+$ git branch gpu
+
 $ make install
 
 $ kind --version
