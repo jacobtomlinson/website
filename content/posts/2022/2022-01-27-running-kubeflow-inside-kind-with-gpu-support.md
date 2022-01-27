@@ -1,7 +1,7 @@
 ---
 title: "Running Kubeflow inside Kind with GPU support"
 date: 2022-01-27T00:00:00+00:00
-draft: true
+draft: false
 author: "Jacob Tomlinson"
 categories:
   - blog
