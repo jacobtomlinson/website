@@ -50,7 +50,9 @@ To test out my alternatives I am going to install them and do the following thin
 - Run an Nginx container that serves an HTML file from my MacBook on port 8080.
 - Run my Nginx container again with the WiFi turned off.
 - Create a `kind` cluster.
-- Modify the resources that Docker has access to.
+- Modify the hardware allocation that Docker has access to.
+
+I'll score each option out of 5, a point for volumes, ports, works offline, runs kind and can easily modify the hardware allocation.
 
 For my testing I'm going to create a directory in my home directory called `test` on my Mac with an `index.html` file in that looks like this:
 
@@ -194,7 +196,9 @@ INFO[0063] done
 
 #### Pros/Cons
 
-Colima seems pretty nice. It was easy to install and use. However it does seem to have some issues that will stop me from using it for now, which is a same because it seemed pretty perfect.
+Colima seems pretty nice. It was easy to install and use and you can dynamically change CPU and memory allocations on the fly. However it does seem to have some issues with running more complex containers that will stop me from using it for now, which is a shame because it seemed pretty perfect.
+
+It gets 4/5.
 
 ### Podman
 
@@ -324,7 +328,11 @@ $ podman machine start
 
 #### Pros/Cons
 
-Podman is heading in a great direction as a deamonless alternative to Docker. But it is exactly that, not Docker. I've not only notices that there are differences between the behavior of certain commands but also that it needs to be treated specially by `kind`. Given that I work on tools and documentation targeting folks using Docker it would make my like easiest if I am running Docker too.
+Podman is heading in a great direction as a deamonless alternative to Docker. But it is exactly that, not Docker. I've not only noticed that there are differences between the behavior of certain commands but also that it needs to be treated specially by `kind`. Given that I work on tools and documentation targeting folks using Docker it would make my like easiest if I am running Docker too.
+
+It managed to map ports, works offline and can reallocate hardware, but I'm going to subtract a point for not being Docker.
+
+2/5.
 
 ### Minikube
 
@@ -473,9 +481,15 @@ $ minikube start --driver=hyperkit --memory 8192 --cpus 2 --disk-size=100g
 
 Minikube seems like a useful tool for running Kubernetes clusters in VMs on your machine. The fact that it runs Docker inside means that technically you can connect to it and leverage it directly. But as we've seen that experience is less than ideal.
 
+I'll give it half a point for ports and volumes because they work, but painfully.
+
+2/5.
+
 ### Run Docker on a virtual machine or remote machine
 
 We could also run Linux ourselves either in a virtual machine or remotely on another system. However both of these options would mean visiting a different IP to access your containers and not being able to mount files from your Mac directly. Using a remote machine also means that you would lose access if you didn't have a decent network connection.
+
+This means that a VM would only get 2/5 and a remove machine only 1/5.
 
 In this case you might as well develop directly on that Linux machine over SSH, it'll make your life easier.
 
