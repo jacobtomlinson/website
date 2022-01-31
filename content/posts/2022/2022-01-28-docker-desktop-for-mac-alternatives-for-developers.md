@@ -16,6 +16,8 @@ tags:
 
 In a couple of days [Docker will begin charging employees of companies with >250 employees to use Docker Desktop](https://www.docker.com/blog/updating-product-subscriptions/). I have no problem with paying for software that brings me value, but you wouldn't believe how complex it can be for large companies to sign employees up to subscription services. Paperwork everywhere! To avoid this I'm evaluating alternatives for Docker Desktop to use on my MacBook.
 
+_Updated 31 Jan 22 - Added [workaround](https://github.com/abiosoft/colima/issues/153) to get `kind` working with Colima._
+
 ## What is Docker Desktop for Mac?
 
 [Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) is an application ([also available for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)) that runs Docker inside a virtual machine transparently. All you need to do is install Docker Desktop and start the service and you can run Docker containers from the command line on your Mac. It neatly makes your local filesystem available to containers via volume mounts and maps all ports back to your Mac. It feels just like running Docker on Linux. Recently it has also supported running [Kubernetes](https://kubernetes.io/) on your Mac, although I've always found it finnicky and used alternatives like [kind](https://kind.sigs.k8s.io/).
@@ -130,20 +132,64 @@ Hooray! That worked, my volume mounted successfully and the port was made availa
 
 Next let's create a `kind` cluster.
 
+The current version of `kind` is `v0.11.1` which contains a bug that prevents `kind` from working with `colima`. This has been fixed upstream but is yet to be released, so first we need to install the latest development version of `kind`.
+
+```console
+$ brew unlink kind
+
+$ brew install kind --HEAD
+```
+
+Now we can create our `kind` cluster.
+
 ```console
 $ kind create cluster --name test
 Creating cluster "test" ...
- ✓ Ensuring node image (kindest/node:v1.21.1) 🖼
+ ✓ Ensuring node image (kindest/node:v1.23.1) 🖼
  ✓ Preparing nodes 📦
  ✓ Writing configuration 📜
-⢆⡱ Starting control-plane 🕹️
-[kubelet-check] It seems like the kubelet isn't running or healthy.
-[kubelet-check] The HTTP call equal to 'curl -sSL http://localhost:10248/healthz' failed with error: Get "http://localhost:10248/healthz": dial tcp [::1]:10248: connect: connection refused.
+ ✓ Starting control-plane 🕹️
+ ✓ Installing CNI 🔌
+ ✓ Installing StorageClass 💾
+Set kubectl context to "kind-test"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-test
+
+Thanks for using kind! 😊
 ```
 
-Hrm that's disappointing. It looks like `kind` failed to start the `kubelet` inside the container. I've run this multiple times in various ways and get the same result each time. This command works perfectly when using the `default` Docker context that comes with Docker Desktop.
+Hooray now we have a `kind` cluster running in a Docker container inside colima. Let's use `kubectl` to check everything is up and running.
 
-This feels like something that could be resolved, but is a bit of a roadblock when getting started. Here's the [full error](https://gist.github.com/jacobtomlinson/76c410118beff174ef9d564694b9712d) if you're interested in debugging this.
+```console
+$ kubectl get all --context kind-test -A
+NAMESPACE            NAME                                             READY   STATUS    RESTARTS   AGE
+kube-system          pod/coredns-64897985d-ksnlj                      1/1     Running   0          15s
+kube-system          pod/coredns-64897985d-np59l                      1/1     Running   0          15s
+kube-system          pod/etcd-test-control-plane                      1/1     Running   0          27s
+kube-system          pod/kindnet-2zfr5                                1/1     Running   0          15s
+kube-system          pod/kube-apiserver-test-control-plane            1/1     Running   0          27s
+kube-system          pod/kube-controller-manager-test-control-plane   1/1     Running   0          27s
+kube-system          pod/kube-proxy-gjqss                             1/1     Running   0          15s
+kube-system          pod/kube-scheduler-test-control-plane            1/1     Running   0          27s
+local-path-storage   pod/local-path-provisioner-5bb5788f44-d8ww5      1/1     Running   0          15s
+
+NAMESPACE     NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE
+default       service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP                  30s
+kube-system   service/kube-dns     ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   28s
+
+NAMESPACE     NAME                        DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
+kube-system   daemonset.apps/kindnet      1         1         1       1            1           <none>                   21s
+kube-system   daemonset.apps/kube-proxy   1         1         1       1            1           kubernetes.io/os=linux   27s
+
+NAMESPACE            NAME                                     READY   UP-TO-DATE   AVAILABLE   AGE
+kube-system          deployment.apps/coredns                  2/2     2            2           28s
+local-path-storage   deployment.apps/local-path-provisioner   1/1     1            1           19s
+
+NAMESPACE            NAME                                                DESIRED   CURRENT   READY   AGE
+kube-system          replicaset.apps/coredns-64897985d                   2         2         2       16s
+local-path-storage   replicaset.apps/local-path-provisioner-5bb5788f44   1         1         1       16s
+```
 
 Let's move on and try to modify the resources available to the Lima VM. It seems that [by default the VM has 2 CPU cores, 2GiB of memory and 60Gib of storage](https://github.com/abiosoft/colima#customizing-the-vm). We can modify the CPU and memory by stopping and starting Colima.
 
@@ -196,9 +242,9 @@ INFO[0063] done
 
 #### Pros/Cons
 
-Colima seems pretty nice. It was easy to install and use and you can dynamically change CPU and memory allocations on the fly. However it does seem to have some issues with running more complex containers that will stop me from using it for now, which is a shame because it seemed pretty perfect.
+Colima seems pretty nice and checks all of our requirements. It was easy to install and use and you can dynamically change CPU and memory allocations on the fly. It's a shame that the storage cannot be reallocated without deleting all of our containers and images. We also needed a development version of `kind` so I'm going to subtract half a point for that.
 
-It gets 4/5.
+It gets 4.5/5.
 
 ### Podman
 
@@ -495,6 +541,6 @@ In this case you might as well develop directly on that Linux machine over SSH, 
 
 ## Conclusion
 
-As of today, three days before Docker Desktop becomes a paid app, it remains unparalleled as the simplest and easiest Docker solution for Mac.
+Looking at the results of my testing there is a clear winner, [Colima](https://github.com/abiosoft/colima). It has excellent ease of installation and tight binding to the Mac filesystem and ports. Running more complex things like `kind` require jumping through a couple of hoops that aren't necessary with Docker Desktop for Mac, but that are minimal compromises that I'm sure will be ironed out in the future.
 
-[Colima](https://github.com/abiosoft/colima) came very close with ease of installation and tight binding to the Mac filesystem and ports, however running more complex things like `kind` are not quite working today. I'm optimistic that it will be the best option for me to replace Docker Desktop, but just needs a little polish.
+Looks like I'm switching to Colima!
