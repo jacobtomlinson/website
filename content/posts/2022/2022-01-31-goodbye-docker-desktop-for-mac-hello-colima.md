@@ -46,6 +46,13 @@ $ du -sh ~/Library/Containers/com.docker.docker/
 $ rm -rf ~/Library/Containers/com.docker.docker/
 ```
 
+We should also remove `~/.docker/config.json` so that we start with a fresh configuration that doesn't depend on binaries in the Docker Desktop app.
+
+```console
+$ rm ~/.docker/config.json
+
+```
+
 ## Installing tools
 
 Docker Desktop provided us with useful command line tools such as `docker` and kept them up to date for us. So we need to grab those from another source. Let's install everything from [Homebrew](https://brew.sh/).
