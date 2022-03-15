@@ -116,7 +116,7 @@ Before we add any files to our repository it is good practice to add a `.gitigno
 You can find a nice Python example `.gitignore` file [here](https://github.com/github/gitignore/blob/master/Python.gitignore). I recommend you download it and use it as the base for your `.gitignore` file.
 
 ```bash
-curl -sSL https://github.com/github/gitignore/raw/master/Python.gitignore > .gitignore
+curl -sSL https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore > .gitignore
 ```
 
 Now we can add all of our files and make our first commit.
