@@ -259,7 +259,7 @@ inputs:
     required: false
   exclude:
     description: "A regular expression of files to exclude in our find and replace"
-    default: ".git" # Ignore the `.git` dirtectory by default
+    default: ".git" # Ignore the `.git` directory by default
     required: false
   find:
     description: "The string we want to replace"
