@@ -10,6 +10,8 @@ import (
 	"bytes"
 	"embed"
 	"text/template"
+	"log"
+	"fmt"
 
 	"github.com/srwiley/oksvg"
 	"github.com/srwiley/rasterx"
@@ -25,26 +27,32 @@ type requestData struct {
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 	w, h := 1200, 630
 
+	// Load SVG template
 	in, _ := f.ReadFile("og-template.svg")
 	tmpl, err := template.New("template").Parse(string(in))
 	if err != nil { return nil, err }
 
+	// Populate SVG template
 	var out bytes.Buffer
 	err = tmpl.Execute(&out, requestData{request.QueryStringParameters})
+	log.Println(fmt.Sprintf("populating template with data: %T", request.QueryStringParameters))
 	if err != nil { return nil, err }
 
+	// Load SVG data into rasteriser
 	icon, err := oksvg.ReadIconStream(&out)
 	if err != nil { return nil, err }
 	icon.SetTarget(0, 0, float64(w), float64(h))
 	rgba := image.NewRGBA(image.Rect(0, 0, w, h))
 	icon.Draw(rasterx.NewDasher(w, h, rasterx.NewScannerGV(w, h, rgba, rgba.Bounds())), 1)
 
+	// Convert to PNG
 	var buf bytes.Buffer
 	err = png.Encode(&buf, rgba)
 	if err != nil {
 	  return nil, err
 	}
 
+	// Return PNG image body
 	return &events.APIGatewayProxyResponse{
 		StatusCode:        200,
 		Headers:           map[string]string{"Content-Type": "image/png"},
