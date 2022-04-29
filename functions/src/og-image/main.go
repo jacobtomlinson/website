@@ -12,6 +12,7 @@ import (
 	"text/template"
 	"log"
 	"fmt"
+	"json"
 
 	"github.com/srwiley/oksvg"
 	"github.com/srwiley/rasterx"
@@ -35,7 +36,8 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	// Populate SVG template
 	var out bytes.Buffer
 	err = tmpl.Execute(&out, requestData{request.QueryStringParameters})
-	log.Println(fmt.Sprintf("populating template with data: %T", request.QueryStringParameters))
+	logParams, _ := json.Marshal(request.QueryStringParameters)
+	log.Println(fmt.Sprintf("populating template with data: %s", string(logParams)))
 	if err != nil { return nil, err }
 
 	// Load SVG data into rasteriser
