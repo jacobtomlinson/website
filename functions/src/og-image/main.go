@@ -12,7 +12,7 @@ import (
 	"text/template"
 	"log"
 	"fmt"
-	"json"
+    "encoding/json"
 
 	"github.com/srwiley/oksvg"
 	"github.com/srwiley/rasterx"
