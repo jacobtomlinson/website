@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/base64"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"net/http"
@@ -39,17 +40,17 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	icon.Draw(rasterx.NewDasher(w, h, rasterx.NewScannerGV(w, h, rgba, rgba.Bounds())), 1)
 
 	var buf bytes.Buffer
-
 	err = png.Encode(&buf, rgba)
 	if err != nil {
 	  return nil, err
 	}
+
 	return &events.APIGatewayProxyResponse{
 		StatusCode:        200,
 		Headers:           map[string]string{"Content-Type": "image/png"},
 		MultiValueHeaders: http.Header{"Set-Cookie": {"Ding", "Ping"}},
-		Body:              buf.String(),
-		IsBase64Encoded:   false,
+		Body:              base64.StdEncoding.EncodeToString(buf.Bytes()),
+		IsBase64Encoded:   true,
 	}, nil
 }
 
