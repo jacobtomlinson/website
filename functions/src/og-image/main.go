@@ -1,18 +1,19 @@
 package main
 
 import (
-	"encoding/base64"
-	"github.com/aws/aws-lambda-go/events"
-	"github.com/aws/aws-lambda-go/lambda"
-	"net/http"
-	"image"
-	"image/png"
 	"bytes"
 	"embed"
-	"text/template"
-	"log"
+	"encoding/base64"
+	"encoding/json"
 	"fmt"
-    "encoding/json"
+	"image"
+	"image/png"
+	"log"
+	"net/http"
+	"text/template"
+
+	"github.com/aws/aws-lambda-go/events"
+	"github.com/aws/aws-lambda-go/lambda"
 
 	"github.com/srwiley/oksvg"
 	"github.com/srwiley/rasterx"
@@ -25,24 +26,31 @@ type requestData struct {
 	Params map[string]string
 }
 
-func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
-	w, h := 1200, 630
-
-	// Load SVG template
+// Load SVG template
+func readSVGTemplate() (*template.Template, error) {
 	in, _ := f.ReadFile("og-template.svg")
-	tmpl, err := template.New("template").Parse(string(in))
-	if err != nil { return nil, err }
+	return template.New("template").Parse(string(in))
+}
 
-	// Populate SVG template
+// Populate SVG template
+func populateSVG(data requestData, tmpl *template.Template) (*bytes.Buffer, error) {
 	var out bytes.Buffer
-	err = tmpl.Execute(&out, requestData{request.QueryStringParameters})
-	logParams, _ := json.Marshal(request.QueryStringParameters)
+	err := tmpl.Execute(&out, data)
+	logParams, _ := json.Marshal(data.Params)
 	log.Println(fmt.Sprintf("populating template with data: %s", string(logParams)))
-	if err != nil { return nil, err }
+	if err != nil {
+		return nil, err
+	}
+	return &out, nil
+}
 
-	// Load SVG data into rasteriser
-	icon, err := oksvg.ReadIconStream(&out)
-	if err != nil { return nil, err }
+// Load SVG data into rasteriser
+func convertToPNG(svgBuffer *bytes.Buffer) (*bytes.Buffer, error) {
+	w, h := 1200, 630
+	icon, err := oksvg.ReadIconStream(svgBuffer)
+	if err != nil {
+		return nil, err
+	}
 	icon.SetTarget(0, 0, float64(w), float64(h))
 	rgba := image.NewRGBA(image.Rect(0, 0, w, h))
 	icon.Draw(rasterx.NewDasher(w, h, rasterx.NewScannerGV(w, h, rgba, rgba.Bounds())), 1)
@@ -51,15 +59,32 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	var buf bytes.Buffer
 	err = png.Encode(&buf, rgba)
 	if err != nil {
-	  return nil, err
+		return nil, err
+	}
+	return &buf, nil
+}
+
+func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
+	tmpl, err := readSVGTemplate()
+	if err != nil {
+		return nil, err
 	}
 
-	// Return PNG image body
+	svgBuffer, err := populateSVG(requestData{Params: request.QueryStringParameters}, tmpl)
+	if err != nil {
+		return nil, err
+	}
+
+	pngBuffer, err := convertToPNG(svgBuffer)
+	if err != nil {
+		return nil, err
+	}
+
 	return &events.APIGatewayProxyResponse{
 		StatusCode:        200,
 		Headers:           map[string]string{"Content-Type": "image/png"},
-		MultiValueHeaders: http.Header{"Set-Cookie": {"Ding", "Ping"}},
-		Body:              base64.StdEncoding.EncodeToString(buf.Bytes()),
+		MultiValueHeaders: http.Header{"Set-Cookie": {"Hello", "World"}},
+		Body:              base64.StdEncoding.EncodeToString(pngBuffer.Bytes()),
 		IsBase64Encoded:   true,
 	}, nil
 }
