@@ -35,6 +35,6 @@
          id="tspan10"
          x="18.531128"
          y="32.367706"
-         style="stroke-width:0.264583">Title goes here</tspan></text>
+         style="stroke-width:0.264583">{{ index .Params "title" }}</tspan></text>
   </g>
 </svg>
