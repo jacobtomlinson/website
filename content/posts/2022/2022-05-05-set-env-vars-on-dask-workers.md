@@ -56,7 +56,7 @@ Instead you can use your `Client` to run an out of band function on all the work
 >>> client = Client("...")  # Connect to your Dask cluster
 
 >>> def set_env():
-...    os.environ["FOO"] = "BAR"
+...     os.environ["FOO"] = "BAR"
 ...
 
 >>> client.run(set_env)
