@@ -25,9 +25,9 @@ When using [Hashicorp's Vault][vault] you may want to have an authentication tok
 
 The seal only policy is fairly simple. Just create a `.hcl` policy file with the following contents:
 
-```
-path "/sys/seal" {
-  policy = "sudo"
+```hcl
+path "sys/seal" {
+  capabilities = ["update", "sudo"]
 }
 ```
 
@@ -35,21 +35,17 @@ path "/sys/seal" {
 
 Create a new policy in vault using the policy file you just created.
 
-```
-vault policy-write seal-only /path/to/my/policy.hcl
+```console
+$ vault policy-write seal-only /path/to/my/policy.hcl
 ```
 
 ### Generate a token
 
 You can now generate tokens which only have the seal permission. You must do this with a root key or a user with `sudo` permissions on `auth/token/create`.
-
-```
-vault token-create -orphan -policy="seal-only"
-```
-
 This will print out a new token with seal only permissions.
 
-```
+```console
+$ vault token-create -orphan -policy="seal-only"
 Key            	Value
 ---            	-----
 token          	abcdefgh-1234-5678-abcd-zyxwvutrspqo
