@@ -10,7 +10,7 @@ tags:
   - Open Source
   - Maintaining
 aliases: 
-   - /posts/2022/dont-be-that-user-dont-be-me/
+  - /posts/2022/dont-be-that-user-dont-be-me/
 ---
 
 Before I was a maintainer of open source software I was a user of open source software, and I sometimes behaved badly.
