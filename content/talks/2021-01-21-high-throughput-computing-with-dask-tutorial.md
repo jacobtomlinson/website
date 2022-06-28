@@ -10,7 +10,7 @@ event:
   type: Tutorial
 length: 120
 abstract: true
-video: https://www.youtube.com/watch?v=Tl8rO-baKuY
+# video: https://www.youtube.com/watch?v=Tl8rO-baKuY
 slides: null
 resources: https://github.com/jacobtomlinson/dask-video-tutorial-2020
 ---

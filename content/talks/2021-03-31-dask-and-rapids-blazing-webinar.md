@@ -9,7 +9,7 @@ event:
   type: Webinar
   location: Online
 length: 60
-video: https://www.youtube.com/embed/py1YPs6s6so
+video: https://www.youtube.com/watch?v=py1YPs6s6so
 abstract: true
 resources: https://gist.github.com/jacobtomlinson/6f16abb716f50f81a6687bd67efd2f61
 ---

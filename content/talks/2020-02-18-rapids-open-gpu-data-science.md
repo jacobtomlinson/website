@@ -10,7 +10,7 @@ event:
   location: Cardiff, UK
 length: 30
 abstract: true
-video: https://www.youtube.com/embed/mL4hMoOzIiQ?start=456
+video: https://www.youtube.com/watch?v=mL4hMoOzIiQ&t=456s
 slides: https://speakerdeck.com/jacobtomlinson/pydata-cardiff-rapids-0-dot-11-open-gpu-data-science
 ---
 
