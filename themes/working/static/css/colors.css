@@ -4,4 +4,13 @@
   --dark-background: black;
   --light-text: #333333;
   --dark-text: #dddddd;
+
+  --info-text: hsl(215, 92%, 60%);
+  --info-background: hsl(215, 92%, 98%);
+
+  --warning-text: hsl(50, 92%, 40%);
+  --warning-background: hsl(50, 92%, 96%);
+
+  --danger-text: hsl(0, 59%, 51%);
+  --danger-background: hsl(0, 59%, 97%);
 }

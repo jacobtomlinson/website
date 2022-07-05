@@ -95,3 +95,61 @@ hr {
   padding: 0.5em;
   border-radius: 0.1em;
 }
+
+.alert {
+  font-size: 0.9em;
+  padding: 0.5em 0.375em 0.5em 1em;
+  border-left: 4px solid;
+  margin-bottom: 1em;
+}
+
+.alert-info {
+  background-color: var(--info-background);
+  border-color: var(--info-text);
+}
+
+.alert-info::before {
+  color: var(--info-text);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
+  content: "\f0eb";
+  padding-right: 0.5em;
+}
+
+.alert-warning {
+  background-color: var(--warning-background);
+  border-color: var(--warning-text);
+}
+
+.alert-warning::before {
+  color: var(--warning-text);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
+  content: "\f0f3";
+  padding-right: 0.5em;
+}
+
+.alert-danger {
+  background-color: var(--danger-background);
+  border-color: var(--danger-text);
+}
+
+.alert-danger::before {
+  color: var(--danger-text);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
+  content: "\f057";
+  padding-right: 0.5em;
+}
+
+.talk-embed {
+  margin-top: 1em;
+  width: 40%;
+  display: inline-block;
+}
+
+.talk-embed iframe {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 710/399;
+}

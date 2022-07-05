@@ -1,0 +1,11 @@
+{{ if in .Params.video "youtube" }}
+{{- with (getJSON (printf "%s%s" "https://youtube.com/oembed?url=" .Params.video)) }}
+<div class="talk-embed">{{ .html | safeHTML }}</div>
+{{ end }}
+{{ end }}
+
+{{ if in .Params.slides "speakerdeck" }}
+{{- with (getJSON (printf "%s%s" "https://speakerdeck.com/oembed.json?url=" .Params.slides)) }}
+<div class="talk-embed">{{ .html | safeHTML }}</div>
+{{ end }}
+{{ end }}
