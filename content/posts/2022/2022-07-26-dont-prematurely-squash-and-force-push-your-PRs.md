@@ -40,4 +40,6 @@ In some projects we have even explicitly disabled the other options such as merg
 
 This means that any time a PR is merged in we get the nice clean history on `main` with one commit per PR. This allows PRs to be messy and evolve over time, they can have many of commits and change direction multiple times without worrying about polluting the history. Once merged the commit message will include the PR number, so if anyone wants to dive back into the history of how that change evolved they can.
 
-This benefits contributors by removing the need for them to keep their PRs clean and tidy. As long as the PR title is descriptive and up to date everything will merge in nicely. And this benefits reviewers by easily being able to see delta changes and how they relate to the feedback they gave previously without having to review the entire change every time they look at it.
+This benefits contributors by removing the need for them to keep their PRs clean and tidy. As long as the PR title is descriptive and up to date everything will merge in nicely. It also means you can regularly pull from `main` to keep your PR up to date without worrying about all the merge commits that get created. I personally find this much easier than rebasing all the time.
+
+Then also benefits reviewers by easily being able to see delta changes and how they relate to the feedback they gave previously without having to review the entire change every time they look at it.
