@@ -1,7 +1,7 @@
 ---
 title: "Don't prematurely squash/rebase and force push your PRs"
 date: 2022-07-26T00:00:00+00:00
-draft: true
+draft: false
 author: "Jacob Tomlinson"
 categories:
   - blog
