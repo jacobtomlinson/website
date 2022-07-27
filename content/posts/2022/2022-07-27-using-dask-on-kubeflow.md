@@ -1,7 +1,7 @@
 ---
 title: "Using Dask on KubeFlow with the Dask Kubernetes Operator"
 date: 2022-07-27T00:00:00+00:00
-draft: true
+draft: false
 author: "Jacob Tomlinson"
 categories:
   - blog
