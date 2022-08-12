@@ -116,3 +116,5 @@ $ kubectl run nvidia-smi --restart=Never --rm -i --tty --image nvidia/cuda:11.0.
 +-----------------------------------------------------------------------------+
 pod "nvidia-smi" deleted
 ```
+
+Here we see the driver version is `495.46` and the CUDA version is `11.5`. We also see all of the GPUs on the node rather than the `1` we limited our `Pod` to in method 2.
