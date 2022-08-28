@@ -20,8 +20,8 @@ type Status struct {
 type Member struct {
 	Address    string `json:"address"`
 	Vars       string `json:"vars"`
-	Subscribed bool   `json:"subscribed"`
-	Upsert     bool   `json:"upsert"`
+	Subscribed string `json:"subscribed"`
+	Upsert     string `json:"upsert"`
 }
 
 type Vars struct {
@@ -41,8 +41,8 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 	jsonValue, _ := json.Marshal(Member{
 		Address:    email,
 		Vars:       string(vars),
-		Subscribed: false,
-		Upsert:     true,
+		Subscribed: "no",
+		Upsert:     "yes",
 	})
 
 	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/lists/newsletter@tomlinson.email/members"), bytes.NewBuffer(jsonValue))
@@ -53,11 +53,10 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 	}
 
 	client := &http.Client{}
-	resp, err := client.Do(req)
+	_, err = client.Do(req)
 	if err != nil {
 		return err
 	}
-	defer resp.Body.Close()
 
 	return nil
 }
@@ -79,12 +78,10 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 	}
 
 	client := &http.Client{}
-	resp, err := client.Do(req)
+	_, err = client.Do(req)
 	if err != nil {
 		return err
 	}
-
-	defer resp.Body.Close()
 
 	return nil
 }
