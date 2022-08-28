@@ -48,12 +48,18 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/lists/newsletter@tomlinson.email/members"), bytes.NewBuffer(jsonValue))
 	req.Header.Set("Content-Type", "application/json")
 	req.SetBasicAuth("api", mailgunKey)
+	if err != nil {
+		return err
+	}
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
+	if err != nil {
+		return err
+	}
 	defer resp.Body.Close()
 
-	return err
+	return nil
 }
 
 func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey string, token string) error {
@@ -68,12 +74,19 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/tomlinson.email/messages"), bytes.NewBuffer(jsonValue))
 	req.Header.Set("Content-Type", "application/json")
 	req.SetBasicAuth("api", mailgunKey)
+	if err != nil {
+		return err
+	}
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
+	if err != nil {
+		return err
+	}
+
 	defer resp.Body.Close()
 
-	return err
+	return nil
 }
 
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
