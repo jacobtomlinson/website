@@ -1,12 +1,12 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"net/url"
 	"os"
 
 	"github.com/google/uuid"
@@ -20,37 +20,22 @@ type Status struct {
 	Status string `json:"status"`
 }
 
-type Member struct {
-	Address    string `json:"address"`
-	Vars       string `json:"vars"`
-	Subscribed string `json:"subscribed"`
-	Upsert     string `json:"upsert"`
-}
-
 type Vars struct {
 	Token string `json:"token"`
-}
-
-type Message struct {
-	From    string `json:"from"`
-	To      string `json:"to"`
-	Subject string `json:"subject"`
-	HTML    string `json:"html"`
 }
 
 func createUser(email string, mailgunBaseURL string, mailgunKey string, token string) error {
 
 	vars, _ := json.Marshal(Vars{token})
-	jsonValue, _ := json.Marshal(Member{
-		Address:    email,
-		Vars:       string(vars),
-		Subscribed: "no",
-		Upsert:     "yes",
-	})
+	form := url.Values{}
+	form.Add("address", email)
+	form.Add("vars", string(vars))
+	form.Add("subscribed", "no")
+	form.Add("upsert", "yes")
 
-	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/lists/newsletter@tomlinson.email/members"), bytes.NewBuffer(jsonValue))
-	req.Header.Set("Content-Type", "application/json")
+	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/lists/newsletter@tomlinson.email/members"), nil)
 	req.SetBasicAuth("api", mailgunKey)
+	req.PostForm = form
 	if err != nil {
 		return err
 	}
@@ -80,16 +65,15 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 
 func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey string, token string) error {
 
-	jsonValue, _ := json.Marshal(Message{
-		From:    "Jacob Tomlinson (Newsletter) <jacob+newsletter@tomlinson.email",
-		To:      email,
-		Subject: "Verify your email address",
-		HTML:    fmt.Sprintf("Thank you for subscribing to my newsletter. Before I can add you to the mailing list please click <a href=\"https://jacobtomlinson.dev/.netlify/functions/newsletter-verify?email=%s&token=%s\">here</a> to verify your email address.", email, token),
-	})
+	form := url.Values{}
+	form.Add("from", "Jacob Tomlinson (Newsletter) <jacob+newsletter@tomlinson.email")
+	form.Add("to", email)
+	form.Add("subject", "Verify your email address")
+	form.Add("html", fmt.Sprintf("Thank you for subscribing to my newsletter. Before I can add you to the mailing list please click <a href=\"https://jacobtomlinson.dev/.netlify/functions/newsletter-verify?email=%s&token=%s\">here</a> to verify your email address.", email, token))
 
-	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/tomlinson.email/messages"), bytes.NewBuffer(jsonValue))
-	req.Header.Set("Content-Type", "application/json")
+	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/tomlinson.email/messages"), nil)
 	req.SetBasicAuth("api", mailgunKey)
+	req.PostForm = form
 	if err != nil {
 		return err
 	}
