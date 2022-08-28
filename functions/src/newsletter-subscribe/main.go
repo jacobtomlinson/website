@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"io/ioutil"
 	"net/http"
@@ -56,7 +55,7 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 
 	if resp.StatusCode >= 300 {
 		log.Error(err)
-		return errors.New(string(body))
+		return fmt.Errorf("%d: %s", resp.StatusCode, string(body))
 	}
 
 	log.Info(string(body))
@@ -94,7 +93,7 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 
 	if resp.StatusCode >= 300 {
 		log.Error(err)
-		return errors.New(string(body))
+		return fmt.Errorf("%d: %s", resp.StatusCode, string(body))
 	}
 
 	log.Info(string(body))
