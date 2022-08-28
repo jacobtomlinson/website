@@ -54,8 +54,9 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 	}
 
 	if resp.StatusCode >= 300 {
+		err = fmt.Errorf("%d: %s", resp.StatusCode, string(body))
 		log.Error(err)
-		return fmt.Errorf("%d: %s", resp.StatusCode, string(body))
+		return err
 	}
 
 	log.Info(string(body))
@@ -92,8 +93,9 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 	}
 
 	if resp.StatusCode >= 300 {
+		err = fmt.Errorf("%d: %s", resp.StatusCode, string(body))
 		log.Error(err)
-		return fmt.Errorf("%d: %s", resp.StatusCode, string(body))
+		return err
 	}
 
 	log.Info(string(body))
