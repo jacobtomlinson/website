@@ -43,19 +43,19 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		log.Fatal(err)
+		log.Error(err)
 		return err
 	}
 
 	body, err := ioutil.ReadAll(resp.Body)
 	defer resp.Body.Close()
 	if err != nil {
-		log.Fatal(err)
+		log.Error(err)
 		return err
 	}
 
 	if resp.StatusCode >= 300 {
-		log.Fatal(err)
+		log.Error(err)
 		return errors.New(string(body))
 	}
 
@@ -81,19 +81,19 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		log.Fatal(err)
+		log.Error(err)
 		return err
 	}
 
 	body, err := ioutil.ReadAll(resp.Body)
 	defer resp.Body.Close()
 	if err != nil {
-		log.Fatal(err)
+		log.Error(err)
 		return err
 	}
 
 	if resp.StatusCode >= 300 {
-		log.Fatal(err)
+		log.Error(err)
 		return errors.New(string(body))
 	}
 
@@ -112,7 +112,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 
 	err := createUser(email, mailgunBaseURL, mailgunKey, token)
 	if err != nil {
-		log.Fatal("Unable to create user")
+		log.Error("Unable to create user")
 		status, _ := json.Marshal(Status{"Unable to create user"})
 		return &events.APIGatewayProxyResponse{
 			StatusCode: 400,
@@ -123,7 +123,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 
 	err = sendVerificationEmail(email, mailgunBaseURL, mailgunKey, token)
 	if err != nil {
-		log.Fatal("Unable to send verification email")
+		log.Error("Unable to send verification email")
 		status, _ := json.Marshal(Status{"Unable to send verification email"})
 		return &events.APIGatewayProxyResponse{
 			StatusCode: 400,
