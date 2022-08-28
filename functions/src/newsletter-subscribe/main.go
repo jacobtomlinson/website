@@ -4,10 +4,12 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"os"
 
 	"github.com/google/uuid"
+	log "github.com/sirupsen/logrus"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
@@ -53,11 +55,20 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 	}
 
 	client := &http.Client{}
-	_, err = client.Do(req)
+	resp, err := client.Do(req)
 	if err != nil {
+		log.Fatal(err)
 		return err
 	}
 
+	body, err := ioutil.ReadAll(resp.Body)
+	defer resp.Body.Close()
+	if err != nil {
+		log.Fatal(err)
+		return err
+	}
+
+	log.Info(string(body))
 	return nil
 }
 
@@ -78,11 +89,20 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 	}
 
 	client := &http.Client{}
-	_, err = client.Do(req)
+	resp, err := client.Do(req)
 	if err != nil {
+		log.Fatal(err)
 		return err
 	}
 
+	body, err := ioutil.ReadAll(resp.Body)
+	defer resp.Body.Close()
+	if err != nil {
+		log.Fatal(err)
+		return err
+	}
+
+	log.Info(string(body))
 	return nil
 }
 
@@ -92,6 +112,8 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	mailgunKey := os.Getenv("MAILGUN_API_KEY")
 	mailgunBaseURL := os.Getenv("MAILGUN_BASE_URL")
 	token := uuid.New().String()
+
+	log.Info(fmt.Sprintf("Subscribing %s", email))
 
 	err := createUser(email, mailgunBaseURL, mailgunKey, token)
 	if err != nil {
@@ -113,6 +135,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 		}, nil
 	}
 
+	log.Info("Subscribed")
 	status, _ := json.Marshal(Status{"Subscribed"})
 	return &events.APIGatewayProxyResponse{
 		StatusCode: 200,
