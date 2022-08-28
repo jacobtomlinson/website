@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io/ioutil"
 	"net/http"
@@ -68,6 +69,11 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 		return err
 	}
 
+	if resp.StatusCode >= 300 {
+		log.Fatal(err)
+		return errors.New(string(body))
+	}
+
 	log.Info(string(body))
 	return nil
 }
@@ -102,6 +108,11 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 		return err
 	}
 
+	if resp.StatusCode >= 300 {
+		log.Fatal(err)
+		return errors.New(string(body))
+	}
+
 	log.Info(string(body))
 	return nil
 }
@@ -117,6 +128,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 
 	err := createUser(email, mailgunBaseURL, mailgunKey, token)
 	if err != nil {
+		log.Fatal("Unable to create user")
 		status, _ := json.Marshal(Status{"Unable to create user"})
 		return &events.APIGatewayProxyResponse{
 			StatusCode: 400,
@@ -127,6 +139,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 
 	err = sendVerificationEmail(email, mailgunBaseURL, mailgunKey, token)
 	if err != nil {
+		log.Fatal("Unable to send verification email")
 		status, _ := json.Marshal(Status{"Unable to send verification email"})
 		return &events.APIGatewayProxyResponse{
 			StatusCode: 400,
