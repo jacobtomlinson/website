@@ -81,7 +81,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	email := request.QueryStringParameters["email"]
 	mailgunKey := os.Getenv("MAILGUN_API_KEY")
 	mailgunBaseURL := os.Getenv("MAILGUN_BASE_URL")
-	token := uuid.New().string()
+	token := uuid.New().String()
 
 	err := createUser(email, mailgunBaseURL, mailgunKey, token)
 	if err != nil {
