@@ -161,7 +161,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	mailgunKey := os.Getenv("MAILGUN_API_KEY")
 	mailgunBaseURL := os.Getenv("MAILGUN_BASE_URL")
 
-	log.Info(fmt.Sprintf("Subscribing %s", email))
+	log.Info(fmt.Sprintf("Confirming %s", email))
 
 	member, err := getUser(email, mailgunBaseURL, mailgunKey)
 	if err != nil {
@@ -169,7 +169,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	}
 
 	if member.Vars.Token != token {
-		log.Info("%s != %s", member.Vars.Token, token)
+		log.Info(fmt.Sprintf("%s != %s", member.Vars.Token, token))
 		return buildResponse("Token does not match", 400), nil
 	}
 
