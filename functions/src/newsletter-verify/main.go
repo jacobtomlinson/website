@@ -169,6 +169,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	}
 
 	if member.Vars.Token != token {
+		log.Info("%s != %s", member.Vars.Token, token)
 		return buildResponse("Token does not match", 400), nil
 	}
 
