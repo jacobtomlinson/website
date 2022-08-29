@@ -34,6 +34,7 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 	form.Add("upsert", "yes")
 
 	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/lists/newsletter@tomlinson.email/members"), strings.NewReader(form.Encode()))
+	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
 	req.SetBasicAuth("api", mailgunKey)
 	if err != nil {
 		return err
@@ -72,6 +73,7 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 	form.Add("html", fmt.Sprintf("Thank you for subscribing to my newsletter. Before I can add you to the mailing list please click <a href=\"https://jacobtomlinson.dev/.netlify/functions/newsletter-verify?email=%s&token=%s\">here</a> to verify your email address.", email, token))
 
 	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/tomlinson.email/messages"), strings.NewReader(form.Encode()))
+	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
 	req.SetBasicAuth("api", mailgunKey)
 	if err != nil {
 		return err
