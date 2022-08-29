@@ -9,20 +9,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/google/uuid"
 	log "github.com/sirupsen/logrus"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 )
-
-type Status struct {
-	Status string `json:"status"`
-}
-
-type Vars struct {
-	Token string `json:"token"`
-}
 
 func buildResponse(message string, statusCode int) *events.APIGatewayProxyResponse {
 	if statusCode >= 400 {
@@ -38,13 +29,59 @@ func buildResponse(message string, statusCode int) *events.APIGatewayProxyRespon
 	}
 }
 
-func createUser(email string, mailgunBaseURL string, mailgunKey string, token string) error {
+type Status struct {
+	Status string `json:"status"`
+}
 
-	vars, _ := json.Marshal(Vars{token})
+type Member struct {
+	Address string `json:"address"`
+	Vars    Vars   `json:"vars"`
+}
+
+type Vars struct {
+	Token string `json:"token"`
+}
+
+func getUser(email string, mailgunBaseURL string, mailgunKey string) (*Member, error) {
+
+	req, err := http.NewRequest("GET", fmt.Sprintf("%s/lists/newsletter@tomlinson.email/members/%s", mailgunBaseURL, email), nil)
+	req.SetBasicAuth("api", mailgunKey)
+	if err != nil {
+		return nil, err
+	}
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Error(err)
+		return nil, err
+	}
+
+	body, err := ioutil.ReadAll(resp.Body)
+	defer resp.Body.Close()
+	if err != nil {
+		log.Error(err)
+		return nil, err
+	}
+
+	if resp.StatusCode >= 300 {
+		err = fmt.Errorf("%d: %s", resp.StatusCode, string(body))
+		log.Error(err)
+		return nil, err
+	}
+	log.Info(string(body))
+
+	member := Member{}
+	json.Unmarshal(body, &member)
+
+	return &member, nil
+}
+
+func subscribeUser(email string, mailgunBaseURL string, mailgunKey string) error {
+
 	form := url.Values{}
 	form.Add("address", email)
-	form.Add("vars", string(vars))
-	form.Add("subscribed", "no")
+	form.Add("subscribed", "yes")
 	form.Add("upsert", "yes")
 
 	req, err := http.NewRequest("POST", fmt.Sprintf("%s/lists/newsletter@tomlinson.email/members", mailgunBaseURL), strings.NewReader(form.Encode()))
@@ -78,15 +115,15 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 	return nil
 }
 
-func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey string, token string) error {
+func sendConfirmationEmail(email string, mailgunBaseURL string, mailgunKey string) error {
 
 	form := url.Values{}
 	form.Add("from", "Jacob Tomlinson (Newsletter) <jacob+newsletter@tomlinson.email>")
 	form.Add("to", email)
-	form.Add("subject", "Newsletter: Verify your email address")
-	form.Add("html", fmt.Sprintf("Thank you for subscribing to my newsletter. Before I can add you to the mailing list please click <a href=\"https://jacobtomlinson.dev/.netlify/functions/newsletter-verify?email=%s&token=%s\">here</a> to verify your email address.", email, token))
+	form.Add("subject", "Newsletter: Subscription confirmed")
+	form.Add("html", "Thank you for confirming your email address, keep your eyes peeled for your first issue.")
 
-	req, err := http.NewRequest("POST", fmt.Sprintf("%s/tomlinson.email/messages", mailgunBaseURL), strings.NewReader(form.Encode()))
+	req, err := http.NewRequest("POST", fmt.Sprintf("%s%s", mailgunBaseURL, "/tomlinson.email/messages"), strings.NewReader(form.Encode()))
 	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
 	req.SetBasicAuth("api", mailgunKey)
 	if err != nil {
@@ -120,23 +157,32 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 
 	email := request.QueryStringParameters["email"]
+	token := request.QueryStringParameters["token"]
 	mailgunKey := os.Getenv("MAILGUN_API_KEY")
 	mailgunBaseURL := os.Getenv("MAILGUN_BASE_URL")
-	token := uuid.New().String()
 
 	log.Info(fmt.Sprintf("Subscribing %s", email))
 
-	err := createUser(email, mailgunBaseURL, mailgunKey, token)
+	member, err := getUser(email, mailgunBaseURL, mailgunKey)
 	if err != nil {
-		return buildResponse("Unable to create user", 400), nil
+		return buildResponse("Unable to get user", 400), nil
 	}
 
-	err = sendVerificationEmail(email, mailgunBaseURL, mailgunKey, token)
-	if err != nil {
-		return buildResponse("Unable to send verification email", 400), nil
+	if member.Vars.Token != token {
+		return buildResponse("Token does not match", 400), nil
 	}
 
-	return buildResponse("Subscribed", 200), nil
+	err = subscribeUser(email, mailgunBaseURL, mailgunKey)
+	if err != nil {
+		return buildResponse("Unable to subscribe user", 400), nil
+	}
+
+	err = sendConfirmationEmail(email, mailgunBaseURL, mailgunKey)
+	if err != nil {
+		return buildResponse("Unable to send confirmation email", 400), nil
+	}
+
+	return buildResponse("Confirmed", 200), nil
 }
 
 func main() {
