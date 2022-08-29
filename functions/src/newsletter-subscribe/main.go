@@ -39,7 +39,6 @@ func buildResponse(message string, statusCode int) *events.APIGatewayProxyRespon
 }
 
 func createUser(email string, mailgunBaseURL string, mailgunKey string, token string) error {
-
 	vars, _ := json.Marshal(Vars{token})
 	form := url.Values{}
 	form.Add("address", email)
@@ -79,12 +78,11 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 }
 
 func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey string, token string) error {
-
 	form := url.Values{}
 	form.Add("from", "Jacob Tomlinson (Newsletter) <jacob+newsletter@tomlinson.email>")
 	form.Add("to", email)
 	form.Add("subject", "Newsletter: Verify your email address")
-	form.Add("html", fmt.Sprintf("Thank you for subscribing to my newsletter. Before I can add you to the mailing list please click <a href=\"https://jacobtomlinson.dev/.netlify/functions/newsletter-verify?email=%s&token=%s\">here</a> to verify your email address.", email, token))
+	form.Add("html", fmt.Sprintf("Thank you for subscribing to my newsletter. Before I can add you to the mailing list please click <a href=\"https://jacobtomlinson.dev/.netlify/functions/newsletter-verify?email=%s&token=%s\">here</a> to verify your email address.", url.QueryEscape(email), token))
 
 	req, err := http.NewRequest("POST", fmt.Sprintf("%s/tomlinson.email/messages", mailgunBaseURL), strings.NewReader(form.Encode()))
 	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
@@ -118,8 +116,7 @@ func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey strin
 }
 
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
-
-	email := request.QueryStringParameters["email"]
+	email, _ := url.QueryUnescape(request.QueryStringParameters["email"])
 	mailgunKey := os.Getenv("MAILGUN_API_KEY")
 	mailgunBaseURL := os.Getenv("MAILGUN_BASE_URL")
 	token := uuid.New().String()
@@ -136,7 +133,12 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 		return buildResponse("Unable to send verification email", 400), nil
 	}
 
-	return buildResponse("Subscribed", 200), nil
+	log.Info("Subscribed")
+	return &events.APIGatewayProxyResponse{
+		StatusCode: 302,
+		Headers:    map[string]string{"Location": "/newsletter/subscribed/"},
+		Body:       "",
+	}, nil
 }
 
 func main() {

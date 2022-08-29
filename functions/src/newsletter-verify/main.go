@@ -47,7 +47,6 @@ type Vars struct {
 }
 
 func getUser(email string, mailgunBaseURL string, mailgunKey string) (*Member, error) {
-
 	req, err := http.NewRequest("GET", fmt.Sprintf("%s/lists/newsletter@tomlinson.email/members/%s", mailgunBaseURL, email), nil)
 	req.SetBasicAuth("api", mailgunKey)
 	if err != nil {
@@ -82,7 +81,6 @@ func getUser(email string, mailgunBaseURL string, mailgunKey string) (*Member, e
 }
 
 func subscribeUser(email string, mailgunBaseURL string, mailgunKey string) error {
-
 	form := url.Values{}
 	form.Add("address", email)
 	form.Add("subscribed", "yes")
@@ -120,7 +118,6 @@ func subscribeUser(email string, mailgunBaseURL string, mailgunKey string) error
 }
 
 func sendConfirmationEmail(email string, mailgunBaseURL string, mailgunKey string) error {
-
 	form := url.Values{}
 	form.Add("from", "Jacob Tomlinson (Newsletter) <jacob+newsletter@tomlinson.email>")
 	form.Add("to", email)
@@ -159,8 +156,7 @@ func sendConfirmationEmail(email string, mailgunBaseURL string, mailgunKey strin
 }
 
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
-
-	email := request.QueryStringParameters["email"]
+	email, _ := url.QueryUnescape(request.QueryStringParameters["email"])
 	token := request.QueryStringParameters["token"]
 	mailgunKey := os.Getenv("MAILGUN_API_KEY")
 	mailgunBaseURL := os.Getenv("MAILGUN_BASE_URL")
@@ -187,7 +183,12 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 		return buildResponse("Unable to send confirmation email", 400), nil
 	}
 
-	return buildResponse("Confirmed", 200), nil
+	log.Info("Confirmed")
+	return &events.APIGatewayProxyResponse{
+		StatusCode: 302,
+		Headers:    map[string]string{"Location": "/newsletter/confirmed/"},
+		Body:       "",
+	}, nil
 }
 
 func main() {
