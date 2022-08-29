@@ -1,0 +1,35 @@
+{{ define "main" }}
+<h1>Newsletter</h1>
+
+Each week I send out a newsletter with five interesting things from my week. Don't miss out!
+
+<form action="/.netlify/functions/newsletter-subscribe">
+    <input type="text" id="email" name="email" required="required" placeholder="you@example.com">
+    <input type="submit" value="Subscribe">
+</form>
+
+<h2>Past Issues</h2>
+
+<div class="articles">
+
+    <div>
+        <ul>
+            {{ range .Pages }}
+            {{ if eq .Type "newsletter"}}
+            <li>
+                <h3>
+                    <a href="{{ .Permalink }}">
+                        {{ .Title }}
+                    </a>
+                </h3>
+                {{ partial "post_attributes.html" . }}
+
+            </li>
+            {{ end }}
+            {{ end }}
+
+        </ul>
+    </div>
+
+</div>
+{{ end }}
