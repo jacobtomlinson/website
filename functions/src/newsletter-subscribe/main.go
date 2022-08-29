@@ -67,7 +67,7 @@ func createUser(email string, mailgunBaseURL string, mailgunKey string, token st
 func sendVerificationEmail(email string, mailgunBaseURL string, mailgunKey string, token string) error {
 
 	form := url.Values{}
-	form.Add("from", "Jacob Tomlinson (Newsletter) <jacob+newsletter@tomlinson.email")
+	form.Add("from", "Jacob Tomlinson (Newsletter) <jacob+newsletter@tomlinson.email>")
 	form.Add("to", email)
 	form.Add("subject", "Verify your email address")
 	form.Add("html", fmt.Sprintf("Thank you for subscribing to my newsletter. Before I can add you to the mailing list please click <a href=\"https://jacobtomlinson.dev/.netlify/functions/newsletter-verify?email=%s&token=%s\">here</a> to verify your email address.", email, token))
