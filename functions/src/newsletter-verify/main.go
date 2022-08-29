@@ -33,6 +33,10 @@ type Status struct {
 	Status string `json:"status"`
 }
 
+type MemberResponse struct {
+	Member Member `json:"member"`
+}
+
 type Member struct {
 	Address string `json:"address"`
 	Vars    Vars   `json:"vars"`
@@ -71,10 +75,10 @@ func getUser(email string, mailgunBaseURL string, mailgunKey string) (*Member, e
 	}
 	log.Info(string(body))
 
-	member := Member{}
+	member := MemberResponse{}
 	json.Unmarshal(body, &member)
 
-	return &member, nil
+	return &member.Member, nil
 }
 
 func subscribeUser(email string, mailgunBaseURL string, mailgunKey string) error {
