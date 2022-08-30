@@ -6,6 +6,8 @@ Each week I send out a newsletter with five interesting things from my week. Don
 <form action="/.netlify/functions/newsletter-subscribe">
     <input type="text" id="email" name="email" required="required" placeholder="you@example.com">
     <input type="submit" value="Subscribe">
+    <input type="submit" value="Unsubscribe" formaction="/.netlify/functions/newsletter-unsubscribe"
+        style="float: right; background: none; color: grey; border: 1px solid grey;">
 </form>
 
 <h2>Past Issues</h2>
