@@ -1,0 +1,26 @@
+name: "Publish newsletter"
+on:
+  schedule:
+    - cron: "0 16 * * 5"
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.96.0"
+          extended: true
+
+      - name: Build site
+        run: hugo
+
+      - name: Send newsletter
+        run: |
+          if [ -f public/newsletter/$(date +%F)-*/email.html ]; then
+              echo "Sending newsletter"
+          fi
