@@ -33,6 +33,17 @@ tag = "tags"
 [outputFormats.RSS]
 baseName = "feed"
 mediatype = "application/rss"
+[outputFormats.email]
+baseName = "email"
+isPlainText = true
+isHTML = true
+mediatype = "text/html"
+name = "email"
+noUgly = true
+permalinkable = false
+
+[outputs]
+page = ['HTML', "email"]
 
 [markup.goldmark.renderer]
 unsafe = true
