@@ -51,4 +51,4 @@ You can also head back to the same form and use the "Unsubscribe" button on the 
 
 Thanks for reading!
 
-![Lenny the dog looking confused](https://i.imgur.com/8BxtFlm.jpg "Lenny hopes you had a good week! (I did say everyone and their dog)")
+![Lenny the dog looking confused](lenny.jpg "Lenny hopes you had a good week! (I did say everyone and their dog)")
