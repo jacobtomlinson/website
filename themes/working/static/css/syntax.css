@@ -3,6 +3,7 @@
   background-color: #ffffff;
 }
 pre code {
+  font-size: 0.7em;
   color: var(--light-text);
   border-left: var(--primary) 0.25rem solid;
   border-radius: 0;
