@@ -47,7 +47,7 @@ I intend to write a full blog post about this.
 
 To sign up you can head to the [newsletter page](https://jacobtomlinson.dev/newsletter/) on my website and submit your email address via the box at the top. You'll get an email asking you to click a link to confirm to ensure that everyone on the mailing list definitely wants to be on it.
 
-You can also head back to the same form and use the "Unsubscribe" button on the right if you change your mind, or click the unsubscribe link in the email. This ins't a lifelong commitment, it's just for as long as you find it useful 😁.
+You can also head back to the same form and use the "Unsubscribe" button on the right if you change your mind, or click the unsubscribe link in the email. This isn't a lifelong commitment, it's just for as long as you find it useful 😁.
 
 Thanks for reading!
 
