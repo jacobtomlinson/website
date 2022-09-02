@@ -183,7 +183,8 @@ Before launching your cluster, you must create a configuration profile that is i
 apiVersion: "kubeflow.org/v1alpha1"
 kind: PodDefault
 metadata:
-  name: configure-dask-dashboardspec:
+  name: configure-dask-dashboard
+spec:
   selector:
 	matchLabels:
   	configure-dask-dashboard: "true"
