@@ -68,12 +68,12 @@ a:active {
 }
 
 blockquote {
-  color: var(--primary);
+  color: var(--brand-grey);
   font-family: "Roboto Slab", serif;
 }
 
 code {
-  color: var(--primary);
+  color: var(--primary-dark);
   font-family: "Roboto Mono", serif;
   background: none;
   border: none;

@@ -25,9 +25,8 @@
 <!-- Canonical -->
 
 {{ if isset .Params "canonical" }}
-<p class="context">
+<p class="alert alert-info">
   <i>
-    <i class="fas fa-archive" title="Archived version"></i>
     This is an archived post that was originally published on
     <a href="{{ .Params.canonical }}" target="_blank" rel="noopener noreferrer">
       {{ if isset .Params "canonical_title" }}
@@ -35,7 +34,7 @@
       {{ else }}
       {{ index (findRE "^(?:https?:\\/\\/)?(?:[^@\\/\\n]+@)?(?:www\\.)?([^:\\/?\\n]+)" .Params.canonical) 0 }}
       {{ end }}
-    </a>.
+    </a>
   </i>
 </p>
 {{ end }}
