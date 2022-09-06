@@ -12,7 +12,7 @@ title = "Jacob Tomlinson"
 [params]
 SiteSourceURL = "https://github.com/jacobtomlinson/website"
 author = "Jacob Tomlinson"
-avatar = "https://github.com/jacobtomlinson.png"
+avatar = "https://jacobtomlinson.dev/profile.png"
 description = "Building RAPIDS and Dask at NVIDIA. Tinker with Opsdroid in my spare time. he/him."
 github = "https://github.com/jacobtomlinson"
 images = ["https://i.imgur.com/Ln3NJU2h.png"]
@@ -33,6 +33,14 @@ tag = "tags"
 [outputFormats.RSS]
 baseName = "feed"
 mediatype = "application/rss"
+[outputFormats.email]
+baseName = "email"
+isHTML = true
+isPlainText = true
+mediatype = "text/html"
+name = "email"
+noUgly = true
+permalinkable = false
 [outputFormats.OGImage]
 baseName = "ogimage"
 isPlainText = true
@@ -43,7 +51,7 @@ notAlternative = true
 permalinkable = false
 
 [outputs]
-page = ['HTML', "ogimage"]
+page = ['HTML', 'email', "ogimage"]
 
 [markup.goldmark.renderer]
 unsafe = true

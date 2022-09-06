@@ -1,0 +1,32 @@
+name: "Publish newsletter"
+on:
+  schedule:
+    - cron: "0 16 * * 5"
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.96.0"
+          extended: true
+
+      - name: Build site
+        run: hugo
+
+      - name: Send newsletter
+        run: |
+          if [ -f public/newsletter/$(date +%F)-*/email.html ]; then
+              SUBJECT=$(grep -oE "<title>.*</title>" public/newsletter/$(date +%F)-*/email.html | sed "s/<title>//" | sed "s/<\/title>//")
+              cat public/newsletter/$(date +%F)-*/email.html | curl -s --user 'api:${{ secrets.MAILGUN_API_KEY }}' \
+                  https://api.eu.mailgun.net/v3/tomlinson.email/messages \
+                  -F from='Jacob Tomlinson (newsletter) <jacob+newsletter@tomlinson.email>' \
+                  -F to=newsletter@tomlinson.email \
+                  -F subject="$SUBJECT" \
+                  -F html='<-'
+          fi
