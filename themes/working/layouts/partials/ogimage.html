@@ -1,0 +1,43 @@
+{{ $font_roboto_slab := "https://github.com/google/fonts/raw/main/apache/robotoslab/RobotoSlab%5Bwght%5D.ttf" }}
+{{ $font_roboto_medium := "https://github.com/google/fonts/raw/main/apache/roboto/static/Roboto-Medium.ttf" }}
+{{ $font_roboto_regular := "https://github.com/google/fonts/raw/main/apache/roboto/static/Roboto-Regular.ttf" }}
+
+{{ $featured := resources.GetRemote "https://i.imgur.com/f5AJKsQ.png" }}
+
+{{ $featured = $featured.Filter (images.Text $.LinkTitle (dict
+"color" "#000"
+"size" 64
+"lineSpacing" 10
+"x" 84 "y" 65
+"font" (resources.GetRemote $font_roboto_slab))) }}
+
+{{ $featured = $featured.Filter (images.Text (string $.ReadingTime) (dict
+"color" "#666"
+"size" 32
+"lineSpacing" 10
+"x" 356 "y" 449
+"font" (resources.GetRemote $font_roboto_medium))) }}
+
+{{ $featured = $featured.Filter (images.Text ($.Date.Format "Jan 2") (dict
+"color" "#666"
+"size" 32
+"lineSpacing" 10
+"x" 132 "y" 449
+"font" (resources.GetRemote $font_roboto_medium))) }}
+
+{{ $featured = $featured.Filter (images.Text ($.Date.Format "2006") (dict
+"color" "#666"
+"size" 28
+"lineSpacing" 10
+"x" 132 "y" 490
+"font" (resources.GetRemote $font_roboto_regular))) }}
+
+{{ $featured = $featured.Filter (
+images.Text (string (delimit (apply $.Params.tags "printf" "#%s" ".") ", " )) (dict
+"color" "#666"
+"size" 28
+"lineSpacing" 10
+"x" 130 "y" 332
+"font" (resources.GetRemote $font_roboto_regular))) }}
+
+{{ return $featured }}

@@ -20,6 +20,11 @@
 <link rel="canonical" href="{{ .Params.canonical }}" />
 {{ end }}
 
+{{ with .OutputFormats.Get "rss" -}}
+{{ printf `
+<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description"
   content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
@@ -37,7 +42,9 @@
 <meta property="og:image" content="{{ $featured.Permalink }}" />
 {{- else -}}
 {{- if .IsPage }}
-<meta property="og:image" content="{{ .Permalink }}ogimage.svg" />
+{{- with partial "ogimage.html" . -}}
+<meta property="og:image" content="{{ .Permalink }}" />
+{{ end -}}
 {{- else -}}
 {{- with $.Site.Params.images }}
 <meta property="og:image" content="{{ index . 0 | absURL }}" />{{ end -}}
@@ -97,7 +104,9 @@
 <meta name="twitter:image" content="{{ $featured.Permalink }}" />
 {{- else -}}
 {{- if .IsPage }}
-<meta property="twitter:image" content="{{ .Permalink }}ogimage.svg" />
+{{- with partial "ogimage.html" . -}}
+<meta property="twitter:image" content="{{ .Permalink }}" />
+{{ end -}}
 {{- else -}}
 {{- with $.Site.Params.images }}
 <meta property="twitter:image" content="{{ index . 0 | absURL }}" />{{ end -}}

@@ -41,17 +41,9 @@ mediatype = "text/html"
 name = "email"
 noUgly = true
 permalinkable = false
-[outputFormats.OGImage]
-baseName = "ogimage"
-isPlainText = true
-mediatype = "image/svg+xml"
-name = "ogimage"
-noUgly = true
-notAlternative = true
-permalinkable = false
 
 [outputs]
-page = ['HTML', 'email', "ogimage"]
+page = ['HTML', 'RSS', 'email']
 
 [markup.goldmark.renderer]
 unsafe = true
