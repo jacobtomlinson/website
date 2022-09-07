@@ -105,7 +105,7 @@
 {{- else -}}
 {{- if .IsPage }}
 {{- with partial "ogimage.html" . -}}
-<meta property="twitter:image" content="{{ .Permalink }}" />
+<meta name="twitter:image" content="{{ .Permalink }}" />
 {{ end -}}
 {{- else -}}
 {{- with $.Site.Params.images }}
