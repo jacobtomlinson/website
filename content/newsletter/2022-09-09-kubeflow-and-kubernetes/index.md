@@ -11,7 +11,7 @@ _Was this forwarded to you? [You can subscribe here!](https://jacobtomlinson.dev
 
 ## 1. Blog: Accelerating ETL on KubeFlow with RAPIDS
 
-[![Screenshot of JupyterLab with the Dask Lab extension open on the left and various Dask plots arranged on the screen](accelerating-etl-featured.png)](https://developer.nvidia.com/blog/accelerating-etl-on-kubeflow-with-rapids/)
+[![Screenshot of JupyterLab with the Dask Lab extension open on the left and various Dask plots arranged on the screen](accelerating-etl.png)](https://developer.nvidia.com/blog/accelerating-etl-on-kubeflow-with-rapids/)
 
 Last week a blog post I wrote about running RAPIDS on Kubeflow was [published on the NVIDIA Developer Blog](https://developer.nvidia.com/blog/accelerating-etl-on-kubeflow-with-rapids/).
 

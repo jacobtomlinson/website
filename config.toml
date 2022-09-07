@@ -14,9 +14,9 @@ SiteSourceURL = "https://github.com/jacobtomlinson/website"
 author = "Jacob Tomlinson"
 avatar = "https://jacobtomlinson.dev/profile.png"
 description = "Building RAPIDS and Dask at NVIDIA. Tinker with Opsdroid in my spare time. he/him."
+github = "https://github.com/jacobtomlinson"
 images = ["https://i.imgur.com/Ln3NJU2h.png"]
 twitter = "https://twitter.com/_jacobtomlinson"
-github = "https://github.com/jacobtomlinson"
 
 footer_left = "Made with <i class=\"fa fa-heart\"></i> using [Hugo](https://gohugo.io/)</a>"
 footer_right = "<i class=\"fa fa-code\"></i> on [Github](https://github.com/jacobtomlinson/jacobtomlinson.github.io) &nbsp;<i class=\"fab fa-github-alt\"></i>"
@@ -35,15 +35,15 @@ baseName = "feed"
 mediatype = "application/rss"
 [outputFormats.email]
 baseName = "email"
-isPlainText = true
 isHTML = true
+isPlainText = true
 mediatype = "text/html"
 name = "email"
 noUgly = true
 permalinkable = false
 
 [outputs]
-page = ['HTML', "email"]
+page = ['HTML', 'RSS', 'email']
 
 [markup.goldmark.renderer]
 unsafe = true
