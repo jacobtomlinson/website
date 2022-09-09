@@ -10,6 +10,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Trigger Netlify build (to ensure remote images are hosted)
+        run: curl -X POST -d {} ${{ secrets.NETLIFY_NIGHTLY_WEBHOOK }}
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:

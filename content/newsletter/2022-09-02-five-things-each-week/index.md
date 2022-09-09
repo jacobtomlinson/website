@@ -1,5 +1,5 @@
 ---
-title: "Five things each week"
+title: "Issue 1: Five things each week"
 date: 2022-09-02T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
