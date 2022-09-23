@@ -5,10 +5,6 @@ draft: false
 author: "Jacob Tomlinson"
 ---
 
-Happy Friday! Here are five things you might find interesting.
-
-_Was this forwarded to you? [You can subscribe here!](https://jacobtomlinson.dev/newsletter)_
-
 ## 1. Blog: Accelerating ETL on KubeFlow with RAPIDS
 
 [![Screenshot of JupyterLab with the Dask Lab extension open on the left and various Dask plots arranged on the screen](accelerating-etl.png)](https://developer.nvidia.com/blog/accelerating-etl-on-kubeflow-with-rapids/)
