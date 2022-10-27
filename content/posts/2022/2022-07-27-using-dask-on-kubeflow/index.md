@@ -148,18 +148,17 @@ Navigate to `127.0.0.1:8080` and login with the default credentials `user@exampl
 
 ### Installing the Dask Operator
 
-To be able to create our Dask clusters we need to [install some custom resource definitions](https://kubernetes.dask.org/en/latest/operator_installation.html).
+To be able to create our Dask clusters we need to [install some custom resource definitions](https://kubernetes.dask.org/en/latest/operator_installation.html) and the operator controller that will watch the Kubernetes API for events related to those custom resources and act accordingly by creating Dask `Pods` and `Services` on our behalf. We can do this with the `dask-kubernetes-operator` helm chart.
 
 ```console
-$ kubectl apply -f https://raw.githubusercontent.com/dask/dask-kubernetes/main/dask_kubernetes/operator/deployment/manifests/daskcluster.yaml
-$ kubectl apply -f https://raw.githubusercontent.com/dask/dask-kubernetes/main/dask_kubernetes/operator/deployment/manifests/daskworkergroup.yaml
-$ kubectl apply -f https://raw.githubusercontent.com/dask/dask-kubernetes/main/dask_kubernetes/operator/deployment/manifests/daskjob.yaml
-```
-
-Then we need the operator application that will watch the Kubernetes API for events related to those custom resources and act accordingly by creating Dask `Pods` and `Services` on our behalf.
-
-```console
-$ kubectl apply -f https://raw.githubusercontent.com/dask/dask-kubernetes/main/dask_kubernetes/operator/deployment/manifests/operator.yaml
+$ helm install --repo https://helm.dask.org --create-namespace -n dask-operator --generate-name dask-kubernetes-operator
+NAME: dask-kubernetes-operator-1666875935
+NAMESPACE: dask-operator
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+Operator has been installed successfully.
 ```
 
 We can check things installed correctly by listing our `daskclusters` and checking the operator pod is running.
@@ -168,15 +167,15 @@ We can check things installed correctly by listing our `daskclusters` and checki
 $ kubectl get daskclusters
 No resources found in default namespace.
 
-$ kubectl get pods -A -l application=dask-kubernetes-operator
-NAMESPACE       NAME                                        READY   STATUS    RESTARTS   AGE
-dask-operator   dask-kubernetes-operator-775b8bbbd5-zdrf7   1/1     Running   0          74s
+$ kubectl get pods -A -l app.kubernetes.io/name=dask-kubernetes-operator
+NAMESPACE       NAME                                                  READY   STATUS    RESTARTS   AGE
+dask-operator   dask-kubernetes-operator-1666875935-b87c75bb7-bhkvh   1/1     Running   0          74s
 ```
 
 Typically users in KubeFlow have the ability to create resources within their own namespace, this is allowed via `ClusterRole` policy called `kubeflow-kubernetes-edit`. But this role knows nothing about our Dask custom resources so we also need to patch that to give folks the ability to create Dask resources themselves.
 
 ```console
-$ kubectl patch clusterrole kubeflow-kubernetes-edit --patch '{"rules": [{"apiGroups": ["kubernetes.dask.org"],"resources": ["*"],"verbs": ["*"]}]}'
+$ kubectl patch clusterrole kubeflow-kubernetes-edit --type="json" --patch '[{"op": "add", "path": "/rules/-", "value": {"apiGroups": ["kubernetes.dask.org"],"resources": ["*"],"verbs": ["*"]}}]'
 ```
 
 That's it, the users of our KubeFlow cluster should now be able to leverage Dask Clusters in their workflows.
