@@ -86,7 +86,8 @@ ul {
   list-style-type: square;
 }
 
-.footer, .attributes small {
+.footer,
+.attributes small {
   color: #666;
   font-size: 0.6em;
   font-weight: 300;
@@ -122,6 +123,19 @@ h1 .draft {
 
 .articles ul li {
   margin-bottom: 1rem;
+}
+
+#applause {
+  cursor: pointer;
+  border: 1px solid grey;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+#applause i {
+  padding-right: 0.1em;
 }
 
 @media only screen and (max-width: 600px) {
