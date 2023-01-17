@@ -105,6 +105,21 @@ However going back isn't as straight forward. If hypothetically Dask chose to sw
 
 The only options are to jump forward to an even higher major version that is clearly not a date or to retcon the CalVer releases and yank/republish existing CalVer releases with a new SemVer name. Neither of which are good options.
 
+
+## CalVer can imply semantics where there are none
+
+After originally publishing this article a reader reached out to me and made the following comment:
+
+> Speaking now as a library consumer: I'm not a Dask, nor a k8s expert, but were I to try dask-kubernetes, currently at 2022.12.0, I'd feel confident targeting Dask and k8s of similar December 2022 vintage.
+
+All projects using CalVer use a common set of dates which can lead users to assume projects with near dates are compatible, but this assumption worries me. Sure they got released at the same time, but `dask-kubernetes` specifies which `dask` versions it works within its requirements. Compatible versions of each should be installed via the pip/conda solver. It shouldn't be down to the user to make this judgement call.
+
+Sure all December 2022 releases were tested and authored around the same time, but it doesn't mean the latest versions of things were tested. Python `3.11` was released in October 2022 but dask's `2022.10.2` release did not work with Python `3.11`. It wasn't until `2022.12.1` that `3.11` support was added. If Python used CalVer would users assume the same immediate compatibility?
+
+I've also been in a position where `dask` is on a 2023 release already but another subproject like `dask-cloudprovider` is still a few months behind with a `2022` release. Does that mean `dask-cloudprovider` is out of date or won't work with current `dask`? No, of course not. It just means different projects have different complexities and some need changing more than others. Having many projects all using CalVer causes folks to take meaning from this and assume that similar dates are compatible. But no such promise is being made by the maintainer.
+
+Yet I've had users reach out to me asking me to make a release of projects that have had no changes just so the dates line up.
+
 ## Wrap up
 
 For any distribution-like project CalVer is a sensible way to version your releases. But there is much more to releasing software than which scheme you use. Building up trust with your community by being transparent, consistent and punctual is crucial.
