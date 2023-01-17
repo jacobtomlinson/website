@@ -13,12 +13,12 @@ tags:
   - calver
 ---
 
-Over the last few years many open source Python projects that I work on have switched to [CalVer](https://calver.org/). I've felt some pain around this, particularly in [Dask](https://dask.org/) and it's subprojects. I want to unpack some of my thoughts and feelings around this trend.
+Over the last few years, many open-source Python projects that I work on have switched to [CalVer](https://calver.org/). I've felt some pain around this, particularly in [Dask](https://dask.org/) and its subprojects. I want to unpack some of my thoughts and feelings around this trend.
 
 ```info
 Semantic Versioning or [SemVer](https://semver.org/) is where versions increments are calculated based on what has changed in the release, whether it is a major/breaking change, a minor/feature change or just a bug fix, e.g `MAJOR.MINOR.PATCH`.
 
-Calendar Versioning or [CalVer](https://calver.org/) is where a project's versioning scheme simply uses the current date rather than any semantic meaing, e.g `YEAR.MONTH.DAY`.
+Calendar Versioning or [CalVer](https://calver.org/) is where a project's versioning scheme simply uses the current date rather than any semantic meaning, e.g `YEAR.MONTH.DAY`.
 
 Some projects use a hybrid of the two. In Dask we use `YEAR.MONTH.PATCH` as it allows us to release multiple times within one day if we need to.
 ```
@@ -41,11 +41,11 @@ Ubuntu also goes out of their way to backport fixes to older versions and signal
 
 ## Distributions should be calendar versioned
 
-Ubuntu is also not a library or API, it is a Linux distribtion. Distributions are collections of tens, hundreds or thousands of pieces of software that have been curated and tested together. The semantics of major/breaking changes and minor/feature changes are less useful there. Every release will have many changes of all types from many projects in their collection.
+Ubuntu is also not a library or API, it is a Linux distribution. Distributions are collections of tens, hundreds or thousands of pieces of software that have been curated and tested together. The semantics of major/breaking changes and minor/feature changes are less useful there. Every release will have many changes of all types from many projects in their collection.
 
-Distributions are also highly opinionated and at the same time totally arbitrary. A person or group of people have selected their preferred tools to fulfil the needs of a modern operating system and then have invested time and effort to verify that those tools are compatible. The decisions to add, upgrade or replace various pieces of software are too complex to represent in a versioning scheme. Snapshotting a point in time and saying "this collection is good, we've tesed it and are happy" is the best you're going to get. Then following up with patch releases is effectively like saying "remember that good collection we had, we've fixed a few issues with it".
+Distributions are also highly opinionated and at the same time totally arbitrary. A person or group of people have selected their preferred tools to fulfill the needs of a modern operating system and then have invested time and effort to verify that those tools are compatible. The decisions to add, upgrade or replace various pieces of software are too complex to represent in a versioning scheme. Snapshotting a point in time and saying "this collection is good, we've tested it and are happy" is the best you're going to get. Then following up with patch releases is effectively like saying "remember that good collection we had, we've fixed a few issues with it".
 
-Many projects do the same kind of thing but at different levels of the software stack. Some curate container images containing software environments, such as the [Pangeo containers](https://github.com/pangeo-data/pangeo-docker-images). Other projects such as [Kubeflow](https://github.com/kubeflow/kubeflow) build platforms and toolkits out of many other pieces of software to serve a particular purpose. These are also distributions and calendar versioning is probably the right choice for them.
+Many projects do the same kind of thing, but at different levels of the software stack. Some curate container images containing software environments, such as the [Pangeo containers](https://github.com/pangeo-data/pangeo-docker-images). Other projects such as [Kubeflow](https://github.com/kubeflow/kubeflow) build platforms and toolkits out of many other pieces of software to serve a particular purpose. These are also distributions and calendar versioning is probably the right choice for them.
 
 One of the reasons behind Dask switching to CalVer was that it provides alternative implementations of the Pandas, NumPy and SciKit-Learn APIs which we refer to as Dask collections. This sort of makes Dask a distribution given that it is vendoring in multiple APIs from other projects. However in hindsight I'd argue that while the Dask collections are a vital part of Dask they are only a small part of the versioned ecosystem. Other components such as the Dask scheduler or deployment tooling should probably have stuck with SemVer given that they are just providing APIs to users and other projects.
 
@@ -55,9 +55,9 @@ As a consumer of many APIs the thing I appreciate most is stability and predicta
 
 A common argument I see from folks in the PyData space against SemVer is that it isn't done well in our community and so we shouldn't bother. From time to time a minor or patch release will happen that breaks things, but in my opinion that's ok, mistakes happen. As long as the project issues a follow up patch release to revert the breakage it's not a huge issue. The important thing is that you are trying to stick to the semantics, and if a release does something unexpected it is a broken release.
 
-By releasing software that uses SemVer you are signaling to your community that you have some constraints. Depending on the types of changes you make you will signal that to them with the version number you release. If you regularly make major version bumps with breaking changes the community will not be happy about this and likely push back.
+By releasing software that uses SemVer you are signaling to your community that you have some constraints. Depending on the types of changes you make, you will signal that to them with the version number you release. If you regularly make major version bumps with breaking changes the community will not be happy about this and likely push back.
 
-In my opinion CalVer signals to your community that anything could happen at any time and that you have no interest in the effect that has on your users. The project has been tested to be working on a given date, but it is an exercise for the user to figure out how much effort it would take for them to upgrade. I don't feel this is very respectful of users time and effort.
+In my opinion, CalVer signals to your community that anything could happen at any time and that you have no interest in the effect that has on your users. The project has been tested to be working on a given date, but it is an exercise for the user to figure out how much effort it would take for them to upgrade. I don't feel this is very respectful of users time and effort.
 
 ## Version schemes should be SemVer compliant
 
@@ -87,11 +87,11 @@ Dask made 27 releases during 2022, but that's all I know about them.
 
 A common reason to upgrade is when you find a bug and are on an old release. The bug has potentially been fixed in a newer release and I should verify before opening an issue. But if I were a user and I was still using a version from 2021 where do I upgrade to?
 
-Maybe I jump to the latest version and find that a bunch of stuff has changed. Do I fix up my code to take the breakages into account? Or do I jump somewhere in between to see if my code still works and the bug has been fixed? Maybe I choose to jump to the release in between where I am and the latest? Does that fix the bug without introducing breaks? If not do I jump again? Did I just reinvent bisect but for releases?
+Maybe I jump to the latest version and find that a bunch of stuff has changed. Do I fix up my code to take the breakages into account? Or do I jump somewhere in between to see if my code still works and the bug has been fixed? Maybe I choose to jump to the release in between where I am and the latest? Does that fix the bug without introducing breaks? If not, do I jump again? Did I just reinvent bisect but for releases?
 
 You get the idea.
 
-If the project used SemVer the user could just move to the latest relase for the major version they were on and try it out. If it works then great! If not they know they have to do some migration work to a newer major version.
+If the project used SemVer the user could just move to the latest release for the major version they were on and try it out. If it works then great! If not they know they have to do some migration work to a newer major version.
 
 As a maintainer I think I would find it easier to remember what had caused the major bump in a Semver project too. So if I was providing user support I could maybe even tell them if their code would work with a newer release. With CalVer I find it very hard to remember what happened between releases in the past without going back through the entire changelog.
 
