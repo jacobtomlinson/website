@@ -67,11 +67,13 @@ SemVer doesn't allow for zero padding of versions. However, it might be tempting
 
 The quick fix for this is to use `YYYY.M.P` for our Helm Chart releases. However this introduces an inconsistency that frustrates me because we need to remember this special case and work around it indefinitely.
 
+```info
 It's also interesting to note that PyPI doesn't allow zero padding as part of complying with [PEP440](https://peps.python.org/pep-0440/). But it automatically strips the zero if you try and push a release with a passes version.
+```
 
 ## CalVer doesn't make releases more regular
 
-The driving motivation for Conda to switch to CalVer in [CEP 8](https://github.com/conda-incubator/ceps/blob/main/cep-8.md) was to "remove ambiguity/maintainer guesswork of when and what warrants a release". Much of that CEP goes on to desribe how releases should be created bi-monthly and doesn't actually mention any pros/cons of removing semantics from the versioning.
+The driving motivation for Conda to switch to CalVer in [CEP 8](https://github.com/conda-incubator/ceps/blob/main/cep-8.md) was to "remove ambiguity/maintainer guesswork of when and what warrants a release". Much of that CEP goes on to desribe how releases should be created bi-monthly but when I read it I didn't see much info about the pros/cons of removing semantics from the versioning.
 
 Any project can switch from an ad-hoc release cycle to a periodic release cycle. You don't need to use CalVer to do this. I think it is easy to be inspired by Ubuntu's versioning and release cycle and adopt the same thing, but I think semantics and release candence should be considered as two separate subjects.
 
