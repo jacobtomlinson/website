@@ -42,6 +42,7 @@ spec:
         # - name: prepuller-2
         #   image: ...
         #   command: ["sh", "-c", "'true'"]
+
         # etc...
 
       # Use the pause container to ensure the Pod goes into a `Running` phase
