@@ -51,3 +51,7 @@ spec:
         - name: pause
           image: gcr.io/google_containers/pause
 ```
+
+Once you've applied this `DaemonSet` you can watch the pre-puller Pods and once they are all in a `Running` phase you know the images have been pulled.
+
+Using a `DaemonSet` is also neat because if you scale the cluster and add new nodes the images will be pulled automatically.
