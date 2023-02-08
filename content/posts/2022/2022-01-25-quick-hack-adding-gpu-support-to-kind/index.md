@@ -17,7 +17,11 @@ I needed GPU support in [kind](https://kind.sigs.k8s.io/), so I added it. I'm al
 
 When developing tools for [Kubernetes](https://kubernetes.io/) I like to use kind which runs a whole cluster inside a single [Docker](https://www.docker.com/) container. I especially like using it via [pytest-kind](https://pypi.org/project/pytest-kind/) which makes running Python unit tests against a Kubernetes cluster a breeze.
 
-Today as of kind 0.11.1 there is no support for passing GPUs through to the Kubernetes cluster and attempts made in [kubernetes-sigs/kind#1886](https://github.com/kubernetes-sigs/kind/pull/1886) were rejected. It seems there is a desire to add this support to kind in the future, but disagreements on how to implement it. Sadly I don't have time to dive into that and try and implement a robust solutions that would be accepted by the kind maintainers, so I decided to quickly hack together a version that I could use right away.
+```info
+**Update: Feb 8th 2023** - Bumped my fork up to kind 0.17.0 and updated post.
+```
+
+Today as of kind 0.17.0 there is no support for passing GPUs through to the Kubernetes cluster and attempts made in [kubernetes-sigs/kind#1886](https://github.com/kubernetes-sigs/kind/pull/1886) were rejected. It seems there is a desire to add this support to kind in the future, but disagreements on how to implement it. Sadly I don't have time to dive into that and try and implement a robust solutions that would be accepted by the kind maintainers, so I decided to quickly hack together a version that I could use right away.
 
 You can find [my fork of kind here with a Pull Request that adds GPU support](https://github.com/jacobtomlinson/kind/pull/1).
 
@@ -46,8 +50,8 @@ $ git branch gpu && git pull origin gpu
 
 $ make install
 
-$ kind --version
-kind version 0.12.0-alpha+bf63502ed1dfde
+$ kind version
+kind (@jacobtomlinson's patched GPU edition) v0.18.0-alpha.69+a32cb054c819a1 go1.19.3 linux/amd64
 ```
 
 ## Creating a GPU kind cluster
@@ -84,12 +88,9 @@ do this via the NVIDIA Operator. Let's install that with [helm](https://helm.sh/
 As our host machine already has NVIDIA drivers installed we need to disable the driver install step.
 
 ```console
-$ helm repo add nvidia https://nvidia.github.io/gpu-operator \
-  && helm repo update
-
-$ helm install --wait --generate-name \
-  -n gpu-operator --create-namespace \
-  nvidia/gpu-operator \
+$ helm install --repo https://nvidia.github.io/gpu-operator nvidia/gpu-operator \
+  --wait --generate-name \
+  --create-namespace -n gpu-operator \
   --set driver.enabled=false
 ```
 
