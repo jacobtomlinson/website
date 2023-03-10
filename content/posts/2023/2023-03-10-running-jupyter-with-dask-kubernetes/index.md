@@ -49,3 +49,13 @@ http://localhost:56952/status
 Ok we can see the Dask dashboard is being port forwarded to port `56952` on localhost. So we can access Jupyter at `http://localhost:56952/jupyter/lab`.
 
 ![Screenshot of Jupyter lab running on the Dask Dashboard port](jupyter-lab.png)
+
+The Jupyter environment will also be pre-configured to be able to connect to the Dask cluster so in your notebooks all you need to do is create a `dask.distributed.Client`.
+
+```python
+from dask.distributed import Client
+
+client = Client()
+```
+
+![Screenshot of connecting a Client to the cluster with no configuration](client.png)
