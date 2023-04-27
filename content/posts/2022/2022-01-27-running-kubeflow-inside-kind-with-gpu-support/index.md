@@ -30,7 +30,7 @@ _This blog post is intended more as personal notes than instructions, so take ev
 - You'll need an up-to-date version of the [Docker runtime](https://docs.docker.com/engine/install/ubuntu/), mine is `20.10.12`.
 - You'll want the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/overview.html).
 - You should also install [kubectl](https://kubernetes.io/docs/tasks/tools/), [kustomize](https://kustomize.io/) and [helm](https://helm.sh/) for interacting with our Kubernetes cluster.
-- You should make sure you have nvidia fabric manager installed (ec2 instances by default do not have fabric manager installed, below are a set of commands you can run to install fabricmanager:
+- You should make sure you have nvidia fabric manager installed (ec2 instances by default do not have fabric manager installed), below are a set of commands you can run to install fabricmanager:
 ```
 driver_version=$(nvidia-smi | grep -oP "(?<=Driver Version: )[0-9.]+")
 driver_major=$(echo ${driver_version} | cut -d. -f1)
