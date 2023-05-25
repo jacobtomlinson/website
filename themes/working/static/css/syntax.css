@@ -13,7 +13,16 @@ pre code {
 /* CodeLine */ .chroma .cl {  }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
-/* LineHighlight */ .chroma .hl { background-color: #ffffcc }
+/* LineHighlight */ .chroma .hl {
+    background-color: hsl(231, 15%, 25%);
+    width: 100%;
+    display: block;
+    margin-left: -1.9rem;
+    padding-left: 1.5rem;
+    border-left: #BD93F9 0.4rem solid;
+    margin-right: -1.9rem;
+    padding-right: 1.5rem;
+}
 /* Keyword */ .chroma .k { color: #ff79c6 }
 /* KeywordConstant */ .chroma .kc { color: #bd93f9 }
 /* KeywordDeclaration */ .chroma .kd { color: #8be9fd; font-style: italic }
