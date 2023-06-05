@@ -81,7 +81,7 @@ We will configure this file to run Jupyter on startup.
    <array>
       <string>/Users/<username>/conda/envs/jupyter/bin/jupyter</string>
       <string>lab</string>
-      <string>--no-browser</string
+      <string>--no-browser</string>
    </array>
    <key>WorkingDirectory</key>
    <string>/Users/<username></string>
