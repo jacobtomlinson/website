@@ -104,6 +104,10 @@ hr {
   margin-bottom: 1em;
 }
 
+.alert p:first-child {
+  display: inline;
+}
+
 .alert-info {
   background-color: var(--info-background);
   border-color: var(--info-text);
@@ -166,4 +170,11 @@ input:focus {
 table {
   width: 100%;
   text-align: left;
+}
+
+th,
+td {
+  vertical-align: top;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
