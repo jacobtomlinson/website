@@ -1,7 +1,7 @@
 ---
 title: "The challenge of updating an aging blog"
 date: 2023-08-23T00:00:00+00:00
-draft: true
+draft: false
 author: "Jacob Tomlinson"
 categories:
   - blog
