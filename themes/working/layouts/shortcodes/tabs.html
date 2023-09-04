@@ -1,0 +1,21 @@
+<div class="tabbed">
+
+    {{ $tabName := .Scratch.Get "tabName" }}
+    {{ $tabTotal := $tabName | len }}
+    {{ $id := delimit (shuffle (split (md5 "a b c d e f") "" )) "" | truncate 10 "" }}
+
+    <form>
+        {{ range $i, $sequence := (seq $tabTotal) }}
+        <input type="radio" id="tabgroup-{{ $id }}-tab-{{ $i }}" name="css-tabs" {{ if eq $i 0 }} checked {{ end }}>
+        {{ end }}
+
+        <ul class="tabs">
+            {{ range $i, $sequence := (seq $tabTotal) }}
+            <li class="tab"><label for="tabgroup-{{ $id }}-tab-{{ $i }}">{{ index $tabName $i | markdownify }}</label>
+            </li>
+            {{ end }}
+        </ul>
+
+        {{ $.Inner | markdownify }}
+    </form>
+</div>
