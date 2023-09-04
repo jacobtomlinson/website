@@ -1,5 +1,5 @@
 ---
-title: "Dask on Kubernetes"
+title: "Dask on Kubernetes Overview"
 date: 2023-03-16T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
