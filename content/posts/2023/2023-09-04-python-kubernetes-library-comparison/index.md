@@ -676,7 +676,7 @@ $ kubectl scale -n kube-system deployment metrics-server --replicas=1
 ```python
 from kr8s.objects import Deployment
 
-deploy = Deployment.get("metrics-server", namespace="kube-system")
+deploy = Deployment("metrics-server", namespace="kube-system")
 deploy.scale(1)
 ```
 {{< /tab >}}
@@ -716,7 +716,7 @@ obj = Deployment.Scale(
     metadata=ObjectMeta(name='metrics-server', namespace='kube-system'),
     spec=ScaleSpec(replicas=1)
 )
-client.replace(obj, 'metrics-server', namespace='kube-system')
+client.replace(obj)
 ```
 {{< /tab >}}
 {{< /tabs >}}
@@ -727,7 +727,7 @@ client.replace(obj, 'metrics-server', namespace='kube-system')
 ```python
 from kr8s.asyncio.objects import Deployment
 
-deploy = await Deployment.get("metrics-server", namespace="kube-system")
+deploy = await Deployment("metrics-server", namespace="kube-system")
 await deploy.scale(1)
 ```
 {{< /tab >}}
@@ -760,7 +760,7 @@ obj = Deployment.Scale(
     metadata=ObjectMeta(name='metrics-server', namespace='kube-system'),
     spec=ScaleSpec(replicas=1)
 )
-await client.replace(obj, 'metrics-server', namespace='kube-system')
+await client.replace(obj)
 ```
 {{< /tab >}}
 {{< /tabs >}}
