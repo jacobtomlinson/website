@@ -12,11 +12,15 @@
     <div>
         <ul>
             {{ $scratch := newScratch }}
-            {{ $scratch.Set "pagenum" (len .Pages) }}
+            {{ $scratch.Set "pagenum" 1 }}
+            {{ $scratch.Set "pages" .Pages }}
+            {{ if isset .Data "Singular" }}{{ if eq .Data.Singular "series"}}
+            {{ $scratch.Set "pages" .Pages.ByDate }}
+            {{ end }}{{ end }}
             {{ if isset .Data "Singular" }}
             {{ $scratch.Set "singular" .Data.Singular }}
             {{ end }}
-            {{ range .Pages }}
+            {{ range ($scratch.Get "pages") }}
             {{ if eq .Type "posts"}}
 
             {{ $scratch.Set "title" .Title }}
@@ -24,7 +28,7 @@
             {{ if isset $scratch.Values "singular" }}
             {{ if eq ($scratch.Get "singular") "series"}}
             {{ $scratch.Set "title" (printf "Part %d: %s" ($scratch.Get "pagenum") .Title) }}
-            {{ $scratch.Add "pagenum" -1 }}
+            {{ $scratch.Add "pagenum" 1 }}
             {{ end }}
             {{ end }}
             <li>
