@@ -1,0 +1,6 @@
+{{ $tabName := .Get "tabName" }}
+{{ .Parent.Scratch.Add "tabName" (slice $tabName) }}
+
+<div class="tab-content">
+    {{ $.Inner | markdownify }}
+</div>
