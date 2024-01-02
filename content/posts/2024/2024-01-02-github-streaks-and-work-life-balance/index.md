@@ -22,7 +22,7 @@ With that in mind I found it fun to look at my own graph from 2023 and dig into 
 
 ![My GitHub commit graph 2023](./2023-my-commit-graph.png "My 2023 GitHub Contribution Graph")
 
-Looking at this graph I can see my longest streak was 14 days in April, which was around the time I was getting [kr8s](https://github.com/kr8s-org/kr8s) off the ground. But actually after looking more closely at this graph I feel like **I was only 5 days away from having a perfect streak**. Let me explain.
+Looking at this graph I can see my longest streak was 14 days in April, which was around the time I was getting [kr8s](https://github.com/kr8s-org/kr8s) off the ground. But actually after looking more closely at this graph **I feel like I was only 5 days away from having a perfect streak**. Let me explain.
 
 First, my weekends are my own. Any contributions on Saturday/Sunday were purely for my own enjoyment. Any weekend days that I didn't contribute I'm sure I enjoyed spending time with my family, renovating my house, playing video games or any other comparable life activities. So let's exclude weekends from my streak.
 
