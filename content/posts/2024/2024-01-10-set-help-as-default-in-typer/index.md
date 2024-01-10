@@ -9,7 +9,7 @@ tags:
   - typer
   - python
   - cli
-  - quick tip
+  - quick tips
 ---
 
 I love using [typer](https://typer.tiangolo.com/) for creating CLI tools in Python. It makes creating complex trees of subcommands really straightforward.
@@ -75,12 +75,30 @@ Error: Missing command.
 
 But if I set the `no_args_is_help` option when creating my `app` I get a more useful help.
 
-```python
+```python {hl_lines=[4]}
 # main.py
 import typer
 
 app = typer.Typer(no_args_is_help=True)
-...
+
+
+@app.command()
+def hello(name: str):
+    "Say hello"
+    print(f"Hello {name}")
+
+
+@app.command()
+def goodbye(name: str, formal: bool = False):
+    "Say goodbye"
+    if formal:
+        print(f"Goodbye Ms. {name}. Have a good day.")
+    else:
+        print(f"Bye {name}!")
+
+
+if __name__ == "__main__":
+    app()
 ```
 
 ```console

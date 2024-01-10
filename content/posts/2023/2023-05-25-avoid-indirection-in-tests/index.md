@@ -63,7 +63,7 @@ Here are a few suggestions for writing tests that are pleasant to debug:
 
 I would much rather see 100 tests that are all slight variations with duplication. Because ultimately when debugging I only want to read and run one of them.
 
-{{< highlight python "hl_lines=8-11" >}}
+```python {hl_lines=["8-11"]}
 import pytest
 
 def test_some_thing_works():
@@ -80,4 +80,4 @@ def test_some_method_of_some_thing():
     thing = Thing.create(*args, **bad_kwargs)
     assert thing.some_method() == something
     thing.delete()
-{{< /highlight >}}
+```
