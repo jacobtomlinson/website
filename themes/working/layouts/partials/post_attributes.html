@@ -38,7 +38,7 @@
     {{ if isset .Params "tags"}}
     <small>
         <i class="fa fa-tags" title="Tags"></i>
-        {{ delimit (apply (apply .Params.tags "urlize" ".") "printf" "<a href=/tags/%s>#%s</a>" "." ".") ", " }}
+        {{ safe.HTML (delimit (apply (apply .Params.tags "urlize" ".") "printf" "<a href=/tags/%s>#%s</a>" "." ".") ", ") }}
     </small>
     {{ end }}
 
