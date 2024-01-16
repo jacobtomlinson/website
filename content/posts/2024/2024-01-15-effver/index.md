@@ -81,7 +81,7 @@ Do you like the sound of <span style="color: #0097a7">EffVer</span>? If so that'
 https://img.shields.io/badge/version_scheme-EffVer-0097a7
 
 # Markdown
-[![Static Badge](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)
+[![EffVer Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)
 
 ```
 
