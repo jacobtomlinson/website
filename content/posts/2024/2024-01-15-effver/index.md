@@ -11,11 +11,11 @@ tags:
   - versioning
 ---
 
-Version numbers are hard to get right. Semantic Versioning [(SemVer)](https://semver.org/) communicates backward compatibility via version numbers which often lead to a [false sense of security and broken promise](https://hynek.me/articles/semver-will-not-save-you/). Calendar Versioning [(CalVer)](https://calver.org/) sits at the other extreme of communicating almost [no useful information at all](https://jacobtomlinson.dev/posts/2023/sometimes-i-regret-using-calver/). 
+Version numbers are hard to get right. Semantic Versioning [(SemVer)](https://semver.org/) communicates backward compatibility via version numbers which often lead to a [false sense of security and broken promises](https://hynek.me/articles/semver-will-not-save-you/). Calendar Versioning [(CalVer)](https://calver.org/) sits at the other extreme of communicating almost [no useful information at all](https://jacobtomlinson.dev/posts/2023/sometimes-i-regret-using-calver/). 
 
 Going forward I plan to version the projects I work on in a way that communicates _how much effort I expect a user will need to spend to adopt the new version_. I'm going to refer to that scheme as **Intended Effort Versioning (<span style="color: #0097a7">EffVer</span> for short)**.
 
-![](./effver.png "Overview of EffVer")
+![In EffVer you use a three number version separated by dots, referred to as Macro, Meso and Micro. You incremenet macro when adoption requires a large effort, meso when it requires some effort and micro when hopefully it requires little to no effort.](./effver.png "Overview of EffVer")
 
 <span style="color: #0097a7">EffVer</span> follows the same pattern of incrementing numbers to communicate with users that SemVer does, and is forward and backward compatible with SemVer (you don't need to use something like a [Python version epoch](https://packaging.python.org/en/latest/specifications/version-specifiers/#version-epochs) to switch between the two schemes). The difference is that instead of quantifying the orthogonality of a change EffVer tries to quantify the intended work required to adopt the change.
 
@@ -103,7 +103,7 @@ SemVer attempts to communicate if an upgrade is safe or not, but can easily get 
 
 When you fix a bug in your code you can argue that the code is now "more correct". SemVer assumes it is safe for _everyone_ to adopt this new code immediately because of this increased "correctness", but the trap that SemVer falls into is the fact that every bug has users.
 
-![xkcd 1172: workflow](./xkcd-1172-workflow.png "<a href=https://xkcd.com/1172>xkcd #1172: Workflow</a>")
+![xkcd 1172: workflow. A comic strip showing a user who is upset that holding the space bar no longer makes their computer overheat because they relied on that behaviour](./xkcd-1172-workflow.png "<a href=https://xkcd.com/1172>xkcd #1172: Workflow</a>")
 
 People trust SemVer to not break their code and then feel angry when things go wrong because when SemVer fails users have to react and often have urgent work to do.
 
@@ -113,7 +113,7 @@ CalVer attempts to communicate that no upgrade is safe, but in doing so strips a
 
 For example if you fix a small bug in your code and make a release, then the next day you delete half the API and make another release, nobody can tell the difference between the two versions.
 
-![](./happy-new-year.png "If you're wondering what ChangeVer is, it's what I call the 90s boxed software version scheme where you were obliged to make visible changes to your prouct and increment the major version in order to get people to upgrade from the old version. Change for the sake of change.")
+![A meme showing two scary dragons and a derpy one to describe major version releases. The first is ChangeVer and says there are major new and exciting things, the second is SemVer and says we broke something and the third is CalVer which says happy new year.](./happy-new-year.png "If you're wondering what ChangeVer is, it's what I call the 90s boxed software version scheme where you were obliged to make visible changes to your prouct and increment the major version in order to get people to upgrade from the old version. Change for the sake of change.")
 
 People feel anxious about upgrading CalVer projects because they don't know if the change will be small or huge. As a result they are more likely to pin their dependencies and upgrade in a more proactive and managed way, which is good, but the lack of information makes upgrading hard to schedule and so it often gets put off.
 
