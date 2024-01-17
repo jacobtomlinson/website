@@ -1,5 +1,5 @@
 ---
-title: "How highlight lines in a Hugo code block"
+title: "How to highlight lines in a Hugo code block"
 date: 2024-01-11T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
