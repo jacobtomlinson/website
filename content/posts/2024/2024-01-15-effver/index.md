@@ -31,7 +31,7 @@ If you make a huge breaking change or overhaul some large aspect of your project
 
 1. <span style="color: #0097a7">EffVer</span> communicates intentions. Software is created by humans (for now) and that while humans have the best of intentions around the impacts that new versions have, sometimes things are more impactful than expected. Instead of trying to quantify the techinical scope of a change <span style="color: #0097a7">EffVer</span> tries to communicate the expected downstream impact.
 2. <span style="color: #0097a7">EffVer</span> respects that all releases impact users and will require effort to adopt them, even if that's some simple testing or updating a lock file. By trying to quantify and communicate the effort required to adopt a release developers demonstrate respect for their user's time.
-3. <span style="color: #0097a7">EffVer</span> doesn't make a distinction between bugs fixes, enhancements and features (because developers struggle to make that distinction too). Instead we focus only on the effort required for existing users to adopt new versions.
+3. <span style="color: #0097a7">EffVer</span> doesn't make a distinction between bugs fixes, enhancements and features (because release often include all of these things). Instead we focus only on the effort required for existing users to adopt new versions.
 4. <span style="color: #0097a7">EffVer</span> users can more clearly reason that _any_ change can result in them needing to do some work, but that the developer using <span style="color: #0097a7">EffVer</span> is trying to give them information to help them quantify and plan this work.
 
 ## Fixing mistakes
@@ -52,7 +52,7 @@ With <span style="color: #0097a7">EffVer</span> we encourage developers to take 
 
 Now users who have pinned to `~2.3.4` will be upgraded to `2.3.6` which is exactly the same commit and therefore doesn't cause them any impact. And users who have pinned to `^2.3.4` will be upgraded to `2.4.0` which correctly communicates that there may be some small intentional impact.
 
-I haven't needed to change my code or make any new commits, I just add more tags to fix my communication.
+I haven't needed to change my code or make any new commits, I just add more tags to clearly communicate the impact of the releases. In theory I could also yank `2.3.5` because it is "wrong", but in practice superseding it with `2.3.6` should be enough.
 
 ## Zero version
 
@@ -101,7 +101,7 @@ Both my and Hynek's blog posts go into detail about the failings of existing sch
 
 SemVer attempts to communicate if an upgrade is safe or not, but can easily get this wrong. 
 
-When you fix a bug in your code you can argue that the code is now "more correct". SemVer assumes it is safe for _everyone_ to adopt this new code immediately because of this increased "correctness", but the trap that SemVer falls into is the fact that every bug has users.
+When you fix a bug in your code you can argue that the code is now "more correct". SemVer assumes it is safe for _everyone_ to adopt this new code immediately because of this increased "correctness", but the trap that SemVer falls into is the fact that **every bug has users**.
 
 ![xkcd 1172: workflow. A comic strip showing a user who is upset that holding the space bar no longer makes their computer overheat because they relied on that behaviour](./xkcd-1172-workflow.png "<a href=https://xkcd.com/1172>xkcd #1172: Workflow</a>")
 
@@ -117,7 +117,7 @@ For example if you fix a small bug in your code and make a release, then the nex
 
 People feel anxious about upgrading CalVer projects because they don't know if the change will be small or huge. As a result they are more likely to pin their dependencies and upgrade in a more proactive and managed way, which is good, but the lack of information makes upgrading hard to schedule and so it often gets put off.
 
-If you read the CalVer website they [highlight Ubuntu](https://calver.org/#ubuntu) as a high-profile user of CalVer. However, Ubuntu has shoehorned in a bunch of semantics to their versioning scheme by only creating April and October releases to make it clearer to users which versions are _major_ versions. They wanted to communicate which versions take more effort to migrate between because communicating user impact is important.
+If you read the CalVer website they [highlight Ubuntu](https://calver.org/#ubuntu) as a high-profile user of CalVer. However, Ubuntu has shoehorned in a bunch of semantics to their versioning scheme by only creating April and October releases to make it clearer to users which versions are _major_ versions. They wanted to communicate which versions take more effort to migrate between because they agree that **communicating user impact is important**.
 
 ### Momentum
 
