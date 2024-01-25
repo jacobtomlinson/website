@@ -1,6 +1,6 @@
 ---
 title: "Running Dask workloads on multiple cluster backends with zero code changes using dask-ctl"
-date: 2024-01-24T00:00:00+00:00
+date: 2024-01-25T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 categories:
