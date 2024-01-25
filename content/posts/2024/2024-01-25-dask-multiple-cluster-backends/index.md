@@ -12,11 +12,11 @@ tags:
   - distributed computing
 ---
 
-Sometimes you want to write some code using Dask which can then be run against multiple different cluster backends. For example for local testing you might want to use `LocalCLuster`, but in production use `KubeCluster`. Or perhaps you want to easily switch between an on premise HPC with `SLURMRunner` or the cloud with `Coiled`.
+Sometimes you want to write some code using [Dask](https://www.dask.org/) which can then be run against multiple different cluster backends. For example for local testing you might want to use `LocalCLuster`, but in production use [`KubeCluster`](https://kubernetes.dask.org/). Or perhaps you want to easily switch between an on premise HPC with `SLURMRunner` or the cloud with [`Coiled`](https://www.coiled.io/).
 
 You could write this logic into your code via a series of `if` statements, but mixing cluster lifecycle code and application code is a poor separation of concerns.
 
-Instead you should use `dask-ctl` to specify everything as a YAML config file. 
+Instead you should use [`dask-ctl`](https://dask-ctl.readthedocs.io/en/latest/) to specify everything as a YAML config file. 
 
 ## Example problem
 
@@ -41,11 +41,11 @@ print(results)
 
 When we run this code we create a local Dask cluster, connect a client to it and then submit some work. 
 
-However, if we want to use a different cluster backend in different deployment scenarios we have to modify our application to handle creating something other than `LocalCluster`, and we probably need to introduce some config system to choose which cluster to use. 
+However, if we want to use a different cluster backend in different deployment scenarios we have to modify our application to handle creating something other than `LocalCluster`, and we probably need to introduce some config system to choose which cluster to use. This can add a lot of complexity to an application, and this kind of code often gets duplicated between projects.
 
 ## Creating clusters with `dask-ctl`
 
-To avoid this we can use the `dask-ctl.lifecycle` submodule to create our clusters for us.
+To avoid this we can use the `dask_ctl.lifecycle` submodule to create our clusters for us.
 
 ```python {hl_lines=[1, 4]}
 import dask_ctl.lifecycle
