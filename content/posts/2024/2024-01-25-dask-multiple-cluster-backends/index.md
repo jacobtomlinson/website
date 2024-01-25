@@ -99,8 +99,8 @@ kwargs:
 You may also want to keep multiple different backend configs in your project.
 
 ```text
-├── cluster-a.yaml  # Dask cluster spec for Kubernetes
-├── cluster-b.yaml  # Dask cluster spec for HPC
+├── cluster-a.yaml  # Spec for Cluster A (e.g Kubernetes)
+├── cluster-b.yaml  # Spec for Cluster B (e.g HPC)
 └── myscript.py
 ```
 
