@@ -13,6 +13,12 @@ tags:
   - Golang
 ---
 
+```danger
+This post has been superseded with [this tutorial](https://www.substratus.ai/blog/kind-with-gpus) that no longer requires any code changes. Please read that instead.
+
+Leaving this here for historic reasons only.
+```
+
 I needed GPU support in [kind](https://kind.sigs.k8s.io/), so I added it. I'm also prone to yak shaving so it's quick, dirty and not going upstream.
 
 When developing tools for [Kubernetes](https://kubernetes.io/) I like to use kind which runs a whole cluster inside a single [Docker](https://www.docker.com/) container. I especially like using it via [pytest-kind](https://pypi.org/project/pytest-kind/) which makes running Python unit tests against a Kubernetes cluster a breeze.
