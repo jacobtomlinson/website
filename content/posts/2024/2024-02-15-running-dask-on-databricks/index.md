@@ -96,4 +96,4 @@ Being able to quickly run Dask on a compute platform you are already using is a 
 2. **Failed Dask components cannot recover.** If the Dask scheduler or workers crash in an unrecoverable way there is no supervisor process to restart them, so the only way to recover is to restart the Databricks cluster.
 3. **Databricks Notebooks do not support the Dask Extension.** Databricks provides their own frontend on top of [Jupyter server](https://jupyter.org/), so plugins for Jupyter Lab like the [dask-labextension](https://github.com/dask/dask-labextension) are not compatible.
 
-If any of these are a deal breaker and you want managed Dask clusters with autoscaling, automatic environment syncing, failure recovery and Jupyter Lab you should check out [Coiled](https://www.coiled.io/).
+If any of these are a deal breaker and you want managed Dask clusters with autoscaling, automatic environment syncing, failure recovery and Jupyter Lab you should check out my friends over at [Coiled](https://www.coiled.io/).
