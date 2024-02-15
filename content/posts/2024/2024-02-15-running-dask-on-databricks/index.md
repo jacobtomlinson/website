@@ -21,7 +21,7 @@ If you're a Databricks user then being able to run Dask alongside Spark can be v
 
 ## Dask Databricks
 
-To make deploying Dask on Databricks easier there is now the [dask-databricks](https://github.com/dask-contrib/dask-databricks) package which can beinstalled via pip or conda.
+To make deploying a distributed Dask cluster on Databricks easier there is now the [dask-databricks](https://github.com/dask-contrib/dask-databricks) package which can be installed via pip or conda.
 
 ```bash
 pip install dask-databricks
