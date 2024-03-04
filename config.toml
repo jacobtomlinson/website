@@ -12,7 +12,7 @@ title = "Jacob Tomlinson"
 [params]
 SiteSourceURL = "https://github.com/jacobtomlinson/website"
 author = "Jacob Tomlinson"
-avatar = "https://jacobtomlinson.dev/profile.png"
+avatar = "/profile.png"
 description = "Building RAPIDS and Dask at NVIDIA. Tinker with Opsdroid in my spare time. he/him."
 github = "https://github.com/jacobtomlinson"
 images = ["https://i.imgur.com/Ln3NJU2h.png"]
