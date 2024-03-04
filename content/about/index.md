@@ -22,7 +22,7 @@ _Note: This page may be updated from time to time._
 ## My current profile picture
 
 <div style="width: 100%; text-align: center;">
-<img src=../../profile.jpeg width=50% />
+<img src=../../profile.png width=50% />
 </div>
 
 ## General bio's of various lengths
