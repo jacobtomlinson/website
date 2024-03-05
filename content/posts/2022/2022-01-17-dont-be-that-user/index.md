@@ -114,3 +114,7 @@ If the project is backed by a large organisation then you may have an existing b
 Lastly you always have the option to fork the project. This is often said in spite because it is no small undertaking but for many it can be a viable path forwards. By taking ownership and responsibility for a fork you have full control over it's development and can make it exactly what you need it to be.
 
 But most of all ![Be excellent to each other, party on dudes](https://i.imgur.com/zJcoRpK.gif).
+
+## Further reading
+
+**Update March 5th 2024:** I found [this thread from 2019](https://jacobtomlinson.dev/posts/2022/dont-be-that-open-source-user-dont-be-me/) which is a great example of users behaving badly.
