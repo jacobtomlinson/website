@@ -117,4 +117,4 @@ But most of all ![Be excellent to each other, party on dudes](https://i.imgur.co
 
 ## Further reading
 
-**Update March 5th 2024:** I found [this thread from 2019](https://jacobtomlinson.dev/posts/2022/dont-be-that-open-source-user-dont-be-me/) which is a great example of users behaving badly.
+**Update March 5th 2024:** I found [this thread from 2019](https://github.com/zloirock/core-js/issues/548) which is a great example of users behaving badly.
