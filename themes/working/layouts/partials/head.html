@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>{{ if .Page.Title }}{{if ne .Page.Title .Site.Title}}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
-<meta property="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 
 <!-- Fonts and CSS Reset -->
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:300,400,600,700|Open+Sans:300,400,600,700" as="style" onload="this.onload=null;this.rel='stylesheet'" />
