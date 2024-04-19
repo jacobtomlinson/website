@@ -144,6 +144,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
+## Use on existing projects
+
+A quick warning, if you're planning to use this with a large existing project the first time a release is created the release notes will contain every PR ever merged into the project. This could be very large. The reason this happens is because the Release Drafter includes every PR since the last release, not the last tag, so if there has never been a release this will be every PR.
+
+To avoid this you can manually create a release for the latest tag in the project, you could even just leave the body empty. Then the first automated release will correctly calculate the notes. You can then go back and delete the release you manually created if you wish.
+
 ## Conclusion
 
 That's it! With a couple of GitHub Actions workflows and a config file we will automatically create a GitHub Release for each tag. These workflows can run alongside your existing workflows that build and publish artifacts for each tag and you get the benefits of using GitHub Releases with out any additional work at release time.
