@@ -93,6 +93,7 @@ permissions:
   contents: read
 
 jobs:
+  # if: github.repository == 'myorg/reponame'  # Uncomment this and set the repo name to ensure releases are not created on forks
   update_release_draft:
     permissions:
       # Write permission is required to create a GitHub release
@@ -122,6 +123,7 @@ permissions:
 
 jobs:
   publish_release:
+    # if: github.repository == 'myorg/reponame'  # Uncomment this and set the repo name to ensure releases are not created on forks
     permissions:
       # Write permission is required to publish a GitHub release
       contents: write
