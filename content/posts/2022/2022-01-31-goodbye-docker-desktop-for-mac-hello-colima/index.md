@@ -222,7 +222,8 @@ INFO[0063] done
 
 That's it, Docker Desktop for Mac is gone and we now have a quick and simple replacement thanks to Colima.
 
-It is worth noting that Colima doesn't auto start when we turn on our machine so we need to remember to run `colima start` after each reboot.
+It is worth noting that Colima doesn't auto start when we turn on our machine by default so we need to remember to run `colima start` after each reboot.
+We can run `brew services start colima` to enable autostart.
 
 If you ever want to switch back you can also just reinstall Docker Desktop and switch your Docker context back.
 
