@@ -10,6 +10,7 @@ thumbnail: docker
 title: What is Docker?
 aliases:
   - /2016/03/22/what-is-docker/
+  - /linux/2016/03/22/what-is-docker/
 ---
 
 

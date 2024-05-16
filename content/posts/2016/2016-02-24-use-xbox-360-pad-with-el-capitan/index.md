@@ -12,6 +12,7 @@ thumbnail: xbox-controller
 title: How to use an Xbox 360 controller with OS X El Capitan
 aliases:
   - /2016/02/24/use-xbox-360-pad-with-el-capitan/
+  - /gaming/2016/02/24/use-xbox-360-pad-with-el-capitan/
 ---
 
 
