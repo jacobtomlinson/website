@@ -54,6 +54,18 @@ Now users who have pinned to `~2.3.4` will be upgraded to `2.3.6` which is exact
 
 I haven't needed to change my code or make any new commits, I just add more tags to clearly communicate the impact of the releases. In theory I could also yank `2.3.5` because it is "wrong", but in practice superseding it with `2.3.6` should be enough.
 
+## Over-bumping
+
+The rules of <span style="color: #0097a7">EffVer</span> are intended to help you choose the minimum increment that you need to make in order to adequately communicate the impact of a release. However, there are cases where you want to bump a higher segment to signal something other than impact. For example if you add a new big feature to your project there may be an expectation to bump the _meso_ number simply because users have grown used to SemVer bumping the middle number for new features, even if there is no impact from it. This is because adding a new feature and then only bumping the _micro_ version feels weird.
+
+In <span style="color: #0097a7">EffVer</span> we refer to this as _over-bumping_, and there is no problem with doing this. This may result in users being more cautious to move to a newer version than they need to be, but that's the only negative effect of doing this.
+
+You might also decide that you want to add loads of new amazing features to your project, and then you want to bump the _macro_ version to signal to your users that this release is a big deal. "Go check out all the amazing new things in version 4.0!". In SemVer the first segment is used to signal breaking changes, and in EffVer it's used to signal big impacts to current users. But it's also used to mark large milestones, even if they aren't breaking or impactful.
+
+Ultimately you are trying to decide how much warning you want to give to users, and generally we don't want to warn unless necessary as it disincentives upgrades. However, in cases where you want to communicate features or milestones then there's value in _over-bumping_ in order to communicate more effectively.
+
+One of the downsides of SemVer is under-bumping. A maintainer may make a release which contains a breaking change, but doesn't increment the major version because it's too disruptive. This means that users are unpleasantly surprised by things breaking when they didn't expect it to. By leaning towards _over-bumping_ in <span style="color: #0097a7">EffVer</span> users are instead pleasantly surprised by the lack of impact when cautously adopting an _over-bumped_ release. It's a positive failure mode instead of a negative one.
+
 ## Zero version
 
 In SemVer the `0.x.x` version has become known as the YOLO version because anything goes. Any change can be breaking and so the semantics around backward compatibility become meaningless.
