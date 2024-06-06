@@ -56,13 +56,13 @@ I haven't needed to change my code or make any new commits, I just add more tags
 
 ## Zero version
 
-In SemVer the `0.x.x` version has become known as the YOLO version because anything goes. Any change can be breaking and so the semantics around backward compatibility become meaningless. 
+In SemVer the `0.x.x` version has become known as the YOLO version because anything goes. Any change can be breaking and so the semantics around backward compatibility become meaningless.
 
-In <span style="color: #0097a7">EffVer</span> the meaning of the zero version still denotes a codebase under development but should be treated as `0.Macro.Micro`. In a development project it is more likely that changes will have a large impact, that's just in their nature, but it's still useful to be able to quantify the impact between each release.
+In <span style="color: #0097a7">EffVer</span> the meaning of the zero version still denotes a codebase in early development but should be treated as `0.Macro.Micro`. In a young project it is more likely that changes will have a large impact, that's just in their nature, but it's still useful to be able to quantify the impact between each release.
 
-You could also use a four segment version number with `0.Macro.Meso.Micro` if you would prefer to have the full fidelity of <span style="color: #0097a7">EffVer</span> communication during development.
+You could also use a four segment version number with `0.Macro.Meso.Micro` if you would prefer to have the full fidelity of <span style="color: #0097a7">EffVer</span> communication during initial development.
 
-As your project matures you will likely find yourself incrementing the _Macro_ version less and the _Micro_ version more which is a good signal for developers that it's time to switch to a `1.0.0` release.
+As your project matures you will likely find yourself incrementing the _Macro_ version less and the _Micro_ version more. If you end up on a version like `0.9.x` for many months it is a good signal that things are pretty stable and that it's time to switch to a `1.0.0` release.
 
 ## Projects using <span style="color: #0097a7">EffVer</span>
 
@@ -127,4 +127,4 @@ The biggest challenge for switching version scheme is the momentum of other sche
 
 Any SemVer project can switch to <span style="color: #0097a7">EffVer</span> by just changing how they decide the version number of the next release. If you try <span style="color: #0097a7">EffVer</span> out and would prefer to go back to traditional semantics then switching back is also just the same process change.
 
-Switching to CalVer is more of a one way street, and although some languages have a [process for switching back](https://packaging.python.org/en/latest/specifications/version-specifiers/#version-epochs) it's not guaranteed to be a smooth ride. So if you ever do switch to CalVer can I suggest you use `YY.MM.DD` instead of `YYYY.MM.DD`, that way you could switch back to <span style="color: #0097a7">EffVer</span>/SemVer and keep your _major_ version number below 100.
+Switching to CalVer is more of a one way street, and although some languages have a process for switching back [it's not guaranteed to be a smooth ride](https://jacobtomlinson.dev/posts/2024/python-version-epochs-are-broken/). So if you ever do switch to CalVer can I suggest you use `YY.MM.DD` instead of `YYYY.MM.DD`, that way you could switch back to <span style="color: #0097a7">EffVer</span>/SemVer and keep your _major_ version number below 100.
