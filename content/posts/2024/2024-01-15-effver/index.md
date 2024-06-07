@@ -15,7 +15,7 @@ Version numbers are hard to get right. Semantic Versioning [(SemVer)](https://se
 
 Going forward I plan to version the projects I work on in a way that communicates _how much effort I expect a user will need to spend to adopt the new version_. I'm going to refer to that scheme as **Intended Effort Versioning (<span style="color: #0097a7">EffVer</span> for short)**.
 
-![In EffVer you use a three number version separated by dots, referred to as Macro, Meso and Micro. You incremenet macro when adoption requires a large effort, meso when it requires some effort and micro when hopefully it requires little to no effort.](./effver.png "Overview of EffVer")
+![In EffVer you use a three number version separated by dots, referred to as Macro, Meso and Micro. You incremenet macro when adoption requires a large effort, meso when it requires some effort and micro when hopefully it requires no effort.](./effver.png "Overview of EffVer")
 
 <span style="color: #0097a7">EffVer</span> follows the same pattern of incrementing numbers to communicate with users that SemVer does, and is forward and backward compatible with SemVer (you don't need to use something like a [Python version epoch](https://packaging.python.org/en/latest/specifications/version-specifiers/#version-epochs) to switch between the two schemes). The difference is that instead of quantifying the orthogonality of a change EffVer tries to quantify the intended work required to adopt the change.
 
@@ -24,6 +24,10 @@ If a change fixes a small bug, adds a new feature that is orthogonal with existi
 If a change fixes a larger bug that some users may have grown accustom to or put workarounds in place for, or makes small breaking changes to features in a way that may require some adoption then you should bump the **Meso** version. This signals to users that **"some small effort may be required to make sure this version works for you"**.
 
 If you make a huge breaking change or overhaul some large aspect of your project you should bump the **Macro** version. This signals to users that **"you will need to dedicate some significant time to upgrading to this version"**.
+
+```info
+I chose new names for each version segment because I wanted them to represent scale rather than category. However, if you adopt <span style="color: #0097a7">EffVer</span> you may want to continue calling them _major/minor/patch_, _breaking/feature/bugfix_ or whatever names your community is used to. You know best how to communicate with your users.
+```
 
 ## Why use <span style="color: #0097a7">EffVer</span>?
 
@@ -60,7 +64,7 @@ The rules of <span style="color: #0097a7">EffVer</span> are intended to help you
 
 In <span style="color: #0097a7">EffVer</span> we refer to this as _over-bumping_, and there is no problem with doing this. This may result in users being more cautious to move to a newer version than they need to be, but that's the only negative effect of doing this.
 
-You might also decide that you want to add loads of new amazing features to your project, and then you want to bump the _macro_ version to signal to your users that this release is a big deal. "Go check out all the amazing new things in version 4.0!". In SemVer the first segment is used to signal breaking changes, and in EffVer it's used to signal big impacts to current users. But it's also used to mark large milestones, even if they aren't breaking or impactful.
+You might also decide that you want to add loads of new amazing features to your project, and then you want to bump the _macro_ version to signal to your users that this release is a big deal. "Go check out all the amazing new things in version 4.0!". In SemVer the first segment is used to signal breaking changes, and in EffVer it's used to signal big impacts to current users. But it's also commonly used to mark large milestones, even if they aren't breaking or impactful.
 
 Ultimately you are trying to decide how much warning you want to give to users, and generally we don't want to warn unless necessary as it disincentives upgrades. However, in cases where you want to communicate features or milestones then there's value in _over-bumping_ in order to communicate more effectively.
 
