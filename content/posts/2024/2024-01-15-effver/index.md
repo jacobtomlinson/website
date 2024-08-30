@@ -82,8 +82,10 @@ As your project matures you will likely find yourself incrementing the _Macro_ v
 
 ## Projects using <span style="color: #0097a7">EffVer</span>
 
-Here are some notable projects that use EffVer:
+Here are some notable projects that use EffVer (in alphabetical order):
 
+- [hikari](https://github.com/hikari-py/hikari/blob/master/CONTRIBUTING.md#versioning-scheme)
+- [HoloViz](https://github.com/holoviz/holoviz/blob/main/hep/hep2.md#versioning)
 - [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/reference/changelog.html#versioning)
 - [Kr8s](https://github.com/kr8s-org/kr8s)
 - [Matplotlib](https://github.com/matplotlib/matplotlib)
