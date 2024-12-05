@@ -1,7 +1,7 @@
 ---
 title: "Most stale bots are anti-user and anti-contributor, but they don't have to be"
 date: 2024-12-05T00:00:00+00:00
-draft: true
+draft: false
 author: "Jacob Tomlinson"
 categories:
   - blog
