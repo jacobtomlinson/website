@@ -16,7 +16,7 @@ Debugging software itself is a hard task, but debugging GPU software environment
 
 In this talk we will dig into how these different layers interact and how you can address some of the common pitfalls that folks run into when configuring GPU Python environments. We will also introduce a new tool, RAPIDS Doctor, that aims to take the challenge out of ensuring your software environments are in good shape. RAPIDS Doctor checks and diagnoses environmental health issues straight from the command line, ensuring that your setup is fully functional and optimized for performance.
 
-Projects like RAPIDS, a rapidly growing suite of GPU Accelerated ML & Data Science libraries, along with communities like Pytorch, Tensorflow and others are continuously looking to simplify the setup required to leverage GPUs in your PyData workflows.
+Projects like RAPIDS, a rapidly growing suite of GPU Accelerated ML & Data Science libraries, along with communities like Pytorch, Tensorflow and others are continuously looking to simplify the setup required to leverage GP-Us in your PyData workflows.
 
 Many users seek to install and use RAPIDS but are unclear of certain system requirements that it depends on. To install RAPIDS you generally need a GPU, NVIDIA Drivers, CUDA Toolkit, and RAPIDS packages (and compatible dependencies). While most of the software can be installed via conda/pip, the drivers must be installed outside of your Python environment and consistent with GPU requirements.
 
