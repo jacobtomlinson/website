@@ -9,7 +9,7 @@ event:
   type: Workshop
   location: Online
 length: 120
-video: null
+video: https://www.youtube.com/watch?v=ZDgZHW_dvNM
 abstract: true
 resources: https://github.com/jacobtomlinson/dask-video-tutorial
 slides: https://speakerdeck.com/jacobtomlinson/parallelizing-your-etl-with-dask-on-kubeflow
