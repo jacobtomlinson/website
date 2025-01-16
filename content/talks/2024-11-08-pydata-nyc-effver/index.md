@@ -6,7 +6,7 @@ author: "Jacob Tomlinson"
 event:
   name: PyData NYC 2024
   link: https://nyc2024.pydata.org/cfp/talk/VAVRYW/
-  type: Tutorial
+  type: Lightning Talk
   location: New York, NY, USA
 length: 5
 slides: https://speakerdeck.com/jacobtomlinson/effver
