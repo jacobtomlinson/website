@@ -5,7 +5,7 @@ draft: false
 author: "Jacob Tomlinson"
 event:
   name: PyData Global 2024
-  link: https://global2024.pydata.org/cfp/talk/B9GZWJ/
+  link: https://global2024.pydata.org/cfp/talk/BUC3GV/
   type: Tutorial
   location: Online
 length: 180
