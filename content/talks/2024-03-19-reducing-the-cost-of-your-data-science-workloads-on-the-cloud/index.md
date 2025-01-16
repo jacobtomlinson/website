@@ -4,7 +4,7 @@ date: 2024-03-19T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 event:
-  name: NVIDIA GTC
+  name: NVIDIA GTC 2024
   link: https://www.nvidia.com/en-us/on-demand/session/gtc24-s62211/
   type: Talk
   location: Online
