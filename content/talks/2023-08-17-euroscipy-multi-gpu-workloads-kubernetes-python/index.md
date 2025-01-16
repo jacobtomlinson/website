@@ -11,6 +11,7 @@ event:
 length: 20
 abstract: true
 slides: https://speakerdeck.com/jacobtomlinson/deploying-multi-gpu-workloads-on-kubernetes-in-python-eef28a83-d7b5-4221-a3ec-bee0891aa439
+video: https://www.youtube.com/watch?v=-rcw6d8MNxo
 ---
 
 By using Dask to scale out RAPIDS workloads on Kubernetes you can accelerate your workloads across many GPUs on many machines. In this talk, we will discuss how to install and configure Dask on your Kubernetes cluster and use it to run accelerated GPU workloads on your cluster.
