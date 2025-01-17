@@ -84,6 +84,7 @@ As your project matures you will likely find yourself incrementing the _Macro_ v
 
 Here are some notable projects that use EffVer (in alphabetical order):
 
+- [array-api-extra](https://github.com/data-apis/array-api-extra)
 - [hikari](https://github.com/hikari-py/hikari/blob/master/CONTRIBUTING.md#versioning-scheme)
 - [HoloViz](https://github.com/holoviz/holoviz/blob/main/hep/hep2.md#versioning)
 - [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/reference/changelog.html#versioning)
