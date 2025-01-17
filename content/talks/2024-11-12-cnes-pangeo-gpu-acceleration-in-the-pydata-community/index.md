@@ -10,4 +10,5 @@ event:
   location: Online
 length: 10
 abstract: false
+slides: https://speakerdeck.com/jacobtomlinson/gpu-acceleration-in-the-pydata-community-bbdf1a29-f174-4db5-a7fb-0ddad2d0d227
 ---
