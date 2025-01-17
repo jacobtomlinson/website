@@ -11,6 +11,7 @@ event:
 length: 25
 abstract: true
 video: https://www.youtube.com/watch?v=f6VtdBLAKn4
+slides: https://speakerdeck.com/jacobtomlinson/when-to-rebuild-things-that-already-exist
 ---
 
 This year I built a library that already exists. The existing solutions didn’t quite meet my needs, I wanted something that ticked all of my boxes. When thinking about building something new people referred me to xkcd #927. But I did it anyway.
