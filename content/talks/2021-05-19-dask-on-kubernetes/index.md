@@ -18,7 +18,7 @@ thumbnail: thumb.png
 excerpt: An overview of deploying Dask on Kubernetes.
 ---
 
-{{< youtube faFncNrXmIY >}}
+{{< youtube id=faFncNrXmIY start=1159 >}}
 
 At the Dask Summit I chaired a workshop called [Deploying Dask](https://summit.dask.org/schedule/presentation/20/deploying-dask/). This workshop was comprised of multiple talks delivered by myself and others.
 

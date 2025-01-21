@@ -18,4 +18,4 @@ thumbnail: thumb.jpg
 featured: true
 ---
 
-{{< youtube 76qs5hz_6HI >}}
+{{< youtube id=76qs5hz_6HI start=448 >}}
