@@ -1,10 +1,10 @@
 {{ $font_roboto_slab := "" }}
 {{ $font_roboto_slab_path := "https://github.com/google/fonts/raw/main/apache/robotoslab/RobotoSlab%5Bwght%5D.ttf" }}
-{{ with resources.GetRemote $font_roboto_slab_path }}
+{{ with try (resources.GetRemote $font_roboto_slab_path) }}
 {{ with .Err }}
 {{ errorf "%s" . }}
-{{ else }}å
-{{ $font_roboto_slab = . }}
+{{ else }}
+{{ $font_roboto_slab = .Value }}
 {{ end }}
 {{ else }}
 {{ errorf "Unable to get resource %q" $font_roboto_slab_path }}
@@ -12,11 +12,11 @@
 
 {{ $font_roboto_medium := "" }}
 {{ $font_roboto_medium_path := "https://github.com/google/fonts/raw/main/apache/robotomono/RobotoMono%5Bwght%5D.ttf" }}
-{{ with resources.GetRemote $font_roboto_medium_path }}
+{{ with try (resources.GetRemote $font_roboto_medium_path) }}
 {{ with .Err }}
 {{ errorf "%s" . }}
-{{ else }}å
-{{ $font_roboto_medium = . }}
+{{ else }}
+{{ $font_roboto_medium = .Value }}
 {{ end }}
 {{ else }}
 {{ errorf "Unable to get resource %q" $font_roboto_medium_path }}
@@ -24,11 +24,11 @@
 
 {{ $font_roboto_regular := "" }}
 {{ $font_roboto_regular_path := "https://github.com/google/fonts/raw/main/apache/robotomono/RobotoMono%5Bwght%5D.ttf" }}
-{{ with resources.GetRemote $font_roboto_regular_path }}
+{{ with try (resources.GetRemote $font_roboto_regular_path) }}
 {{ with .Err }}
 {{ errorf "%s" . }}
-{{ else }}å
-{{ $font_roboto_regular = . }}
+{{ else }}
+{{ $font_roboto_regular = .Value }}
 {{ end }}
 {{ else }}
 {{ errorf "Unable to get resource %q" $font_roboto_regular_path }}
