@@ -10,6 +10,7 @@ event:
   location: New York, NY, USA
 length: 180
 resources: https://github.com/NVIDIA/accelerated-computing-hub/tree/main/gpu-python-tutorial
+photos: https://www.flickr.com/photos/pydata/54121695905/in/album-72177720321763863/
 abstract: true
 ---
 

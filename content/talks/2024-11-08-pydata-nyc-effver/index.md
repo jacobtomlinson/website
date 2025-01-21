@@ -13,4 +13,9 @@ slides: https://speakerdeck.com/jacobtomlinson/effver
 video: https://youtu.be/76qs5hz_6HI?si=pfuK73vLTAQAuB5g&t=448
 resources: https://jacobtomlinson.dev/effver/
 abstract: false
+excerpt: EffVer, the version scheme where you just tell your users what order of mangnitude to expect the upgrade effort to be.
+thumbnail: thumb.jpg
+featured: true
 ---
+
+{{< youtube 76qs5hz_6HI >}}

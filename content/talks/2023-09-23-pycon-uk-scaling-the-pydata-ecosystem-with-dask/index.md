@@ -10,6 +10,7 @@ event:
   location: Cardiff, UK
 length: 90
 abstract: true
+photos: https://www.flickr.com/photos/184390836@N04/53208183015/in/album-72177720311395640
 ---
 
 Dask is a flexible library for parallel computing in Python. Dask provides high-level interfaces to extend the PyData ecosystem to larger-than-memory or distributed environments, as well as lower-level interfaces to customise workflows. No previous experience is required, though knowledge of Python, NumPy and pandas is preferred.
@@ -48,3 +49,8 @@ What are the Delayed and Futures APIs?
 Dask’s LocalCluster and other deployment options.
 Additional resources to learn more about the topics in this section.
 
+## Pictures
+
+PyCon had a fantastic photographer who took some nice pictures of me. 
+
+![Me running a workshop](./53208183015_9f56af470c_k.jpg "[Picture by Mark Hawkins for PyCon UK.](https://www.flickr.com/photos/184390836@N04/53208183015/in/album-72177720311395640)")

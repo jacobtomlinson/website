@@ -12,7 +12,12 @@ length: 20
 abstract: true
 video: https://www.nvidia.com/en-us/on-demand/session/gtc24-s62211/
 slides: https://speakerdeck.com/jacobtomlinson/reducing-the-cost-of-your-data-science-workloads-on-the-cloud
+thumbnail: thumb.png
+featured: true
+excerpt: GPU acceleration can significantly decrease the amount of time you need computing resources, reducing your overall cost.
 ---
+
+[![](./video-player.png)](https://www.nvidia.com/en-us/on-demand/session/gtc24-s62211/)
 
 By leveraging cloud computing resources, you can pay for just the computing power you need, when you need it. Additionally, GPU acceleration can significantly decrease the amount of time you need computing resources, reducing your overall cost.
 

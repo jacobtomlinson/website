@@ -12,7 +12,14 @@ length: 180
 video: https://www.youtube.com/watch?v=sMpqsoIvrio
 resources: https://github.com/jacobtomlinson/gpu-python-tutorial
 abstract: true
+featured: true
+thumbnail: thumb.jpg
+excerpt: Writing GPU code in Python is easier today than ever, this tutorial covers how you can get started with accelerating your code.
 ---
+
+{{< youtube sMpqsoIvrio >}}
+
+## Abstract
 
 Since joining NVIDIA I’ve gotten to grips with the fundamentals of writing accelerated code in Python. I was amazed to discover that I didn’t need to learn C++ and I didn’t need new development tools. Writing GPU code in Python is easier today than ever, and in this tutorial, I will share what I’ve learned and how you can get started with accelerating your code.
 

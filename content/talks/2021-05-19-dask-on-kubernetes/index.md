@@ -13,7 +13,12 @@ video: https://youtu.be/faFncNrXmIY?t=1159
 abstract: true
 resources: https://summit.dask.org/schedule/presentation/20/deploying-dask/
 slides: https://speakerdeck.com/jacobtomlinson/dask-on-kubernetes
+featured: true
+thumbnail: thumb.png
+excerpt: An overview of deploying Dask on Kubernetes.
 ---
+
+{{< youtube faFncNrXmIY >}}
 
 At the Dask Summit I chaired a workshop called [Deploying Dask](https://summit.dask.org/schedule/presentation/20/deploying-dask/). This workshop was comprised of multiple talks delivered by myself and others.
 

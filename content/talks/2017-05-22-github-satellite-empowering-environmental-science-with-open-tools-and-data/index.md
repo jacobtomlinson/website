@@ -10,8 +10,15 @@ event:
   location: London, UK
 length: 20
 abstract: true
-video: https://www.youtube.com/watch?v=K0svhmx0nRE&t=455s
-slides: null
+video: https://www.youtube.com/watch?v=K0svhmx0nRE
+slides: https://speakerdeck.com/jacobtomlinson/empowering-environmental-science-with-open-tools-and-open-data
+featured: true
+thumbnail: thumb.jpg
+excerpt: The Met Office uses open tools to analyze vast weather data and share it publicly.
 ---
+
+{{< youtube K0svhmx0nRE >}}
+
+## Abstract
 
 The Met Office is a world leading weather and climate centre with the largest operational supercomputer in Europe. With their data growing rapidly every year,  they've realized a need to change their approach to analysing it. This talk covers how they are working with a suite of open source tools to solve this problem. They have mixed popular projects, like Jupyter Notebooks, with new data processing libraries (like Dask) and their own bespoke weather analysis tools (like Iris). They are also opening large volumes of data to the public, which through these tools can be manipulated quickly and easily from the comfort of a web browser.
