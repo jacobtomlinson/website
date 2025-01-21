@@ -70,6 +70,13 @@
     </small>
     {{ end }}
 
+    {{ if .Params.photos }}
+    <small>
+        <i class="fas fa-camera-retro" title="Photos"></i>
+        <a href="{{ .Params.photos }}">Photos</a>
+    </small>
+    {{ end }}
+
     {{ if .Params.resources }}
     <small>
         <i class="fas fa-book-open" title="Additional resources"></i>

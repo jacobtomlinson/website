@@ -38,6 +38,7 @@ hr {
   .header {
     padding-bottom: 3rem;
   }
+
 }
 
 .header a {
@@ -67,6 +68,10 @@ hr {
 
 .attributes small {
   margin-right: 1em;
+}
+
+article>div:first-child {
+  margin-top: 1em;
 }
 
 .footer {
@@ -157,6 +162,57 @@ hr {
   height: 100%;
   width: 100%;
   aspect-ratio: 710/399;
+}
+
+.featured-talks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  /* row-gap column gap */
+  margin-bottom: 1em;
+}
+
+.featured-talk {
+  width: 48%;
+  max-width: 400px;
+  margin: 0 auto 2em auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .featured-talk {
+    width: 100%;
+    max-width: none;
+  }
+
+}
+
+.featured-talk a:has(img) {
+  box-shadow: none;
+}
+
+.featured-talk h3 {
+  margin: 0;
+  border: none;
+  padding: 0;
+
+}
+
+.featured-talk .excerpt {
+  font-size: 0.7em;
+  margin: 0.5em 0;
+}
+
+.featured-talk img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.25em;
+}
+
+.featured-talk .attributes {
+  margin: 0;
 }
 
 input {

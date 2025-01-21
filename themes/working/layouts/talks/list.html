@@ -1,18 +1,43 @@
 {{ define "main" }}
 <h1>Talks</h1>
 
+<div class="featured-talks">
+
+    <h2>Featured</h2>
+    <p>I love speaking about technologies that I'm passionate about. Here are a few of my favourite talks that I've
+        given over the years.</p>
+    <div class="featured-talks-container">
+        {{ range .Pages }}
+        {{ if and (eq .Type "talks") (.Params.featured) }}
+        <div class="featured-talk">
+            <a href="{{ .Permalink }}">
+                <img src="{{ urls.JoinPath .Permalink .Params.thumbnail }}" alt="{{ .Title }}">
+            </a>
+            <a href="{{ .Permalink }}">
+                <h3>{{ .Title }}</h3>
+            </a>
+            <p class="excerpt">{{.Params.excerpt}}</p>
+            {{ partial "post_attributes.html" . }}
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+
+</div>
+
+
 <div class="articles">
 
+    <h2>All Talks</h2>
     <div>
         <ul>
             {{ range .Pages }}
             {{ if eq .Type "talks"}}
             <li>
-                <h2>
+                <h3>
                     {{ .Title }}
-                </h2>
+                </h3>
                 {{ partial "post_attributes.html" . }}
-
             </li>
             {{ end }}
             {{ end }}
