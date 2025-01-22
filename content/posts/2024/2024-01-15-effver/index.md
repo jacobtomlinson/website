@@ -87,6 +87,7 @@ Here are some notable projects that use EffVer (in alphabetical order):
 - [array-api-extra](https://github.com/data-apis/array-api-extra)
 - [hikari](https://github.com/hikari-py/hikari/blob/master/CONTRIBUTING.md#versioning-scheme)
 - [HoloViz](https://github.com/holoviz/holoviz/blob/main/hep/hep2.md#versioning)
+- [JAX](https://jax.readthedocs.io/en/latest/jep/25516-effver.html)
 - [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/reference/changelog.html#versioning)
 - [Kr8s](https://github.com/kr8s-org/kr8s)
 - [Matplotlib](https://github.com/matplotlib/matplotlib)
