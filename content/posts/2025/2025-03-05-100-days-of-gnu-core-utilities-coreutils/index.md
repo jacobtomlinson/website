@@ -16,6 +16,8 @@ I consider myself an advanced Linux and macOS user. I'm currently a software eng
 
 I'm setting myself a challenge to work my way through the [list of coreutils commands](https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands) and try one out every day. There are around 100 commands give or take, so this should make a nice 100 days challenge. I'll update this post with a little background on the command, what you would use it for and some example usage. I'll also post these on my [Bluesky account](https://bsky.app/profile/jacobtomlinson.dev).
 
+My goal here is to try out every command and hopefully discover a few new ones to add to my every day CLI usage.
+
 ## Background
 
 The [GNU Core Utilities (coreutils)](https://en.wikipedia.org/wiki/GNU_Core_Utilities) are an open-source set of tools that you will find on nearly any unix-based system. If you've ever used the command line or terminal you will have used some of these commands before, even if you didn't know they were part of a package called GNU coreutils. These include common commands like `cat`, `ls` and `rm` and less common ones like `expand` and `readlink`.
