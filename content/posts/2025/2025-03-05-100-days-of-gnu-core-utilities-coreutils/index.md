@@ -31,7 +31,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - `chgrp` - Changes file group ownership
     - `chown` - Changes file ownership
     - `chmod` - Changes the permissions of a file or directory
-    - `cp` - Copies a file or directory
+    - [`cp`](#cp) - Copies a file or directory
     - `dd` - Copies and converts a file
     - `df` - Shows disk free space on file systems
     - `dir` - Is exactly like `ls -C -b`. (Files are by default listed in columns and sorted vertically.)
@@ -166,4 +166,24 @@ bar
 $ cat /tmp/foo /tmp/bar
 foo
 bar
+```
+
+### Day 2: `cp` {#cp}
+
+The copy command `cp` allows you to copy a file from one place to another.
+
+```console
+$ cp /tmp/foo /tmp/bar
+```
+
+I commonly use the `-R` flag to copy a directory recursively
+
+```console
+$ cp -R /tmp/dir1/ /tmp/dir2/
+```
+
+An interesting more advanced use case I've used before is to also specify the `-L` flag which tells `cp` to follow symbolic links instead of copying them.
+
+```console
+$ cp -LR /tmp/dir1/ /tmp/dir2/  # Any symbolic links found in dir1 will create copies of the files, not the links in dir2
 ```
