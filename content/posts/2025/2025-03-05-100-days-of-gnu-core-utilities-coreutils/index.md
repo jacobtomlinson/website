@@ -168,7 +168,7 @@ foo
 bar
 ```
 
-### Day 2: `cp` {#cp}
+### Day 2: `cp` {#cp}
 
 The copy command `cp` allows you to copy a file from one place to another.
 
