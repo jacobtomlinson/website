@@ -38,7 +38,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - `dircolors` - Set up color for ls
     - `install` - Copies files and set attributes
     - `ln` - Creates a link to a file
-    - `ls` - Lists the files in a directory
+    - [`ls`](#ls) - Lists the files in a directory
     - `mkdir` - Creates a directory
     - `mkfifo` - Makes named pipes (FIFOs)
     - `mknod` - Makes block or character special files
@@ -136,7 +136,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
 
 ### Day 1: `cat` {#cat}
 
-`cat` or "concatenate" takes one or more text files, concatenates them together and prints them out to the terminal.
+[`cat`](https://linux.die.net/man/1/cat) or "concatenate" takes one or more text files, concatenates them together and prints them out to the terminal.
 
 I rarely use the concatenation functionality, I usually just use it to print a single file out to the screen.
 
@@ -170,13 +170,13 @@ bar
 
 ### Day 2: `cp` {#cp}
 
-The copy command `cp` allows you to copy a file from one place to another.
+The copy command [`cp`](https://linux.die.net/man/1/cp) allows you to copy a file from one place to another.
 
 ```console
 $ cp /tmp/foo /tmp/bar
 ```
 
-I commonly use the `-R` flag to copy a directory recursively
+I commonly use the `-R` flag to copy a directory recursively.
 
 ```console
 $ cp -R /tmp/dir1/ /tmp/dir2/
@@ -186,4 +186,93 @@ An interesting more advanced use case I've used before is to also specify the `-
 
 ```console
 $ cp -LR /tmp/dir1/ /tmp/dir2/  # Any symbolic links found in dir1 will create copies of the files, not the links in dir2
+```
+
+### Day 3: `ls` {#ls}
+
+The "list" command or [`ls`](https://linux.die.net/man/1/ls) lists the contents of a directory.
+
+The default behaviour on most systems is to print out a tab separated list of names.
+
+```console
+$ ls ~/
+Applications     Documents        Library          Music            Pictures
+Desktop          Downloads        Movies           Notes            Projects
+Public           Scratch
+```
+
+I commonly use the `-l` flag to list detailed information.
+
+```console
+$ ls -l ~/
+total 0
+drwx------@   3 jtomlinson  staff    96 11 Jan  2024 Applications
+drwx------@  12 jtomlinson  staff   384 12 Feb 14:08 Desktop
+drwx------@   4 jtomlinson  staff   128 30 Jul  2024 Documents
+drwx------@ 227 jtomlinson  staff  7264  5 Mar 14:05 Downloads
+drwx------@  99 jtomlinson  staff  3168 12 Feb 14:07 Library
+drwx------    5 jtomlinson  staff   160  4 Mar  2024 Movies
+drwx------+   4 jtomlinson  staff   128 10 Jan  2024 Music
+drwx------   10 jtomlinson  staff   320  6 Mar 14:46 Notes
+drwx------+  13 jtomlinson  staff   416 21 Jan 13:59 Pictures
+drwx------@  16 jtomlinson  staff   512 15 Nov 13:04 Projects
+drwx------@   4 jtomlinson  staff   128 10 Jan  2024 Public
+drwx------@  11 jtomlinson  staff   352 27 Feb 12:35 Scratc
+```
+
+I also often use the `-a` flag to list hidden files.
+
+```console
+$ ls -la ~/
+total 824
+drwxr-x---+  73 jtomlinson  staff    2336  7 Mar 10:59 .
+drwxr-xr-x    7 root        admin     224 25 Feb 10:11 ..
+-rw-r--r--@   1 jtomlinson  staff   10244  7 Mar 10:32 .DS_Store
+drwx------+  60 jtomlinson  staff    1920  6 Mar 17:01 .Trash
+lrwxr-xr-x@   1 jtomlinson  staff      64 10 Jan  2024 .bash_profile
+lrwxr-xr-x@   1 jtomlinson  staff      58 10 Jan  2024 .bashrc
+drwxr-xr-x@  12 jtomlinson  staff     384  6 Mar 11:34 .cache
+drwxr-xr-x@  11 jtomlinson  staff     352  9 Dec 14:03 .config
+drwxr-xr-x@   9 jtomlinson  staff     288 27 Feb 12:36 .kube
+drwxr-xr-x@   6 jtomlinson  staff     192 22 Feb  2024 .local
+drwx------@  22 jtomlinson  staff     704 30 Sep 14:42 .ssh
+lrwxr-xr-x@   1 jtomlinson  staff      61 10 Jan  2024 .tmux.conf
+lrwxr-xr-x@   1 jtomlinson  staff      57 10 Jan  2024 .vimrc
+drwxr-xr-x@   5 jtomlinson  staff     160 10 Jan  2024 .vscode
+-rw-------@   1 jtomlinson  staff   93970  7 Mar 10:59 .zsh_history
+lrwxr-xr-x@   1 jtomlinson  staff      57 10 Jan  2024 .zshrc
+drwx------@   3 jtomlinson  staff      96 11 Jan  2024 Applications
+drwx------@  12 jtomlinson  staff     384 12 Feb 14:08 Desktop
+drwx------@   4 jtomlinson  staff     128 30 Jul  2024 Documents
+drwx------@ 227 jtomlinson  staff    7264  5 Mar 14:05 Downloads
+drwx------@  99 jtomlinson  staff    3168 12 Feb 14:07 Library
+drwx------    5 jtomlinson  staff     160  4 Mar  2024 Movies
+drwx------+   4 jtomlinson  staff     128 10 Jan  2024 Music
+drwx------   10 jtomlinson  staff     320  6 Mar 14:46 Notes
+drwx------+  13 jtomlinson  staff     416 21 Jan 13:59 Pictures
+drwx------@  16 jtomlinson  staff     512 15 Nov 13:04 Projects
+drwx------@   4 jtomlinson  staff     128 10 Jan  2024 Public
+drwx------@  11 jtomlinson  staff     352 27 Feb 12:35 Scratch
+```
+
+I also like the `-h` flag which displays the file sizes in a human readable way.
+
+```console
+$ ls -lah ~/.zsh_history
+-rw-------@ 1 jtomlinson  staff    92K  7 Mar 11:02 .zsh_history
+```
+
+In my [dotfiles](https://github.com/jacobtomlinson/dotfiles) I set some aliases around these to make things easier. I originally cribbed these from the Red Hat Enterprise Linux 6 (RHEL6) default `.bashrc` file and have used them ever since.
+
+```bash
+# Set ls colours
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# Aliases to make ls easier to use in different modes, taken from RHEL 6
+alias ls='ls -GFh'
+alias ll="ls -l"
+alias lh="ls -lh"
+alias la="ls -la"
+alias lah="ls -lah"
+alias sl="ls"
 ```
