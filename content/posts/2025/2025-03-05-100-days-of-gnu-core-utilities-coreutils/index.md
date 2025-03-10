@@ -276,3 +276,20 @@ alias la="ls -la"
 alias lah="ls -lah"
 alias sl="ls"
 ```
+
+### Day 4: `mv` {#mv}
+
+Moving a file with `mv` is another common operation. If you are moving a file or folder within a filesystem (e.g on the same hard drive partition) then you can think of it more like renaming because it doesn't actually move any of the bytes on the disk, it just updates the filesystem with a new name.
+
+```bash
+mv /tmp/foo /tmp/bar  # Renames the file foo to bar in /tmp
+```
+
+You might want to move a bunch of files into a different folder, but if a file exists with the same name you don't want to overwite it.
+
+You can use the `-n` flag to not overwite files, or the `-i` flag to prompt you before overwriting. Generally `-i` is the default and you can set `-f` which forcibly overwites files without asking.
+
+```bash
+mv -f /tmp/baz/* /tmp/buzz/.  # Move all the files in baz into buzz and overwite any that already exist without prompting
+```
+
