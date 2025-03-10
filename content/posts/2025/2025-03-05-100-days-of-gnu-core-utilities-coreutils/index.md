@@ -43,7 +43,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - `mkfifo` - Makes named pipes (FIFOs)
     - `mknod` - Makes block or character special files
     - `mktemp` - Creates a temporary file or directory
-    - `mv` - Moves files or rename files
+    - [`mv`](#mv) - Moves files or rename files
     - `realpath` - Returns the resolved absolute or relative path for a file
     - `rm` - Removes (deletes) files, directories, device nodes and symbolic links
     - `rmdir` - Removes empty directories
