@@ -34,7 +34,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - [`cp`](#cp) - Copies a file or directory
     - `dd` - Copies and converts a file
     - `df` - Shows disk free space on file systems
-    - `dir` - Is exactly like `ls -C -b`. (Files are by default listed in columns and sorted vertically.)
+    - [`dir`](#dir) - Is exactly like `ls -C -b`. (Files are by default listed in columns and sorted vertically.)
     - `dircolors` - Set up color for ls
     - `install` - Copies files and set attributes
     - `ln` - Creates a link to a file
@@ -293,3 +293,13 @@ You can use the `-n` flag to not overwite files, or the `-i` flag to prompt you 
 mv -f /tmp/baz/* /tmp/buzz/.  # Move all the files in baz into buzz and overwite any that already exist without prompting
 ```
 
+### Day 5: `dir` {#dir}
+
+The `dir` command is effectively an alias to `ls -C -b`. The `-C` flag forces multiple columns and `-b` will escape special characters. You wont find this command on all systems, for example it's not on macOS or in busybox but you will find it on Ubuntu.
+
+This command exists mostly to be compatible with other operating systems like DOS and Windows.
+
+```console
+$ dir /
+bin  boot  dev  etc  home  lib  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+```
