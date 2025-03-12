@@ -45,7 +45,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - `mktemp` - Creates a temporary file or directory
     - [`mv`](#mv) - Moves files or rename files
     - `realpath` - Returns the resolved absolute or relative path for a file
-    - `rm` - Removes (deletes) files, directories, device nodes and symbolic links
+    - [`rm`](#rm) - Removes (deletes) files, directories, device nodes and symbolic links
     - `rmdir` - Removes empty directories
     - `shred` - Overwrites a file to hide its contents, and optionally deletes it
     - `sync` - Flushes file system buffers
@@ -303,3 +303,21 @@ This command exists mostly to be compatible with other operating systems like DO
 $ dir /
 bin  boot  dev  etc  home  lib  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 ```
+
+### Day 6: `rm` {#rm}
+
+The `rm` command removes a file. You can also recursively do this with `rm -r`. This will prompt you for each file and check if you want to delete it. You can override this with `rm -f`.
+
+Combining these two flags gives you `rm -rf` which is often considered one of the most dangerous linux commands because you can delete your whole filesystem this way. 
+
+```bash
+rm /tmp/foo
+```
+
+When I was a linux sysadmin there was a user who had a script which cleaned up files in a directory. The directory was set as an environment variable `$SOME_DIR`. So their script had a line like this:
+
+```bash
+rm -rf $SOME_DIR/*
+```
+
+If an environment variable is unset it just resolves to an empty string, and this script had a bug which caused that environment variable to be unset. So when their script ran it ran `rm -rf /*` instead. The script was run via a cron job in the middle of the night, so when they cam in the next day they found everything in their home directory had been deleted, along with every file on the shared network storage with `777` permissions. We spent a lot of time restoring files from backups that day.
