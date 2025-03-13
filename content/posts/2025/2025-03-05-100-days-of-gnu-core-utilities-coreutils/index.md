@@ -332,8 +332,8 @@ You most commonly see this used within a script with `set -e` which will exit th
 #!/bin/bash
 # somescript.sh
 
-set -e
+set -e  # If a command fails exit the script
 
-# The rm fails but the or true makes the line succeed and the script will continue
+# The rm fails but the or true stops the script from exiting
 rm /tmp/filethatdoesntexist || true
 ```
