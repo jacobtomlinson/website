@@ -121,7 +121,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - `tee` - Sends output to multiple files
     - `test` - Evaluates an expression
     - `timeout` - Run a command with a time limit
-    - `true` - Does nothing, but exits successfully
+    - [`true`](#true) - Does nothing, but exits successfully
     - `tty` - Prints terminal name
     - `uname` - Prints system information
     - `unlink` - Removes the specified file using the unlink function
@@ -321,3 +321,19 @@ rm -rf $SOME_DIR/*
 ```
 
 If an environment variable is unset it just resolves to an empty string, and this script had a bug which caused that environment variable to be unset. So when their script ran it ran `rm -rf /*` instead. The script was run via a cron job in the middle of the night, so when they cam in the next day they found everything in their home directory had been deleted, along with every file on the shared network storage with `777` permissions. We spent a lot of time restoring files from backups that day.
+
+### Day 7: `true` {#true}
+
+The `true` command does nothing, but always returns successfully with exit code `0`. 
+
+You most commonly see this used within a script with `set -e` which will exit the script if any commands fail. You might want to continue executing the script if a command fails, so you can use the or opetator with `true` to make it always appear to have succeeded.
+
+```bash
+#!/bin/bash
+# somescript.sh
+
+set -e
+
+# The rm fails but the or true makes the line succeed and the script will continue
+rm /tmp/filethatdoesntexist || true
+```
