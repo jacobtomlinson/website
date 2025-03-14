@@ -14,9 +14,9 @@ tags:
   - myst
 ---
 
-I write a lot of markdown. I use it on [GitHub](https://github.com/) when creating issues/PRs, I use it in [Obsidian](https://obsidian.md/) when I take notes, I use it in [Hugo](https://gohugo.io/) when writing blog posts (like this one), I use it in [Jupyter Notebooks](https://jupyter.org/) when working with data and I use it in [Sphinx](https://www.sphinx-doc.org/en/master/) with [MyST](https://myst-parser.readthedocs.io/en/latest/) when writing documentation.
+I write a lot of markdown. I use it on [GitHub](https://github.com/) when creating issues/PRs, I use it in [Obsidian](https://obsidian.md/) when I take notes, I use it in [Hugo](https://gohugo.io/) when writing blog posts ([like this one](https://github.com/jacobtomlinson/website/blob/master/content/posts/2025/2025-03-14-why-cont-my-markdown-titles-work/index.md?plain=1)), I use it in [Jupyter Notebooks](https://jupyter.org/) when working with data and I use it in [Sphinx](https://www.sphinx-doc.org/en/master/) with [MyST](https://myst-parser.readthedocs.io/en/latest/) when writing documentation.
 
-Therefore, I make a lot of markdown titles, but sometimes they don't work ([_tl;dr here's the answer why_](#answer)).
+Therefore, I make a lot of markdown titles, but sometimes they don't work ([_tl;dr skip to the answer_](#answer)).
 
 ```markdown
 # This is an H1
