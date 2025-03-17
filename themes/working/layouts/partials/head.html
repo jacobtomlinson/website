@@ -15,11 +15,6 @@
     href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:300,400,600,700|Open+Sans:300,400,600,700" />
 </noscript>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" as="style" />
-<noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
-</noscript>
-
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" as="style" />
 <noscript>
@@ -31,13 +26,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/solid.min.css" />
 </noscript>
 
-<!-- Wing CSS -->
-<link rel="stylesheet" href="/css/wing.min.css" as="style" />
+{{ with resources.Match "css/**.css" | resources.Concat "css/styles.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ .Permalink }}" as="style" />
 <noscript>
-  <link rel="stylesheet" href="/css/wing.min.css" />
+  <link rel="stylesheet" href="{{ .Permalink }}" />
 </noscript>
-
-<link rel="stylesheet" href="/css/style.css" />
+{{ end }}
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
