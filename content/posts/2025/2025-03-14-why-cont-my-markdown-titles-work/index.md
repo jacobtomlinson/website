@@ -68,7 +68,12 @@ Renders as:
 
 Sometimes I accidentally type the wrong kind of space!
 
-On a Mac you type the `#` character by pressing `alt + 3`. When typing a title you type a bunch of `#` characters and then a space (unicode `\x20`). However, if you accidentally keep holding down `alt` and type `alt + space` you get a non-breaking space (unicode `\xa0`).
+
+On a Mac you type the `#` character by pressing `option + 3`. When typing a title you type a bunch of `#` characters and then a space (unicode `\x20`). However, if you accidentally keep holding down `option` and type `option + space` you get a non-breaking space (unicode `\xa0`).
+
+```info
+**Update:** Turns out this is a UK specific thing! In other keyboard language settings the `#` is typed with `shift + 3`, and `£` is typed with `option + 3`. I guess that it makes sense for the `£` to be more accessible than `#` for most UK Mac Users.
+```
 
 A non-breaking space looks exactly the same as a space, but is not considered as whitespace.
 
