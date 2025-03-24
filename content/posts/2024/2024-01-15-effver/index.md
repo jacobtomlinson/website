@@ -91,6 +91,7 @@ Here are some notable projects that use EffVer (in alphabetical order):
 - [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/reference/changelog.html#versioning)
 - [Kr8s](https://github.com/kr8s-org/kr8s)
 - [Matplotlib](https://github.com/matplotlib/matplotlib)
+- [Zarr](https://zarr.readthedocs.io/en/latest/developers/contributing.html#versioning)
 
 _Want to add your project to this list, [make a PR here](https://github.com/jacobtomlinson/website/blob/master/content/posts/2024/2024-01-15-effver/index.md)._
 
