@@ -37,7 +37,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - [`dir`](#dir) - Is exactly like `ls -C -b`. (Files are by default listed in columns and sorted vertically.)
     - `dircolors` - Set up color for ls
     - `install` - Copies files and set attributes
-    - `ln` - Creates a link to a file
+    - [`ln`](#ln) - Creates a link to a file
     - [`ls`](#ls) - Lists the files in a directory
     - `mkdir` - Creates a directory
     - `mkfifo` - Makes named pipes (FIFOs)
@@ -337,3 +337,54 @@ set -e  # If a command fails exit the script
 # The rm fails but the or true stops the script from exiting
 rm /tmp/filethatdoesntexist || true
 ```
+
+### Day 8: `ln` {#ln}
+
+The link or `ln` command is used commonly for creating symbolic links, and can also be used for creating hard links.
+
+Symbolic links, or soft links, are files which just point to other files. You can think of them like shortcuts. Remembering the syntax for creating them is the hardest part, its very easy to get the arguments flipped.
+
+```bash
+ln -s <file to point to> <shortcut name>
+```
+
+For example if we wanted to create a symbolic link to `/bin/bash` and we wanted to call is `bosh` it would be:
+
+```bash
+ln -s /bin/bash bosh
+```
+
+We can use [`ls`](#ls) to show our symbolic link and where it points to.
+
+```console
+$ ls -l               
+total 0
+lrwxr-xr-x  1 jtomlinson  wheel  9 Mar 25 11:13 bosh -> /bin/bash
+```
+
+Less commonly you can also use `ln` to create hard links. Whenever you create a file on a *nix system you are creating both a section of bytes on disk, and also a name pointing to those bytes. Symbolic links create a new name that points to the first name. Hard links create a new name that points directly to those same bytes. This is a bit like pointers in many programming languages.
+
+Let's see this in action by using [`touch`](#touch) to create a new file, and then using `ln` to create a hard link.
+
+```console
+$ touch fizz
+
+$ ls -l 
+total 0
+-rw-r--r--  1 jtomlinson  wheel  0 Mar 25 11:19 fizz
+```
+
+We can see our new file here, and you can see before the username there is a `1`. This means that these bytes on disk are pointed to by one name.
+
+```
+$ ln fizz buzz 
+
+$ ls -l       
+total 0
+-rw-r--r--  2 jtomlinson  wheel  0 Mar 25 11:19 buzz
+-rw-r--r--  2 jtomlinson  wheel  0 Mar 25 11:19 fizz
+```
+
+Now we've created a hard link called buzz which also points to the same bytes on disk. We can see the number of links has been updates to `2`. Unlike a soft link we can safely delete `fizz` and the file will still exist and be pointed to by `buzz`. 
+
+Hard links only work within the same filesystem. You can't create a hard link to a file on another drive.
