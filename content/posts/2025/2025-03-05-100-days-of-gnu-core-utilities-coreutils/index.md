@@ -49,7 +49,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - `rmdir` - Removes empty directories
     - `shred` - Overwrites a file to hide its contents, and optionally deletes it
     - `sync` - Flushes file system buffers
-    - `touch` - Changes file timestamps; creates file
+    - [`touch`](#touch) - Changes file timestamps; creates file
     - `truncate` - Shrink or extend the size of a file to the specified size
     - `vdir` - Is exactly like `ls -l -b`. (Files are by default listed in long format.)
 - Text Utilities
@@ -376,7 +376,7 @@ total 0
 
 We can see our new file here, and you can see before the username there is a `1`. This means that these bytes on disk are pointed to by one name.
 
-```
+```console
 $ ln fizz buzz 
 
 $ ls -l       
@@ -388,3 +388,38 @@ total 0
 Now we've created a hard link called buzz which also points to the same bytes on disk. We can see the number of links has been updates to `2`. Unlike a soft link we can safely delete `fizz` and the file will still exist and be pointed to by `buzz`. 
 
 Hard links only work within the same filesystem. You can't create a hard link to a file on another drive.
+
+### Day 9: `touch` {#touch}
+
+The `touch` command is commonly used to create a file that did not previously exist.
+
+```console
+$ touch /tmp/foo
+$ ls -l /tmp/foo                                      
+-rw-r--r--  1 jtomlinson  wheel  0 Apr 14 15:17 /tmp/foo
+```
+
+Despite this being the most common use of touch for me day to day it's primary purpose is to update the modified and accessed times of a file to the current time. 
+
+For example I have a file that was created on Jan 10th 2025.
+
+```console
+$ ls -l /tmp/old
+-rw-r--r--  1 jtomlinson  wheel  0 Jan 10 14:37 /tmp/old
+```
+
+I can update the timestamp on that file to now by touching it.
+
+```console
+$ touch /tmp/old                       
+$ ls -l /tmp/old
+-rw-r--r--  1 jtomlinson  wheel  0 Apr 14 15:20 /tmp/old
+```
+
+Interestingly you can also set that modified date to any arbitrary date you like. For example I could set it to my pi day year.
+
+```console
+$ touch -d 2026-03-14T00:00:00 /tmp/old
+$ ls -l /tmp/old                       
+-rw-r--r--  1 jtomlinson  wheel  0 Mar 14  2026 /tmp/old
+```
