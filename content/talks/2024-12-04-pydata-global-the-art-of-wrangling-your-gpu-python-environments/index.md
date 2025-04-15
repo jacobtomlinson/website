@@ -11,6 +11,7 @@ event:
 length: 30
 abstract: true
 slides: https://speakerdeck.com/jacobtomlinson/the-art-of-wrangling-your-gpu-python-environments
+video: https://www.youtube.com/watch?v=ghq-VDNvNss
 ---
 
 Debugging software itself is a hard task, but debugging GPU software environments can be even more challenging. Understanding the intricate interactions between hardware, drivers, CUDA, C++ dependencies, and Python libraries can be far more complex.
