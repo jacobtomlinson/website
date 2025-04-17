@@ -11,7 +11,7 @@
 {{ end }}
 
 {{ $font_roboto_medium := "" }}
-{{ $font_roboto_medium_path := "https://github.com/google/fonts/raw/main/apache/robotomono/RobotoMono%5Bwght%5D.ttf" }}
+{{ $font_roboto_medium_path := "https://github.com/google/fonts/raw/main/ofl/robotomono/RobotoMono%5Bwght%5D.ttf" }}
 {{ with try (resources.GetRemote $font_roboto_medium_path) }}
 {{ with .Err }}
 {{ errorf "%s" . }}
@@ -23,7 +23,7 @@
 {{ end }}
 
 {{ $font_roboto_regular := "" }}
-{{ $font_roboto_regular_path := "https://github.com/google/fonts/raw/main/apache/robotomono/RobotoMono%5Bwght%5D.ttf" }}
+{{ $font_roboto_regular_path := "https://github.com/google/fonts/raw/main/ofl/robotomono/RobotoMono%5Bwght%5D.ttf" }}
 {{ with try (resources.GetRemote $font_roboto_regular_path) }}
 {{ with .Err }}
 {{ errorf "%s" . }}
