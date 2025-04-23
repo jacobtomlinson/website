@@ -39,7 +39,7 @@ Here's a table of contents taken from the [wikipedia list of coreutils commands]
     - `install` - Copies files and set attributes
     - [`ln`](#ln) - Creates a link to a file
     - [`ls`](#ls) - Lists the files in a directory
-    - `mkdir` - Creates a directory
+    - [`mkdir`](#mkdir) - Creates a directory
     - `mkfifo` - Makes named pipes (FIFOs)
     - `mknod` - Makes block or character special files
     - `mktemp` - Creates a temporary file or directory
@@ -422,4 +422,34 @@ Interestingly you can also set that modified date to any arbitrary date you like
 $ touch -d 2026-03-14T00:00:00 /tmp/old
 $ ls -l /tmp/old                       
 -rw-r--r--  1 jtomlinson  wheel  0 Mar 14  2026 /tmp/old
+```
+
+### Day 10: `mkdir` {#mkdir}
+
+The `mkdir` command is used to create new directories.
+
+```console
+$ mkdir foo
+$ ls -d foo/
+foo/
+```
+
+If you try to create a nested directory like `foo/bar/baz/` `mkdir` will complain that the intermediate directories don't exist. 
+
+```console
+$ mkdir foo/bar/baz
+mkdir: foo/bar: No such file or directory
+```
+
+However you can use the `-p` flag to tell `mkdir` to create the intermediate directories
+
+```console
+$ mkdir -p foo/bar/baz
+$ ls -R foo 
+bar
+
+foo/bar:
+baz
+
+foo/bar/baz:
 ```
