@@ -90,6 +90,7 @@ Here are some notable projects that use EffVer (in alphabetical order):
 - [JAX](https://jax.readthedocs.io/en/latest/jep/25516-effver.html)
 - [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/reference/changelog.html#versioning)
 - [Kr8s](https://github.com/kr8s-org/kr8s)
+- [LightGBM](https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html#versioning)
 - [Matplotlib](https://github.com/matplotlib/matplotlib)
 - [Zarr](https://zarr.readthedocs.io/en/latest/developers/contributing.html#versioning)
 
