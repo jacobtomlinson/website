@@ -70,6 +70,10 @@ hr {
   margin-right: 1em;
 }
 
+.footer-attributes {
+  margin-top: 1em;
+}
+
 article>div:first-child {
   margin-top: 1em;
 }

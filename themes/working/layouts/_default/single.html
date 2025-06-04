@@ -53,17 +53,21 @@
 
 {{ partial "series_footer.html" . }}
 
-<hr />
-
-<h2>Have thoughts?</h2>
-
-<ul>
-  <li>Discuss this post on <a href="http://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ .Title }}">Hacker
-      News</a></li>
-  <li>Tell me what you think of it on <a href="{{ .Site.Params.bluesky }}">Bluesky</a></li>
-  <li><i>Found an error? <a href="{{ .Site.Params.SiteSourceURL }}/blob/master/content/{{ .File.Path }}"
-        data-proofer-ignore>Suggest an edit on GitHub</a></i></li>
-</ul>
+<div class="attributes footer-attributes">
+  <small>
+    <i class="fab fa-y-combinator" title="Discuss"></i>
+    <a href="http://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ .Title }}">Discuss on Hacker News</a>
+  </small>
+  <small>
+    <i class="fab fa-bluesky" title="Bluesky"></i>
+    <a href="{{ .Site.Params.bluesky }}">Share on Bluesky</a>
+  </small>
+  <small>
+    <i class="fab fa-github" title="Edit"></i>
+    <a href="{{ .Site.Params.SiteSourceURL }}/blob/master/content/{{ .File.Path }}" data-proofer-ignore>Suggest an edit
+      on GitHub</a>
+  </small>
+</div>
 
 
 {{ if .Page.Store.Get "hasMermaid" }}
