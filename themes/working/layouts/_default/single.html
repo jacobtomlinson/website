@@ -60,7 +60,10 @@
   </small>
   <small>
     <i class="fab fa-bluesky" title="Bluesky"></i>
-    <a href="{{ .Site.Params.bluesky }}">Share on Bluesky</a>
+    <a
+      href="https://bsky.app/intent/compose?text={{ .Title | urlquery }}%20by%20@{{ .Site.Params.bluesky_handle | urlquery }}%0A{{ .Permalink | urlquery }}">Share
+      on
+      Bluesky</a>
   </small>
   <small>
     <i class="fab fa-github" title="Edit"></i>
