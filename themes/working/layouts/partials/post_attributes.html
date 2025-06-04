@@ -83,4 +83,17 @@
         <a href="{{ .Params.resources }}">Additional Resources</a>
     </small>
     {{ end }}
+
+    {{ if eq .Type "posts" }}
+    <small>
+        <a href="http://news.ycombinator.com/submitlink?u={{ .Permalink }}&t={{ if .Date.Before (now.AddDate -1 0 0) }}{{ .Title }} ({{ .Date.Format "2006" }}){{ else }}{{ .Title }}{{ end }}" title="Discuss on Hacker News">
+            <i class="fab fa-y-combinator"></i>
+        </a>
+    </small>
+    <small>
+        <a href="https://bsky.app/intent/compose?text={{ .Title | urlquery }}%20by%20@{{ .Site.Params.bluesky_handle | urlquery }}%0A{{ .Permalink | urlquery }}" title="Share on Bluesky">
+            <i class="fab fa-bluesky"></i>
+        </a>
+    </small>
+    {{ end }}
 </div>

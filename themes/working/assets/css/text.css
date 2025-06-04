@@ -93,6 +93,16 @@ ul {
   font-weight: 300;
 }
 
+.attributes small a:has(i) {
+  color: #666;
+  box-shadow: none;
+}
+
+.attributes small a:has(i):hover {
+  color: var(--primary);
+  box-shadow: none;
+}
+
 .singular {
   color: #666;
   font-size: 0.5em;
