@@ -19,6 +19,7 @@ images = ["https://i.imgur.com/Ln3NJU2h.png"]
 twitter = "https://twitter.com/_jacobtomlinson"
 bluesky_handle = "jacobtomlinson.dev"
 bluesky = "https://bsky.app/profile/jacobtomlinson.dev"
+linkedin = "https://www.linkedin.com/in/jacobtomlinsondev/"
 
 footer_left = "Made with <i class=\"fa fa-heart\"></i> using [Hugo](https://gohugo.io/)</a>"
 footer_right = "<i class=\"fa fa-code\"></i> on [Github](https://github.com/jacobtomlinson/jacobtomlinson.github.io) &nbsp;<i class=\"fab fa-github-alt\"></i>"
