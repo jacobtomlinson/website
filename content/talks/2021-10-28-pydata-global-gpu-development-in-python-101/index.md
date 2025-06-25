@@ -9,7 +9,7 @@ event:
   type: Tutorial
   location: Online
 length: 90
-video: null
+video: https://www.youtube.com/watch?v=aIFjEK7p9Zw
 abstract: true
 resources: https://github.com/jacobtomlinson/gpu-python-tutorial
 ---
