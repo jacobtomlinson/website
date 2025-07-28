@@ -137,7 +137,7 @@ CalVer attempts to communicate that no upgrade is safe, but in doing so strips a
 
 For example if you fix a small bug in your code and make a release, then the next day you delete half the API and make another release, nobody can tell the difference between the two versions.
 
-![A meme showing two scary dragons and a derpy one to describe major version releases. The first is ChangeVer and says there are major new and exciting things, the second is SemVer and says we broke something and the third is CalVer which says happy new year.](./happy-new-year.png "If you're wondering what ChangeVer is, it's what I call the 90s boxed software version scheme where you were obliged to make visible changes to your prouct and increment the major version in order to get people to upgrade from the old version. Change for the sake of change.")
+![A meme showing two scary dragons and a derpy one to describe major version releases. The first is ChangeVer and says there are major new and exciting things, the second is SemVer and says we broke something and the third is CalVer which says happy new year.](./happy-new-year.png "If you're wondering what ChangeVer is, it's what I call the 90s boxed software version scheme where you were obliged to make visible changes to your product and increment the major version in order to get people to upgrade from the old version. Change for the sake of change.")
 
 People feel anxious about upgrading CalVer projects because they don't know if the change will be small or huge. As a result they are more likely to pin their dependencies and upgrade in a more proactive and managed way, which is good, but the lack of information makes upgrading hard to schedule and so it often gets put off.
 
