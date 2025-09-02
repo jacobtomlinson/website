@@ -11,6 +11,7 @@ event:
 length: 25
 abstract: true
 slides: https://speakerdeck.com/jacobtomlinson/effver-version-your-code-by-the-effort-required-to-upgrade
+video: https://www.youtube.com/watch?v=dx5K2Sytk4c
 ---
 
 Version numbers are hard to get right. Maintainers want to communicate to users what the impact of adopting a new version will be, but poor communication can lead to a lot of frustration. There are a few popular version schemes in use today including Semantic Versioning (SemVer) and Calendar Versioning (CalVer). However, projects in the Python community often don’t strictly conform to these standards which leads to confusion.
