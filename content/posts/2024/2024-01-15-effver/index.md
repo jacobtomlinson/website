@@ -93,6 +93,7 @@ Here are some notable projects that use EffVer (in alphabetical order):
 - [LightGBM](https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html#versioning)
 - [Matplotlib](https://github.com/matplotlib/matplotlib)
 - [Zarr](https://zarr.readthedocs.io/en/latest/developers/contributing.html#versioning)
+- [napari](https://github.com/napari/napari)
 
 _Want to add your project to this list, [make a PR here](https://github.com/jacobtomlinson/website/blob/master/content/posts/2024/2024-01-15-effver/index.md)._
 
