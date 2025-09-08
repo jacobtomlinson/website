@@ -1,6 +1,6 @@
 ---
 title: "EffVer - Version your code by the effort required to upgrade"
-date: 2025-07-T00:00:00+00:00
+date: 2025-07-09T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson"
 event:
