@@ -10,6 +10,7 @@ event:
   location: Tacoma, WA, USA
 length: 30
 abstract: true
+video: https://www.youtube.com/watch?v=Nr9UZuTWwrE
 ---
 
 In today’s world of ever-growing data and AI, learning about GPUs has become an essential part of software carpentry, professional development and the education curriculum. However, teaching with GPUs can be challenging, from resource accessibility to managing dependencies and varying knowledge levels.
