@@ -33,3 +33,5 @@ _The majority of your users_ don't follow you on social media.
 ## Context
 
 I am the developer/maintainer of various Python libraries in the Science, Data and AI space with a few DevOps tools thrown in for good measure. Lessons may not translate to other communities.
+
+When working on open source projects it's easy to focus on the power users. Folks who think like you, might contribute, or build related projects. But it's important to remember that they are a small minority group, most users think about your software way less than you do. **Most of your users are busy getting on with their own work.**
