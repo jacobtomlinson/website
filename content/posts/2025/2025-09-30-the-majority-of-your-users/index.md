@@ -7,7 +7,7 @@ categories:
   - blog
 tags:
   - Open Source
-  - Mainenance
+  - Maintenance
 ---
 
 _The majority of your users_ don’t read your changelog. 
