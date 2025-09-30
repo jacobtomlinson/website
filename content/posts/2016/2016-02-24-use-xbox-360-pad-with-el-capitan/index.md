@@ -36,8 +36,8 @@ The installer will put a configuration pane in System Preferences.
 From this menu you'll be able to test your controller is working as well as
 make changes to the config.
 
-![Imgur](https://i.imgur.com/AoZUpPN.png)
-![Imgur](https://i.imgur.com/u9ZnYLo.png)
+![Imgur](AoZUpPN.png)
+![Imgur](u9ZnYLo.png)
 
 
 [driver-github]: https://github.com/360Controller/360Controller/releases

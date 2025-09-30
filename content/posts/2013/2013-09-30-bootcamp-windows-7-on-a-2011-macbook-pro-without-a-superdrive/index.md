@@ -36,7 +36,7 @@ So in order to get Windows installed on my MacBook I had two options, put the Su
 
 So initially I put a Windows 7 DVD in my USB SuperDrive and began the usual process of installing Windows using the bootcamp assistant. I launched the bootcamp assistant from Applications > Utilities and used it to partition the HDD. Now the assistant will complain if you don&#8217;t have the Windows media attached so it may be worth plugging in a USB DVD drive with a Windows disk in for this part, we won&#8217;t actually use this to install Windows. If you try to boot from the USB attached DVD you will most likely just get a flashing white cursor in the top left corner.
 
-![VMware Fusion](https://i.imgur.com/Be3I5gL.png)
+![VMware Fusion](Be3I5gL.png)
 
 Now the posts I found online suggested using VMWare to use the partition as the HDD for a Virtual machine rather than a normal Virtual Disk file. This way you can partially install Windows onto the partition and then reboot natively to that partition and complete the installation. Now in order to do this you will need to install rEFIt which is an addition to the normal EFI bootloader, this is required as the partially installed Windows will not show up in the normal menu you get when holding alt when booting. So you will need to download rEFIt and install it.
 
@@ -75,7 +75,7 @@ Now once completing this you may find that this guide works perfectly for you an
 
 When I followed that guide and rebooted I was confronted with the message &#8220;Could not find file winboot.exe&#8221;. Now this issue is caused by the Windows boot record pointing at the wrong partition. I guess this is caused by the fact that the number and possibly order of the partitions is different on the physical machine to when it is accessed form the VM. This problem can usually be fixed by loading up the recovery console from the installation DVD and repairing the MBR but the whole reason we&#8217;re doing this is because we can&#8217;t boot from the DVD so we&#8217;re going to have to blow away this failed installation and start again from a different angle, but don&#8217;t worry this wasn&#8217;t for nothing, what this has achieved is it has made this partition bootable so what we will do now is copy the installation media to this bootable partition and then it form there onto itself.
 
-![Paragon NTFS](https://i.imgur.com/rQnMhnD.png)
+![Paragon NTFS](rQnMhnD.png)
 
 To do this you will need to be able to modify the NTFS partition from OS X. So boot back into OS X and install Paragon NTFS, you can get a free trial of this which will be fine. Once you&#8217;ve installed that you need to open the Windows partition in finder and drag it&#8217;s entire contents to the trash and then empty the trash to delete everything. This will take a few minutes but you will be left with an empty bootable NTFS partition.
 

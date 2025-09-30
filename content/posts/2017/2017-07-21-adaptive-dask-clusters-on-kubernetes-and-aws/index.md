@@ -65,7 +65,7 @@ In order to do this the scheduler must have permissions to access the Kubernetes
 
 We are exposing the scheduler as a service within the Kubernetes cluster. So we can connect to it from our [Jupyter notebooks][lab-k8s-jupyter] also running on the cluster. We are also exposing the scheduler status page externally via an ingress so we can check the status of the cluster.
 
-![Dask Tasks Scaling](https://i.imgur.com/5keD8Mzh.png)
+![Dask Tasks Scaling](5keD8Mzh.png)
 
 ### Demo
 

@@ -17,19 +17,19 @@ According to [folks who enjoy outdoor activities](http://goeast.ems.com/three-ty
 
 The first type of fun is the most basic and generic form of fun. It is fun while you do it, it makes you happy in the moment, it often doesn't last much past that. This includes activities such as riding a rollercoaster or playing with a puppy.
 
-![Family on a rollercoaster](https://i.imgur.com/ip7a064l.png)
+![Family on a rollercoaster](ip7a064l.png)
 
 ## Type II
 
 The second type of fun is a little more complex, it isn't necessarily fun in the moment and doesn't give instant gratification, but in the long term after you make some progress you feel enjoyment and satisfaction. This includes activities like hiking, running or trying to beat the final boss on a video game.
 
-![Group of people hiking](https://i.imgur.com/KocIwpgl.png)
+![Group of people hiking](KocIwpgl.png)
 
 ## Type III
 
 The third type of fun is not fun at all. You do not enjoy doing it and you do not ever want to repeat the experience. The pleasure here comes from telling people about the experience. This could include things like the time you broke your tooth while playing rugby or when you dropped your phone down the toilet. It's not a pleasant thing to experience but it makes for excellent pub banter.
 
-![People playing rugby](https://i.imgur.com/IOk3O7Ul.png)
+![People playing rugby](IOk3O7Ul.png)
 
 ## Balance
 

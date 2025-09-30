@@ -53,7 +53,7 @@ Now that we know what is involved in maintaining a project let's discuss some wa
 
 The first place you generally interact with your community is via issues. In an earlier post in this series we discussed [issue templates](https://jacobtomlinson.dev/posts/2021/building-a-user-community-for-your-open-source-project/). Issue templates are helpful not just for your users, they help to ensure you have all the information you need when you come to respond.
 
-![Screenshot of Add issue template](https://i.imgur.com/5ZZPgRa.png)
+![Screenshot of Add issue template](5ZZPgRa.png)
 
 Don't hesitate to push back on users and ask for any missing information. The biggest thing that is going to be helpful to you is having a small reproducible example which you can use to dive into investigating the problem. If the user hasn't provided one then ask, link them to [advice on writing good issues](https://matthewrocklin.com/blog/work/2018/02/28/minimal-bug-reports) and move on.
 
@@ -63,7 +63,7 @@ If there are other members of your community who are knowledgeable in certain ar
 
 Sadly you do need to have a thick skin sometimes, users like this one appear from time to time. Try not to take things personally and remind folks that you are a volunteer.
 
-![Entitled user being rude to maintainers](https://i.imgur.com/miZbczo.png 'Image credit <a href="https://twitter.com/youyuxi/status/1414920369320906752?s=20">@youyuxi</a>')
+![Entitled user being rude to maintainers](miZbczo.png 'Image credit <a href="https://twitter.com/youyuxi/status/1414920369320906752?s=20">@youyuxi</a>')
 
 ## Reviewing Pull Requests
 

@@ -115,15 +115,15 @@ so that you can fix the problem.
 It will also do this when someone (or you) submits a pull request. Travis will see the pull request,
 test the code and then advise within the pull request window whether it is safe to merge.
 
-![Pull request waiting to be checked by Travis CI](https://i.imgur.com/IxsaFSe.png)
+![Pull request waiting to be checked by Travis CI](IxsaFSe.png)
 
 So if the build fails you will get a message like this:
 
-![Pull request failed by Travis CI](https://i.imgur.com/aThKVyp.png)
+![Pull request failed by Travis CI](aThKVyp.png)
 
 Or if it succeeds you get given the go ahead to merge:
 
-![Pull request successfully checked by Travis CI](https://i.imgur.com/kLZlnlD.png)
+![Pull request successfully checked by Travis CI](kLZlnlD.png)
 
 If you're following a GitHub workflow using pull requests this can be a great way to
 make sure that everything which goes into the master branch is already tested.

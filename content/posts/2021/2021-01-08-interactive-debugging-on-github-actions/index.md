@@ -88,7 +88,7 @@ We probably do not want to leak our connection information into our config. It's
 
 In your repository head to `Settings > Secrets` and create `DEBUG_HOST` and `DEBUG_PORT` secrets with the hostname and port that `ngrok` gave us.
 
-![Secrets](https://i.imgur.com/pc1Ldfz.png)
+![Secrets](pc1Ldfz.png)
 
 Then add a last step to your GitHub workflow.
 
@@ -116,7 +116,7 @@ In this last step we use a combination of `mkfifo`, `cat`, `sh` and `nc` to forw
 
 When your workflow gets to this step it will appear to run indefinitely with no output.
 
-![Workflow running](https://i.imgur.com/9LRAHpO.png)
+![Workflow running](9LRAHpO.png)
 
 But if we look at the `nc` session we have running on our local machine we should now see a shell prompt.
 

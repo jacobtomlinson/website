@@ -14,7 +14,7 @@ canonical: https://medium.com/informatics-lab/intro-to-earth-information-met-off
 canonical_title: the Informatics Lab Blog
 ---
 
-![](https://i.imgur.com/JxOLZgkh.png)
+![](JxOLZgkh.png)
 
 *This article was originally written for the the Met Office workshop run at the* [*Intro to Earth Information*](https://www.eventbrite.co.uk/e/intro-to-earth-information-with-googles-geographer-ed-parsons-tickets-53817586851) *event on the 12th of March 2019.*
 
@@ -36,7 +36,7 @@ These simulations are vast and constantly updating. Therefore working with them 
 
 In this workshop we will be working towards the goal of making important business decisions using probabilistic weather data. For the purpose of this session we are going to imagine a scenario where we are operating a local ferry company to move cars across a river. This business is affected by the weather and they cannot sail in high wind conditions. As the operator of this business we need to reduce the risk to our passengers and also the financial risk of missing crossings. Using the tools and data we have available we will produce a real time interactive report for the business' decision makers.
 
-![Example wind forecast that we will produce later](https://i.imgur.com/tePlRlL.png "Example wind forecast that we will produce later")
+![Example wind forecast that we will produce later](tePlRlL.png "Example wind forecast that we will produce later")
 
 However to get to this point we will need to start at the beginning and explore the tools, the data and finally the analysis we will need to do in order to get to this useful information.
 

@@ -32,19 +32,19 @@ To give ourselves a head start we are going to use [this `python-container-actio
 
 To get started head to the [template on GitHub](https://github.com/jacobtomlinson/python-container-action) and press the big green "Use this template" button.
 
-![Use this template](https://i.imgur.com/AduXSKU.png)
+![Use this template](AduXSKU.png)
 
 Give your new Action a repo name and optionally a description. In this example we are going to make an Action which lints YAML files, so I'm going to name it `gha-lint-yaml`.
 
-![gha-lint-yaml](https://i.imgur.com/piYQfQP.png)
+![gha-lint-yaml](piYQfQP.png)
 
 This will give us a new repository that is essentially a fork of the template.
 
-![Our new Action repo](https://i.imgur.com/Bido10A.png)
+![Our new Action repo](Bido10A.png)
 
 Also our template has a couple of GitHub Actions configured to test the Action (woo GitHub Action recursion). We can visit the "Actions" tab and hopefully see both tests have passed.
 
-![GitHub Actions running on our Action](https://i.imgur.com/rdeeANv.png)
+![GitHub Actions running on our Action](rdeeANv.png)
 
 We will come back to these tests later.
 
@@ -54,7 +54,7 @@ Lastly on the GitHub side for now let's clone our repository locally.
 $ git clone <your repo clone url>
 ```
 
-![Repo clone dialog](https://i.imgur.com/trmfLEJ.png)
+![Repo clone dialog](trmfLEJ.png)
 
 ## Writing our Action code
 
@@ -362,11 +362,11 @@ $ git push origin master
 
 We can head to the Actions tab on our repository and watch our `Lint` and `Integration Test` workflows run.
 
-![Lint test](https://i.imgur.com/kMO2iYn.png)
+![Lint test](kMO2iYn.png)
 
 Our lint step has passed, so we have definitely pushed valid Python code.
 
-![Integration test](https://i.imgur.com/v43FfdW.png)
+![Integration test](v43FfdW.png)
 
 Hooray our integration test has also passed. We can have a look at the outputs from our Action and the checks to see that our Action raised a warning in orange as expected and then correctly reported `1` warnings. Note that is shows the default `strict` value was filled in for us too.
 
@@ -382,11 +382,11 @@ To publish it we need to do a GitHub release. We can do this the usual way throu
 
 If you followed the publish dialog the "Publish this Action to the GitHub Marketplace" checkbox will already be checked. If you went in through the releases page you will need to check this box yourself.
 
-![Drafting a release](https://i.imgur.com/8bcBNMH.png)
+![Drafting a release](8bcBNMH.png)
 
 GitHub has already picked up some information from our `action.yml` file including the name and description. It is also warning us that we haven't set a logo or color for our Action. This is how you set the icon you will see next to your Action in the Marketplace.
 
-![Actions with their icons](https://i.imgur.com/1BRca09.png)
+![Actions with their icons](1BRca09.png)
 
 We will leave ours out for now which will just use the defaults but you can go back to your `action.yml` and set yours however you like.
 
@@ -396,11 +396,11 @@ You also need to set a version tag. My preference is to use SemVer and start at 
 
 Once you click "Publish Release" you will be taken to the release page. You should notice that on the left hand side it has a little blue "Marketplace" badge which means this release is available on the Marketplace.
 
-![Our first release](https://i.imgur.com/CbbIbDU.png)
+![Our first release](CbbIbDU.png)
 
 If you click that link you will be taken to the Marketplace page for your newly published action.
 
-![Marketplace listing for YAML file linter](https://i.imgur.com/Ib5xRjO.png)
+![Marketplace listing for YAML file linter](Ib5xRjO.png)
 
 The Marketplace listing will use your `README.md` from your repository and provide some quick links for people to get started with your Action.
 

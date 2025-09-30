@@ -38,15 +38,15 @@ $ git push --tags
 
 But if we head to [our releases page on GitHub](https://github.com/jacobtomlinson/is-number/releases) we just see a list of the tags we created.
 
-![Screenshot of the is-number releases page on GitHub](https://i.imgur.com/qf7xtWP.png)
+![Screenshot of the is-number releases page on GitHub](qf7xtWP.png)
 
 Instead of creating our tag from the command line we could also click the "Draft a new release" button on that page and create it from there. We can fill in our tag name, release name and add some release notes. We can also head over to our [commit history](https://github.com/jacobtomlinson/is-number/commits/master) to see what changed since our last version to help us write our notes.
 
-![Screenshot of the draft a new release page with 0.0.3 information filled in](https://i.imgur.com/pV5tl12.png)
+![Screenshot of the draft a new release page with 0.0.3 information filled in](pV5tl12.png)
 
 Now if we click publish release our tag will be created and our release automation will trigger as expected, but our releases page will have way more useful information for our users.
 
-![Screenshot of is-number releases page with 0.0.3 showing more information than the other releases](https://i.imgur.com/SALP8tt.png)
+![Screenshot of is-number releases page with 0.0.3 showing more information than the other releases](SALP8tt.png)
 
 ### Twitter
 

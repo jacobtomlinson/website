@@ -17,7 +17,7 @@ Running SSH on Binder has not been possible since late 2020. Due to abuse from b
 
 <div style="text-align: center;">
 
-![This is why we can't have nice things](https://i.imgur.com/mY4jZkS.png)
+![This is why we can't have nice things](mY4jZkS.png)
 
 </div>
 

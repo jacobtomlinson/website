@@ -36,7 +36,7 @@ I could then share this notebook with the rest of my team so that next month if 
 
 Jupyter notebooks are definitely a tool which fit nicely in the infrastructure world. I highly recommend you try them out!
 
-![Jupyter notebook doing AWS things](https://i.imgur.com/wr3ZABQh.png)
+![Jupyter notebook doing AWS things](wr3ZABQh.png)
 
 [jade-notebooks]: http://www.informaticslab.co.uk/technology/2016/09/12/try-jade.html
 [jupyter]: http://jupyter.org/

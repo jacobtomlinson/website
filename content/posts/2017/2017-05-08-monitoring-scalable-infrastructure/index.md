@@ -78,4 +78,4 @@ In the Lab we use a combination of Telegraf, Logstash, InfluxDB, Elasticsearch a
 
 _When I started thinking about this work I gave a talk about it at the TechExeter conference. [Listen to it here](https://soundcloud.com/techexeter/2016-track-1-jacob-tomlinson-monitoring-in-a-scalable-world)._
 
-![Monitoring screenshot](https://i.imgur.com/Ppq9uE2h.png)
+![Monitoring screenshot](Ppq9uE2h.png)

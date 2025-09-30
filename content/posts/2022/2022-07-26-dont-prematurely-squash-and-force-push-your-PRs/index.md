@@ -14,7 +14,7 @@ tags:
 
 A big frustration for me when reviewing Pull Requests on GitHub is coming back to a PR you've already reviewed to check on recent changes and be greeted with "We went looking everywhere, but couldn’t find those commits".
 
-![Screenshot of the "We went looking everywhere, but couldn’t find those commits" page on GitHub](https://i.imgur.com/txEYab4.png)
+![Screenshot of the "We went looking everywhere, but couldn’t find those commits" page on GitHub](txEYab4.png)
 
 ## Why does this happen?
 
@@ -32,11 +32,11 @@ When greeted with this page the reviewer has to check what they last wrote, chec
 
 In nearly every project I work on we set the "Squash and merge" button to be the default merge scheme for PRs.
 
-![Screenshot of the squash and merge button on GitHub](https://i.imgur.com/EQiVgVB.png)
+![Screenshot of the squash and merge button on GitHub](EQiVgVB.png)
 
 In some projects we have even explicitly disabled the other options such as merge commits and rebasing.
 
-![Screenshot of the GitHub configuration page showing only "squash and merge" is enabled](https://i.imgur.com/nbGvju8.png)
+![Screenshot of the GitHub configuration page showing only "squash and merge" is enabled](nbGvju8.png)
 
 This means that any time a PR is merged in we get the nice clean history on `main` with one commit per PR. This allows PRs to be messy and evolve over time, they can have many of commits and change direction multiple times without worrying about polluting the history. Once merged the commit message will include the PR number, so if anyone wants to dive back into the history of how that change evolved they can.
 

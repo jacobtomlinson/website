@@ -33,21 +33,21 @@ The first thing we are going to need to do is allow GitHub Actions to publish pa
 
 If we log into PyPI and head to our "Account Settings" page we will find an "API Tokens" section part way down the page.
 
-![PyPI API Tokens Page](https://i.imgur.com/KnHHiw8.png)
+![PyPI API Tokens Page](KnHHiw8.png)
 
 If you click "Add API Token" you will be able to give your token a name and select the scope. Let's create one called `is-number-publish` for our `is-number` package.
 
-![Creating is-number API Token](https://i.imgur.com/G8li22E.png)
+![Creating is-number API Token](G8li22E.png)
 
 The next page will show us our token. This is the only time we will see this token so we need to make note if it now.
 
 We are going to add this token to our `is-number` repo as a secret. If we head to our repo on GitHub and then the Settings > Secrets page we should see a "New Repository Secret" button.
 
-![New Repository Secret button](https://i.imgur.com/HH2xhcv.png)
+![New Repository Secret button](HH2xhcv.png)
 
 We will give our secret a name of `PYPI_PASSWORD` and paste in the token that PyPI provided us.
 
-![Our PYPI_PASSWORD secret](https://i.imgur.com/VDbYI1R.png)
+![Our PYPI_PASSWORD secret](VDbYI1R.png)
 
 Now our token is available for use in our GitHub Actions workflows.
 
@@ -148,17 +148,17 @@ $ git commit -m "Add automated releases on tags"
 $ git push --set-upstream origin add-cd
 ```
 
-![Pull request](https://i.imgur.com/jaHQc34.png)
+![Pull request](jaHQc34.png)
 
 We should see our new `Build Distribution` check in the list and if we look at the steps the `publish` step will be skipped because this wasn't a tagged push.
 
-![Skipped publish step](https://i.imgur.com/vp2Fhkn.png)
+![Skipped publish step](vp2Fhkn.png)
 
 ### Merging and releasing
 
 Once things have passed we should merge our PR on GitHub.
 
-![Merged PR](https://i.imgur.com/JDr1veT.png)
+![Merged PR](JDr1veT.png)
 
 When we have done that let's switch back to our `master` branch, pull down the changes and tag a `0.0.2` release.
 
@@ -173,15 +173,15 @@ $ git push --tags  # We aren't on a fork so we can omit the upstream
 
 Now if we head to the `Actions` tab of our repository we should see a `Build Distribution` workflow running for our `0.0.2` tag.
 
-![Build Distribution workflow running](https://i.imgur.com/D8EWLJt.png)
+![Build Distribution workflow running](D8EWLJt.png)
 
 If we head into this workflow we should see the "Publish Package to PyPI" step ran this time and shows our new version being uploaded.
 
-![Publish Package to PyPI step uploading 0.0.2](https://i.imgur.com/WeIxs41.png)
+![Publish Package to PyPI step uploading 0.0.2](WeIxs41.png)
 
 And if we head over to PyPI we should see our new version available.
 
-![is-number 0.0.2 on PyPI](https://i.imgur.com/YTPr7oo.png)
+![is-number 0.0.2 on PyPI](YTPr7oo.png)
 
 In the next few hours Conda Forge will notice this new version, raise a Pull Request on our feedstock, run the checks and auto merge if everything is ok. Then this version will also be available via `conda`. We don't need to do anything here unless we update our package dependencies, in which case the PR will fail and we would need to update it.
 

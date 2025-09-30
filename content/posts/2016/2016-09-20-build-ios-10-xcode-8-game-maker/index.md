@@ -32,11 +32,11 @@ As of Xcode 8 you must set the provisioning team for both the game target and th
 
 First set the team for the project.
 
-![Set Provisioning Team](https://i.imgur.com/yUirK3a.png)
+![Set Provisioning Team](yUirK3a.png)
 
 Then change the target dropdown to the tests and do the same there.
 
-![Change Target](https://i.imgur.com/Jsx42QS.png)
+![Change Target](Jsx42QS.png)
 
 This should be enough to get your game running on your device.
 
@@ -50,7 +50,7 @@ By defaut Game Maker enables the use of Game Center in your project. However as 
 
 To add the key simply open the project settings but double-clicking the root of the project, navigate to the `Capabilities` tab and you should see the error in the Game Center section. Click the "Fix Issue" button and the key will be added for you.
 
-![Game Center Fix Issue](https://i.imgur.com/freQG4m.png)
+![Game Center Fix Issue](freQG4m.png)
 
 ### Set Photo Library Usage description
 
@@ -60,7 +60,7 @@ As of iOS 10 you must set a descriptive sting for each privacy privilege you wan
 
 To do this expand the directory for your game in the project explorer, expand the `Supporting Files` directory and open the plist file named `ProjectName-Info.plist` where `ProjectName` is the name of your project. In this file you must add a property called `Privacy - Photo Library Usage Description`, which is available in the drop down list of keys, and set the value to a string describing your use of the photo library. If you do not use the photo library you can probably set this to anything, but I recommend you set it to something sensible like "Used to save game screenshots".
 
-![Privacy plist option](https://i.imgur.com/bH9IF0v.png)
+![Privacy plist option](bH9IF0v.png)
 
 ## Conclusion
 

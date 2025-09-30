@@ -53,7 +53,7 @@ If you have your Kubernetes environment configured we can already test out our n
 
 You should be able to follow the instructions that are printed on the screen to get access to our test deployment of our example chart and view our example nginx deployment running in your browser.
 
-![Nginx running in Safari](https://i.imgur.com/3MwF66E.png)
+![Nginx running in Safari](3MwF66E.png)
 
 We can clean this up again by running `helm delete example`.
 
@@ -61,7 +61,7 @@ We can clean this up again by running `helm delete example`.
 
 We should also push our git repository up to GitHub at this point. First we need to create our repository on GitHub:
 
-![Creating a GitHub repo](https://i.imgur.com/z9ucPbg.png)
+![Creating a GitHub repo](z9ucPbg.png)
 
 Then we need to push our local git repository up:
 
@@ -72,7 +72,7 @@ git push -u origin master
 
 *Note: We haven't committed our example chart yet so we will just see our initial README commit on GitHub.*
 
-![Our GitHub repo](https://i.imgur.com/q0hqgYi.png)
+![Our GitHub repo](q0hqgYi.png)
 
 ## Linting it with Travis CI
 
@@ -131,7 +131,7 @@ In our config we have chosen Python as our base language as that will make some 
 
 If we then commit and push our chart along with our Travis config and check out the build over at travis-ci.com we should see it successfully lint and pass the build.
 
-![Travis linting the chart and passing](https://i.imgur.com/QtFMtMY.png)
+![Travis linting the chart and passing](QtFMtMY.png)
 
 ## Setting up the static site on GitHub Pages
 
@@ -171,17 +171,17 @@ git push origin gh-pages
 
 We should now be able to switch to our `gh-pages` branch on GitHub and see our new branch with a separate lineage to the `master` branch containing just out `index.md` file.
 
-![Switching to gh-pages branch](https://i.imgur.com/QKLICEG.png)
+![Switching to gh-pages branch](QKLICEG.png)
 
 If you now visit the Settings section of your repository and scroll down to the GitHub Pages area you should see the URL that your GitHub Pages site is being hosted at.
 
 I'm actually going to take things one step further and [configure a custom domain](https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages) here for my Helm chart repository, but that's mainly because I've messed around with my GitHub account too much and the default option doesn't work for me. So this is totally optional, your chart will work just fine using the default options.
 
-![My GitHub Pages settings](https://i.imgur.com/N2kQO8H.png)
+![My GitHub Pages settings](N2kQO8H.png)
 
 Now if we click the link where it says our site is published (yours may look like `https://yourusername.github.io/reponame/`) we should see our example index page.
 
-![Hello GitHub Pages example](https://i.imgur.com/lsBsBly.png)
+![Hello GitHub Pages example](lsBsBly.png)
 
 ## Building the repository
 
@@ -228,7 +228,7 @@ When you run that command a bunch of things will happen here. The chart will be 
 
 We can check this by visiting our repository on GitHub and selecting the `gh-pages` branch again. We should now see our `index.yaml` file along with our first chart release, in my case called `example-0.1.0.tgz`.
 
-![First Chartpress release](https://i.imgur.com/yt9Owys.png)
+![First Chartpress release](yt9Owys.png)
 
 From our master branch on the command line we should be sure to commit our `chartpress.yaml` config file and push it too.
 
@@ -268,7 +268,7 @@ helm install helm-repo-example/example --name repo-example
 
 We should get the same output as before and if we follow the instructions we should see the same nginx page as before. This difference is this time anyone can add your Helm chart repo and install your chart.
 
-![Nginx installed from our chart repo](https://i.imgur.com/o7RfSda.png)
+![Nginx installed from our chart repo](o7RfSda.png)
 
 We could stop here if we wanted. We have a working Helm chart repo and some simple steps to increment versions and add new charts. However there are some extra steps we could do to make this extra helpful.
 
@@ -405,7 +405,7 @@ We then iterate over each chart, print out some information about the chart and 
 
 We can test this locally by running `jekyll serve` and navigating to http://localhost:4000.
 
-![Human readable chart page](https://i.imgur.com/J9Ytu1o.png)
+![Human readable chart page](J9Ytu1o.png)
 
 We can see here that our install instructions have been filled in with our information. _Note that it shows the URL as 0.0.0.0:4000 because we are testing locally, this will show the correct URL when built by GitHub pages._
 
@@ -431,7 +431,7 @@ git push origin gh-pages
 
 We can then visit our GitHub Pages URL and check we see the same thing we saw locally with the correct URL.
 
-![Live GitHub Pages site](https://i.imgur.com/ZBFECG9.png)
+![Live GitHub Pages site](ZBFECG9.png)
 
 Now that we have this Jekyll template in place every time we update our charts with Chartpress it will push a commit to the `gh-pages` branch and will automatically build a new version of the page pulling in new information from the `index.yaml` manifest, so we likely won't need to touch this code again unless we want to change the layout.
 
@@ -455,7 +455,7 @@ ssh-keygen -t rsa -b 4096 -q -N "" -C "" -f $PWD/deploy_key
 
 This will generate two files: `deploy_key` and `deploy_key.pub`. We now need to visit the "Deploy keys" section of our repository on GitHub and create a new key with the contents of our `deploy_key.pub` file. Give it a name and be sure to tick the `Allow Write Access` box so that we can push to the `gh-pages` branch with it. You'll be prompted for your password and then the key will be created.
 
-![Creating deploy key on GitHub](https://i.imgur.com/FZUtYKc.png)
+![Creating deploy key on GitHub](FZUtYKc.png)
 
 Next we need to encrypt our private key file and allow Travis to decrypt it. There are some neat tools in the Travis CI CLI tool for doing this. Instructions for installing and configuring the CLI can be found [here](https://github.com/travis-ci/travis.rb#readme).
 
@@ -519,7 +519,7 @@ git push && git push --tags
 
 Now if we wait a minute or two for Travis to run our build and deploy our tag we can then refresh our chart repo page and see the new `0.1.1` release listed in the table.
 
-![Chart repo showing 0.1.1 release](https://i.imgur.com/pkOvUO9.png)
+![Chart repo showing 0.1.1 release](pkOvUO9.png)
 
 Now in future to push new versions of our chart we just make our changes, tag our commit and push to GitHub, everything else is automated after that.
 
@@ -557,7 +557,7 @@ For more information check out the [Helm Hub docs](https://github.com/helm/hub/b
 
 Once you've done this and your PR has been merged you should see your charts listed on Helm Hub. When you make new releases of your chart Helm Hub will update within a few hours.
 
-![Helm Hub](https://i.imgur.com/UexNJfV.png)
+![Helm Hub](UexNJfV.png)
 
 ## Wrap Up
 

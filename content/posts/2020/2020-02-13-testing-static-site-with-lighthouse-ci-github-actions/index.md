@@ -17,7 +17,7 @@ thumbnail: lighthouse-ci
 
 When you build a website you want pages to load as quickly as possible for users. Google has a tool called [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) which you can run on your website to see various metrics about the page. I've used it in the past while working on my blog and other sites.
 
-![PageSpeed Insights](https://i.imgur.com/UPGxUDV.png)
+![PageSpeed Insights](UPGxUDV.png)
 
 This service is powered by an open-source tool that Google maintains called [Lighthouse](https://developers.google.com/web/tools/lighthouse). Lighthouse uses Chrome's rendering engine to test a URL and report metrics around performance, accessibility, progressive web apps, SEO and more.
 
@@ -155,15 +155,15 @@ gh pr create  # Hooray for the GitHub CLI https://cli.github.com/
 
 We can then look at the output of our GitHub Action in the Checks section of our PR.
 
-![Lighthouse CI running in GitHub Actions](https://i.imgur.com/5iNcBpy.png)
+![Lighthouse CI running in GitHub Actions](5iNcBpy.png)
 
 If we expand the Lighthouse CI step and have a look we can see that it ran Lighthouse once on each of the specified URLs and uploaded the reports to Google Cloud Storage.
 
-![Lighthouse CI output](https://i.imgur.com/gGJzo7I.png)
+![Lighthouse CI output](gGJzo7I.png)
 
 If we open up the report for the website root we see something similar to the PageSpeed Insights report above.
 
-![Lighthouse CI report](https://i.imgur.com/2yI8Xj1.png)
+![Lighthouse CI report](2yI8Xj1.png)
 
 As you can see this report is worse than the report above, this is because Lighthouse CI will profile for mobile by default and my website performs worse on mobile than desktop. I should probably fix that.
 
@@ -202,11 +202,11 @@ git push
 
 The report we saw before have an accessibility score of 79 to the home page (this is actually `0.79` in terms of the configuration threshold) so we are expecting our build to fail this time as we haven't made any changes to the site which will improve the accessibility.
 
-![Lighthouse CI assertion failing](https://i.imgur.com/TJnEpLm.png)
+![Lighthouse CI assertion failing](TJnEpLm.png)
 
 If we check the GitHub Actions log we can see our assertions here are failing.
 
-![Lighthouse CI assertion errors](https://i.imgur.com/lvKcKUc.png)
+![Lighthouse CI assertion errors](lvKcKUc.png)
 
 Great! We can have our CI pass/fail our Pull Requests based on information from the Lighthouse report. We can assert things like ["Does the page use responsive images?"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#audits_), ["Do our categories get a specific score"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#categories) or even ["Does my page download less than 200KB of CSS?"](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/assertions.md#budgets).
 

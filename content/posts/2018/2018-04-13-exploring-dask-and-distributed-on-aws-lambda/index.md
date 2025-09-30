@@ -18,7 +18,7 @@ I spent some time this week exploring whether it would be possible to run [Dask]
 
 My hypothesis was that by leveraging even high levels of service abstraction on public cloud platforms we would be able to make Dask and Distributed even more scalable and responsive.
 
-![](https://i.imgur.com/5SgfoeIh.png)
+![](5SgfoeIh.png)
 
 Introduction
 ------------

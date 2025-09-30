@@ -20,7 +20,7 @@ Now I must admit I am one for buying rubbish on eBay and usually fancy myself as
 
 I was looking for a 32GB micro SD card to go in my new android tablet, I had a look on Amazon and saw that they were somewhere around the &pound;15 mark. Then I went to eBay and saw that on there they were mostly the same except for a few which were around the &pound;6-8 mark. At this point I should&#8217;ve thought to myself &#8220;danger&#8221; but instead I simply though &#8220;wow they must be shipping straight out of China or something&#8221;, I wasn&#8217;t bothered about waiting for it to arrive as my tablet is on it&#8217;s way from Hong Kong and won&#8217;t be here any time soon.
 
-![Fake SD Card](https://i.imgur.com/CNO5hup.png)
+![Fake SD Card](CNO5hup.png)
 
 To my delight it arrived just a few days later. I opened it up and had a look at it and it looked like the real deal, I didn&#8217;t have any devices with me at the time to test it out so just popped it in my bag. I then thought to myself that I&#8217;d have a look and see if there are other sizes for this great price. I went back onto eBay and searched for 64GB SDXC Micro SD card, knowing that the SDHC format is limited to 32GB and has now been superseded by the SDXC format to support larger sizes. However what I found was people claiming to sell 64GB SDHC cards at around the &pound;10 mark.
 

@@ -91,7 +91,7 @@ $ sphinx-autobuild docs docs/_build/html
 
 Now if we navigate to `http://127.0.0.1:8000` in our browser we should be able to see our documentation.
 
-![Hello world sphinx documentation site](https://i.imgur.com/8q4mEod.png)
+![Hello world sphinx documentation site](8q4mEod.png)
 
 ## Content
 
@@ -151,7 +151,7 @@ Usage
 
 What I'm trying to do here is strike a balance between giving the user enough information to decide they want to use my package, but balance that with overwhelming them with too much text.
 
-![Index page copied from README](https://i.imgur.com/tfMwFWx.png)
+![Index page copied from README](tfMwFWx.png)
 
 One small thing to note here is that I've included two code examples here in my narrative documentation, so these will not be covered by my doctests. If I change the API then it may invalidate the documentation page by making the information incorrect.
 
@@ -204,7 +204,7 @@ Lastly we need to update the `toctree` in our `index.rst` file to include this n
 
 Now if we head back to our browser we should be able to click the new `API` link on the sidebar and see our auto generated page.
 
-![New API documentation page](https://i.imgur.com/FfP4xAU.png)
+![New API documentation page](FfP4xAU.png)
 
 Given our `is-number` project is pretty simple that's probably enough here. For your project you may want to add more pages and sections, perhaps your install is more complex and deserves it's own page.
 
@@ -214,17 +214,17 @@ Now that we have successfully created our documentation site we will want to hos
 
 A great service for this is [Read the Docs](https://readthedocs.org).
 
-![Read the Docs](https://i.imgur.com/y5i59D5.png)
+![Read the Docs](y5i59D5.png)
 
 Head to that website and sign up for an account (I just log in with my GitHub account).
 
 Then head to the [import a project](https://readthedocs.org/dashboard/import/) page so we can import our GitHub repo.
 
-![Add a project in RtD](https://i.imgur.com/3a1IE2t.png)
+![Add a project in RtD](3a1IE2t.png)
 
 The project information will be populated for us so we can just go ahead and continue.
 
-![is-number on RtD](https://i.imgur.com/MEvlp5d.png)
+![is-number on RtD](MEvlp5d.png)
 
 Now that we have our project set up let's also add a `.readthedocs.yml` config file to our project.
 
@@ -258,11 +258,11 @@ $ git commit -m "Add Sphinx documentation"  # Our pre-commit checks may not be h
 $ git push --set-upstream origin add-docs
 ```
 
-![Add docs pull request](https://i.imgur.com/8csux7Y.png)
+![Add docs pull request](8csux7Y.png)
 
 Now if we merge our PR Read the Docs will build our documentation for us and make it available at [https://is-number.readthedocs.io/](https://is-number.readthedocs.io/).
 
-![Our docs live on Read the Docs](https://i.imgur.com/fcy7lnQ.png)
+![Our docs live on Read the Docs](fcy7lnQ.png)
 
 In exchange for a small advert displayed on our documentation we now have free hosting for our documentation website.
 

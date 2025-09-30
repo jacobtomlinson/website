@@ -21,7 +21,7 @@ With some friends look out the window and each choose a weather symbol which rep
 
 Representing something as complex as the weather in a single symbol is hard. At [Mozfest 2015][mozfest-2015] we played a simple game with attendees to demonstrate how people perceive symbols differently. With [Mozfest 2016][mozfest-2016] planning underway we thought this would be a nice time to share this with you.
 
-![Notebooks with drawings of symbols in](https://i.imgur.com/pXPK5GEh.jpg)
+![Notebooks with drawings of symbols in](pXPK5GEh.jpg)
 
 ## The rules
 

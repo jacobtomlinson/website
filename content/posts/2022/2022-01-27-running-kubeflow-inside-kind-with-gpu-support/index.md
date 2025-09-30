@@ -216,11 +216,11 @@ Forwarding from [::1]:8080 -> 8080
 
 You can then open your browser and navigate to `127.0.0.1:8080` and login with the default credentials `user@example.com` and `12341234`.
 
-![Logging into Kubeflow](https://i.imgur.com/pB8bcNY.png)
+![Logging into Kubeflow](pB8bcNY.png)
 
 Wooo we are in!
 
-![Kubeflow dashboard](https://i.imgur.com/aw0irfU.png)
+![Kubeflow dashboard](aw0irfU.png)
 
 ## Testing our GPUs
 
@@ -230,15 +230,15 @@ Now let's check our GPUs are accessible and working.
 
 We can start by heading to the `Notebooks` section and creating a new [Jupyter](https://jupyter.org/) session. Give your notebook a name and select one GPU, leave everything else as the default.
 
-![Creating a notebook server called gpu-test with one GPU](https://i.imgur.com/YhTrCEV.png)
+![Creating a notebook server called gpu-test with one GPU](YhTrCEV.png)
 
 It'll take a little while to pull the image but then we should see the green check appear.
 
-![Notebooks status page showing our notebook as running](https://i.imgur.com/V1rCpHI.png)
+![Notebooks status page showing our notebook as running](V1rCpHI.png)
 
 We should be able to hit `Connect` to open up Jupyter Lab and run `nvidia-smi` in a terminal to check our GPU is available.
 
-![NVIDIA SMI command in Jupyter showing one GPU](https://i.imgur.com/Olxc7kq.png)
+![NVIDIA SMI command in Jupyter showing one GPU](Olxc7kq.png)
 
 ### Pipelines with GPUs
 
@@ -261,25 +261,25 @@ compiler.Compiler().compile(vectoradd, 'pipeline.yaml')
 
 Then download the `pipeline.yaml` file.
 
-![Downloading the pipeline.yaml file](https://i.imgur.com/ChdX6jJ.png)
+![Downloading the pipeline.yaml file](ChdX6jJ.png)
 
 Now back in the Kubeflow UI we can head to the `Pipelines` section and click `Upload pipeline`.
 
 Upload your file and fill in the name and description.
 
-![Creating a pipeline](https://i.imgur.com/4VLmSjT.png)
+![Creating a pipeline](4VLmSjT.png)
 
 Then click `Create experiment` and create an experiment for us to run our pipeline under.
 
-![Creating an experiment](https://i.imgur.com/kNTKpJe.png)
+![Creating an experiment](kNTKpJe.png)
 
 This will take us to the `Create run` dialog with everything filled in, so we can just click `Start`.
 
-![Creating a run](https://i.imgur.com/SpEZEgY.png)
+![Creating a run](SpEZEgY.png)
 
 Then if we click on our run and select our `vectoradd` step and open the logs we should see output similar to what we saw with `docker run` earlier.
 
-![Our successful run showing the vector add output logs](https://i.imgur.com/YeVT1Kr.png)
+![Our successful run showing the vector add output logs](YeVT1Kr.png)
 
 It all works!
 

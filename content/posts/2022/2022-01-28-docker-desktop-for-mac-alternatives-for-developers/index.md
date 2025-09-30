@@ -26,7 +26,7 @@ It also has a GUI for accessing your containers, images and settings.
 
 I've been a user [since the beta](https://www.docker.com/blog/docker-for-mac-windows-beta/) and it was called "Docker for Mac". In all honesty I miss the old UI.
 
-![Docker for Mac from 2016](https://i.imgur.com/A5eT7c7.png)
+![Docker for Mac from 2016](A5eT7c7.png)
 
 ## My Requirements
 
@@ -126,7 +126,7 @@ $ docker run --rm -p 8080:80 -v $HOME/test:/usr/share/nginx/html:ro nginx
 
 Now I can head to my browser and check that it works.
 
-![Web browser showing the test page](https://i.imgur.com/EOXMg93.png)
+![Web browser showing the test page](EOXMg93.png)
 
 Hooray! That worked, my volume mounted successfully and the port was made available on my laptop. I also successfully disabled my wifi and ran the command again and got the same result.
 
@@ -293,7 +293,7 @@ $ docker run --rm -p 8080:80 nginx
 
 This works so port mappings seem to be fine.
 
-![Default nginx page](https://i.imgur.com/KKSDMYT.png)
+![Default nginx page](KKSDMYT.png)
 
 Disabling my wifi and running the command again works, so network access is not required. However I did notice that hitting ctrl+c didn't stop the container and I had to manually run `podman rm -f <name>` to stop it. Not a problem but definitely different to `docker`.
 
@@ -496,7 +496,7 @@ $ docker run --rm -p 8080:80 -v $HOME/test:/usr/share/nginx/html:ro nginx
 
 We should now be able to access our container, but not at `localhost`. Minikube routes traffic through a virtual IP that we can see in the `minikube tunnel` output. So in this case we need to visit `http://192.168.64.3:8080`.
 
-![Our test page showing at the virtual IP](https://i.imgur.com/ptHTHQ4.png)
+![Our test page showing at the virtual IP](ptHTHQ4.png)
 
 This also works without WiFi.
 

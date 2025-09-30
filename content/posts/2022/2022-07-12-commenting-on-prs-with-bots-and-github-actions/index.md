@@ -59,6 +59,6 @@ We also specify the `GITHUB_TOKEN` but if you are using a PAT stored in a secret
 
 In order to trigger this action we need to merge it into the `main` branch. Then on new PRs our comment will be applied.
 
-![Bot comment showing up on new PR](https://i.imgur.com/6z7b5bD.png)
+![Bot comment showing up on new PR](6z7b5bD.png)
 
 Just remember that if you open PRs to update this action in the future it will trigger the version on main, not the one in the PR until it has been merged. Keep your secrets safe folks!

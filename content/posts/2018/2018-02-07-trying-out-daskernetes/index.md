@@ -22,7 +22,7 @@ The [Daskernetes](https://github.com/dask/daskernetes) python module allows you 
 
 This article is also a notebook which you can [download](https://gist.github.com/jacobtomlinson/f4365393463fc3247f494673de110263) and run on [pangeo.pydata.org](http://pangeo.pydata.org) or your own Kubernetes cluster. Pangeo is an awesome project we are involved in to provide a scalable scientific analysis environment!
 
-![Example of creating a cluster](https://i.imgur.com/pmorYzth.png)
+![Example of creating a cluster](pmorYzth.png)
 
 ## Installing
 
@@ -62,7 +62,7 @@ It is possible to replace the worker Docker image with our own [Informatics Lab 
 cluster
 ```
 
-![daskernetes widget](https://i.imgur.com/QQYid7Sh.png)
+![daskernetes widget](QQYid7Sh.png)
 
 You can access the Dask dashboard using the address information printed in the table, on Pangeo you can simply click the link!
 
@@ -76,7 +76,7 @@ client = distributed.Client(cluster.scheduler_address)
 client
 ```
 
-![Distributed client](https://i.imgur.com/1TFeehRh.png)
+![Distributed client](1TFeehRh.png)
 
 You can now use the client within your dask distributed workflow and scale the number of workers dynamically using the widget above.
 

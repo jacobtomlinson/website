@@ -18,7 +18,7 @@ thumbnail: obs
 
 A popular tool with streamers and YouTubers is [Open Broadcaster Software®️ Studio](https://obsproject.com/) or OBS for short. It allows you to compose scenes with cameras, desktop sharing, video snippets, images, web pages and more and then stream that video to services like Twitch or Mixer. You can also save recordings locally if you want to upload them to YouTube.
 
-![OBS Studio screenshot](https://i.imgur.com/sRUYmhm.png)
+![OBS Studio screenshot](sRUYmhm.png)
 
 While OBS Studio supports streaming via the [RTMP protocol](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol) and has a bunch of presets for services like [Twitch](https://www.twitch.tv/) you may also want to use your OBS scenes in video meeting applications like [Zoom](https://zoom.us/), [Hangouts](https://hangouts.google.com/) or [Teams](https://www.microsoft.com/en-gb/microsoft-365/microsoft-teams/group-chat-software).
 
@@ -32,13 +32,13 @@ To do this you can download and install the [OBS (macOS) Virtual Camera plugin](
 
 Head to the [releases page](https://github.com/johnboiles/obs-mac-virtualcam/releases) and download the latest `.pkg` file. Open the installer and follow the instructions.
 
-![OBS (macOS) Virtual Camera plugin installer](https://i.imgur.com/m99rqiV.png)
+![OBS (macOS) Virtual Camera plugin installer](m99rqiV.png)
 
 Once it is installed restart OBS Studio and any other application that you want to access your video stream.
 
 Then in OBS Studio click `Tools > Start Virtual Camera`. You'll need to do this every time you open OBS.
 
-![OBS Studio Start Virtual Camera menu](https://i.imgur.com/c7YX2HW.png)
+![OBS Studio Start Virtual Camera menu](c7YX2HW.png)
 
 ## Setting up your OBS scene
 
@@ -46,19 +46,19 @@ If you've used OBS before and are happy setting up your scene you can skip this 
 
 If you're new to OBS Studio you will just see a black screen and will have a single scene called `Scene`.
 
-![OBS Studio default scene](https://i.imgur.com/ymRYsUK.png)
+![OBS Studio default scene](ymRYsUK.png)
 
 You will at least want to add a `Video Capture Device` with your webcam. Click the `+` under sources and select `Video Capture Device`, give it a name and then choose the camera input you want to use.
 
-![Add Video Capture Device](https://i.imgur.com/lx7SKF8.png)
+![Add Video Capture Device](lx7SKF8.png)
 
-![Give the source a name](https://i.imgur.com/tD6Lu5h.png)
+![Give the source a name](tD6Lu5h.png)
 
-![Choose your webcam](https://i.imgur.com/MEfqTTM.png)
+![Choose your webcam](MEfqTTM.png)
 
 You can then move this source around on your scene, scale it, crop it, etc. I'm going to leave mine up in the top left corner so you can see that it is working in the video meeting software.
 
-![OBS with webcam](https://i.imgur.com/AOWQRJ9.png)
+![OBS with webcam](AOWQRJ9.png)
 
 ## Chat / Meeting software
 
@@ -68,17 +68,17 @@ Now let's look at using our OBS scene in some popular chat software.
 
 If you open Google Hangouts and start a new meeting you should immediately see your OBS scene selected as the video input.
 
-![Google Hangouts Example](https://i.imgur.com/NBY3TbU.png)
+![Google Hangouts Example](NBY3TbU.png)
 
 If you don't see this click the three dots in the corner of your video and head to `Settings > Video`. Then ensure you have selected `OBS Virtual Camera`.
 
-![Hangouts settings](https://i.imgur.com/APykHNp.png)
+![Hangouts settings](APykHNp.png)
 
-![Hangouts video settings](https://i.imgur.com/94Kg8Zf.png)
+![Hangouts video settings](94Kg8Zf.png)
 
 If you see a blue screen with the OBS logo in your camera output this means you forgot to click `Start Virtual Camera` in OBS.
 
-![OBS Virtual Camera stopped](https://i.imgur.com/43ITcL2.png)
+![OBS Virtual Camera stopped](43ITcL2.png)
 
 You may have noticed that your video feed is flipped, and in the OBS test card it says `Mirrored`. This is because many video meeting tools will show you a mirrored version of yourself, because this is what you are used to seeing in the mirror. Seeing a regular version of yourself can feel weird. But don't worry, just because you see a mirrored version doesn't mean that others in the meeting will. So don't try and "fix" it by flipping your camera in OBS.
 
@@ -88,15 +88,15 @@ When you join a call on Teams it will likely not select the OBS video source by 
 
 Open the menu with the three dots and open `Show device settings`.
 
-![Teams settings](https://i.imgur.com/LHnseEH.png)
+![Teams settings](LHnseEH.png)
 
 Then change camera to `OBS Virtual Camera`.
 
-![Teams camera settings](https://i.imgur.com/K6aPKHj.png)
+![Teams camera settings](K6aPKHj.png)
 
 You should then see your OBS scene, but again it will be flipped.
 
-![OBS virtual cam in Teams](https://i.imgur.com/Jbh0MMc.png)
+![OBS virtual cam in Teams](Jbh0MMc.png)
 
 _There is also a tiny switch camera icon in the bottom right, which you could use instead of opening the settings._
 
@@ -135,7 +135,7 @@ Now when you open Zoom you'll be prompted to enter your password and approve the
 
 You should then be able to choose the `OBS Virtual Camera` when you are in a meeting.
 
-![OBS Virtual Camera in Zoom](https://i.imgur.com/1rj5pU2.png)
+![OBS Virtual Camera in Zoom](1rj5pU2.png)
 
 _You can also head to `Video Settings...` and uncheck `Mirror my video` to see what everyone else sees._
 

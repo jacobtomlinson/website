@@ -88,13 +88,13 @@ $ git commit -m "Add issue template"
 $ git push --set-upstream origin add-issue-template
 ```
 
-![Screenshot of Add issue template pull request](https://i.imgur.com/jkqkRhP.png)
+![Screenshot of Add issue template pull request](jkqkRhP.png)
 
 Now if we head to "Issues" and create a new issue we are presented with our template.
 
-![Screenshot of issue template selection page](https://i.imgur.com/JCtG6vu.png)
+![Screenshot of issue template selection page](JCtG6vu.png)
 
-![Screenshot of Add issue template](https://i.imgur.com/5ZZPgRa.png)
+![Screenshot of Add issue template](5ZZPgRa.png)
 
 You can create more than one template, so let's add another one for feature requests called `.github/ISSUE_TEMPLATE/feature.md`.
 
@@ -111,7 +111,7 @@ labels:
 
 This one is a little less prescriptive, but we've included a comment asking the user to check that this hasn't already been requested. Now if I branch, commit, push, and merge this change I can see my second option on the "create issue" screen.
 
-![GitHub create issue page with bug and feature options](https://i.imgur.com/a9D2oE5.png)
+![GitHub create issue page with bug and feature options](a9D2oE5.png)
 
 You can also specify external links to be included in this multiple choice if your project uses other services for some query types. This is great because we can catch all our users who head over to raise an issue and direct them to the appropriate place.
 
@@ -135,7 +135,7 @@ contact_links:
 
 Now if I branch, commit, push and merge this I'll see a third option on the "create new issue" page.
 
-![GitHub create issue page with bug, feature and StackOverflow options](https://i.imgur.com/WKqcIIK.png)
+![GitHub create issue page with bug, feature and StackOverflow options](WKqcIIK.png)
 
 ### Forums
 
@@ -163,11 +163,11 @@ Popular chat services include [Slack](https://slack.com/), [Matrix](https://matr
 
 For `is-number` let's use Gitter. Head over to Gitter and log in with your GitHub Account. Then head to the [create community from repo](https://gitter.im/home/explore#createcommunity) page and find your GitHub repo.
 
-![Screenshot of Gitter repo selection page](https://i.imgur.com/Bct6sQg.png)
+![Screenshot of Gitter repo selection page](Bct6sQg.png)
 
 Then create your room.
 
-![Screenshot of is-number Gitter chat](https://i.imgur.com/glJ6EPS.png)
+![Screenshot of is-number Gitter chat](glJ6EPS.png)
 
 Folks can now head to [https://gitter.im/is-number/community](https://gitter.im/is-number/community), log in with their GitHub account and chat about `is-number`.
 
@@ -181,7 +181,7 @@ We should also add a link to our issue templates.
 
 Then branch, commit, push and merge it to see the result.
 
-![GitHub create issue page with bug, feature, StackOverflow and Gitter options](https://i.imgur.com/WjKqyAy.png)
+![GitHub create issue page with bug, feature, StackOverflow and Gitter options](WjKqyAy.png)
 
 ### FAQ/Troubleshooting
 
@@ -234,7 +234,7 @@ We also need to make sure we link it in the `toctree` in `index.rst`.
 
 Now if I branch, commit, push and merge this code I can head over to my documentation website and see my new FAQ section.
 
-![Screenshot of the is-number FAQ page](https://i.imgur.com/ksE6XnP.png)
+![Screenshot of the is-number FAQ page](ksE6XnP.png)
 
 ### Creating a joined up experience
 
@@ -266,7 +266,7 @@ In the badges section of each file add some more community badges.
 
 Then if we branch, commit, push and merge this change we can see our new badges on GitHub and our documentation.
 
-![Screenshot of both GitHub and our documentation showing the new badges](https://i.imgur.com/Pqo4rDl.png)
+![Screenshot of both GitHub and our documentation showing the new badges](Pqo4rDl.png)
 
 ## Summary
 

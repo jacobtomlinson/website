@@ -49,7 +49,7 @@ called "Xbox 360 Controllers".
 From this menu you'll be able to test your controller is working as well as
 make changes to the config.
 
-![Imgur](https://i.imgur.com/ikYGruw.png)
+![Imgur](ikYGruw.png)
 
 ### Updates
  * Add disable kext sign check

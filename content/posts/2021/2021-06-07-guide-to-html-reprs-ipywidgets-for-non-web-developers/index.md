@@ -76,13 +76,13 @@ These reprs are going to be primarily used when debugging so giving the user som
 
 If we jump over to Jupyter we can see that the same code also shows our repr inline in our notebook.
 
-![Python repr displayed in Jupyter Lab](https://i.imgur.com/V94H5mN.png)
+![Python repr displayed in Jupyter Lab](V94H5mN.png)
 
 But Jupyter is a web application. The plain text repr we are seeing on the page has been rendered as HTML in order for us to view it.
 
 If we inspect the element on the page using our browser's built in debugging tools we can see that it has been wrapped in a `<pre>` element which ensures that whitespace including new lines is preserved and that has been wrapped in a`<div>` element with some classes attached.
 
-![Inspecting a plain text repr in the browser](https://i.imgur.com/Ur1NO3t.png)
+![Inspecting a plain text repr in the browser](Ur1NO3t.png)
 
 Jupyter is awesome because it allows us to also define a `_repr_html_` method which is used to generate that HTML. This allows us to do something richer, more bespoke and more stylized for Jupyter users.
 
@@ -109,13 +109,13 @@ class MyAwesomeObject(object):
         """
 ```
 
-![Our first HTML repr](https://i.imgur.com/646GZPE.png)
+![Our first HTML repr](646GZPE.png)
 
 Now instead of printing our regular repr to the screen we can see our rich text HTML repr which puts the class name in a `<h3>` heading element and shows the attributes as a bullet point list.
 
 We can also inspect this in our browser tools and see that there is no `<pre>` block, instead it has been replaced with the contents of our HTML method.
 
-![Inspecting the HTML repr](https://i.imgur.com/URZvwsM.png)
+![Inspecting the HTML repr](URZvwsM.png)
 
 Awesome! Now let's make some nice HTML reprs!
 
@@ -161,7 +161,7 @@ To style our content we are going to place a block of CSS above our HTML, all ma
 
 For example we can change the text colour of the `<h3>` element and it will display like this.
 
-![HTML repr with a red title](https://i.imgur.com/mD7MSPO.png)
+![HTML repr with a red title](mD7MSPO.png)
 
 It is important to be aware that this CSS applies to the whole page, so we just made all `<h3>` objects red. Therefore it is much better to use class selectors and class names that are unique to your repr.
 
@@ -228,7 +228,7 @@ Remember those classes that Jupyter put on the surrounding `<div>` earlier? Thos
         return style + body
 ```
 
-![HTML repr with a table](https://i.imgur.com/zefI0P2.png)
+![HTML repr with a table](zefI0P2.png)
 
 Here we have switched our list to a table using `<table>`, `<tr>` (table row) and `<td>` (table cell) elements. We've also used an `!important` flag in our CSS to ensure that option is selected. Typically `!important` flags are bad practice in CSS and you should adjust your style hierarchy instead. However in this case we have no control over the style hierarchy, we are limited to the CSS that we have created.
 
@@ -265,7 +265,7 @@ Next we might want to think more about styling our text. We can of course add CS
         return style + body
 ```
 
-![Html repr with table and bold text](https://i.imgur.com/sp3UbEO.png)
+![Html repr with table and bold text](sp3UbEO.png)
 
 Here we've wrapped the attribute names in `<b>` elements to bold the text.
 
@@ -282,7 +282,7 @@ There are a bunch of different elements which we could use to modify our text.
 
 For example here is how these different elements look in Jupyter.
 
-![Preview of different text styles](https://i.imgur.com/CWVQan4.png)
+![Preview of different text styles](CWVQan4.png)
 
 HTML is primarily about providing structure and semantics but historically has elements for styling too. It is more common these days to use CSS for styling and only use HTML for semantics. For our use case though my preference is to keep our repr code as lean as possible and `<b>` takes up much less room than a CSS rule to increase the font weight.
 
@@ -292,7 +292,7 @@ The next thing to think about is layout. This covers order of elements on the pa
 
 If we look at our `<h3>` element for example we can see that there are it quite a large margin at the top which pushes the text down.
 
-![h3 element with margin](https://i.imgur.com/2BXEoB2.png)
+![h3 element with margin](2BXEoB2.png)
 
 This would make sense if it were a true level three title element in a piece of text, but in this context we are using that element for size and weight and we do not want that extra padding. Let's change that margin to something smaller.
 
@@ -328,7 +328,7 @@ This would make sense if it were a true level three title element in a piece of 
         return style + body
 ```
 
-![HTMl repr with smaller top margin](https://i.imgur.com/QmT58g1.png)
+![HTMl repr with smaller top margin](QmT58g1.png)
 
 Now the padding is much smaller and things align better.
 
@@ -348,7 +348,7 @@ The horizontal rule element `<hr>` creates a horizontal line across the page. Th
 <sup>This is a footnote.</sup>
 ```
 
-![Example using hr element](https://i.imgur.com/EfCMqFT.png)
+![Example using hr element](EfCMqFT.png)
 
 Web browsers also try to collapse whitespace so even if your HTML includes line breaks they will likely not be honored.
 
@@ -357,7 +357,7 @@ The quick brown fox
 jumps over the lazy dog.
 ```
 
-![Sentence rendered on one line](https://i.imgur.com/TSzPvuF.png)
+![Sentence rendered on one line](TSzPvuF.png)
 
 Despite there being a break in the text the browser renders this sentence on one line. There are a few solutions to this.
 
@@ -368,7 +368,7 @@ The quick brown fox<br />
 jumps over the lazy dog.
 ```
 
-![Sentence rendered with a line break](https://i.imgur.com/tXWD6Cq.png)
+![Sentence rendered with a line break](tXWD6Cq.png)
 
 We could also wrap our text in a `<pre>` element which tells the browser to preserve all whitespace. However it is worth noting that this element is also commonly used for quotes and to wrap code blocks and the default Jupyter styling adds a margin to the left hand side.
 
@@ -379,7 +379,7 @@ jumps over the lazy dog.
 </pre>
 ```
 
-![Sentence rendered with a line break and left margin](https://i.imgur.com/8yY3szi.png)
+![Sentence rendered with a line break and left margin](8yY3szi.png)
 
 Lastly we could use `<p>` elements. Semantically a `<p>` section represents a paragraph, so it shouldn't really be used for breaking up sentences but instead ensuring there is correct spacing between paragraphs. Commonly this adds the line break and also some margins.
 
@@ -392,7 +392,7 @@ A mad boxer shot a quick, gloved jab to the jaw of his dizzy opponent.
 </p>
 ```
 
-![Two sentences broken up into paragraphs](https://i.imgur.com/cI7FUNG.png)
+![Two sentences broken up into paragraphs](cI7FUNG.png)
 
 ### What about images?
 
@@ -408,7 +408,7 @@ If the image you want to use is very small you could create a base64 encoded ver
 
 Base64 encoding an image means that the image will be converted to a string of text which can be passed entirely in HTML. For a quick example I've gone to Google Slides and drawn a little logo for our object.
 
-![Logo design in google Slides](https://i.imgur.com/dvaaDmh.png)
+![Logo design in google Slides](dvaaDmh.png)
 
 Nothing fancy here, just some coloured text in a fun font. Then I can take a screenshot of this and run it through a [base64 encoder](https://www.gieson.com/Library/projects/utilities/base64-image/). This gives me some HTML that I could use in my HTML repr.
 
@@ -467,7 +467,7 @@ class MyAwesomeObject(object):
         return style + body
 ```
 
-![HTML repr with base64 png logo](https://i.imgur.com/n4kGUjA.png)
+![HTML repr with base64 png logo](n4kGUjA.png)
 
 Despite being easy to work with there are a number of downsides to using PNGs like this.
 
@@ -484,11 +484,11 @@ SVGs are a vector graphic standard which complements the HTML standard. This mea
 
 For drawing SVGs I like to use Figma. It's a free design tool which is pretty beginner friendly. Here I've quickly created the same piece of text that I did in Google Slides with the same font and colours.
 
-![Drawign in Figma](https://i.imgur.com/YISWCTX.png)
+![Drawign in Figma](YISWCTX.png)
 
 But in Figma I can right click on the text and copy it as an SVG.
 
-![Copy as SVG](https://i.imgur.com/LOfm6C0.png)
+![Copy as SVG](LOfm6C0.png)
 
 ```svg
 <svg width="68" height="52" viewBox="0 0 68 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -504,7 +504,7 @@ We can see that it is wrapped in a top level `<svg>` element with some size and 
 
 SVG really shines when you want draw simple shapes though. Let's head back to Figma and draw a blue circle with a black outline.
 
-![Figma drawing of a blue circle with a black outline](https://i.imgur.com/JXWghed.png)
+![Figma drawing of a blue circle with a black outline](JXWghed.png)
 
 If we copy the SVG for this element we see it is much simpler.
 
@@ -567,4 +567,4 @@ We can recreate our SVG circle using CSS.
         return style + body
 ```
 
-![HTML repr with styled div icon](https://i.imgur.com/krpJCPd.png)
+![HTML repr with styled div icon](krpJCPd.png)

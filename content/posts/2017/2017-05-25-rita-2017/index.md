@@ -14,4 +14,4 @@ thumbnail: award
 My team won a Real IT Award for Innovation! [Check out the full post here](https://archived.informaticslab.co.uk/events/2017/05/25/rita-2017.html).
 
 
-[![The Lab at RITA 2017](https://i.imgur.com/psaL7DE.png)](http://static.real-it-awards.co.uk/gallery-2017.php#)
+[![The Lab at RITA 2017](psaL7DE.png)](http://static.real-it-awards.co.uk/gallery-2017.php#)

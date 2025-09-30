@@ -78,14 +78,14 @@ Creating this `Client` object within the Python global namespace means that any 
 
 The Dask distributed scheduler also has a dashboard which can be opened in a web browser. As you can see in the output above the default location for this is on the scheduler machine at port `8787`. So you should be able to navigate to `http://MachineA:8787`.
 
-<a href="https://i.imgur.com/VzQIVpI.png">
-<img alt="Dask dashboard" src="https://i.imgur.com/VzQIVpI.png" width="100%" align="center">
+<a href="VzQIVpI.png">
+<img alt="Dask dashboard" src="VzQIVpI.png" width="100%" align="center">
 </a>
 
 If you are using Jupyter Lab as your Python environment you are also able to open individual plots from the dashboard as windows in Jupyter Lab with the [Dask Lab Extension](https://github.com/dask/dask-labextension).
 
-<a href="https://i.imgur.com/SNk6F0H.png">
-<img alt="Dask Lab Extension" src="https://i.imgur.com/SNk6F0H.png" width="100%" align="center">
+<a href="SNk6F0H.png">
+<img alt="Dask Lab Extension" src="SNk6F0H.png" width="100%" align="center">
 </a>
 
 ### Recap
