@@ -34,7 +34,7 @@
 {{ errorf "Unable to get resource %q" $font_roboto_regular_path }}
 {{ end }}
 
-{{ $featured := resources.GetRemote "https://i.imgur.com/f5AJKsQ.png" }}
+{{ $featured := resources.GetRemote "https://jacobtomlinson.dev/og-image.png" }}
 
 {{ $featured = $featured.Filter (images.Text $.LinkTitle (dict
 "color" "#000"
