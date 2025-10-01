@@ -31,5 +31,5 @@ done
 The GitHub search limits you to 1000 PRs at a time with no pagination beyond that, so if you've made more than 1000 PRs you might need to do it in a few time range batches.
 
 ```bash
-gh search prs --author="@me" --limit 1000 "created:2010-01-01..2019-12-31"
+gh search prs --author="@me" --limit 1000 "created:2010-01-01..2019-12-31" | ...
 ```
