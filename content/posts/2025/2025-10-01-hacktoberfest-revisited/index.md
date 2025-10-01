@@ -18,7 +18,7 @@ Usually I end up contributing to projects I own/maintain and this fills up my qu
 
 My plans is to revisit old projects I've contributed to in the past. I've made thousands of PRs on GitHub over the years, so I'm going to go back to a repo I've worked on before and be a second-time contributor instead.
 
-Here's a quick bash command that uses the `gh` GitHub CLI tool to find participating repos you've contributed to before.
+Here's a quick bash command that uses the [`gh` GitHub CLI tool](https://cli.github.com/) to find participating repos you've contributed to before.
 
 ```bash
 gh search prs --author="@me" --limit 1000 | \
