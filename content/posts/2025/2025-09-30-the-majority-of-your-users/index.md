@@ -2,7 +2,7 @@
 author: Jacob Tomlinson
 title: The Majority Of Your Users
 date: 2025-09-30T00:00:00+00:00
-draft: no
+draft: false
 categories:
   - blog
 tags:
