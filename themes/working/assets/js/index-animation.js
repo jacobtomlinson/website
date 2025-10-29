@@ -1,5 +1,8 @@
 function initBinary() {
   canvas = document.getElementById("animation");
+  if (!canvas) {
+    return;
+  }
   content = "";
   characters = "01";
   for (var i = 0; i < 12000; i++) {
@@ -9,6 +12,9 @@ function initBinary() {
     }
   }
   canvas.innerHTML = content;
+
+  setInterval(animateBinary, 100);
+  window.addEventListener("mousemove", animateBinary);
 }
 
 function animateBinary() {
@@ -26,5 +32,3 @@ function animateBinary() {
 }
 
 window.addEventListener("load", initBinary);
-setInterval(animateBinary, 100);
-window.addEventListener("mousemove", animateBinary);
