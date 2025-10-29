@@ -15,7 +15,7 @@ canonical: https://medium.com/informatics-lab/my-pragmatic-workshop-format-c3a4e
 canonical_title: the Informatics Lab Blog
 ---
 
-![Mozfest workshop facilitators meeting](https://i.imgur.com/65WqItbh.png "Mozfest workshop facilitators meeting")
+![Mozfest workshop facilitators meeting](65WqItbh.png "Mozfest workshop facilitators meeting")
 
 Figuring out the right format for a workshop can be tricky. There are so many factors; what is the subject, do people need any equipment, how many people will attend, how many facilitators will there be, where will it be held, what level of expertise will the participants have, the list goes on...
 

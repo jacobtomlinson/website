@@ -124,7 +124,7 @@ In the terminal simply run `opsdroid`. This should immediately drop you into the
 
 _If you are using the official Jupyter docker image you will have a default username of `jovyan` which is the [name given to a user of Jupyter Notebooks](https://github.com/jupyter/docker-stacks/issues/358), so that's why it will call you `jovyan`._
 
-![Hello opsdroid](https://i.imgur.com/4967YRs.png)
+![Hello opsdroid](4967YRs.png)
 
 ### Customise our skill
 
@@ -132,12 +132,12 @@ Now that we have tested our skill let's change it to do some more things. If you
 
 _If you have experience with Python development you may notice that a skill is just a Python module._
 
-![Example skill layout](https://i.imgur.com/Ea0SHca.png
+![Example skill layout](Ea0SHca.png
 )
 
 Click the `__init__.py` file to open up the skill code.
 
-![Example skill code](https://i.imgur.com/CMtK1TJ.png)
+![Example skill code](CMtK1TJ.png)
 
 ### The layout of a skill
 
@@ -177,7 +177,7 @@ Then when it has chosen a string and formatted it responds to the message with t
 
 This function matches against any message which contains the words `hi`, `hello`, `hey` or `hallo`. This is a very basic regular expression which doesn't do much checking. For example those words could exist within other words and would make no sense to respond to.
 
-![Bad match](https://i.imgur.com/Fc1Ded2.png
+![Bad match](Fc1Ded2.png
 )
 
 In the chat above I said `do not say hello to this message` which not only matches `hello` in that sentence but also the word `hi` within the word `this`. Causing the bot to respond.
@@ -198,7 +198,7 @@ The `^` and `$` operators ensure that there is no other text between the beginni
 
 Now if you tell the bot to `reload` and then try that message again it will not match because there are other characters either side of the words `hello` and `hi`.
 
-![HiHello](https://i.imgur.com/AWLdW3O.png)
+![HiHello](AWLdW3O.png)
 
 ## Automating interesting things with your bot
 
@@ -225,5 +225,5 @@ async def chuck_facts(opsdroid, config, message):
     await message.respond(body["value"])
 ```
 
-![Chuck fact](https://i.imgur.com/GYQFGHY.png)
+![Chuck fact](GYQFGHY.png)
 

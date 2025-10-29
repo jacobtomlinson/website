@@ -92,6 +92,8 @@ Here are some notable projects that use EffVer (in alphabetical order):
 - [Kr8s](https://github.com/kr8s-org/kr8s)
 - [LightGBM](https://lightgbm.readthedocs.io/en/latest/Installation-Guide.html#versioning)
 - [Matplotlib](https://github.com/matplotlib/matplotlib)
+- [napari](https://github.com/napari/napari)
+- [Parcels](https://github.com/OceanParcels/Parcels)
 - [Zarr](https://zarr.readthedocs.io/en/latest/developers/contributing.html#versioning)
 
 _Want to add your project to this list, [make a PR here](https://github.com/jacobtomlinson/website/blob/master/content/posts/2024/2024-01-15-effver/index.md)._

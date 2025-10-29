@@ -98,11 +98,11 @@ $ git commit -m "Add GitHub Actions workflow"
 $ git push
 ```
 
-![Pytest running in GitHub Actions](https://i.imgur.com/MYNJzc6.png)
+![Pytest running in GitHub Actions](MYNJzc6.png)
 
 Now whenever someone makes a Pull Request against our repo these checks will run to ensure that the tests still pass in their version.
 
-![A Pull Request with all Actions passing](https://i.imgur.com/W7cGONz.png)
+![A Pull Request with all Actions passing](W7cGONz.png)
 
 ## Testing formatting
 
@@ -234,7 +234,7 @@ $ git commit -m "Add pre-commit action"
 $ git push
 ```
 
-![Pre-commit GitHub Action passed](https://i.imgur.com/dVoO6Ab.png)
+![Pre-commit GitHub Action passed](dVoO6Ab.png)
 
 ## Coverage
 
@@ -288,7 +288,7 @@ $ git push
 
 Then once the Action has completed you can head to Codecov and log in with Your GitHub account. From there you should be able to navigate to your project and view your coverage report.
 
-![Coverage report for is-number](https://i.imgur.com/OIVHGV9.png)
+![Coverage report for is-number](OIVHGV9.png)
 
 Codecov will also run as a check on your pull requests.
 
@@ -300,7 +300,7 @@ To wrap up let's add some more badges to our README file. We already have a badg
 
 For GitHub Actions we are going to use their own badges. So head to the "Actions" tab in your repo and select the `CI` workflow from the list on the left. Then on the right hand side click the three dot menu dropdown and select "Create status badge".
 
-![Create status badge button](https://i.imgur.com/2bfxnfC.png)
+![Create status badge button](2bfxnfC.png)
 
 A box will pop up with a markdown example, but as we are using RST just copy the URL for the badge.
 
@@ -338,7 +338,7 @@ $ git commit -m "Add more badges"
 $ git push
 ```
 
-![is-number README with badges](https://i.imgur.com/wkQQKPQ.png)
+![is-number README with badges](wkQQKPQ.png)
 
 ## Summary
 

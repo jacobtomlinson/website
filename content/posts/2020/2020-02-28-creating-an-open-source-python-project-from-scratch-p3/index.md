@@ -29,11 +29,11 @@ To get started you'll need to [sign up for a GitHub Account](https://github.com/
 
 Then you click the "New repository" button in the drop-down menu in the top right.
 
-![Create new repo button](https://i.imgur.com/jNGaRmg.png)
+![Create new repo button](jNGaRmg.png)
 
 Then you need to give your repository a name and a description and click the "Create repository" button.
 
-![Create new repo form](https://i.imgur.com/JMrRt58.png)
+![Create new repo form](JMrRt58.png)
 
 Lastly you need to tell your local git repo that you have created a remote repository and that you want to push your code up there.
 
@@ -50,7 +50,7 @@ git push origin master --tags
 
 Now if you reload the page we should see our codebase available on GitHub.
 
-![GitHub Repository](https://i.imgur.com/PP8fIqd.png)
+![GitHub Repository](PP8fIqd.png)
 
 Note our `README` is automatically displayed on the page and we can see our commit history in the file explorer.
 
@@ -150,7 +150,7 @@ https://pypi.org/project/is-number/0.0.1/
 
 We can now visit our package on PyPI.
 
-![is-number on PyPI](https://i.imgur.com/oenISzo.png)
+![is-number on PyPI](oenISzo.png)
 
 Our users can now install it with `pip`, you can try it yourself if you like.
 
@@ -172,11 +172,11 @@ It is common place to provide links like this using badges. Many different tools
 
 If you head to shields.io, search for PyPI and select the then click the PyPI Version badge.
 
-![shields.io PyPI version](https://i.imgur.com/ipgyfUP.png)
+![shields.io PyPI version](ipgyfUP.png)
 
 We can then enter the name of our package and it will show us a preview of our badge and give us an opportunity to copy an RST link to the badge.
 
-![shields.io badge preview](https://i.imgur.com/E9YGgE1.png)
+![shields.io badge preview](E9YGgE1.png)
 
 Then we should head to our `README.rst` file and update it with our badge and install instruction.
 
@@ -208,7 +208,7 @@ git push origin master
 
 We can now reload our page on GitHub and see our updated `README`.
 
-![README with PyPI badge and pip install command](https://i.imgur.com/xxTvSyj.png)
+![README with PyPI badge and pip install command](xxTvSyj.png)
 
 ### Conda Forge
 

@@ -23,13 +23,13 @@ RAPIDS allows you to **scale up** your workload by reimplementing low-level part
 
 Together, Dask and RAPIDS allow you to **scale up** and **scale out** production Python workloads at the same time.
 
-![Diagram of scale out and scale up with RAPIDS](https://i.imgur.com/LSC9fze.png "Image <a href=https://docs.rapids.ai/overview>https://docs.rapids.ai/overview</a>")
+![Diagram of scale out and scale up with RAPIDS](LSC9fze.png "Image <a href=https://docs.rapids.ai/overview>https://docs.rapids.ai/overview</a>")
 
 ## Dask
 
 Dask enables you to distribute your work by creating a [Directed Acyclic Graph (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph) representation of your code at runtime. This graph is then passed to a scheduler that allocates individual tasks to worker processes. These worker processes can be on a single machine, allowing you to make use of all your CPU cores, or on many machines allow you to scale to hundreds or even thousands of CPU cores.
 
-![Animated Dask graph executing](https://i.imgur.com/5EELrOL.gif "Image <a href=https://dask.org>https://dask.org</a>")
+![Animated Dask graph executing](5EELrOL.gif "Image <a href=https://dask.org>https://dask.org</a>")
 
 While Dask can be used directly to create these graphs using the [Delayed interface](https://docs.dask.org/en/latest/delayed.html) there are also implementations of common Python APIs which have already been converted over.
 
@@ -75,7 +75,7 @@ This way you can both **scale up** by using a GPU and also **scale-out** using m
 
 ## Recap
 
-![Table of support](https://i.imgur.com/j93lTQd.png)
+![Table of support](j93lTQd.png)
 
 ## Further Reading
 

@@ -142,9 +142,9 @@ Forwarding from [::1]:8080 -> 8080
 
 Navigate to `127.0.0.1:8080` and login with the default credentials `user@example.com` and `12341234`.
 
-![KubeFlow login page](https://i.imgur.com/pB8bcNY.png)
+![KubeFlow login page](pB8bcNY.png)
 
-![KubeFlow home page](https://i.imgur.com/aw0irfU.png)
+![KubeFlow home page](aw0irfU.png)
 
 ### Installing the Dask Operator
 
@@ -184,13 +184,13 @@ That's it, the users of our KubeFlow cluster should now be able to leverage Dask
 
 Let's head into the KubeFlow Notebooks tab on the left of the UI and launch ourselves a Jupyter Notebook server. We can leave everything as default here and just give it a name.
 
-![Launching a Jupyter server](https://i.imgur.com/TMvhSz4.png)
+![Launching a Jupyter server](TMvhSz4.png)
 
 Then once our notebook is running we can hit "Connect" to open Jupyter Lab in a new tab.
 
-![Running notebook server in KubeFlow](https://i.imgur.com/xBoQxV8.png)
+![Running notebook server in KubeFlow](xBoQxV8.png)
 
-![Jupyter Lab](https://i.imgur.com/LaA9vAw.png)
+![Jupyter Lab](LaA9vAw.png)
 
 To create our Dask cluster we have two choices, we can either create a [`DaskCluster` custom resource](https://kubernetes.dask.org/en/latest/operator_resources.html#daskcluster) configuration in YAML and apply it with `kubectl` or we can use the Python API that is provided by the `dask_kubernetes` package.
 
@@ -202,7 +202,7 @@ Let's start with the Python API. While our environment likely already has Dask i
 $ pip install dask-kubernetes
 ```
 
-![Installing dask-kubernetes with pip](https://i.imgur.com/SzB2RXe.png)
+![Installing dask-kubernetes with pip](SzB2RXe.png)
 
 Then we can import the `KubeCluster` class to create our cluster.
 
@@ -218,7 +218,7 @@ cluster = KubeCluster(name="demo")
 
 By instantiating this class with the default configuration it will create a `DaskCluster` resource for us automatically, and in turn the operator will create `Pod` resources for the Dask scheduler and three workers.
 
-![Dask cluster widget showing three workers](https://i.imgur.com/jy2Gj6F.png)
+![Dask cluster widget showing three workers](jy2Gj6F.png)
 
 We can scale this cluster up and down either using the scaling tab in the Jupyter widget or by calling `.scale()` on our cluster.
 
@@ -228,7 +228,7 @@ cluster.scale(5)
 
 Note that the widget updates automatically to reflect the new cluster configuration.
 
-![Scaling to 5 workers](https://i.imgur.com/Tq6ryaq.png)
+![Scaling to 5 workers](Tq6ryaq.png)
 
 We can also use `kubectl` to see what has been created for us.
 
@@ -275,11 +275,11 @@ arr = da.random.random((10_000, 1_000, 1_000), chunks=(1000, 1000, 100))
 result = arr.mean().compute()
 ```
 
-![Code example running in notebook](https://i.imgur.com/gnVy62c.png)
+![Code example running in notebook](gnVy62c.png)
 
 The example array we create here is ~75GB in size with chunks of ~750MB. When we started our Notebook server earlier we left the default memory option of 0.5GB so if we were working with NumPy we wouldn't be able to fit even one chunk in memory, let alone the whole array. But with Dask we can leverage the cluster which gives us access to more memory and runs these tasks in parallel.
 
-![Dashboard running tasks](https://i.imgur.com/xN9f0vh.png)
+![Dashboard running tasks](xN9f0vh.png)
 
 When we are all finished with our cluster we can shut it down to stop using up Kubernetes resources.
 

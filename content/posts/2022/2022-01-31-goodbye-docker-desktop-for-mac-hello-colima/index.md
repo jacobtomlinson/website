@@ -35,7 +35,7 @@ Colima builds on that foundation to run a VM with Docker installed and it also c
 
 First things first I'm going to quit Docker Desktop and drag it to the trash.
 
-![Dragging Docker Desktop to the trash](https://i.imgur.com/zneCPlJ.png)
+![Dragging Docker Desktop to the trash](zneCPlJ.png)
 
 Next we also need to remove the VM image that Docker Desktop created, this can be pretty large so we don't want to miss deleting it.
 
@@ -97,7 +97,7 @@ docker run --rm -p 8080:80 nginx
 
 I can head to my browser and check that it works.
 
-![Web browser showing the nginx welcome page](https://i.imgur.com/YGiBLEb.png)
+![Web browser showing the nginx welcome page](YGiBLEb.png)
 
 Hooray! That worked, our container started and our ports even mapped correctly.
 

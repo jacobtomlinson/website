@@ -14,11 +14,11 @@ author: Jacob Tomlinson
 canonical: https://medium.com/informatics-lab/hypothetical-datasets-70381cce8a9
 canonical_title: the Informatics Lab Blog
 ---
-![Imgur](https://i.imgur.com/Ng5H2X1h.png)
+![Imgur](Ng5H2X1h.png)
 
 In Theo's previous posts on [storing high momentum data](https://medium.com/informatics-lab/creating-a-data-format-for-high-momentum-datasets-a394fa48b671) and its [accompanying metadata](https://medium.com/informatics-lab/how-to-and-not-to-handle-metadata-in-high-momentum-datasets-8a058141d904) we get some interesting insights into the future of cloud based data storage. In this post I'm going to cover how we are working with today's [NetCDF](https://www.unidata.ucar.edu/software/netcdf/)-based challenges, by making assumptions!
 
-![xkcd #1339: When You Assume](https://i.imgur.com/bmEXperh.png "xkcd #1339: When You Assume - <https://xkcd.com/1339/>")
+![xkcd #1339: When You Assume](bmEXperh.png "xkcd #1339: When You Assume - <https://xkcd.com/1339/>")
 
 Every day we upload ~100K NetCDF files of varying sizes into [AWS S3](https://aws.amazon.com/s3/) which total around 7TB per day. We make these publicly available for research under the [AWS Earth Open Data scheme](https://registry.opendata.aws/uk-met-office/). These files comprise four different datasets which are produced by four of our operational models ([Global Atmospheric](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/global-atmospheric-hi-res-10km-deterministic-beta-service-parameters-080818.pdf), [UKV](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/uk-atmospheric-hi-res-model-ukv-beta-service-parameters-080818.pdf), [MOGREPS-G](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/mogreps-global-ensemble-beta-service-parameters-080818.pdf) and [MOGREPS-UK](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/mogreps-uk-ensemble-beta-service-parameters-080818.pdf)). Each model has a number of variables such as air temperature, humidity and rainfall rate which can be thought of as sub-datasets.
 
@@ -52,7 +52,7 @@ A cube is a set of metadata and a [NumPy](https://www.numpy.org/) array-like obj
 
 In our hypotheticube implementation we need to do two things: avoid errors when files do not exist (our `NetCDFDataProxy` will throw an exception if the file doesn't exist), and clone our initial cube replacing the metadata and `NetCDFDataProxy` object as many times as we need to.
 
-![Process for constructing a hypotheticube](https://i.imgur.com/AAJH25ih.png "Process for constructing a hypotheticube")
+![Process for constructing a hypotheticube](AAJH25ih.png "Process for constructing a hypotheticube")
 
 To avoid errors when we hit missing data we have created a new version of the `NetCDFDataProxy` called `CheckingNetCDFDataProxy`. This implementation checks for the file's existence before loading the array into memory and if the file doesn't exist it creates a fully masked array of the same shape and size and returns that instead. This is important because we can't be certain that all of the files in our dataset exist. Some files may still be working their way through the processing pipline and are not available on S3 yet. They could be uploaded to S3 but still replicating through S3's eventual consistency model. Or even some models may have stalled part way through and only a subset of the data was actually generated. Those files hypothetically could exist, but don't, so we need to mask them out if we can't find them.
 
@@ -60,9 +60,9 @@ In order to create our hypotheticube we need an actual existing NetCDF file to s
 
 Once we have generated all of our syntheticubes we then use Iris's built in functionality to merge and concatenate all of these into our final hypotheticube.
 
-![A template cube with three dimensions](https://i.imgur.com/3KGDJDoh.png "A template cube with three dimensions")
+![A template cube with three dimensions](3KGDJDoh.png "A template cube with three dimensions")
 
-![The resulting hypotheticube with five dimensions made up of 12,936 syntheticubes](https://i.imgur.com/8ZOLZ9ah.png "The resulting hypotheticube with five dimensions made up of 12,936 syntheticubes")
+![The resulting hypotheticube with five dimensions made up of 12,936 syntheticubes](8ZOLZ9ah.png "The resulting hypotheticube with five dimensions made up of 12,936 syntheticubes")
 
 ### Intake Hypothetic
 
@@ -78,13 +78,13 @@ The catalogs we've designed for iris-hypothetic contain information on all combi
 
 We take the product of the iterative metadata to construct our dataframe of all possible combinations of metadata. Once we have this we need to work out the file path for the file representing each set of metadata. To do this our catalog stores the Python import location of a function which will take a row of metadata and return the file path. We do this because our file paths could be something simple like `/path/to/dir/{frt}_{fp}_{variable}.nc` or in our case it is a hashed filename which can be reconstructed from the metadata. We use this function along with the metadata to construct the series of file paths.
 
-![An example hypothetic intake catalog](https://i.imgur.com/x8yChimh.png "An example hypothetic intake catalog")
+![An example hypothetic intake catalog](x8yChimh.png "An example hypothetic intake catalog")
 
 Once we have our dataframe of metadata and series of file paths we need our template cube. To get this we begin hunting through our list of paths trying to load each one. We can't guarantee they all exist so we just keep trying until we find one that loads, once one does we assume it is representative of all the other files and use it as our template. If we get all the way to the end of the list without finding a working template cube we raise an error.
 
 Once we have these three objects we pass them to iris-hypothetic from within our intake driver and return the resulting hypotheticube.
 
-![Hypotheticube loaded from intake](https://i.imgur.com/sU9qU0ih.png "Hypotheticube loaded from intake")
+![Hypotheticube loaded from intake](sU9qU0ih.png "Hypotheticube loaded from intake")
 
 ### MO AWS Earth
 
@@ -105,19 +105,19 @@ hypotheticube = intake.cat.mo_aws_earth.{model}.{variable}.read()
 
 If you're using this in [IPython](https://ipython.org/) or a [Jupyter Notebook](https://jupyter.org/) you can tab complete the models and variables.
 
-![Tab completing the UKV model variables from the mo_aws_earth catalog](https://i.imgur.com/OXaJP4jh.png "Tab completing the UKV model variables from the mo_aws_earth catalog")
+![Tab completing the UKV model variables from the mo_aws_earth catalog](OXaJP4jh.png "Tab completing the UKV model variables from the mo_aws_earth catalog")
 
 ## Exploring the data
 
 Now that we have our hypotheticubes we can begin exploring. Let's load a hypotheticube of soil temperature from our UKV model.
 
-![Loading a soil temperature hypotheticube from an intake catalog](https://i.imgur.com/YEP5Cuch.png "Loading a soil temperature hypotheticube from an intake catalog")
+![Loading a soil temperature hypotheticube from an intake catalog](YEP5Cuch.png "Loading a soil temperature hypotheticube from an intake catalog")
 
 ### Cube sizes
 
 The first thing we might want to do is to check how big these hypothetical arrays are. We have a utility function within our [`jade_utils`](https://anaconda.org/informaticslab/jade_utils) package called `estimate_cube_size` to estimate your in-memory size of a cube based on the shape and dtype.
 
-![Cube size estimate for soil temperature at depth from UKV](https://i.imgur.com/5LXAXvZh.png "Cube size estimate for soil temperature at depth from UKV")
+![Cube size estimate for soil temperature at depth from UKV](5LXAXvZh.png "Cube size estimate for soil temperature at depth from UKV")
 
 If we were to load our lazy array into memory it would take up 194.8GiB of RAM. If we want to do any science with it we need quite a lot of memory.
 
@@ -135,13 +135,13 @@ We can be certain about the model run frequency because we run the model and we 
 
 To test this we can collapse all of our spacial dimensions with a mean to leave forecast reference time and forecast period and plot them. This will cause us to try to load every syntheticube of data and map out the dimensions we have made assumptions about.
 
-![Spatial mean of soil temperature to leave 2D time domain.](https://i.imgur.com/gteL7oo.png "Spatial mean of soil temperature to leave 2D time domain.")
+![Spatial mean of soil temperature to leave 2D time domain.](gteL7oo.png "Spatial mean of soil temperature to leave 2D time domain.")
 
 We can see in our plot that our assumption was mostly right. Some runs go to five days, some go out to 2.5 days, but the majority stop at one day. This is due to forecasts being expensive to run, and refining our prediction of the immediate future is more valuable than predicting further out.
 
 We can also see that all of the recent forecasts (on the right hand side of the plot) are missing. This is due to the 24 hours delay which is added to the free AWS Earth data to distinguish it from our commercial offering.
 
-![Another view of the 2D time domain.](https://i.imgur.com/lbG97ZH.png "Another view of the 2D time domain.")
+![Another view of the 2D time domain.](lbG97ZH.png "Another view of the 2D time domain.")
 
 I had a closer look at the longer runs to see if there was any interesting finer detail. From this view the last run appears to only be part way through making it's way to S3.
 
@@ -155,9 +155,9 @@ We could update our catalogs to optimise this, perhaps by putting the long, medi
 
 One big benefit of having dask powered data arrays is being able to distribute our calculations. Calculating the mean above would have taken roughly two hours using a single core on my laptop, and that's not including downloading the data. However I used [dask-kubernetes](http://kubernetes.dask.org/en/latest/) on our [Pangeo](http://pangeo.io/) cluster to parallelise the operation, which took only four minutes.
 
-![Creating a dask kubernetes cluster](https://i.imgur.com/tLhc9mm.png "Creating a dask kubernetes cluster")
+![Creating a dask kubernetes cluster](tLhc9mm.png "Creating a dask kubernetes cluster")
 
-![Progress of calculating the mean with 30 cores](https://i.imgur.com/2aJ14yp.gif "Progress of calculating the mean with 30 cores")
+![Progress of calculating the mean with 30 cores](2aJ14yp.gif "Progress of calculating the mean with 30 cores")
 
 ## Summary of assumptions
 

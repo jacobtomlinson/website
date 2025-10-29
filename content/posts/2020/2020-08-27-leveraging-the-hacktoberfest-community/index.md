@@ -34,13 +34,13 @@ In an ideal scenario a contributor will take a whole documentation file or multi
 
 However in my experience many contributors, in an attempt to hit the t-shirt metric quickly, will raise one PR per mistake they find. They also often stop once they have raised four PRs.
 
-![A PR which removes two full stops](https://i.imgur.com/URdOsMr.png)
+![A PR which removes two full stops](URdOsMr.png)
 
 Another problem is that most open source projects have their documentation written in english, but the majority of the world does not speak/write english as their first language. This means that often a PR to fix language can accidentally make it worse. Being fluent in english is absolutely not a requirement to be a software developer, but writing good documentation is a skill and to improve existing documentation it helps greatly to be proficient in the language that it is written in.
 
 Another common type of contribution is adding/removing words which do not change the meaning of a sentence. Sometimes this makes things harder to read, sometimes it just has no effect at all.
 
-![Imgur](https://i.imgur.com/hBFZg5N.png)
+![Imgur](hBFZg5N.png)
 
 Lastly many contributors will make changes to documentation in order to improve grammar, but without understanding the context of the project they are working on. This often results in changes which improve readability making the content incorrect or invalid.
 
@@ -58,17 +58,17 @@ When a contributor comes in to "fix" code style problems they will likely break 
 
 Sometimes a contributor will raise a PR which adds a feature to a project which is totally unrelated. Often this is a small feature that a novice user has learned to implement in a tutorial and now they are trying to find a home for it. I have seen users in the past copy and paste the same contribution to many projects in the hope that someone will incorporate it. In worst case scenarios this has been a standalone Python script which they've dumped somewhere random in the codebase.
 
-![Imgur](https://i.imgur.com/92SqTRq.png)
+![Imgur](92SqTRq.png)
 
 ### Bizarre miscellaneous contributions
 
 I have also seen a whole range of bizarre contributions. Having folks PR in an unrelated Python script is definitely a bit strange, here's another one where someone contributed a C++ bubble sort script to a Python project.
 
-![Imgur](https://i.imgur.com/vEEp8RO.png)
+![Imgur](vEEp8RO.png)
 
 I've also seen folks randomly delete chunks of code.
 
-![Imgur](https://i.imgur.com/8XBtJA8.png)
+![Imgur](8XBtJA8.png)
 
 Or just duplicate an existing file with a new name.
 
@@ -80,7 +80,7 @@ If you engage in Hacktoberfest by using the `hacktoberfest` label you will attra
 
 It is tempting to just go through the backlog of open issues and liberally apply the `hacktoberfest` label. But if an issue has been open for a long time and nobody has picked it up it is likely that the instructions are unclear or their is not much motivation to resolve it. Pointing novice contributors at issues like this will probably not result in anyone picking them up.
 
-![Label added and removed for 2018 and added again in 2019](https://i.imgur.com/mI8EEwU.png)
+![Label added and removed for 2018 and added again in 2019](mI8EEwU.png)
 
 It is much better to create new issues targeted at Hacktoberfest contributors, we go into this in depth in a minute.
 
@@ -100,7 +100,7 @@ Write this file like it is a tutorial on how to contribute to your project.
 
 You can create [pull request templates](https://docs.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository) for your project by creating a file called `.github/pull_request_template.md`. When new users open a PR the form will be auto populated with this template. This is useful for pointing users to your contributing docs and providing them with a checklist of the things you expect from them.
 
-![Example PR template](https://i.imgur.com/rV4aBzg.png)
+![Example PR template](rV4aBzg.png)
 
 Keep it short. Ask contributors to justify the change, link to the issue it is related to, describe how they tested it and check off any requirements you may have.
 

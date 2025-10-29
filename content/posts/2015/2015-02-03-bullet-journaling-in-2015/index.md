@@ -40,7 +40,7 @@ You will certainly have come across this with a regular to do list. You start ea
 
 This is just one form of rapid logging, Ryder expands it with further symbols and I've added a couple of my own. Here are the symbols I use:
 
-![Imgur](https://i.imgur.com/zo6hxHH.png)
+![Imgur](zo6hxHH.png)
 
 * Incomplete task - A task which needs to be done.
 * Complete task - A task which has been completed.
@@ -55,7 +55,7 @@ Sometimes a task may need to be broken down into sub items. To signify this I in
 
 This is often useful for breaking up a task into small chucks, this would be represented by a tick box with indented tick boxes below for each chunk. The parent box would only be ticked once all child boxes have been ticked.
 
-![Imgur](https://i.imgur.com/2efAwt3.png)
+![Imgur](2efAwt3.png)
 
 It is also useful for meetings. A meeting starts with a meeting symbol and one line description of the meeting topic, then indented underneath I use Info items to take general meeting noted and tick boxes for actions I must do after the meeting.
 
@@ -68,7 +68,7 @@ The first three pages of my bullet journal are numbered _i_ through _iii_ and ar
 
 I also add symbols to _month lists_ and _idea pages_.
 
-![Imgur](https://i.imgur.com/fDacIu6.png)
+![Imgur](fDacIu6.png)
 
 ## Page Types
 
@@ -81,7 +81,7 @@ page.
 
 I then add to this page with task items throughout the month. Generally items added to this page are long term goals which wouldn't be suitable for _day lists_.
 
-![Imgur](https://i.imgur.com/dx1aRxD.png)
+![Imgur](dx1aRxD.png)
 
 ### Day lists
 
@@ -91,7 +91,7 @@ A day list is my task list for the day. Every day I sit down at my desk, turn to
 
 I use this page throughout the day to add items I have to do, take meeting notes, and record information. The idea behind this page is that there are no unticked items on the page when I'm ready to call it a day. When I get to the end of the day incomplete items are either migrated to the _month list_ if I feel they will take longer than expected or migrated to the following day.
 
-![Imgur](https://i.imgur.com/n48N9ka.png)
+![Imgur](n48N9ka.png)
 
 In my 2014 journal I would add multiple days on the same page if there was space. I found this problematic when looking back over old entries as it was hard to find a specific day. It also stopped me from prematurely adding "tomorrows" page if there was something I though "oh I'll do that tomorrow" as I wouldn't know how much space to leave for the rest of today. To remedy this I've decided to start a new
 page for each day even if I've only written two lines on the previous page.
@@ -102,7 +102,7 @@ When working on a project I turn to the next available double spread in the jour
 
 Project pages are added to the index. If I attend a meeting relating to the project it is likely that I will take notes on a _day list_ so that is also added to the page numbers for that project.
 
-![Imgur](https://i.imgur.com/nsJRtRd.png)
+![Imgur](nsJRtRd.png)
 
 ### General lists
 

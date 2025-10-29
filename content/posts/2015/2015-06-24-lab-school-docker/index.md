@@ -109,7 +109,7 @@ _Images are usually named following the convention of `author/image`, however we
 
 We are also telling docker to link port `80` on the container to port `80` on the host. This means we can visit our instance in our web browser and we should see the "It works!" apache default page.
 
-![Apache test page](https://i.imgur.com/Mn5vDbr.png)
+![Apache test page](Mn5vDbr.png)
 
 If you see the same page in your browser then you've successfully created an apache container.
 
@@ -200,7 +200,7 @@ docker run -p 80:80 my-httpd
 
 Excellent, now when you navigate to your EC2 instance in your browser you should see  your lovely new index page.
 
-![Custom apache test page](https://i.imgur.com/1PzBUyL.png)
+![Custom apache test page](1PzBUyL.png)
 
 ## Exercise 4: Docker Compose
 
@@ -401,7 +401,7 @@ docker-compose up
 
 Refresh your EC2 instance's page in your browser and you should now see the default django test page.
 
-![Django test page](https://i.imgur.com/IFC3Yf9.png)
+![Django test page](IFC3Yf9.png)
 
 ## Conclusion
 

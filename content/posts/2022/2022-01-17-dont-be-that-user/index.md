@@ -113,7 +113,7 @@ If the project is backed by a large organisation then you may have an existing b
 
 Lastly you always have the option to fork the project. This is often said in spite because it is no small undertaking but for many it can be a viable path forwards. By taking ownership and responsibility for a fork you have full control over it's development and can make it exactly what you need it to be.
 
-But most of all ![Be excellent to each other, party on dudes](https://i.imgur.com/zJcoRpK.gif).
+But most of all ![Be excellent to each other, party on dudes](zJcoRpK.gif).
 
 ## Further reading
 

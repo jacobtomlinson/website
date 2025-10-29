@@ -19,11 +19,11 @@ I first noticed this last night when on my Macbook at home. I went to www.google
 
 But when I got to work this morning and logged onto my RHEL box and tried to get onto Stack Overflow again I went to www.google.co.uk (well used firefox's search bar) and typed "stackoverflow" and again I have been presented with the result but linking to www.doioig.gov.
 
-![Google Search for Stack Overflow](https://i.imgur.com/NwpQL7P.png)
+![Google Search for Stack Overflow](NwpQL7P.png)
 
 It seems that www.doioig.gov is the page for "Office of Inspector General" and appears to be a very harmless US government website.
 
-![DOI Website](https://i.imgur.com/C9tvnt2.png)
+![DOI Website](C9tvnt2.png)
 
 I did a quick search for "stackoverflow doioig" (as you can see in the screenshots) to see if anyone else had seen this issue but there is nothing in the search that appears relevant at time of writing.
 

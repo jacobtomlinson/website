@@ -124,7 +124,7 @@ Here's an example of the event details what we created:
 >
 > We look forward to seeing you there!
 >
-> **Image**: https://i.imgur.com/2i1tMNG.png
+> **Image**: 2i1tMNG.png
 >
 > **Live video content**: NA
 >
@@ -287,13 +287,13 @@ When writing our material we said we were "targeting users who were either new t
 
 We could've been more specific and asked folks to rank their ability. But the more complex the questions the less likely folks will fill them out, so it's a balancing act.
 
-![Forms response chart. Question title: Have you used Dask before? 39% no, 61% yes.](https://i.imgur.com/T1loyeb.png)
+![Forms response chart. Question title: Have you used Dask before? 39% no, 61% yes.](T1loyeb.png)
 
 #### Did we cover all the topics you were expecting? And if not, what was missing?
 
 Depending on the complexity of your project you may have to make compromises on what you can cover in the time you have. Dask is a large project and so we couldn't cover everything, so we wanted to check we had covered the basics.
 
-![Forms response chart. Question title: Did we cover all the topics you expected? 22% no, 78% yes.](https://i.imgur.com/la3dqrA.png)
+![Forms response chart. Question title: Did we cover all the topics you expected? 22% no, 78% yes.](la3dqrA.png)
 
 Most of the feedback we had from folks who answered no were asking about advanced topics like Kubernetes, Google Cloud deployments, deep dives into internal workings, etc. I'm satisfied that this shouldn't have been in this tutorial, but it adds weight to our plans to run deep dives in the future.
 
@@ -305,13 +305,13 @@ Setting the pace is hard. If you're targeting a range of abilities then it's eas
 
 Our feedback shows that folks were generally happy, but we are leaning on the side of being too fast. Given that we are filling our allocated time this probably indicates that we should cut a little content in order to slow things down.
 
-![Forms response chart. Question title: How was the pace? 70% Just right, 26% Too fast, 4% Too slow.](https://i.imgur.com/mHPNmwp.png)
+![Forms response chart. Question title: How was the pace? 70% Just right, 26% Too fast, 4% Too slow.](mHPNmwp.png)
 
 #### Which sections did you find more informative?
 
 By asking what sections were most informative we can identify things to cut in future if we do need to slow things down. It also shows areas where we may want to spend more time and add more content.
 
-![Forms response chart. Question title: Which sections did you find more informative?](https://i.imgur.com/XLzSEw4.png)
+![Forms response chart. Question title: Which sections did you find more informative?](XLzSEw4.png)
 
 #### What would be your preferred platform for a tutorial like this?
 
@@ -319,7 +319,7 @@ We had to make a decision on which video platform to use based on the criteria w
 
 Our results confirmed that folks were happy with Zoom. These results may be a little biased given that we used Zoom, but I'm confident that we can keep using it and folks will have a good experience.
 
-![Forms response chart. Question title: What would be your preferred platform for a tutorial like this? 70% Zoom, <5% for options including YouTube, Twitch, Jitsi, and No preference](https://i.imgur.com/fMxTZOK.png)
+![Forms response chart. Question title: What would be your preferred platform for a tutorial like this? 70% Zoom, <5% for options including YouTube, Twitch, Jitsi, and No preference](fMxTZOK.png)
 
 #### Would you recommend the tutorial to a colleague?
 
@@ -327,7 +327,7 @@ The last thing to check is that folks had a good time. It gives you great pleasu
 
 _These results may be biased because if folks wouldn't recommend it they probably wouldn't bother to fill out a survey. But hey, I'll take it!_
 
-![Forms response chart. Question title: Would you recommend the tutorial to a colleague? 100% Yes.](https://i.imgur.com/RzrXvfn.png)
+![Forms response chart. Question title: Would you recommend the tutorial to a colleague? 100% Yes.](RzrXvfn.png)
 
 ## Wrap up
 

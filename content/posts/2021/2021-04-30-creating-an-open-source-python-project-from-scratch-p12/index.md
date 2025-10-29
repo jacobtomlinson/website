@@ -82,7 +82,7 @@ We also need to include this in the table of contents in `docs/index.rst`. I'm g
 
 Now if we run `sphinx-autobuild docs docs/_build/html` we can preview our new documentation section.
 
-![Screenshot of Sphinx preview showing the Contributing page](https://i.imgur.com/AOFNc9u.png)
+![Screenshot of Sphinx preview showing the Contributing page](AOFNc9u.png)
 
 This is a good foundation for our contributing docs, but we can add more.
 
@@ -296,11 +296,11 @@ $ git commit -m "Add contributing and maintaining docs
 $ git push --set-upstream origin contributing-maintaining-docs
 ```
 
-![Screenshot of merged contributing-maintaining-docs PR](https://i.imgur.com/w4wZMsg.png)
+![Screenshot of merged contributing-maintaining-docs PR](w4wZMsg.png)
 
 With our changes merged we can see GitHub will add links to our contributing documentation in various places including the bottom right when users open a new issue.
 
-![Screenshot of new issue with contributing guidelines link](https://i.imgur.com/g7A5s12.png)
+![Screenshot of new issue with contributing guidelines link](g7A5s12.png)
 
 ### PR templates
 
@@ -342,7 +342,7 @@ Here we've pointed folks to the contributing guidelines in case they haven't see
 
 Now when a user raises a pull request the body will be pre-populated to help them fill in all the info we need.
 
-![Screenshot of new PR with template filled in](https://i.imgur.com/qQSXizZ.png)
+![Screenshot of new PR with template filled in](qQSXizZ.png)
 
 ## Summary
 

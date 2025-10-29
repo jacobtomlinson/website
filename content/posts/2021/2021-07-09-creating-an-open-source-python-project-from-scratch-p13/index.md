@@ -129,33 +129,33 @@ Remember that just because we are throwing together a quick logo now doesn't mea
 
 I am also going to keep things as simple as possible when it comes to design tools. Personally I have fallen in love with [Figma](https://www.figma.com) lately which is a free online drawing and design tool. But to draw our `is-number` logo let's use [Google Slides](https://www.google.co.uk/slides/about/), which I expect most readers will have used before. You could also use Microsoft Powerpoint or any other tool you are familiar with. As long as it can draw simple shapes and text then you're all good.
 
-![Empty google slides page](https://i.imgur.com/EPv6bVd.png)
+![Empty google slides page](EPv6bVd.png)
 
 Before we start drawing we want to consider where our logo will be used. On most social media it will be cropped into a small circle. On our documentation and GitHub pages we may want it to be larger and take the place of the page title. Therefore it's common for most logos to be made up of a word and a symbol. These can be related like the `N` logo used by Netflix alongside their full `Netflix` logo.
 
-![Netflix logo](https://i.imgur.com/4VFHQmW.png)
+![Netflix logo](4VFHQmW.png)
 
 Or this can be an image or icon alongside the company name which can also be used independently. Like the Dropbox logo.
 
-![Dropbox logo](https://i.imgur.com/OTt7niu.png)
+![Dropbox logo](OTt7niu.png)
 
 For `is-number` let's start by just writing the name of the project in a font we like. We will get onto fonts later but I've chosen `Roboto Mono` here because it is both available in Google Slides and also for use in other places via [Google Fonts](https://fonts.google.com/specimen/Roboto+Mono).
 
-![is-number written in the font Roboto Mono](https://i.imgur.com/cVwftHJ.png)
+![is-number written in the font Roboto Mono](cVwftHJ.png)
 
 I think for this design I am going to include a logo that is separate from the name of the project, but to keep things simple I'm still going to make it out of text. Thinking about what our project is and what it does will help choose something appropriate. Our project tells you if something is a number or not, it answers a question, so a question mark is probably a good symbol to use. And the thing you are asking about is numbers, so a hashtag (also known as an octothorpe) is a common symbol for representing numbers.
 
 I could go with something simple like the two symbols together.
 
-![An octothorpe next to a question mark in the font Roboto Mono](https://i.imgur.com/mQXbez8.png)
+![An octothorpe next to a question mark in the font Roboto Mono](mQXbez8.png)
 
 I could also experiment with making the question mark bigger and placing a white box over the dot. Then taking a small octothorpe and placing that over the top to make a hybrid of the two.
 
-![A question mark with an octothorpe instead of a dot](https://i.imgur.com/2EvPi5c.png)
+![A question mark with an octothorpe instead of a dot](2EvPi5c.png)
 
 Either of these options should work well in isolation and also as part of the full name.
 
-![Both full logo variations](https://i.imgur.com/XobbzwY.png)
+![Both full logo variations](XobbzwY.png)
 
 I think my preference here is the custom question mark with the octothorpe instead of the dot, so let's go with that.
 
@@ -169,11 +169,11 @@ Colour palettes tend to have primary and secondary colours. Primary are used for
 
 To get us started on our small open source project we can use a resource like [coolors.co](https://coolors.co) to generate a palette for us. You can keep hitting the space bar and generating colours until you find some you are happy with. For now I've just kept going until I have a palette with a couple of variations on two different colours. I want multiple because I don't want everything to just be a single colour.
 
-![My generated palette on coolors](https://i.imgur.com/5Cl1eAe.png)
+![My generated palette on coolors](5Cl1eAe.png)
 
 It can also be helpful to use a contrast checker like [this one from WebAIM](https://webaim.org/resources/contrastchecker/) if you intend to use the colours for text. The tool will show you whether it will be readable by most people at different sizes on different backgrounds.
 
-![Checking one of my generated colours in WebAIM](https://i.imgur.com/i8CvEJl.png)
+![Checking one of my generated colours in WebAIM](i8CvEJl.png)
 
 The palette I've generated has a couple of reds that I can use for primary and a few blues for secondary.
 
@@ -200,15 +200,15 @@ I've also included an off black instead of full black in the list because this c
 
 Now that we have some colours let's apply them to our logo.
 
-![is-number logo](https://i.imgur.com/Syhviwx.png)
+![is-number logo](Syhviwx.png)
 
 This is definitely not the best logo in the world, but that's ok. It was easy to make, it is recognisable and it is something I can use when working on `is-number`.
 
 The last thing we need to do is export our logo. Google Sheets has the ability to export slides as scalable vector graphics (SVGs). This is a great format because it can be scaled up or down with no loss in image quality. It exports the whole slide though so you'll need to move your logo up into the top left hand corner beforte you export it.
 
-![Logo in google sheets in the top left hand corner](https://i.imgur.com/yE24vtU.png)
+![Logo in google sheets in the top left hand corner](yE24vtU.png)
 
-![Menu to download as SVG](https://i.imgur.com/mNgE48N.png)
+![Menu to download as SVG](mNgE48N.png)
 
 Then once you've downloaded it open it up in your favorite text editor (something like [VSCode](https://code.visualstudio.com/) has a preview for SVGs which is helpful). The very first line will include a `viewBox` property which we need to edit.
 
@@ -218,11 +218,11 @@ Then once you've downloaded it open it up in your favorite text editor (somethin
 
 This describes the size of the canvas that the SVG is drawn on, which is the size of the slide from Google Sheets. Reduce these numbers until your logo is centered in the frame.
 
-![Editing the logo SVG in VSCode](https://i.imgur.com/TOBbNxu.png)
+![Editing the logo SVG in VSCode](TOBbNxu.png)
 
 Repeat the process for just the logo on its own too for use in social media profile pictures.
 
-![Editing the small logo](https://i.imgur.com/c4CBEjn.png)
+![Editing the small logo](c4CBEjn.png)
 
 Then copy these files into somewhere in your docs directory.
 
@@ -277,7 +277,7 @@ A good way to experiment with fonts is to just play around in Google Slides. Wri
 
 For `is-number` I've gone with `Roboto` for both the title and body font and `Inconsolata` for the code.
 
-![Google Slides with some sample text](https://i.imgur.com/eUhrOlq.png)
+![Google Slides with some sample text](eUhrOlq.png)
 
 So once we've decided on our fonts we can update our guidelines.
 
@@ -313,7 +313,7 @@ html_theme_options = {
 }
 ```
 
-![Documentation with new logo](https://i.imgur.com/PE8cjG3.png)
+![Documentation with new logo](PE8cjG3.png)
 
 ## Summary
 

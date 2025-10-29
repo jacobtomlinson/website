@@ -78,7 +78,7 @@ $ now
 
 It will prompt you to check you are happy that as you are on the free tier your config and logs will be made available for the world to see (don't panic we'll address this later). Type `y` to continue and watch you container build and deploy!
 
-![](https://i.imgur.com/9q2ssUNh.png)
+![](9q2ssUNh.png)
 
 Your opsdroid container will now be running and `now` will have automatically copied the deployment url to your clipboard. Give it a couple of seconds to get up and running and then test the api with the `curl` command.
 

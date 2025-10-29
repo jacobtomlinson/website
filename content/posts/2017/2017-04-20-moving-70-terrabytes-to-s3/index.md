@@ -38,7 +38,7 @@ It sounds like a joke at first, but when you do the maths it turns out that copy
 
 Luckily for us Amazon Web Services provide a robust and secure way of doing this called [AWS Snowball][aws-snowball]. Taking its name from their archive storage system [AWS Glacier][aws-glacier], Snowball is a service for importing big chunks of data into their cloud storage. It works by posting you a very large and durable hard drive appliance, you simply fill the drive up with data and then ship it back to them.
 
-![AWS Snowball](https://i.imgur.com/J4jD23mh.jpg)
+![AWS Snowball](J4jD23mh.jpg)
 
 ### Practicalities
 

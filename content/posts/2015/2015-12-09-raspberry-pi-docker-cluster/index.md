@@ -28,11 +28,11 @@ We only had original Raspberry Pi model Bs in the cupboard, which are perfectly 
 
 I decided I wanted to build a cluster of five Pis, but also decided on a sixth to run as the master and control machine. We have a 3D printer in the Lab so I went and found a [nice modular rack][pi-rack] to print to hold them in place.
 
-![Pi Rack](https://i.imgur.com/DXxWgn4h.jpg)
+![Pi Rack](DXxWgn4h.jpg)
 
 To power and network them together we purchased a cheap 8 port hub and a 6 port USB phone charger. I also added a spare home router to provide DHCP, DNS and internet access, although this was just for simplicity and I could've configured the master Pi to manage this.
 
-![Raspberry Pi Cluster](https://i.imgur.com/xkFpRVBh.jpg)
+![Raspberry Pi Cluster](xkFpRVBh.jpg)
 
 # Basic config
 
@@ -141,7 +141,7 @@ Name: 3364ce99fee8
 
 Excellent so I now had my cluster up and running. I can execute commands on my swarm by running normal docker commands on the host and specifying the swarm master in the `-H` option or by changing the `DOCKER_HOST` environment variable to the same value.
 
-![More cluster](https://i.imgur.com/S74GY4ph.jpg)
+![More cluster](S74GY4ph.jpg)
 
 This gives us one problem however ... networking. If I create two containers on my swarm and link them together I cannot be sure that they will both be created on the same node, which would break the link. This is because each node creates a network bridge for its own containers. It assigns them IP addresses and manages the routing in and out. Until recently when multiple containers are spread across nodes and need to talk to each other the only way to connect them between the bridges was by exposing ports out to the node and connecting to the nodes IP from the other containers. This is not ideal as containers should be independent of the nodes they are running on and shouldn't have to expose their services outside unless we really need to.
 
@@ -212,7 +212,7 @@ Kubernetes also handles the proxying and routing for you in a neater way that I'
 
 This project has been very useful for improving my understanding of clustering containers. It is also very useful for visually demonstrating to others how clustering containers, and more specifically Docker, works in practice.
 
-![Lovely lights](https://i.imgur.com/NU82BOJh.jpg)
+![Lovely lights](NU82BOJh.jpg)
 
 [compose]: https://docs.docker.com/compose/
 [consul]: https://www.consul.io/

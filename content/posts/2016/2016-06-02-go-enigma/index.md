@@ -31,7 +31,7 @@ After learning about this I began to think that if the best minds of 1939 could 
 ## Step one: Learn how an Enigma machine works
 Enigma Machines are an electronic device which looks similar to a type writer. It has a keyboard with the letters A-Z, some lights with the letters A-Z and some electronic mappings to jumble them up. When you press a key on the keyboard one of the lights turns on, giving you a ciphered letter.
 
-![Enigma Machine](https://i.imgur.com/bh2zFIyh.jpg)
+![Enigma Machine](bh2zFIyh.jpg)
 
 The groundbreaking thing about this machine was that the mapping between the letters is built into a series of rotating cogs called rotors. Whenever a key is pressed the rotors turn, changing the mapping between all the letters. Therefore if you encode the message `AAAAA` it will not give you `HHHHH`, you will in fact get something like `JKUFG`.
 
