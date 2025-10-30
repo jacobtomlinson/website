@@ -1,11 +1,10 @@
 function updateApplause(applause) {
-    let container = document.getElementById('applause');
-    if (!container) {
-        const attributes = document.getElementsByClassName("attributes")[0];
-        attributes.innerHTML += '<small id="applause"></small>';
-        document.getElementById("applause").addEventListener("click", giveApplause);
+    let container = document.querySelector('#applause');
+    if (!container || !document.querySelector("article")) {
+        return;
     }
-    container = document.getElementById('applause');
+    container.addEventListener("click", giveApplause);
+    container.style.removeProperty('display');
     container.innerHTML = '<i class="fas fa-hands-clapping"></i> ' + applause;
 }
 

@@ -96,4 +96,8 @@
         </a>
     </small>
     {{ end }}
+
+    {{ if eq .Type "posts" }}
+    <small id="applause" style="display: none;"></small>
+    {{ end }}
 </div>

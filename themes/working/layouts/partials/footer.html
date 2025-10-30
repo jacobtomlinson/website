@@ -8,7 +8,3 @@
   </div>
 </div>
 {{ end }}
-
-{{ with resources.Match "js/**.js" | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ .RelPermalink }}"></script>
-{{ end }}
