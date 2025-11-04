@@ -4,8 +4,8 @@ date: 2025-07-11T00:00:00+00:00
 draft: false
 author: "Jacob Tomlinson, Naty Clementi"
 event:
-  name: EuroSciPy
-  link: https://euroscipy.org/schedule/
+  name: SciPy
+  link: https://www.scipy2025.scipy.org/schedule
   type: Talk
   location: Tacoma, WA, USA
 length: 30
