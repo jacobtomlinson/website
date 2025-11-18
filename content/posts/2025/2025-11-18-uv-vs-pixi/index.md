@@ -106,12 +106,12 @@ There are also a few other things I like about the conda package spec. For examp
 
 ```python
 try:
-    import foo
+    import bar
 except ImportError:
-    foo = None
+    bar = None
 
-if foo:
-    foo.some_feature() # this method was added in foo 1.5
+if bar:
+    bar.some_feature() # this method was added in bar 1.5
 ```
 
 Then in your `pyproject.toml` you specify the extra.
