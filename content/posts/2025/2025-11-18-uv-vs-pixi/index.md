@@ -61,7 +61,7 @@ Python is extremely popular as a beginner/intermediate language and you can beco
   compilation terminated.
 ```
 
-I'm not exactly sure on the history here but around this time the folks over at [Anaconda](https://anaconda.org) (formely known as Continuum Analytics) were trying to solve this problem. They worked a lot with Python users in the sciences where there was heavy use of libraries with compiled code like `numpy` and `scipy`. At this time the creators of PyPI and `pip` felt that it should remain as a pure source code repository, this would change later on, but there was enough friction here that the Anaconda folks decided to create the [`conda`](https://docs.conda.io/en/latest/) package manager.
+I'm not exactly sure on the history here but around this time the folks over at [Anaconda](https://anaconda.org) (formerly known as Continuum Analytics) were trying to solve this problem. They worked a lot with Python users in the sciences where there was heavy use of libraries with compiled code like `numpy` and `scipy`. At this time the creators of PyPI and `pip` felt that it should remain as a pure source code repository, this would change later on, but there was enough friction here that the Anaconda folks decided to create the [`conda`](https://docs.conda.io/en/latest/) package manager.
 
 ## Binary packages
 
@@ -106,12 +106,12 @@ There are also a few other things I like about the conda package spec. For examp
 
 ```python
 try:
-    import bar
+    import foo
 except ImportError:
-    bar = None
+    foo = None
 
-if bar:
-    bar.some_feature() # this method was added in bar 1.5
+if foo:
+    foo.some_feature() # this method was added in foo 1.5
 ```
 
 Then in your `pyproject.toml` you specify the extra.
@@ -182,7 +182,7 @@ In the Python community a popular solution to this was [`poetry`](https://python
 
 For me `poetry` was my first introduction to declarative Python environments. In `conda` you could create an `environment.yaml` and in `pip` a `requirements.txt`. While the best practice was to update those files and recreate your environment from scratch each time it rarely happened that way. Most people would run multiple install commands like `pip install foo`, then `pip install bar`, etc and have an environment grow organically and potentially introduce conflicts over time. With `poetry` you would run `poetry add foo`, and `poetry add bar`. The list of dependencies was stored in the project and was solved from scratch each time. This way you guarantee you don't end up with a broken environment. You can see a parallel here with `conda` where solves are done from scratch, but updating and storing the environment explicitly felt refreshing and new.
 
-## Manging Python itself
+## Managing Python itself
 
 A challenge in the `pip` style ecosystem is that `pip` and derived tools like `poetry` depends on Python, so before you get your package manager you need to figure out where to get Python from in the first place. This is solved in `conda` because `python` is just another package for you to include in your dependencies, each environment can have it's own version of Python. 
 
@@ -200,7 +200,7 @@ The target audience of `pixi` is folks who use a lot of compiled or non-Python d
 
 The environment solves in `pip` are less compute intensive than `conda` because it doesn't try and resolve the entire environment every time. But there was still a lot of performance left on the table. Installing Python packages via `pip` felt very slow compared to using `pixi`, `mamba` or modern versions of `conda`.
 
-The folks working on `rye` saw this opporunity and did for `pip` as `mamba`/`pixi` had done for `conda`. They built [`uv`](https://docs.astral.sh/uv/), which started as a reimplementation of `pip` in Rust. They built a really fast solver for PyPI packages and also bundled environment management similar to `venv` and `poetry` directly into `uv`. This now meant that the pip ecosystem via `uv` has even more of a feature overlap with `conda`, it's fast, declarative, has locking, can handle compiled dependencies and can manage virtual environments. However, by the nature of reimplementing `pip` directly you will find that `uv pip` still has many of the problems that `pip` has.
+The folks working on `rye` saw this opportunity and did for `pip` as `mamba`/`pixi` had done for `conda`. They built [`uv`](https://docs.astral.sh/uv/), which started as a reimplementation of `pip` in Rust. They built a really fast solver for PyPI packages and also bundled environment management similar to `venv` and `poetry` directly into `uv`. This now meant that the pip ecosystem via `uv` has even more of a feature overlap with `conda`, it's fast, declarative, has locking, can handle compiled dependencies and can manage virtual environments. However, by the nature of reimplementing `pip` directly you will find that `uv pip` still has many of the problems that `pip` has.
 
 Over time almost all the project management features from `rye` were ported over to `uv`, and `rye` has since been deprecated.
 
@@ -389,7 +389,7 @@ I cannot understate how fast all of the above commands run when using `uv` compa
 
 ### Interdependent Library Development: `conda` + `uv pip`
 
-An exception to the above is when I'm working on multiple libraries with interconnected dependencies. For example the other day I was debugging a failing test in `dask.distributed`. To investigate this I had both `dask` and `distirbuted` installed from source. I then discovered the bug was in a dependency of `distributed` called `tblib`. So I wanted to have all three installed from source, then I needed to [make changes to `tblib`](https://github.com/ionelmc/python-tblib/pull/85) while running the test suite from `distributed`, all in the same environment.
+An exception to the above is when I'm working on multiple libraries with interconnected dependencies. For example the other day I was debugging a failing test in `dask.distributed`. To investigate this I had both `dask` and `distributed` installed from source. I then discovered the bug was in a dependency of `distributed` called `tblib`. So I wanted to have all three installed from source, then I needed to [make changes to `tblib`](https://github.com/ionelmc/python-tblib/pull/85) while running the test suite from `distributed`, all in the same environment.
 
 For these situations I find the `conda` environment model of having named environments stored in a central location more helpful. I didn't want environments stored within the `dask`, `distributed` or `tblib` directories, which is how `pixi` and `uv` feel most natural. I just want to create an environment, specify a Python version, and use `uv pip install -e .` to install each project from their locally cloned git repo. I use `uv pip` because the functionality is the same as `pip` just way faster.
 
@@ -442,6 +442,6 @@ I went as far as making some [shell aliases](https://github.com/jacobtomlinson/d
 
 ## Final thoughts on `pip`
 
-This post started out explinaing how `pip` came and solved an important problem solving dependencies for Python more than 15 years ago. It is the tool recommended by the [Python Software Foundation](https://www.python.org/psf-landing/) to install Python packages. However, in 2025 I do not use it at all. The needs of the community have moved on again and now I'm jumping between `uv`, `pixi` and `conda` until the next thing comes along.
+This post started out explaining how `pip` came and solved an important problem solving dependencies for Python more than 15 years ago. It is the tool recommended by the [Python Software Foundation](https://www.python.org/psf-landing/) to install Python packages. However, in 2025 I do not use it at all. The needs of the community have moved on again and now I'm jumping between `uv`, `pixi` and `conda` until the next thing comes along.
 
 [^1]: Funnily enough drawing this diagram was a perfect use case for `pixi`/`conda`, which you'll learn more about in the article. The diagram is drawn with `graphviz` which is a non-Python binary package which isn't available on PyPI and therefore can't be installed with `pip`, `uv`, `poetry` or any other tools that consumes from PyPI. It must either be installed with your system package manager like `apt` or `brew`, or be installed with `conda`.
