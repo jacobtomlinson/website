@@ -182,7 +182,7 @@ In the Python community a popular solution to this was [`poetry`](https://python
 
 For me `poetry` was my first introduction to declarative Python environments. In `conda` you could create an `environment.yaml` and in `pip` a `requirements.txt`. While the best practice was to update those files and recreate your environment from scratch each time it rarely happened that way. Most people would run multiple install commands like `pip install foo`, then `pip install bar`, etc and have an environment grow organically and potentially introduce conflicts over time. With `poetry` you would run `poetry add foo`, and `poetry add bar`. The list of dependencies was stored in the project and was solved from scratch each time. This way you guarantee you don't end up with a broken environment. You can see a parallel here with `conda` where solves are done from scratch, but updating and storing the environment explicitly felt refreshing and new.
 
-## Manging Python itself
+## Managing Python itself
 
 A challenge in the `pip` style ecosystem is that `pip` and derived tools like `poetry` depends on Python, so before you get your package manager you need to figure out where to get Python from in the first place. This is solved in `conda` because `python` is just another package for you to include in your dependencies, each environment can have it's own version of Python. 
 
