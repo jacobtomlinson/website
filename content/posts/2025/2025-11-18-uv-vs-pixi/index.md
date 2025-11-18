@@ -61,7 +61,7 @@ Python is extremely popular as a beginner/intermediate language and you can beco
   compilation terminated.
 ```
 
-I'm not exactly sure on the history here but around this time the folks over at [Anaconda](https://anaconda.org) (formely known as Continuum Analytics) were trying to solve this problem. They worked a lot with Python users in the sciences where there was heavy use of libraries with compiled code like `numpy` and `scipy`. At this time the creators of PyPI and `pip` felt that it should remain as a pure source code repository, this would change later on, but there was enough friction here that the Anaconda folks decided to create the [`conda`](https://docs.conda.io/en/latest/) package manager.
+I'm not exactly sure on the history here but around this time the folks over at [Anaconda](https://anaconda.org) (formerly known as Continuum Analytics) were trying to solve this problem. They worked a lot with Python users in the sciences where there was heavy use of libraries with compiled code like `numpy` and `scipy`. At this time the creators of PyPI and `pip` felt that it should remain as a pure source code repository, this would change later on, but there was enough friction here that the Anaconda folks decided to create the [`conda`](https://docs.conda.io/en/latest/) package manager.
 
 ## Binary packages
 
@@ -442,6 +442,6 @@ I went as far as making some [shell aliases](https://github.com/jacobtomlinson/d
 
 ## Final thoughts on `pip`
 
-This post started out explinaing how `pip` came and solved an important problem solving dependencies for Python more than 15 years ago. It is the tool recommended by the [Python Software Foundation](https://www.python.org/psf-landing/) to install Python packages. However, in 2025 I do not use it at all. The needs of the community have moved on again and now I'm jumping between `uv`, `pixi` and `conda` until the next thing comes along.
+This post started out explaining how `pip` came and solved an important problem solving dependencies for Python more than 15 years ago. It is the tool recommended by the [Python Software Foundation](https://www.python.org/psf-landing/) to install Python packages. However, in 2025 I do not use it at all. The needs of the community have moved on again and now I'm jumping between `uv`, `pixi` and `conda` until the next thing comes along.
 
 [^1]: Funnily enough drawing this diagram was a perfect use case for `pixi`/`conda`, which you'll learn more about in the article. The diagram is drawn with `graphviz` which is a non-Python binary package which isn't available on PyPI and therefore can't be installed with `pip`, `uv`, `poetry` or any other tools that consumes from PyPI. It must either be installed with your system package manager like `apt` or `brew`, or be installed with `conda`.
