@@ -367,7 +367,7 @@ I also like to encourage contributions to my projects and the reality is that `u
 For example I can clone my `kr8s` project.
 
 ```bash
-git clone git@github.com:kr8s-org/kr8s.git
+git clone https://github.com/kr8s-org/kr8s.git
 cd kr8s
 ```
 
@@ -391,14 +391,14 @@ I cannot understate how fast all of the above commands run when using `uv` compa
 
 An exception to the above is when I'm working on multiple libraries with interconnected dependencies. For example the other day I was debugging a failing test in `dask.distributed`. To investigate this I had both `dask` and `distirbuted` installed from source. I then discovered the bug was in a dependency of `distributed` called `tblib`. So I wanted to have all three installed from source, then I needed to [make changes to `tblib`](https://github.com/ionelmc/python-tblib/pull/85) while running the test suite from `distributed`, all in the same environment.
 
-For these situations I find the `conda` environment model of having named environments stored in a central location more helpful. I didn't want environments stored within the `dask`, `distirbuted` or `tblib` directories, which is how `pixi` and `uv` feel most natural. I just want to create an environment, specify a Python version, and use `uv pip install -e .` to install each project from their locally cloned git repo. I use `uv pip` because the functionality is the same as `pip` just way faster.
+For these situations I find the `conda` environment model of having named environments stored in a central location more helpful. I didn't want environments stored within the `dask`, `distributed` or `tblib` directories, which is how `pixi` and `uv` feel most natural. I just want to create an environment, specify a Python version, and use `uv pip install -e .` to install each project from their locally cloned git repo. I use `uv pip` because the functionality is the same as `pip` just way faster.
 
 For example let's start by cloning a bunch of interdependent projects.
 
 ```bash
-git clone git@github.com:dask/dask.git
-git clone git@github.com:dask/distributed.git
-git clone git@github.com:dask/dask-kubernetes.git
+git clone https://github.com/dask/dask.git
+git clone https://github.com/dask/distributed.git
+git clone https://github.com/ionelmc/python-tblib.git
 ```
 
 Then I would create a new named environment with `conda`.
@@ -419,12 +419,11 @@ git checkout main
 cd ../distributed
 uv pip install -e .
 
-cd ../dask-kubernetes
+cd ../tblib
 uv pip install -e .
-uv pip install -r requirements-test.txt  # This project still uses a requirement.txt file for test dependencies
 ```
 
-Then finally I could run the `dask-kubernetes` tests against my local versions of `dask` and `distributed`.
+Then finally I could run the `distributed` tests against my local versions of `dask` and `tblib`.
 
 ```bash
 pytest
