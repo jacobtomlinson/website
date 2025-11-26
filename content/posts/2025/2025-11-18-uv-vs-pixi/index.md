@@ -156,7 +156,7 @@ $ conda install foo bar==1.4
 failed to solve...
 ```
 
-The goal of describing these differences isn't to say `conda` is better. Just that `conda` set out to solve a bunch of problems that `pip` had. Some of which have been fixed by both projects in different and opinionated ways, and others which haven't be fixed in `pip` at all. These differences keep the `conda` community alive and relevant.
+The goal of describing these differences isn't to say `conda` is better. Just that `conda` set out to solve a bunch of problems that `pip` had. Some of which have been fixed by both projects in different and opinionated ways, and others which haven't been fixed in `pip` at all. These differences keep the `conda` community alive and relevant.
 
 ## Reinventing the wheel
 
@@ -251,7 +251,7 @@ With `uv` you can run this directly with an ephemeral virtual environment. Creat
 uv run --with requests,rich example.py
 ```
 
-You can also declaratively add these dependencies to the script do you can omit the `--with` flag in the future.
+You can also declaratively add these dependencies to the script so you can omit the `--with` flag in the future.
 
 ```bash
 uv add --script example.py 'requests<3' 'rich'
@@ -430,7 +430,7 @@ pytest
 ```
 
 ````info
-I have played around with using `pixi` to do this, mainly to reduce the number of tools I use to just `pixi` and `uv`. You can create environments anywhere on your system, and you can activate an environment from any path with but it just feels clunky. 
+I have played around with using `pixi` to do this, mainly to reduce the number of tools I use to just `pixi` and `uv`. You can create environments anywhere on your system, and you can activate an environment from any path with it, but it just feels clunky. 
 
 ```bash
 pixi init /path/to/env
