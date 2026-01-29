@@ -56,6 +56,10 @@ twine upload dist/*  # or uv publish
 
 Now that the backport release is on PyPI we also need to publish it to Conda Forge. However, there is so much automation in Conda Forge releases that I got a little stuck here. Thankfully [John Kirkham](https://github.com/jakirkham) kindly walked me through the process. The point of this post is to write that process down for future reference.
 
+```note
+Since publishing this I've also been pointed to the [Conda Forge | How to maintain several versions](https://conda-forge.org/docs/how-to/advanced/several-versions/) docs page which outlines the background on what automation is happening here. My search abilities let me down and I didn't find this page when originally trying to figure this process out.
+```
+
 To make releases on Conda Forge I usually push a new package to PyPI then wait for the Conda Forge Bot to automatically make a PR. This PR updates the version and the sha256 hash for the new package on PyPI. Then that PR gets merged to `main` which triggers the package to be built and pushed to Anaconda.
 
 Making a backport is similar, but instead of making a PR to `main` you make a new branch and then make a PR to that branch. Then when the PR is merged the same release automation happens.
@@ -128,4 +132,4 @@ Then you need to comment on the PR with the phrase `@conda-forge-admin, please r
 
 Once the rerender is complete and the CI has passed you can merge the PR. This will trigger the release and once the CI works it's way through you will see the package on Anaconda.
 
-![Screenshot of the Dask Conda Forge package on Anaconda showing the 2025.9.2 release](./dask-conda-forge-anaconda.png "https://anaconda.org/channels/conda-forge/packages/dask/overview")
+![Screenshot of the Dask Conda Forge package on Anaconda showing the 2025.9.2 release](./dask-conda-forge-anaconda.png "https://anaconda.org/channels/conda-forge/packages/dask/overvSiew")
