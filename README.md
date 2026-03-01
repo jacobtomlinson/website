@@ -12,7 +12,7 @@ tweet me [@jacobtomlinson.dev](https://bsky.app/profile/jacobtomlinson.dev) or e
 ## Contribution
 If you see any errors in my website content or feel you could make improvements then please
 feel free to open an issue or raise a pull request. Or if you wish just leave a comment
-on the relevant page.
+on the relevant page. This site was contributed to open sorce platform for exchange of ideas and to increase its effectiveness.
 
 If you notice any bugs relating to the theme or display of the website please feel free to raise an issue.
 
