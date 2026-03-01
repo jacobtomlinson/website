@@ -5,6 +5,12 @@
 The code which powers jacobtomlinson.dev
 
 ## Contact
+If there is something wrong with the content on that web site,
+feel free to
+[file an issue with this repository](https://github.com/jacobtomlinson/website/issues),
+or formulate a pull request.
+Note that most pages will come with an edit link in the bottom right corner.
+
 If you wish to contact me regarding my website please raise an issue on GitHub,
 tweet me [@jacobtomlinson.dev](https://bsky.app/profile/jacobtomlinson.dev) or email me
 [jacob@tomlinson.email](mailto:jacob@tomlinson.email).
