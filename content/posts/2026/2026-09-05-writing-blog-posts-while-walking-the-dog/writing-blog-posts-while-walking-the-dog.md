@@ -11,7 +11,7 @@ tags:
   - Blogging
 ---
 
-I'm excited about how AI is changing how I work, it has made me more productive and able to get more things done. I'm also frustrated by how much low-effort content is being generated and sprayed across the internet. Content that isn't created to benefit the reader, it's there only to benefit the creator via ads, referrals, etc.
+I'm excited about how AI is changing how I work, it has made me more productive and able to get more things done. I'm also frustrated by how much low-effort content is being generated and [sprayed across the internet](https://en.wikipedia.org/wiki/Dead_Internet_theory). Content that isn't created to benefit the reader, it's there only to benefit the creator via ads, referrals, etc.
 
 I'll admit I tend to write blog posts for my own personal reasons. Usually it's so I can avoid explaining something multiple times to different people, or so I can get a better understanding of an idea in my head by writing about it. I primarily blog for myself, but the goal is to benefit others with the content too. I'm not trying to sell ads or anything like that.
 
