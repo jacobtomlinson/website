@@ -129,6 +129,6 @@ According to my blog software's reading speed estimate this post will take the a
 
 So what I have produced here is content that is a distilled and refined version of my thoughts and ideas. I've checked all of my personal boxes in staying true to not publishing AI content. But it's unclear to me whether there should be a final, final pass where I retype the whole post from scratch.
 
-Typing the post out is could be considered the proof that I've done the work. Do I need to earn that proof? If I did type it myself, nobody would read it and think "this is AI", because there would be no AI written words in it. But I don't know whether that's necessary. I don't know whether the content I can produce through this process of dictation and distillation is enough.
+Typing the post out could be considered the proof that I've done the work. Do I need to earn that proof? If I did type it myself, nobody would read it and think "this is AI", because there would be no AI written words in it. But I don't know whether that's necessary. I don't know whether the content I can produce through this process of dictation and distillation is enough.
 
 Honestly, I'm interested in what you think. Come and find me on [Bluesky](https://bsky.app/profile/jacobtomlinson.dev) and tell me what you think about this post and how I created it. Did it feel like AI content? Do you feel like I stuck to my principle of not putting AI created content on my blog? I'm genuinely interested in your thoughts and feedback.
